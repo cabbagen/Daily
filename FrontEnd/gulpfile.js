@@ -1,12 +1,13 @@
 
 var gulp = require('gulp'),
-	configFn = require('./configFn.js'),
+	configFn = require('./config.js'),
 	path = require('path'),
 	webpack = require('webpack'),
 	webpackStream = require('webpack-stream'),
 	less = require('gulp-less'),
 	cleanCss = require('gulp-clean-css'),
-	autoprefixer = require('gulp-autoprefixer');
+	autoprefixer = require('gulp-autoprefixer'),
+	imagemin = require('gulp-imagemin');
 
 
 // javascitpt 
@@ -44,14 +45,25 @@ gulp.task('less', function() {
 		.pipe(gulp.dest('../Public/style/'));
 });
 
+
+// images
+gulp.task('images', function() {
+	gulp.src('./images/*')
+		.pipe(imagemin())
+		.pipe(gulp.dest('../Public/images/'));
+});
+
+
+
 // watch
 gulp.task('watch', function() {
+	gulp.watch(['./images/*'], ['images']);
 	gulp.watch(['./javascript/*.js', './javascript/**/*.js'], ['webpack']);
 	gulp.watch(['./style/*.less', './style/**/*.less'], ['less']);
 });
 
 
-gulp.task('default', ['less', 'webpack', 'watch']);
+gulp.task('default', ['less', 'webpack', 'images', 'watch']);
 
 
 
