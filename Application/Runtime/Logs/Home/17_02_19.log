@@ -1,0 +1,651 @@
+[ 2017-02-19T15:08:42+08:00 ] 127.0.0.1 /Home/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.014572s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010118s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010502s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.018650s ]
+INFO: [ app_end ] --END-- [ RunTime:0.018889s ]
+
+[ 2017-02-19T15:08:55+08:00 ] 127.0.0.1 /Home/Login/login%20.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000590s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001069s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001422s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000658s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000845s ]
+
+[ 2017-02-19T15:09:15+08:00 ] 127.0.0.1 /Home/Login/loginAccount.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000994s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000876s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001061s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.029345s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.029635s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.233901s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.234172s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.020655s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.021018s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001251s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001438s ]
+
+[ 2017-02-19T15:32:37+08:00 ] 127.0.0.1 /index.php/Home/Login/handleLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000767s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001008s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001192s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0594s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `think_user` WHERE `username` = ' Lee' AND `password` = '123'  [ RunTime:0.0521s ]
+
+[ 2017-02-19T15:32:37+08:00 ] 127.0.0.1 /index.php/Home/Login/loginAccount.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000650s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000858s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000314s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018341s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018536s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000896s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000868s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001144s ]
+
+[ 2017-02-19T15:32:49+08:00 ] 127.0.0.1 /index.php/Home/Login/handleLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000644s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001242s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0416s ]
+SQL: SELECT * FROM `think_user` WHERE `username` = 'Lee' AND `password` = '123'  [ RunTime:0.0005s ]
+
+[ 2017-02-19T15:32:50+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001108s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001088s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001485s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0050s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 29 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000261s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000654s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045661s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045992s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000775s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000971s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000765s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001002s ]
+
+[ 2017-02-19T15:33:19+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000095s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000975s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000861s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001177s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0624s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 29 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000355s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013817s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014038s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000626s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000800s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000616s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000784s ]
+
+[ 2017-02-19T15:49:23+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000805s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000823s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001005s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0692s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0091s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 38 行.
+NOTIC: [8] Undefined property: stdClass::$avator D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 45 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000198s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000551s ]
+NOTIC: [8] Undefined variable: userinfo D:\wamp\www\Daily\Application\Runtime\Cache\Home\439556ebe5e36dd14267e731cd1b495b.php 第 41 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063947s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064146s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001246s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001512s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000795s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000970s ]
+
+[ 2017-02-19T15:49:58+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000588s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000840s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0065s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0065s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 38 行.
+NOTIC: [8] Undefined property: stdClass::$avator D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 45 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000393s ]
+NOTIC: [8] Undefined variable: userinfo D:\wamp\www\Daily\Application\Runtime\Cache\Home\439556ebe5e36dd14267e731cd1b495b.php 第 41 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011914s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012146s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000827s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000801s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000975s ]
+
+[ 2017-02-19T15:50:39+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000741s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000847s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001029s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0092s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0225s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 38 行.
+NOTIC: [8] Undefined property: stdClass::$avator D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 45 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000376s ]
+NOTIC: [8] Undefined variable: userinfo D:\wamp\www\Daily\Application\Runtime\Cache\Home\439556ebe5e36dd14267e731cd1b495b.php 第 41 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013853s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014110s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000847s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001079s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001058s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001415s ]
+
+[ 2017-02-19T15:51:26+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000717s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001083s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001378s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0096s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0127s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 38 行.
+NOTIC: [8] Undefined property: stdClass::$avator D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 45 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000337s ]
+NOTIC: [8] Undefined variable: userinfo D:\wamp\www\Daily\Application\Runtime\Cache\Home\439556ebe5e36dd14267e731cd1b495b.php 第 41 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019775s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020304s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000896s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001273s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php:48) D:\wamp\www\Daily\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php:48) D:\wamp\www\Daily\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php:48) D:\wamp\www\Daily\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001785s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002214s ]
+
+[ 2017-02-19T15:53:20+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000611s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001148s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001426s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0083s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0218s ]
+SQL: SELECT * FROM `think_user` WHERE `username` = 'Lee'  [ RunTime:0.0008s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 38 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 44 行.
+NOTIC: [8] Undefined property: stdClass::$avator D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 45 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000189s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001600s ]
+NOTIC: [8] Undefined variable: userinfo D:\wamp\www\Daily\Application\Runtime\Cache\Home\439556ebe5e36dd14267e731cd1b495b.php 第 41 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015659s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015917s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000968s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001241s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000975s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001292s ]
+
+[ 2017-02-19T15:54:08+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001448s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000989s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001221s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0065s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `think_user` WHERE `username` = 'Lee' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 38 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 44 行.
+NOTIC: [8] Undefined property: stdClass::$avator D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 45 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000292s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000685s ]
+NOTIC: [8] Undefined variable: userinfo D:\wamp\www\Daily\Application\Runtime\Cache\Home\439556ebe5e36dd14267e731cd1b495b.php 第 41 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013758s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014056s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000715s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000909s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000825s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000994s ]
+
+[ 2017-02-19T15:54:52+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000840s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000707s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000980s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `think_user` WHERE `username` = 'Lee' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 38 行.
+
+[ 2017-02-19T15:54:55+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000607s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000777s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0088s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `think_user` WHERE `username` = 'Lee' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 38 行.
+
+[ 2017-02-19T15:55:12+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000605s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000979s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001343s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0087s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0286s ]
+SQL: SELECT * FROM `think_user` WHERE `username` = 'Lee' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 38 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000389s ]
+NOTIC: [8] Undefined variable: userinfo D:\wamp\www\Daily\Application\Runtime\Cache\Home\439556ebe5e36dd14267e731cd1b495b.php 第 41 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013527s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013727s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000806s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000623s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000794s ]
+
+[ 2017-02-19T15:55:15+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001129s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000991s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001340s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0089s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `think_user` WHERE `username` = 'Lee' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 38 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000140s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000359s ]
+NOTIC: [8] Undefined variable: userinfo D:\wamp\www\Daily\Application\Runtime\Cache\Home\439556ebe5e36dd14267e731cd1b495b.php 第 41 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013441s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013788s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000921s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001155s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000657s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000824s ]
+
+[ 2017-02-19T15:55:28+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000609s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000716s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000914s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0214s ]
+SQL: SELECT * FROM `think_user` WHERE `username` = 'Lee' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 38 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000321s ]
+NOTIC: [8] Undefined variable: userinfo D:\wamp\www\Daily\Application\Runtime\Cache\Home\439556ebe5e36dd14267e731cd1b495b.php 第 41 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013675s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013851s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000823s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000613s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000776s ]
+
+[ 2017-02-19T15:56:52+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000664s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001566s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001884s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0071s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `think_user` WHERE `username` = 'Lee' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 38 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000337s ]
+NOTIC: [8] Undefined variable: userinfo D:\wamp\www\Daily\Application\Runtime\Cache\Home\439556ebe5e36dd14267e731cd1b495b.php 第 40 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011475s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011657s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000648s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000825s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000751s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000919s ]
+
+[ 2017-02-19T15:56:55+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000982s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002160s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0066s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `think_user` WHERE `username` = 'Lee' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 38 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000183s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000467s ]
+NOTIC: [8] Undefined variable: userinfo D:\wamp\www\Daily\Application\Runtime\Cache\Home\439556ebe5e36dd14267e731cd1b495b.php 第 40 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015080s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015332s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001034s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001284s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000908s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001408s ]
+
+[ 2017-02-19T15:57:37+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000608s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000635s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000821s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0066s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `think_user` WHERE `username` = 'Lee' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 38 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000325s ]
+NOTIC: [8] Undefined variable: userinfo D:\wamp\www\Daily\Application\Runtime\Cache\Home\439556ebe5e36dd14267e731cd1b495b.php 第 40 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013020s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013282s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001181s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001491s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000785s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001041s ]
+
+[ 2017-02-19T15:58:06+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001698s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000648s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000835s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `think_user` WHERE `username` = 'Lee' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 38 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000313s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011957s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012201s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000734s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000918s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000720s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000961s ]
+
+[ 2017-02-19T15:59:01+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000184s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001701s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000948s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001143s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `think_user` WHERE `username` = 'Lee' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 38 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000347s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013077s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013274s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000641s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000806s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000792s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000957s ]
+
+[ 2017-02-19T15:59:35+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000736s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000728s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000944s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `think_user` WHERE `username` = 'Lee' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 38 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000321s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012280s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012538s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001126s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001483s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000724s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000936s ]
+
+[ 2017-02-19T16:00:35+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000784s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000648s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000828s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `think_user` WHERE `username` = 'Lee' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 38 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000316s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011246s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011435s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000623s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000787s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000607s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000771s ]
+
+[ 2017-02-19T16:01:01+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000698s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000848s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001116s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0087s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0084s ]
+SQL: SELECT * FROM `think_user` WHERE `username` = 'Lee' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 38 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000193s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000481s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012730s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012945s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000678s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000845s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000618s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000796s ]
+
+[ 2017-02-19T16:01:33+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001108s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000837s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001024s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `think_user` WHERE `username` = 'Lee' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 38 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000202s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000574s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012144s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012357s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000654s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000817s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000786s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000952s ]
+
+[ 2017-02-19T16:02:00+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000753s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000907s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0511s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0175s ]
+SQL: SELECT * FROM `think_user` WHERE `username` = 'Lee' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 38 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000306s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012120s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012312s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000671s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000870s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000611s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000799s ]
+
+[ 2017-02-19T16:02:11+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001155s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000845s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001063s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `think_user` WHERE `username` = 'Lee' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 38 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000222s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000605s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013744s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013938s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000649s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000826s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000601s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000798s ]
+

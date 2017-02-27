@@ -1,0 +1,18 @@
+<?php
+    include "TopSdk.php";
+    date_default_timezone_set('Asia/Shanghai'); 
+	// $content = @file_get_contents('/Users/xt/Downloads/json.txt');
+	// var_dump(json_decode($content));
+	// var_dump(urlencode(mb_convert_encoding('阿里发票商家答疑', 'gb2312', 'utf-8')));
+	
+	$c = new TopClient;
+	// $c->appkey = $appkey;
+	// $c->secretKey = $secret;
+	$req = new OpenimUsersGetRequest;
+	// $req->setFields("nick,sex");
+	// $resp = $c->execute($req, $sessionKey);
+	
+	var_dump($c);
+	
+	var_dump($req);
+?>

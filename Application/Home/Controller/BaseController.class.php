@@ -1,4 +1,4 @@
-<?php 
+<?php
 	namespace Home\Controller;
 	use Think\Controller;
 
@@ -32,9 +32,18 @@
 		protected function _empty() {
 			echo 'empty';
 		}
-		
+
+		/**
+		 * 调试时使用，进行跨域处理
+		 * @return [type] [description]
+		 */
+		public function allowCrossOrigin() {
+			header('Access-Control-Allow-Origin: *');
+			header('Access-Control-Allow-Methods:POST, GET');
+		}
 
 		
+
 	}
 
 

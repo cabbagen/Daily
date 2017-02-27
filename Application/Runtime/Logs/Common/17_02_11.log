@@ -1,0 +1,72 @@
+[ 2017-02-11T09:56:21+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000663s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-02-11T10:36:26+08:00 ] 127.0.0.1 /Public/imeage/upload.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000850s ]
+ERR: 无法加载模块:Public
+
+[ 2017-02-11T10:36:30+08:00 ] 127.0.0.1 /Public/imeage/upload.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001149s ]
+ERR: 无法加载模块:Public
+
+[ 2017-02-11T10:37:00+08:00 ] 127.0.0.1 /Public/images/upload.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000948s ]
+ERR: 无法加载模块:Public
+
+[ 2017-02-11T10:37:05+08:00 ] 127.0.0.1 /Public/images/upload.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001247s ]
+ERR: 无法加载模块:Public
+
+[ 2017-02-11T10:37:35+08:00 ] 127.0.0.1 /Public/images/regist.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000669s ]
+ERR: 无法加载模块:Public
+
+[ 2017-02-11T10:37:50+08:00 ] 127.0.0.1 /public/images/regist.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000706s ]
+ERR: 无法加载模块:Public
+
+[ 2017-02-11T10:38:21+08:00 ] 127.0.0.1 /public/images/upload.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001253s ]
+ERR: 无法加载模块:Public
+
+[ 2017-02-11T10:38:23+08:00 ] 127.0.0.1 /public/images/upload.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001096s ]
+ERR: 无法加载模块:Public
+
+[ 2017-02-11T11:18:26+08:00 ] 127.0.0.1 /Login/uploadAvator
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001193s ]
+ERR: 无法加载模块:Login
+
+[ 2017-02-11T11:23:48+08:00 ] 127.0.0.1 /Login/uploadAvator
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000589s ]
+ERR: 无法加载模块:Login
+
+[ 2017-02-11T11:25:02+08:00 ] 127.0.0.1 /Login/uploadAvator
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000593s ]
+ERR: 无法加载模块:Login
+

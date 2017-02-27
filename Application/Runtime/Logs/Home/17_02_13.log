@@ -1,0 +1,111 @@
+[ 2017-02-13T00:40:55+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.036791s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009598s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0458s ]
+ERR: Think\Model:demo方法不存在！
+
+[ 2017-02-13T00:41:17+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000104s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001604s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003219s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0406s ]
+NOTIC: [8] Undefined variable: imTop D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 20 行.
+
+[ 2017-02-13T00:41:58+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000937s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003092s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.024056s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0419s ]
+ERR: Think\Model:initIm方法不存在！
+
+[ 2017-02-13T00:42:03+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001849s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002270s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0056s ]
+ERR: Think\Model:initIm方法不存在！
+
+[ 2017-02-13T00:42:31+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000109s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001808s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002033s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0120s ]
+NOTIC: [8] Undefined property: ResultSet::$userinfos D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 22 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 22 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 26 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000211s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000591s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.425624s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.426033s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.049457s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.049778s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.016859s ]
+INFO: [ app_end ] --END-- [ RunTime:0.017123s ]
+
+[ 2017-02-13T00:42:41+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000996s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001782s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002218s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0075s ]
+NOTIC: [8] Undefined property: ResultSet::$userinfos D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 22 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 22 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 26 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000140s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000343s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013347s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013550s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000726s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000892s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000967s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001134s ]
+
+[ 2017-02-13T00:43:21+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000082s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001508s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004521s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005393s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0104s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000304s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013022s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013233s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000742s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000911s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001062s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001225s ]
+

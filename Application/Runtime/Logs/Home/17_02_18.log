@@ -1,0 +1,299 @@
+[ 2017-02-18T17:31:41+08:00 ] 127.0.0.1 /Home/App/sendEmailToInviter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.032806s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.022150s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.022465s ]
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1585 行.
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1604 行.
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1585 行.
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1604 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.014489s ]
+INFO: [ app_end ] --END-- [ RunTime:0.014833s ]
+
+[ 2017-02-18T17:33:10+08:00 ] 127.0.0.1 /Home/App/sendEmailToInviter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000596s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003687s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004358s ]
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1585 行.
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1604 行.
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1585 行.
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1604 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000825s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001038s ]
+
+[ 2017-02-18T17:34:01+08:00 ] 127.0.0.1 /Home/App/sendEmailToInviter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000663s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001224s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001572s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000983s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001185s ]
+
+[ 2017-02-18T17:36:55+08:00 ] 127.0.0.1 /Home/App/sendEmailToInviter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000117s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001848s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002207s ]
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1585 行.
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1604 行.
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1585 行.
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1604 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001002s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001202s ]
+
+[ 2017-02-18T17:37:16+08:00 ] 127.0.0.1 /Home/App/sendEmailToInviter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000407s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001928s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002092s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002603s ]
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1585 行.
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1604 行.
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1585 行.
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1604 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000720s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000910s ]
+
+[ 2017-02-18T17:38:55+08:00 ] 127.0.0.1 /Home/App/sendEmailToInviter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000989s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001081s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001361s ]
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1585 行.
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1604 行.
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1585 行.
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1604 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000893s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001137s ]
+
+[ 2017-02-18T17:41:35+08:00 ] 127.0.0.1 /Home/App/sendEmailToInviter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000789s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000833s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001022s ]
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1585 行.
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1604 行.
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1585 行.
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1604 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001249s ]
+
+[ 2017-02-18T17:42:30+08:00 ] 127.0.0.1 /Home/App/sendEmailToInviter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000914s ]
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1585 行.
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1604 行.
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1585 行.
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1604 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001700s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002245s ]
+
+[ 2017-02-18T17:45:21+08:00 ] 127.0.0.1 /Home/App/sendEmailToInviter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000757s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000841s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001068s ]
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1585 行.
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1604 行.
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1585 行.
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1604 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001068s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001365s ]
+
+[ 2017-02-18T17:47:16+08:00 ] 127.0.0.1 /Home/App/sendEmailToInviter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000753s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000796s ]
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1585 行.
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1604 行.
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1585 行.
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1604 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001430s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001806s ]
+
+[ 2017-02-18T17:48:35+08:00 ] 127.0.0.1 /Home/App/sendEmailToInviter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000677s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000898s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001078s ]
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1585 行.
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1604 行.
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1585 行.
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1604 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001826s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002208s ]
+
+[ 2017-02-18T17:49:37+08:00 ] 127.0.0.1 /Home/App/sendEmailToInviter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000601s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000818s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001297s ]
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1585 行.
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1604 行.
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1585 行.
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1604 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000771s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000992s ]
+
+[ 2017-02-18T17:52:03+08:00 ] 127.0.0.1 /Home/App/sendEmailToInviter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001092s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001393s ]
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1585 行.
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1604 行.
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1585 行.
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1604 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001818s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002231s ]
+
+[ 2017-02-18T17:54:03+08:00 ] 127.0.0.1 /Home/App/sendEmailToInviter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000084s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001446s ]
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1585 行.
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1604 行.
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1585 行.
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1604 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000769s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000978s ]
+
+[ 2017-02-18T17:54:34+08:00 ] 127.0.0.1 /Home/App/sendEmailToInviter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000725s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001910s ]
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1585 行.
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1604 行.
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1585 行.
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1604 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001317s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001642s ]
+
+[ 2017-02-18T17:54:57+08:00 ] 127.0.0.1 /Home/App/sendEmailToInviter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001146s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001070s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001476s ]
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1585 行.
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1604 行.
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1585 行.
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1604 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001208s ]
+
+[ 2017-02-18T17:56:28+08:00 ] 127.0.0.1 /Home/App/sendEmailToInviter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001108s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000630s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000858s ]
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1585 行.
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1604 行.
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1585 行.
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1604 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001330s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001755s ]
+
+[ 2017-02-18T18:00:22+08:00 ] 127.0.0.1 /Home/App/sendEmailToInviter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000703s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000866s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001054s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000875s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001059s ]
+
+[ 2017-02-18T18:07:21+08:00 ] 127.0.0.1 /Home/App/sendEmailToInviter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001658s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000870s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001137s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001266s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001769s ]
+
+[ 2017-02-18T18:07:22+08:00 ] 127.0.0.1 /Home/App/sendEmailToInviter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000623s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000583s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000752s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000765s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000952s ]
+
+[ 2017-02-18T18:07:40+08:00 ] 127.0.0.1 /Home/App/sendEmailToInviter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001249s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001857s ]
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1585 行.
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1604 行.
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1585 行.
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; D:\wamp\www\Daily\ThinkPHP\Library\Vendor\phpmailer\class.phpmailer.php 第 1604 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002483s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003137s ]
+

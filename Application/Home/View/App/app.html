@@ -1,0 +1,42 @@
+<extend name="Base:layout" />
+
+<block name="style">
+  <style type="text/css">
+    html {
+      font: normal 14px/1.5 "微软雅黑";
+    }
+    h2 {
+      text-align: center;
+      font-weight: normal;
+    }
+    section {
+      padding: 10px 20px;
+      border: 1px solid #cccccc;
+      margin: 15px 0px;
+    }
+    pre {
+      width: 80%;
+      font: normal 12px/1.5 "微软雅黑";
+      padding: 20px 10px;
+      margin: 20px auto;
+      border: 1px solid #cccccc;
+    }
+  </style>
+</block>
+
+<block name="content">
+	<h2>接口测试示例页面</h2>
+    <section>
+      <p>IM 测试</p>
+      <pre>userInfo = {$userInfo}</pre>
+    </section>
+</block>
+
+<block name="javascript">
+
+  <script type="text/javascript">
+    var userInfo = {$userInfo};
+    console.log(userInfo);
+  </script>
+  
+</block>
