@@ -6,7 +6,7 @@
 	class UserModel extends Model {
 		
 		public function checkUser($username, $password) {
-			$userModel = M('user');
+			$userModel = M('users');
 			$condition = array(
 				'username' => $username,
 				'password' => $password,
@@ -18,7 +18,7 @@
 		}
 
 		public function createUser($userInfos) {
-			$userModel = M('user');
+			$userModel = M('users');
 			$result = $userModel->create($userInfos)->add();
 
 			if($result) {
@@ -60,7 +60,7 @@
 		}
 
 		public function getUserInfo($queryArray) {
-			$userModel = M('user');
+			$userModel = M('users');
 
 			return $userModel->where($queryArray)->find();
 		}
