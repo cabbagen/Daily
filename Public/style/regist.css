@@ -30,6 +30,9 @@ form {
 	text-align: right;
 	padding-right: 10px;
 }
+.field input[type="email"] {
+	margin-left: -4px;
+}
 .field.gender input {
 	width: auto;
 	height: auto;
@@ -49,6 +52,7 @@ form {
 	border: 1px solid #cccccc;
 	font-size: 12px;
 	outline: none;
+	color: #666666;
 }
 .submit button {
 	width: 100px;
@@ -71,13 +75,8 @@ form {
 	width: 120px;
 	height: 120px;
 	border: 1px dashed #cccccc;
-	position: relative;
-	top: 0px;
-	right: 0px;
-}
-.image-show img {
-	width: 100%;
-	height: 100%;
+	background: url('/public/images/avator.png') no-repeat center;
+	cursor: pointer;
 }
 .avator {
 	text-align: center;
