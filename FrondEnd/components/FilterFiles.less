@@ -2,17 +2,26 @@
 @width: 260px;
 @border-color: #eeeeee;
 
-.filterWarp {
+.filter_warp {
   width: @width;
   height: 500px;
+  float: left;
+  overflow: scroll;
   border-right: 1px solid @border-color;
 
-  .filterHeader {
+  .filter_header {
     height: 50px;
-    background: url("http://localhost:8088/menu.png") no-repeat 10px center;
-    background-size: 20px 20px;
     border-bottom: 1px solid @border-color;
-
+    
+    .add_file {
+      width: 40px;
+      height: 40px;
+      display: inline-block;
+      background: url("/public/images/createFile.png") no-repeat 10px center;
+      background-size: 24px 24px;
+      margin: 3px 0px 0px 0px;
+      cursor: pointer;
+    }
     input {
       width: 205px;
       height: 31px;
@@ -22,11 +31,12 @@
       padding-left: 12px;
       float: right;
       margin: 8px 13px 0px 0px;
+      outline: none;
     }
   }
 }
 
-.filterContent li {
+.filter_content li {
   width: @width;
   height: 58px;
   border-bottom: 1px solid @border-color;
@@ -41,7 +51,7 @@
     top: 0px;
     left: 0px;
   }
-  .fileName span {
+  .file_name span {
     font-weight: bold;
   }
   img {
@@ -53,7 +63,7 @@
   }
 }
 
-.noMore {
+.no_more {
   width: @width;
   text-align: center;
   margin-top: 20px;

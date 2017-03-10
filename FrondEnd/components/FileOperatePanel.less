@@ -1,0 +1,46 @@
+@width: 700px;
+@border-color: #eeeeee;
+
+.file_panel {
+	width: @width;
+	height: 500px;
+	float: left;
+
+	.file_operate {
+		width: @width;
+		height: 50px;
+		line-height: 50px;
+		border-bottom: 1px solid @border-color;
+		
+		> div {
+			float: right;
+			margin-right: 10px;
+		}
+		button {
+			margin-right: 10px;
+		}
+		i {
+			margin: 0px 8px;
+			font-size: 18px;
+			position: relative;
+			top: 3px;
+			left: 0px;
+		}
+		input {
+			width: 300px;
+			height: 38px;
+			line-height: 38px;
+			padding-left: 10px;
+			outline: none;
+			font-size: 16px;
+		}
+	}
+	.file_editor_wrap {
+		width: @width;
+		height: 450px;
+
+		> div {
+			// border: none;
+		}
+	}
+}

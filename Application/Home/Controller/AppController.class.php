@@ -36,11 +36,20 @@
 				if($categoryInfo) {
 					$userCategoryInfos[$key] = $categoryInfo;
 				} else {
+					// 若当前用户菜单分类查询不到，则使用一个空数组
 					$userCategoryInfos[$key] = array();
 				}
 			}
 
 			return $userCategoryInfos;
+		}
+
+		// 查询用户菜单分类二级条目
+		private function getCategoryItem($tableName, $itemId) {
+			$tableName = ucfirst($tableName);
+			$itemInfoList = D($tableName)->getCategoryItemFromModel($tableName, $itemId);
+
+			return $itemInfoList;
 		}
 
 		// 渲染页面函数
@@ -80,15 +89,13 @@
 
 		}
 
-
+		
 
 		// ====================================================================
 
 		// 当用户点击左侧菜单分类时，获取获取对应的资源数据
 		// 分类起名字的时候 要禁止特殊符号
 		public function getUserCategoryResource() {
-			$this->allowCrossOrigin();
-
 			if(I('resourceCategory', null) && I('id', null)) {
 				$result = $this->getCategoryItem(I('resourceCategory', null), I('id', null));
 				if($result || empty($result)) {
@@ -102,15 +109,6 @@
 			} else {
 				$this->ajaxReturnError();
 			}
-		}
-
-		// 查询对应类别的文件
-		private function getCategoryItem($tableName, $itemId) {
-			$tableName = ucfirst($tableName);
-			$itemInfoList = D($tableName)->getCategoryItemFromModel($tableName, $itemId);
-
-			return $itemInfoList;
-
 		}
 
 		// 测试 demo

@@ -3,7 +3,7 @@ import styles from './MsgList.less';
 
 class MsgList extends Component {
     constructor(prop) {
-        super(prop);
+      super(prop);
     }
 
     renderItem() {

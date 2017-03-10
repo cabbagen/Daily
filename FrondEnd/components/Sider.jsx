@@ -16,6 +16,7 @@ class Sider extends Component {
 
 	render() {
 		var { userMenuInfo } = this.props;
+
 		return (
 			<div className={styles.sider}>
 				<Menu
@@ -60,7 +61,7 @@ class Sider extends Component {
 		var foldersNodes = foldersInfo.map((folderObject, folderIndex) => {
 			return (
 				<Menu.Item key={`${subMenuKey}-${folderIndex}`}>
-					<Link to={`/web/${folderObject.folder_name}`} onClick={this.folderLinkTo.bind(this, folderObject.id)}>{folderObject.folder_name}</Link>
+					<Link to={`/web/${folderObject.folder_name}`} onClick={this.menuCategoryLinkTo.bind(this, subMenuKey, folderObject.id)}>{folderObject.folder_name}</Link>
 				</Menu.Item>
 			);
 		});
@@ -72,16 +73,12 @@ class Sider extends Component {
 		);
 	}
 
-	folderLinkTo(folderId) {
-		console.log(`folders id: ${folderId}`);
-	}
-
 	renderCalendars(calendarsInfo) {
 		var subMenuKey = 'calendars';
 		var calendarsNodes = calendarsInfo.map((calendarObject, calendarIndex) => {
 			return (
 				<Menu.Item key={`${subMenuKey}-${calendarIndex}`}>
-					<Link to={`/web/${calendarObject.calendar_name}`} onClick={this.calendarLinkTo.bind(this, calendarObject.id)}>{calendarObject.calendar_name}</Link>
+					<Link to={`/web/${calendarObject.calendar_name}`} onClick={this.menuCategoryLinkTo.bind(this, subMenuKey, calendarObject.id)}>{calendarObject.calendar_name}</Link>
 				</Menu.Item>
 			);
 		});
@@ -93,16 +90,12 @@ class Sider extends Component {
 		);
 	}
 
-	calendarLinkTo(calendarId) {
-		console.log(`calendar id: ${calendarId}`);
-	}
-
 	renderCategorys(categorysInfo) {
-		var subMenuKey = 'users';
+		var subMenuKey = 'categorys';
 		var usersNodes = categorysInfo.map((categoryObject, categoryIndex) => {
 			return (
 				<Menu.Item key={`${subMenuKey}-${categoryIndex}`}>
-					<Link to={`/web/${categoryObject.category_name}`} onClick={this.categoryLinkTo.bind(this, categoryObject.id)}>{categoryObject.category_name}</Link>
+					<Link to={`/web/${categoryObject.category_name}`} onClick={this.menuCategoryLinkTo.bind(this, subMenuKey, categoryObject.id)}>{categoryObject.category_name}</Link>
 				</Menu.Item>
 			);
 		});
@@ -114,16 +107,12 @@ class Sider extends Component {
 		);
 	}
 
-	categoryLinkTo(categoryId) {
-		console.log(`category id: ${categoryId}`);
-	}
-
 	renderGroups(groupsInfo) {
-		var subMenuKey = 'teams';
+		var subMenuKey = 'groups';
 		var groupsNodes = groupsInfo.map((groupObject, groupIndex) => {
 			return (
 				<Menu.Item key={`${subMenuKey}-${groupIndex}`}>
-					<Link to={`/web/${groupObject.group_name}`} onClick={this.groupLinkTo.bind(this, groupObject.id)}>{groupObject.group_name}</Link>
+					<Link to={`/web/${groupObject.group_name}`} onClick={this.menuCategoryLinkTo.bind(this, subMenuKey, groupObject.id)}>{groupObject.group_name}</Link>
 				</Menu.Item>
 			);
 		});
@@ -135,16 +124,12 @@ class Sider extends Component {
 		);
 	}
 
-	groupLinkTo(groupId) {
-		console.log(`group id: ${groupId}`);
-	}
-
 	renderShares(sharesInfo) {
 		var subMenuKey = 'shares';
 		var sharesNodes = sharesInfo.map((shareObject, shareIndex) => {
 			return (
 				<Menu.Item key={`${subMenuKey}-${shareIndex}`}>
-					<Link to={`/web/${shareObject.share_name}`} onClick={this.shareLinkTo.bind(this, shareObject.id)}>{shareObject.share_name}</Link>
+					<Link to={`/web/${shareObject.share_name}`} onClick={this.menuCategoryLinkTo.bind(this, subMenuKey, shareObject.id)}>{shareObject.share_name}</Link>
 				</Menu.Item>
 			);
 		});
@@ -156,10 +141,15 @@ class Sider extends Component {
 		);
 	}
 
-	shareLinkTo(shareId) {
-		console.log(`share id: ${shareId}`);
-	}
+	menuCategoryLinkTo(resourceCategory, id) {
+		var { mainActions } = this.props;
+		var functionName = `get${resourceCategory.charAt(0).toUpperCase() + resourceCategory.slice(1)}CategoryItem`;
 
+		mainActions[functionName]({
+			resourceCategory : resourceCategory,
+			id : id
+		});
+	}
 
 }
 

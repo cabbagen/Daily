@@ -2,7 +2,8 @@ import React, { PropTypes, Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import actions from '../actions';
-
+import FilterFiles from '../components/FilterFiles.jsx';
+import FileOperatePanel from '../components/FileOperatePanel.jsx';
 import styles from '../container/file.less';
 
 
@@ -12,10 +13,16 @@ class File extends Component {
 	}
 
 	render() {
-		console.log(this.props);
+		var { fileState, mainState, fileActions } = this.props;
+
+		var filterFilesProps = {
+			foldersCategoryItem : mainState.foldersCategoryItem
+		};
+
 		return (
-			<div>
-				<p>hello</p>
+			<div className={styles.file_content}>
+				<FilterFiles {...filterFilesProps} />
+				<FileOperatePanel />
 			</div>
 		);
 	}
@@ -24,7 +31,8 @@ class File extends Component {
 
 const mapStateToProps = (state) => {
 	return {
-		fileState : state.file
+		fileState : state.file,
+		mainState : state.main
 	};
 };
 

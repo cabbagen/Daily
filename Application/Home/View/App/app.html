@@ -1,7 +1,7 @@
 <extend name="Base:layout" />
 
 <block name="style">
-
+  <link href="/public/lib/style/simditor.css" rel="stylesheet" type="text/css" />
 </block>
 
 <block name="content">
@@ -14,5 +14,9 @@
 	<script type="text/javascript">
 		window.userInfo = {$userInfo};
 	</script>
+  <script type="text/javascript" src="/public/lib/javascript/module.min.js"></script>
+  <script type="text/javascript" src="/public/lib/javascript/hotkeys.min.js"></script>
+  <script type="text/javascript" src="/public/lib/javascript/uploader.min.js"></script>
+  <script type="text/javascript" src="/public/lib/javascript/simditor.min.js"></script>    
   <script type="text/javascript" src="http://localhost:9000/app.js"></script>
 </block>

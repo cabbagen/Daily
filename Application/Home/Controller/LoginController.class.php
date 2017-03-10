@@ -31,7 +31,7 @@
 		}
 
 		public function loginAccount() {
-			$this->assign('hasError', $this->hasLoginError;
+			$this->assign('hasError', $this->hasLoginError);
 			$this->display();
 		}
 

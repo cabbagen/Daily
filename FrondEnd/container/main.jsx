@@ -22,7 +22,8 @@ class Main extends Component {
 		};
 
 		var SiderProps = {
-			userMenuInfo : mainState.userMenuInfo
+			userMenuInfo : mainState.userMenuInfo,
+			mainActions : mainActions
 		};
 
 		return (
