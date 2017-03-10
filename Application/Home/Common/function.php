@@ -1,6 +1,7 @@
 <?php
 	
 	function sendEmail($emailTo, $emailTitle, $emailContent) {
+
 		vendor('phpmailer.class#phpmailer');
 		$mail = new PHPMailer();
 

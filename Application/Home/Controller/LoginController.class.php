@@ -25,8 +25,13 @@
 
 		private $avatorUrl = '/public/files/avator/default.png';
 
+		private function addWebsiteSession($username, $userId) {
+			session('username', $username);
+			session('userId', $userId);
+		}
+
 		public function loginAccount() {
-			$this->assign('hasError', $this->hasLoginError);
+			$this->assign('hasError', $this->hasLoginError;
 			$this->display();
 		}
 
@@ -43,12 +48,13 @@
 		}
 
 		public function handleLogin() {
-			$userModel = D('user');
+			$userModel = D('users');
 			$result = $userModel->checkUser( I('post.username'), I('post.password') );
 
 			if($result) {
-				session('username',I('post.username'));
+				$this->addWebsiteSession($result['username'], $result['id']);
 				$this->hasLoginError = false;
+				
 				$this->redirect('App/app');
 			} else {
 				$this->hasLoginError = true;
@@ -57,7 +63,7 @@
 		}
 
 		public function handleRegist() {
-			$userModel = D('user');
+			$userModel = D('users');
 			$userInfos = array_merge(I('post.', null), array(
 				'avatorUrl' => $this->avatorUrl,
 				'password' => md5( I('post.password', null) ),
@@ -66,7 +72,7 @@
 			$result = $userModel->createUser($userInfos);
 
 			if($result) {
-				session('username', I('post.username', null));
+				$this->addWebsiteSession($result['username'], $result['id']);
 				$this->ajaxReturn($this->registSuccessResponse);
 			} else {
 				$this->ajaxReturn($this->registErrorResponse);

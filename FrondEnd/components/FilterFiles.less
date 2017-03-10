@@ -1,0 +1,61 @@
+
+@width: 260px;
+@border-color: #eeeeee;
+
+.filterWarp {
+  width: @width;
+  height: 500px;
+  border-right: 1px solid @border-color;
+
+  .filterHeader {
+    height: 50px;
+    background: url("http://localhost:8088/menu.png") no-repeat 10px center;
+    background-size: 20px 20px;
+    border-bottom: 1px solid @border-color;
+
+    input {
+      width: 205px;
+      height: 31px;
+      line-height: 31px;
+      border: 1px solid #cccccc;
+      border-radius: 20px;
+      padding-left: 12px;
+      float: right;
+      margin: 8px 13px 0px 0px;
+    }
+  }
+}
+
+.filterContent li {
+  width: @width;
+  height: 58px;
+  border-bottom: 1px solid @border-color;
+  font-size: 14px;
+  cursor: pointer;
+
+  p {
+    height: 24px;
+    line-height: 34px;
+    padding-left: 10px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+  }
+  .fileName span {
+    font-weight: bold;
+  }
+  img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 14px;
+    top: 8px;
+  }
+}
+
+.noMore {
+  width: @width;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}

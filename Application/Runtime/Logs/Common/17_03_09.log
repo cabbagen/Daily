@@ -1,0 +1,12 @@
+[ 2017-03-09T10:02:21+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000682s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-03-09T14:37:41+08:00 ] 127.0.0.1 /3d29615eb70edde29112.hot-update.json
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001105s ]
+ERR: 无法加载模块:3d29615eb70edde29112.hot-update
+

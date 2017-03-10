@@ -42,6 +42,13 @@
 			header('Access-Control-Allow-Methods:POST, GET');
 		}
 
+		public function ajaxReturnError($msg = "系统繁忙，请稍后重试") {
+			$this->ajaxReturn(array(
+				'status' => 500,
+				'msg' => $msg
+			));
+		}
+
 		
 
 	}

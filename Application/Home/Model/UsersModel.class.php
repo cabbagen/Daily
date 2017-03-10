@@ -1,9 +1,9 @@
 <?php
 	namespace Home\Model;
-	use Think\Model;
+	use Home\Model;
 	Vendor('imSdk.TopSdk');
 
-	class UserModel extends Model {
+	class UsersModel extends BaseModel {
 		
 		public function checkUser($username, $password) {
 			$userModel = M('users');
@@ -12,7 +12,7 @@
 				'password' => $password,
 			);
 
-			$result = $userModel->where($condition)->select();
+			$result = $userModel->where($condition)->find();
 
 			return $result;
 		}

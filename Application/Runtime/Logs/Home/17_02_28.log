@@ -1,0 +1,1157 @@
+[ 2017-02-28T14:34:20+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.029163s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008579s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009004s ]
+
+[ 2017-02-28T14:35:22+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000915s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001199s ]
+
+[ 2017-02-28T14:36:14+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001068s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001398s ]
+
+[ 2017-02-28T14:58:48+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000845s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000903s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001100s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `think_folders`  [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015541s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015756s ]
+
+[ 2017-02-28T15:04:58+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000664s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000901s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001096s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0117s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0055s ]
+SQL: SELECT `folder_name` FROM `think_folders`  [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000933s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001124s ]
+
+[ 2017-02-28T15:37:08+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000728s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000821s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000994s ]
+ERR: 1146:Table 'daily.think_base' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `think_base`
+ERR: 1146:Table 'daily.think_base' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `think_base`
+
+[ 2017-02-28T16:01:04+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000732s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001036s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0085s ]
+ERR: Think\Model:getUserCategory方法不存在！
+
+[ 2017-02-28T16:01:42+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000695s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001262s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0082s ]
+ERR: Think\Model:getUserCategory方法不存在！
+
+[ 2017-02-28T16:01:43+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000586s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000791s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000975s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0092s ]
+ERR: Think\Model:getUserCategory方法不存在！
+
+[ 2017-02-28T16:02:08+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000707s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000958s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001146s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0054s ]
+ERR: Think\Model:getUserCategory方法不存在！
+
+[ 2017-02-28T16:02:09+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000574s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000801s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0095s ]
+ERR: Think\Model:getUserCategory方法不存在！
+
+[ 2017-02-28T16:02:10+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000735s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000618s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000793s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0050s ]
+ERR: Think\Model:getUserCategory方法不存在！
+
+[ 2017-02-28T16:02:10+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000626s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000844s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0085s ]
+ERR: Think\Model:getUserCategory方法不存在！
+
+[ 2017-02-28T16:02:29+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000583s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001154s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001559s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0051s ]
+ERR: Think\Model:getUserCategory方法不存在！
+
+[ 2017-02-28T16:02:30+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000893s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001009s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001345s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0096s ]
+ERR: Think\Model:getUserCategory方法不存在！
+
+[ 2017-02-28T16:02:30+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000981s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001146s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001643s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0055s ]
+ERR: Think\Model:getUserCategory方法不存在！
+
+[ 2017-02-28T16:04:09+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000699s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000873s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001083s ]
+NOTIC: [8] Use of undefined constant userCatetoryInfos - assumed 'userCatetoryInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 82 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\Daily\Application\Home\Common\function.php 第 38 行.
+NOTIC: [8] Undefined variable: userCatetoryInfos D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 64 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000970s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001149s ]
+
+[ 2017-02-28T16:04:27+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001177s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000838s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001018s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0082s ]
+NOTIC: [8] Use of undefined constant userCatetoryInfos - assumed 'userCatetoryInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 82 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\Daily\Application\Home\Common\function.php 第 38 行.
+NOTIC: [8] Undefined variable: userCatetoryInfos D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 64 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001090s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001420s ]
+
+[ 2017-02-28T16:05:12+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000574s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000865s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001084s ]
+
+[ 2017-02-28T16:05:25+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000611s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001038s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0084s ]
+ERR: Think\Model:getUserCategory方法不存在！
+
+[ 2017-02-28T16:05:27+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000582s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000673s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000931s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0086s ]
+ERR: Think\Model:getUserCategory方法不存在！
+
+[ 2017-02-28T16:07:56+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000806s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000901s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001102s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0052s ]
+SQL: SELECT `folder_name` FROM `think_folders` LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant userCatetoryInfos - assumed 'userCatetoryInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\Daily\Application\Home\Common\function.php 第 39 行.
+NOTIC: [8] Undefined variable: userCatetoryInfos D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 64 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001015s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001210s ]
+
+[ 2017-02-28T16:07:58+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000589s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000749s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000987s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0084s ]
+SQL: SELECT `folder_name` FROM `think_folders` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant userCatetoryInfos - assumed 'userCatetoryInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\Daily\Application\Home\Common\function.php 第 39 行.
+NOTIC: [8] Undefined variable: userCatetoryInfos D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 64 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000734s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000899s ]
+
+[ 2017-02-28T16:08:39+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000681s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000845s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001105s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0086s ]
+SQL: SELECT `folder_name` FROM `think_folders` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant userCatetoryInfos - assumed 'userCatetoryInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\Daily\Application\Home\Common\function.php 第 39 行.
+NOTIC: [8] Undefined variable: userCatetoryInfos D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 64 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000887s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001057s ]
+
+[ 2017-02-28T16:08:56+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000580s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001495s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0063s ]
+SQL: SELECT `folder_name` FROM `think_folders` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant userCatetoryInfos - assumed 'userCatetoryInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 82 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\Daily\Application\Home\Common\function.php 第 39 行.
+NOTIC: [8] Undefined variable: userCatetoryInfos D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 64 行.
+NOTIC: [8] Undefined variable: userCatetoryInfos D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 65 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000731s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000902s ]
+
+[ 2017-02-28T16:08:57+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000602s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000761s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0095s ]
+SQL: SELECT `folder_name` FROM `think_folders` LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant userCatetoryInfos - assumed 'userCatetoryInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 82 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\Daily\Application\Home\Common\function.php 第 39 行.
+NOTIC: [8] Undefined variable: userCatetoryInfos D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 64 行.
+NOTIC: [8] Undefined variable: userCatetoryInfos D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 65 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000738s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000925s ]
+
+[ 2017-02-28T16:09:05+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000595s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000772s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0372s ]
+SQL: SELECT `folder_name` FROM `think_folders` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant userCatetoryInfos - assumed 'userCatetoryInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 82 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\Daily\Application\Home\Common\function.php 第 39 行.
+NOTIC: [8] Undefined variable: userCatetoryInfos D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 64 行.
+NOTIC: [8] Undefined variable: userCatetoryInfos D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 65 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000783s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000950s ]
+
+[ 2017-02-28T16:10:33+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001148s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003623s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004200s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0103s ]
+SQL: SELECT `folder_name` FROM `think_folders` LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant userCatetoryInfos - assumed 'userCatetoryInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\Daily\Application\Home\Common\function.php 第 39 行.
+NOTIC: [8] Undefined variable: userCatetoryInfos D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 64 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000939s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001121s ]
+
+[ 2017-02-28T16:10:34+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000149s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001516s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001187s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001471s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0090s ]
+SQL: SELECT `folder_name` FROM `think_folders` LIMIT 1   [ RunTime:0.0012s ]
+NOTIC: [8] Use of undefined constant userCatetoryInfos - assumed 'userCatetoryInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\Daily\Application\Home\Common\function.php 第 39 行.
+NOTIC: [8] Undefined variable: userCatetoryInfos D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 64 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001886s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002216s ]
+
+[ 2017-02-28T16:10:37+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001202s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001105s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001315s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0119s ]
+SQL: SELECT `folder_name` FROM `think_folders` LIMIT 1   [ RunTime:0.0013s ]
+NOTIC: [8] Use of undefined constant userCatetoryInfos - assumed 'userCatetoryInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\Daily\Application\Home\Common\function.php 第 39 行.
+NOTIC: [8] Undefined variable: userCatetoryInfos D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 64 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001257s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001483s ]
+
+[ 2017-02-28T16:11:05+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002552s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002143s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0051s ]
+SQL: SELECT `folder_name` FROM `think_folders` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant userCatetoryInfos - assumed 'userCatetoryInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\Daily\Application\Home\Common\function.php 第 39 行.
+NOTIC: [8] Undefined variable: userCatetoryInfos D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 64 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002222s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002520s ]
+
+[ 2017-02-28T16:11:06+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000271s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001850s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001150s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001530s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0089s ]
+SQL: SELECT `folder_name` FROM `think_folders` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant userCatetoryInfos - assumed 'userCatetoryInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\Daily\Application\Home\Common\function.php 第 39 行.
+NOTIC: [8] Undefined variable: userCatetoryInfos D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 64 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000744s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000937s ]
+
+[ 2017-02-28T16:11:41+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001200s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001664s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0122s ]
+NOTIC: [8] Use of undefined constant userCatetoryInfos - assumed 'userCatetoryInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\Daily\Application\Home\Common\function.php 第 39 行.
+NOTIC: [8] Undefined variable: userCatetoryInfos D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 64 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000984s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001335s ]
+
+[ 2017-02-28T16:12:33+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001188s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001240s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001661s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0090s ]
+SQL: SELECT `folder_name` FROM `think_folders` WHERE `from_user_id` = 1 LIMIT 1   [ RunTime:0.0210s ]
+NOTIC: [8] Use of undefined constant userCatetoryInfos - assumed 'userCatetoryInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\Daily\Application\Home\Common\function.php 第 39 行.
+NOTIC: [8] Undefined variable: userCatetoryInfos D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 64 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000873s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001111s ]
+
+[ 2017-02-28T16:12:34+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001144s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001639s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0059s ]
+SQL: SELECT `folder_name` FROM `think_folders` WHERE `from_user_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant userCatetoryInfos - assumed 'userCatetoryInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\Daily\Application\Home\Common\function.php 第 39 行.
+NOTIC: [8] Undefined variable: userCatetoryInfos D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 64 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002982s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003631s ]
+
+[ 2017-02-28T16:13:47+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001175s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001051s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0260s ]
+SQL: SELECT `folder_name` FROM `think_folders` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant userCatetoryInfos - assumed 'userCatetoryInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\Daily\Application\Home\Common\function.php 第 39 行.
+NOTIC: [8] Undefined variable: userCatetoryInfos D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 64 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001040s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001288s ]
+
+[ 2017-02-28T16:14:09+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001173s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001528s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0160s ]
+SQL: SELECT `folder_name` FROM `think_folders` WHERE `from_user_id` = 1  [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant userCatetoryInfos - assumed 'userCatetoryInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\Daily\Application\Home\Common\function.php 第 39 行.
+NOTIC: [8] Undefined variable: userCatetoryInfos D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 64 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001105s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001443s ]
+
+[ 2017-02-28T16:15:11+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001115s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001427s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `think_folders` WHERE `from_user_id` = 1  [ RunTime:0.0012s ]
+NOTIC: [8] Use of undefined constant userCatetoryInfos - assumed 'userCatetoryInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\Daily\Application\Home\Common\function.php 第 39 行.
+NOTIC: [8] Undefined variable: userCatetoryInfos D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 64 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001178s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001522s ]
+
+[ 2017-02-28T16:15:39+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000628s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000874s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001689s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0139s ]
+SQL: SELECT `folder_name` FROM `think_folders` WHERE `from_user_id` = 1  [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant userCatetoryInfos - assumed 'userCatetoryInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\Daily\Application\Home\Common\function.php 第 39 行.
+NOTIC: [8] Undefined variable: userCatetoryInfos D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 64 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000955s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001191s ]
+
+[ 2017-02-28T16:16:05+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000769s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003160s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0078s ]
+SQL: SELECT `folder_name` FROM `think_folders` WHERE `from_user_id` = 1  [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant userCatetoryInfos - assumed 'userCatetoryInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\Daily\Application\Home\Common\function.php 第 39 行.
+NOTIC: [8] Undefined variable: userCatetoryInfos D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 64 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002879s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003408s ]
+
+[ 2017-02-28T16:16:06+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000712s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000586s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000770s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0115s ]
+SQL: SELECT `folder_name` FROM `think_folders` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant userCatetoryInfos - assumed 'userCatetoryInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\Daily\Application\Home\Common\function.php 第 39 行.
+NOTIC: [8] Undefined variable: userCatetoryInfos D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 64 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000724s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000888s ]
+
+[ 2017-02-28T16:17:54+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000796s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000984s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0108s ]
+SQL: SELECT `folder_name` FROM `think_folders` WHERE `from_user_id` = 1  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: userCatetoryInfos D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 64 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001203s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001475s ]
+
+[ 2017-02-28T16:17:55+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002189s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000825s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0122s ]
+SQL: SELECT `folder_name` FROM `think_folders` WHERE `from_user_id` = 1  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: userCatetoryInfos D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 64 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001186s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001449s ]
+
+[ 2017-02-28T16:17:59+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001283s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0129s ]
+SQL: SELECT `folder_name` FROM `think_folders` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: userCatetoryInfos D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 64 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000881s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001084s ]
+
+[ 2017-02-28T16:18:15+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000287s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001664s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0104s ]
+SQL: SELECT `folder_name` FROM `think_folders` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: userCatetoryInfos D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 64 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001097s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001347s ]
+
+[ 2017-02-28T16:18:45+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001628s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0108s ]
+SQL: SELECT `folder_name` FROM `think_folders` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: userCatetoryInfos D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 64 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001081s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001411s ]
+
+[ 2017-02-28T16:20:15+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001012s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001220s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001504s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0097s ]
+SQL: SELECT `folder_name` FROM `think_folders` WHERE `from_user_id` = 1  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: userCatetoryInfos D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 64 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001745s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001978s ]
+
+[ 2017-02-28T16:20:16+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000145s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002543s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001135s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001450s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0095s ]
+SQL: SELECT `folder_name` FROM `think_folders` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: userCatetoryInfos D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 64 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000936s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001101s ]
+
+[ 2017-02-28T16:20:38+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001155s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001270s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001645s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0111s ]
+SQL: SELECT `folder_name` FROM `think_folders` WHERE `from_user_id` = 1  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: userCatetoryInfos D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 64 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001339s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001624s ]
+
+[ 2017-02-28T16:21:49+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000189s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001432s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001185s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001579s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0079s ]
+SQL: SELECT `folder_name` FROM `think_folders` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: userCatetoryInfos D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 64 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000884s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001218s ]
+
+[ 2017-02-28T16:21:51+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001478s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0143s ]
+SQL: SELECT `folder_name` FROM `think_folders` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: userCatetoryInfos D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 64 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000759s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001030s ]
+
+[ 2017-02-28T16:22:09+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001125s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001174s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001660s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0317s ]
+SQL: SELECT `folder_name` FROM `think_folders` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: userCatetoryInfos D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 64 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000915s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001152s ]
+
+[ 2017-02-28T16:22:10+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000109s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001177s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000889s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001421s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0101s ]
+SQL: SELECT `folder_name` FROM `think_folders` WHERE `from_user_id` = 1  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: userCatetoryInfos D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 64 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001139s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001606s ]
+
+[ 2017-02-28T16:22:16+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001177s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001375s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0138s ]
+SQL: SELECT `folder_name` FROM `think_folders` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001045s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001315s ]
+
+[ 2017-02-28T16:23:27+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000104s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001434s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001973s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002472s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0482s ]
+SQL: SELECT `folder_name` FROM `think_folders` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001215s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001469s ]
+
+[ 2017-02-28T16:23:28+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001209s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000890s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001184s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0069s ]
+SQL: SELECT `folder_name` FROM `think_folders` WHERE `from_user_id` = 1  [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001789s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002369s ]
+
+[ 2017-02-28T16:24:03+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000667s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000825s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0053s ]
+SQL: SELECT `folder_name` FROM `think_folders` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000776s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000945s ]
+
+[ 2017-02-28T16:24:29+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001172s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002086s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.1225s ]
+SQL: SELECT `folder_name` FROM `think_folders` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000960s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001224s ]
+
+[ 2017-02-28T16:24:29+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000988s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001010s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001434s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0052s ]
+SQL: SELECT `folder_name` FROM `think_folders` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001039s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001368s ]
+
+[ 2017-02-28T16:24:30+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001422s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0090s ]
+SQL: SELECT `folder_name` FROM `think_folders` WHERE `from_user_id` = 1  [ RunTime:0.0016s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001376s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001998s ]
+
+[ 2017-02-28T16:25:20+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001064s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000945s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001262s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0087s ]
+SQL: SELECT `folder_name` FROM `think_folders` WHERE `from_user_id` = 1  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000981s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001241s ]
+
+[ 2017-02-28T16:26:25+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001653s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001778s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0089s ]
+SQL: SELECT `folder_name` FROM `think_folders` WHERE `from_user_id` = 1  [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003271s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004096s ]
+
+[ 2017-02-28T16:26:55+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001157s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001573s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0078s ]
+SQL: SELECT `folder_name` FROM `think_folders` WHERE `from_user_id` = 1  [ RunTime:0.0012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001692s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001974s ]
+
+[ 2017-02-28T16:26:56+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000838s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000808s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001095s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0096s ]
+SQL: SELECT `folder_name` FROM `think_folders` WHERE `from_user_id` = 1  [ RunTime:0.0013s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002501s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002946s ]
+
+[ 2017-02-28T16:27:06+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000848s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000927s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0183s ]
+SQL: SELECT `folder_name` FROM `think_folders` WHERE `from_user_id` = 1  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001113s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001456s ]
+
+[ 2017-02-28T16:27:07+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000247s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001838s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001107s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0124s ]
+SQL: SELECT `folder_name` FROM `think_folders` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000850s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001071s ]
+
+[ 2017-02-28T16:27:21+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001179s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002110s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0082s ]
+SQL: SELECT `folder_name` FROM `think_folders` WHERE `from_user_id` = 1  [ RunTime:0.0012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002177s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002470s ]
+
+[ 2017-02-28T16:27:46+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000756s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000898s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001145s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0112s ]
+SQL: SELECT `folder_name` FROM `think_folders` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001285s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001624s ]
+
+[ 2017-02-28T16:27:47+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000128s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001805s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001597s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0119s ]
+SQL: SELECT `folder_name` FROM `think_folders` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000873s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001055s ]
+
+[ 2017-02-28T16:28:19+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000610s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000819s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001161s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0138s ]
+SQL: SELECT `folder_name` FROM `think_folders` WHERE `from_user_id` = 1  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: userCatetoryInfos D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 64 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001114s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001442s ]
+
+[ 2017-02-28T16:28:20+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000906s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001217s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0129s ]
+SQL: SELECT `folder_name` FROM `think_folders` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: userCatetoryInfos D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 64 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001054s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001327s ]
+
+[ 2017-02-28T16:28:33+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001157s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002126s ]
+
+[ 2017-02-28T16:28:51+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001144s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001132s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001520s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0058s ]
+SQL: SELECT `folder_name` FROM `think_folders` WHERE `from_user_id` = 1  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: userCatetoryInfos D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 64 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003703s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004118s ]
+
+[ 2017-02-28T16:28:53+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001203s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001127s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001517s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0086s ]
+SQL: SELECT `folder_name` FROM `think_folders` WHERE `from_user_id` = 1  [ RunTime:0.0014s ]
+NOTIC: [8] Undefined variable: userCatetoryInfos D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 64 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002083s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002485s ]
+
+[ 2017-02-28T16:39:24+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000144s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004688s ]
+
+[ 2017-02-28T16:40:00+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001189s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001173s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001601s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0131s ]
+SQL: SELECT `folder_name` FROM `think_folders` WHERE `from_user_id` = 1  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: userCatetoryInfos D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 64 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002886s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003480s ]
+
+[ 2017-02-28T16:40:26+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001905s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0138s ]
+SQL: SELECT `folder_name` FROM `think_folders` WHERE `from_user_id` = 1  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: userCatetoryInfo D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 64 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001079s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001409s ]
+
+[ 2017-02-28T16:40:28+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003916s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0126s ]
+SQL: SELECT `folder_name` FROM `think_folders` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: userCatetoryInfo D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 64 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000779s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001034s ]
+
+[ 2017-02-28T16:40:37+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001068s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001217s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001864s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0084s ]
+SQL: SELECT `folder_name` FROM `think_folders` WHERE `from_user_id` = 1  [ RunTime:0.0021s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001460s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001714s ]
+
+[ 2017-02-28T16:41:19+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001195s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001196s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001588s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0127s ]
+SQL: SELECT `folder_name` FROM `think_folders` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000899s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001157s ]
+
+[ 2017-02-28T16:41:30+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001675s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001679s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0126s ]
+SQL: SELECT `folder_name` FROM `think_folders` WHERE `from_user_id` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0049s ]
+ERR: Think\Model:getUserCategory方法不存在！
+
+[ 2017-02-28T16:41:38+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001540s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001964s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0133s ]
+SQL: SELECT `folder_name` FROM `think_folders` WHERE `from_user_id` = 1  [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001136s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001495s ]
+
+[ 2017-02-28T16:47:10+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001508s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001561s ]
+
+[ 2017-02-28T16:48:00+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000815s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000712s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000929s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0134s ]
+SQL: SELECT `folder_name` FROM `think_folders` WHERE `from_user_id` = 1  [ RunTime:0.0006s ]
+
+[ 2017-02-28T16:48:02+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000981s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001321s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0135s ]
+SQL: SELECT `folder_name` FROM `think_folders` WHERE `from_user_id` = 1  [ RunTime:0.0007s ]
+
+[ 2017-02-28T16:49:01+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001533s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002999s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003528s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0115s ]
+SQL: SELECT `folder_name` FROM `think_folders` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0523s ]
+SQL: SELECT `calendar_name` FROM `think_calendars` WHERE `from_user_id` = 1  [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001210s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001409s ]
+
+[ 2017-02-28T16:49:04+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000961s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001164s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001613s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0142s ]
+SQL: SELECT `folder_name` FROM `think_folders` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0517s ]
+SQL: SELECT `calendar_name` FROM `think_calendars` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000717s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000891s ]
+
+[ 2017-02-28T16:49:13+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000178s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003504s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000820s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001002s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0106s ]
+SQL: SELECT `folder_name` FROM `think_folders` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0045s ]
+SQL: SELECT `calendar_name` FROM `think_calendars` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000717s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000883s ]
+

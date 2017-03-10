@@ -9,47 +9,23 @@
 		<link rel="stylesheet" type="text/css" href="/Public/lib/style/reset.css" />
 		<link rel="stylesheet" type="text/css" href="/Public/lib/style/common.css" />
 		
-  <style type="text/css">
-    html {
-      font: normal 14px/1.5 "微软雅黑";
-    }
-    h2 {
-      text-align: center;
-      font-weight: normal;
-    }
-    section {
-      padding: 10px 20px;
-      border: 1px solid #cccccc;
-      margin: 15px 0px;
-    }
-    pre {
-      width: 80%;
-      font: normal 12px/1.5 "微软雅黑";
-      padding: 20px 10px;
-      margin: 20px auto;
-      border: 1px solid #cccccc;
-    }
-  </style>
+
 
 	</head>
 	<body>
 		<!-- 文档内容 -->
 		
-	<h2>接口测试示例页面</h2>
-    <section>
-      <p>IM 测试</p>
-      <pre>userInfo = <?php echo ($userInfo); ?></pre>
-    </section>
+  <div id="root">
+    
+  </div>
 
 	</body>
 	<!-- 脚本文件 -->
 	<script type="text/javascript" src="/Public/lib/javascript/jquery.js"></script>
 	
-
-  <script type="text/javascript">
-    var userInfo = <?php echo ($userInfo); ?>;
-    console.log(userInfo);
-  </script>
-  
+	<script type="text/javascript">
+		window.userInfo = <?php echo ($userInfo); ?>;
+	</script>
+  <script type="text/javascript" src="http://localhost:9000/app.js"></script>
 
 </html>

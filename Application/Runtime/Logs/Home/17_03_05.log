@@ -1,0 +1,905 @@
+[ 2017-03-05T15:19:51+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.028422s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.017054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017482s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0778s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0092s ]
+SQL: SELECT `folder_name` FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0233s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0980s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0053s ]
+SQL: SELECT `calendar_name` FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0532s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0050s ]
+SQL: SELECT `category_name` FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0527s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0054s ]
+SQL: SELECT `group_name` FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+
+[ 2017-03-05T15:19:57+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000955s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000686s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000885s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0061s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0058s ]
+SQL: SELECT `folder_name` FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0069s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0061s ]
+SQL: SELECT `calendar_name` FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0055s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0050s ]
+SQL: SELECT `category_name` FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0055s ]
+SQL: SELECT `group_name` FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+
+[ 2017-03-05T15:20:00+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001065s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001074s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001481s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0067s ]
+SQL: SELECT `folder_name` FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0074s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0059s ]
+SQL: SELECT `calendar_name` FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0052s ]
+SQL: SELECT `category_name` FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0069s ]
+SQL: SELECT `group_name` FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+
+[ 2017-03-05T15:20:45+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000173s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002773s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000817s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001008s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0055s ]
+SQL: SELECT `folder_name` FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0055s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0049s ]
+SQL: SELECT `calendar_name` FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0041s ]
+SQL: SELECT `category_name` FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0046s ]
+SQL: SELECT `group_name` FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+
+[ 2017-03-05T15:20:47+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000806s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001105s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001483s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0389s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0081s ]
+SQL: SELECT `folder_name` FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0066s ]
+SQL: SELECT `calendar_name` FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0057s ]
+SQL: SELECT `category_name` FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0057s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0053s ]
+SQL: SELECT `group_name` FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+
+[ 2017-03-05T15:24:19+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001428s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002200s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0069s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0070s ]
+SQL: SELECT `folder_name` FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0065s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0067s ]
+SQL: SELECT `calendar_name` FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0070s ]
+SQL: SELECT `category_name` FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0069s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0074s ]
+SQL: SELECT `group_name` FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0005s ]
+
+[ 2017-03-05T15:25:13+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001187s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001126s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001499s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0068s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0067s ]
+SQL: SELECT `folder_name` FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0068s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0077s ]
+SQL: SELECT `calendar_name` FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0063s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0067s ]
+SQL: SELECT `category_name` FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0061s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0062s ]
+SQL: SELECT `group_name` FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0005s ]
+
+[ 2017-03-05T15:29:00+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001586s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001936s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0094s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0052s ]
+SQL: SELECT `folder_name` FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0536s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0090s ]
+SQL: SELECT `calendar_name` FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0066s ]
+SQL: SELECT `category_name` FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0075s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0068s ]
+SQL: SELECT `group_name` FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+
+[ 2017-03-05T15:32:00+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001176s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001836s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0072s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0073s ]
+SQL: SELECT `folder_name` FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0074s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0069s ]
+SQL: SELECT `calendar_name` FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0071s ]
+SQL: SELECT `category_name` FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0068s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0053s ]
+SQL: SELECT `group_name` FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+
+[ 2017-03-05T15:55:13+08:00 ] 127.0.0.1 /Home/App/getUserCatetoryInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000737s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000824s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.021399s ]
+INFO: [ app_end ] --END-- [ RunTime:0.021607s ]
+
+[ 2017-03-05T15:55:34+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000572s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000760s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0054s ]
+SQL: SELECT `folder_name` FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0052s ]
+SQL: SELECT `calendar_name` FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0047s ]
+SQL: SELECT `category_name` FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0042s ]
+SQL: SELECT `group_name` FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000899s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001144s ]
+
+[ 2017-03-05T15:55:59+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000910s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001746s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002184s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0057s ]
+SQL: SELECT `folder_name` FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0062s ]
+SQL: SELECT `calendar_name` FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0044s ]
+SQL: SELECT `category_name` FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0049s ]
+SQL: SELECT `group_name` FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000772s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000946s ]
+
+[ 2017-03-05T15:56:47+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000584s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000635s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000827s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0087s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0046s ]
+SQL: SELECT `id`,`folder_name` FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0451s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0047s ]
+SQL: SELECT `id`,`calendar_name` FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0055s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0041s ]
+SQL: SELECT `id`,`category_name` FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0058s ]
+SQL: SELECT `id`,`group_name` FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000738s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000910s ]
+
+[ 2017-03-05T15:56:52+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000612s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000772s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0099s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0065s ]
+SQL: SELECT `id`,`folder_name` FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0515s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`calendar_name` FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0065s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`category_name` FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0052s ]
+SQL: SELECT `id`,`group_name` FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000737s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000918s ]
+
+[ 2017-03-05T15:56:54+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000585s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001160s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001478s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0083s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0053s ]
+SQL: SELECT `id`,`folder_name` FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0446s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0054s ]
+SQL: SELECT `id`,`calendar_name` FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0052s ]
+SQL: SELECT `id`,`category_name` FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0042s ]
+SQL: SELECT `id`,`group_name` FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000750s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000926s ]
+
+[ 2017-03-05T15:57:05+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000570s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000800s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0087s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0047s ]
+ERR: 1054:Unknown column 'id.folder_name' in 'field list'
+ [ SQL语句 ] : SELECT id.folder_name FROM `think_Folders` WHERE `from_user_id` = 1 
+ERR: 1054:Unknown column 'id.folder_name' in 'field list'
+ [ SQL语句 ] : SELECT id.folder_name FROM `think_Folders` WHERE `from_user_id` = 1 
+
+[ 2017-03-05T15:57:26+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000690s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001266s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0477s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0058s ]
+SQL: SELECT `folder_name` FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0052s ]
+SQL: SELECT `calendar_name` FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0051s ]
+SQL: SELECT `category_name` FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0045s ]
+SQL: SELECT `group_name` FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001276s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001474s ]
+
+[ 2017-03-05T15:57:29+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000624s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000771s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0055s ]
+SQL: SELECT `folder_name` FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0044s ]
+SQL: SELECT `calendar_name` FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0042s ]
+SQL: SELECT `category_name` FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0046s ]
+SQL: SELECT `group_name` FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000725s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000895s ]
+
+[ 2017-03-05T15:59:26+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000588s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000604s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000780s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0048s ]
+SQL: SELECT `id`,`folder_name` FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0069s ]
+SQL: SELECT `id`,`calendar_name` FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0047s ]
+SQL: SELECT `id`,`category_name` FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`group_name` FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000710s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000886s ]
+
+[ 2017-03-05T16:01:28+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000692s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000907s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001094s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0055s ]
+SQL: SELECT `id`,`folder_name` FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0051s ]
+SQL: SELECT `id`,`calendar_name` FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0038s ]
+SQL: SELECT `id`,`category_name` FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0044s ]
+SQL: SELECT `id`,`group_name` FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000898s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001069s ]
+
+[ 2017-03-05T16:05:43+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000726s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000810s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000999s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0047s ]
+SQL: SELECT `id`,`folder_name` FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0521s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0058s ]
+SQL: SELECT `id`,`calendar_name` FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`category_name` FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0044s ]
+SQL: SELECT `id`,`group_name` FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001199s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001469s ]
+
+[ 2017-03-05T16:09:45+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000826s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001026s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0714s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0054s ]
+SQL: SELECT `id`,`from_user_id`,`folder_name` FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0046s ]
+SQL: SELECT `id`,`from_user_id`,`calendar_name` FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0043s ]
+SQL: SELECT `id`,`from_user_id`,`category_name` FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0045s ]
+SQL: SELECT `id`,`from_user_id`,`group_name` FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001157s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001412s ]
+
+[ 2017-03-05T16:13:16+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000120s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001394s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000846s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001050s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0098s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0497s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000893s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001064s ]
+
+[ 2017-03-05T16:16:43+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000871s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001449s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0092s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0524s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000960s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001181s ]
+
+[ 2017-03-05T16:16:45+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000655s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000838s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0107s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0421s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0058s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000746s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000959s ]
+
+[ 2017-03-05T16:16:46+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000593s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000582s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000756s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0091s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0526s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000747s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000943s ]
+
+[ 2017-03-05T16:22:31+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000433s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001542s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001205s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001411s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0090s ]
+SQL: select id, folder_name from think_Folders where from_user_id = 1 [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0056s ]
+SQL: select id, calendar_name from think_Calendars where from_user_id = 1 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0504s ]
+SQL: select id, category_name from think_Categorys where from_user_id = 1 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0060s ]
+SQL: select id, group_name from think_Groups where from_user_id = 1 [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001219s ]
+
+[ 2017-03-05T16:26:29+08:00 ] 127.0.0.1 /Home/App/getInitUserInfos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000844s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001025s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0094s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0045s ]
+SQL: SELECT `folder_name` FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0538s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0072s ]
+SQL: SELECT `calendar_name` FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0045s ]
+SQL: SELECT `category_name` FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0048s ]
+SQL: SELECT `group_name` FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001380s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001681s ]
+
+[ 2017-03-05T17:13:29+08:00 ] 127.0.0.1 /Home/App/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001183s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001254s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002087s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002756s ]
+
+[ 2017-03-05T17:13:48+08:00 ] 127.0.0.1 /Home/App/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000944s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001276s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001155s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001532s ]
+
+[ 2017-03-05T17:15:27+08:00 ] 127.0.0.1 /Home/App/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000082s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000910s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001200s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000651s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000838s ]
+
+[ 2017-03-05T17:16:39+08:00 ] 127.0.0.1 /Home/App/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001127s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001778s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001432s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001813s ]
+
+[ 2017-03-05T17:29:23+08:00 ] 127.0.0.1 /Home/App/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001165s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000881s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001084s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001441s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001841s ]
+
+[ 2017-03-05T17:29:33+08:00 ] 127.0.0.1 /Home/App/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000756s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000885s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001155s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000671s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001027s ]
+
+[ 2017-03-05T17:30:24+08:00 ] 127.0.0.1 /Home/App/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000794s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000779s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001056s ]
+
+[ 2017-03-05T17:30:34+08:00 ] 127.0.0.1 /Home/App/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001056s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001008s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001285s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000650s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000834s ]
+
+[ 2017-03-05T18:54:40+08:00 ] 127.0.0.1 /Home/App/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.014477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007852s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008056s ]
+
+[ 2017-03-05T18:55:22+08:00 ] 127.0.0.1 /Home/App/getUserCategoryResource?pathParams=share,file
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000878s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001162s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.074081s ]
+INFO: [ app_end ] --END-- [ RunTime:0.074279s ]
+
+[ 2017-03-05T18:55:44+08:00 ] 127.0.0.1 /Home/App/getUserCategoryResource?pathParams=share,file
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000651s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000771s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001396s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001759s ]
+
+[ 2017-03-05T18:55:45+08:00 ] 127.0.0.1 /Home/App/getUserCategoryResource?pathParams=share,file
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001979s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000599s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000791s ]
+
+[ 2017-03-05T18:56:21+08:00 ] 127.0.0.1 /Home/App/getUserCategoryResource?pathParams=share,file
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000700s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001902s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000787s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001014s ]
+
+[ 2017-03-05T18:56:38+08:00 ] 127.0.0.1 /Home/App/getUserCategoryResource?pathParams=share,file
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000675s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000830s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000724s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001032s ]
+
+[ 2017-03-05T18:56:54+08:00 ] 127.0.0.1 /Home/App/getUserCategoryResource?pathParams=share,file
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001153s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000858s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001172s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000682s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000887s ]
+
+[ 2017-03-05T19:00:13+08:00 ] 127.0.0.1 /Home/App/getUserCategoryResource?pathParams=share,file
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000681s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002094s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000789s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000994s ]
+
+[ 2017-03-05T19:07:37+08:00 ] 127.0.0.1 /Home/App/getUserCategoryResource?pathParams=folders,id
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000695s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000904s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001191s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0072s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `think_Folders`  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000921s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001091s ]
+
+[ 2017-03-05T19:07:53+08:00 ] 127.0.0.1 /Home/App/getUserCategoryResource?pathParams=folders,id
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000742s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000905s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001125s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0083s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `think_Folders`  [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000946s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001136s ]
+
+[ 2017-03-05T19:19:48+08:00 ] 127.0.0.1 /Home/App/getUserCategoryResource?pathParams=folders,id
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000829s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000992s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001207s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `think_Folders`  [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001017s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001193s ]
+
+[ 2017-03-05T19:19:49+08:00 ] 127.0.0.1 /Home/App/getUserCategoryResource?pathParams=folders,id
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000599s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000784s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0102s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `think_Folders`  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000730s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000908s ]
+
+[ 2017-03-05T19:20:26+08:00 ] 127.0.0.1 /Home/App/getUserCategoryResource?pathParams=folders,%E7%A4%BA%E4%BE%8B%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000679s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000849s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001050s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `think_Folders`  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000896s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001070s ]
+
+[ 2017-03-05T19:21:17+08:00 ] 127.0.0.1 /Home/App/getUserCategoryResource?pathParams=folders,%E7%A4%BA%E4%BE%8B%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000590s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000795s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0086s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.folder_name = think_files.from_name   [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000758s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000932s ]
+
+[ 2017-03-05T19:24:02+08:00 ] 127.0.0.1 /Home/App/getUserCategoryResource?pathParams=folders,%E7%A4%BA%E4%BE%8B%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000715s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000874s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001067s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0085s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `think_Folders` RIGHT JOIN think_files on think_folders.folder_name = think_files.from_name   [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000934s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001124s ]
+
+[ 2017-03-05T19:24:02+08:00 ] 127.0.0.1 /Home/App/getUserCategoryResource?pathParams=folders,%E7%A4%BA%E4%BE%8B%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000582s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000785s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0509s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `think_Folders` RIGHT JOIN think_files on think_folders.folder_name = think_files.from_name   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000752s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000930s ]
+
+[ 2017-03-05T19:27:27+08:00 ] 127.0.0.1 /Home/App/getUserCategoryResource?pathParams=folders,%E7%A4%BA%E4%BE%8B%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000817s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001007s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0085s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0074s ]
+SQL: SELECT `from_name` FROM `think_Folders` INNER JOIN think_files on think_folders.folder_name = think_files.from_name   [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000967s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001138s ]
+
+[ 2017-03-05T19:28:00+08:00 ] 127.0.0.1 /Home/App/getUserCategoryResource?pathParams=folders,%E7%A4%BA%E4%BE%8B%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000691s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000805s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001011s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0083s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.folder_name = think_files.from_name   [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001137s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001459s ]
+
