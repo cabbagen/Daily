@@ -31,6 +31,7 @@
 
 		private function getUserMenuCatetoryInfos($dbTofiled) {
 			$userCategoryInfos = array();
+			
 			foreach ($dbTofiled as $key => $value) {
 				$categoryInfo = D($key)->getUserMenuCatetoryInfosFromModel($key, $value);
 				if($categoryInfo) {
@@ -68,6 +69,7 @@
 				);
 
 				$this->assign('userInfo', json_encode($userInfo));
+				$this->assign('menuCategoryInfos', json_encode($this->getUserMenuInfos()));
 			}
 
 			$this->display();
@@ -82,27 +84,28 @@
 				'Groups' => 'group_name',
 			));
 
-			$this->ajaxReturn(array(
-				'status' => 200,
-				'data' => $userMenuInfosQueryConditon
-			));
+			// 补加上分享的部分
+			$userMenuInfosQueryConditon['Shares'] = array(
+				array(
+					'id' => 1,
+					'share_name' => '来自我的分享',
+				),
+				array(
+					'id' => 2,
+					'share_name' => '我收到的分享',
+				)
+			);
+
+			return $userMenuInfosQueryConditon;
 
 		}
 
-		
-
-		// ====================================================================
-
 		// 当用户点击左侧菜单分类时，获取获取对应的资源数据
-		// 分类起名字的时候 要禁止特殊符号
 		public function getUserCategoryResource() {
 			if(I('resourceCategory', null) && I('id', null)) {
 				$result = $this->getCategoryItem(I('resourceCategory', null), I('id', null));
 				if($result || empty($result)) {
-					$this->ajaxReturn(array(
-						'status' => 200,
-						'data' => $result,
-					));
+					$this->ajaxReturn(array('status' => 200, 'data' => $result,));
 				} else {
 					$this->ajaxReturnError();
 				}
@@ -111,8 +114,56 @@
 			}
 		}
 
-		// 测试 demo
+		// 确认修改一级菜单子项内容
+		public function confirmModify() {
+			$result = D(I('confirmObject')['type'])->cofirmModifyNameFromModel(I('confirmObject'));
 
+			if($result) {
+				$updateData = $this->getUserMenuCatetoryInfos(array(
+					I('confirmObject')['type'] => lcfirst( I('confirmObject')['type'] ) . '_name',
+				));
+
+				$this->ajaxReturn(array('status' => 200, 'data' => $updateData));
+			} else {
+				$this->ajaxReturnError();
+			}
+		}
+
+		// 添加一级菜单子项
+		public function addItem() {
+			$result = D(I('addItemObject')['type'])->addItemFromModel(I('addItemObject'));
+
+			if($result) {
+				$updateData = $this->getUserMenuCatetoryInfos(array(
+					I('addItemObject')['type'] => lcfirst( I('addItemObject')['type'] ) . '_name',
+				));
+
+				$this->ajaxReturn(array('status' => 200, 'data' => $updateData));
+			} else {
+				$this->ajaxReturnError();
+			}
+		}
+
+
+		// 删除一级菜单子项
+		public function deleteItem() {
+			$result = D(I('deleteItemObject')['type'])->deleteItemFromModel(I('deleteItemObject'));
+
+			if($result) {
+				$updateData = $this->getUserMenuCatetoryInfos(array(
+					I('deleteItemObject')['type'] => lcfirst( I('deleteItemObject')['type'] ) . '_name',
+				));
+
+				$this->ajaxReturn(array('status' => 200, 'data' => $updateData));
+			} else {
+				$this->ajaxReturnError();
+			}
+		}
+
+
+
+
+		// 测试 demo
 		public function demo() {
 			$this->ajaxReturn(array('status' => 'ok'));
 		}

@@ -13,7 +13,7 @@
 		private $findPasswordContent = "<p>您的密码已成功找回，请不要泄露给其他人！</p><p>新的密码为：</p>";
 
 		private function createRandomPassword() {
-
+			
 		}
 
 		public function sendEmailToInviter() {
@@ -22,9 +22,11 @@
 			$isSendSuccess = sendEmail(I('post.email', null), $this->inviteTitle, $this->inviteContent);
 
 			if($isSendSuccess) {
-				echo json_encode(array('status' => 200));
+				$this->ajaxReturn(array(
+					'status' => 200
+				));
 			} else {
-				echo json_encode(array('status' => 300));
+				$this->ajaxReturnError();
 			}
 		}
 

@@ -3,7 +3,7 @@ const mainInitState = {
 	userInfo : window.userInfo,
 	isLoading : true,
 	notifications : "",
-	userMenuInfo : {},
+	userMenuInfo : window.menuCategoryInfos,
 	foldersCategoryItem : [],
 	calendarsCategoryItem : [],
 	categorysCategoryItem : [],
@@ -12,78 +12,93 @@ const mainInitState = {
 };
 
 const mainReducerMap = {
-	sendEmailInvitation : function(state, action) {
-		// console.info(`发送邮件 action: ${JSON.stringify(action)}`);
-		return state;
+
+	// 发送邮件部分
+	sendEmailInvitationAsyncSuccess : function(state, action) {
+		var newState = Object.assign({}, state, {notifications : action.msg});
+		return newState;
 	},
-	getUserMenuInfo : function(state, action) {
-		return state;
+	sendEmailInvitationAsyncError : function(state, action) {
+		var newState = Object.assign({}, state, {notifications : action.msg});
+		return newState;
 	},
-	getUserMenuInfoAsyncSuccess : function(state, action) {
-		action.userMenuInfo['Shares'] = [
-			{id : 1, share_name : "来自我的分享"},
-			{id : 2, share_name : "我收到的分享"}
-		];
-		return Object.assign({}, state, {isLoading:false, userMenuInfo:action.userMenuInfo});
-	},
-	getUserMenuInfoAsyncError : function(state, action) {
-		return state;
-	},
-	getFoldersCategoryItem : function(state, action) {
-		// console.log('获取文件夹内的文件');
-		return state;
-	},
+	
+	// 查询二级分类列表
 	getFoldersCategoryItemAsyncSuccess : function(state, action) {
-		// console.log('获取文件夹内的文件成功');
-		return Object.assign({}, state, action);
+		var tempObj = {foldersCategoryItem : action.foldersCategoryItem};
+		return Object.assign({}, state, tempObj);
 	},
 	getFoldersCategoryItemAsyncError : function(state, action) {
-		// console.log('获取文件夹内的文件失败');
-		return state;
-	},
-	getCalendarsCategoryItem : function(state, action) {
-		return state;
+		var newState = Object.assign({}, state, {notifications : action.msg});
+		return newState;
 	},
 	getCalendarsCategoryItemAsyncSuccess : function(state, action) {
-		// console.log('获取日程组内的日程成功');
-		return Object.assign({},state, action);
+		var tempObj = {calendarsCategoryItem : action.calendarsCategoryItem};
+		return Object.assign({},state, tempObj);
 	},
 	getCalendarsCategoryItemAsyncError : function(state, action) {
-		// console.log('获取日程组内的日程失败');
-		return state;
-	},
-	getCategorysCategoryItem : function(state, action) {
-		return state;
+		var newState = Object.assign({}, state, {notifications : action.msg});
+		return newState;
 	},
 	getCategorysCategoryItemAsyncSuccess : function(state, action) {
-		// console.log('获取好友组内的好友成功');
-		return Object.assign({}, state, action);
+		var tempObj = {categorysCategoryItem : action.categorysCategoryItem};
+		return Object.assign({}, state, tempObj);
 	},
 	getCategorysCategoryItemAsyncError : function(state, action) {
-		// console.log('获取好友组内的好友失败');
-		return state;
-	},
-	getGroupsCategoryItem : function(state, action) {
-		return state;
+		var newState = Object.assign({}, state, {notifications : action.msg});
+		return newState;
 	},
 	getGroupsCategoryItemAsyncSuccess : function(state, action) {
-		// console.log('获取好友群内的好友列表成功');
-		return Object.assign({}, state, action);
+		var tempObj = {groupsCategoryItem : action.groupsCategoryItem};
+		return Object.assign({}, state, tempObj);
 	},
 	getGroupsCategoryItemAsyncError : function(state, action) {
-		// console.log('获取好友群内的好友列表失败');
-		return state; 
-	},
-	getSharesCategoryItem : function(state, action) {
-		return state;
+		var newState = Object.assign({}, state, {notifications : action.msg});
+		return newState;
 	},
 	getSharesCategoryItemAsyncSuccess : function(state, action) {
-		// console.log('获取分享文件成功');
-		return Object.assign({}, state, action);
+		var tempObj = {sharesCategoryItem : action.sharesCategoryItem};
+		return Object.assign({}, state, tempObj);
 	},
 	getSharesCategoryItemAsyncError : function(state, action) {
-		// console.log('获取分享文件失败');
-		return state;
+		var newState = Object.assign({}, state, {notifications : action.msg});
+		return newState;
+	},
+
+	// 一级分类编辑及确认修改函数
+	confirmMenuCategoryModifyItemAsyncSuccess : function(state, action) {
+		var tempObj = Object.assign({}, state.userMenuInfo, action.category);
+		return Object.assign({}, state, {userMenuInfo : tempObj});
+	},
+	confirmMenuCategoryModifyItemAsyncError : function(state, action) {
+		var newState = Object.assign({}, state, {notifications : action.msg});
+		return newState;
+	},
+	editMenuCategoryItem : function(state, action) {
+		var newUserMenuInfo = Object.assign({}, state.userMenuInfo, action.categoryParams);
+		return Object.assign({}, state, {userMenuInfo : newUserMenuInfo});
+	},
+	deleteMenuCategoryItemAsyncSuccess : function(state, action) {
+		var tempObj = Object.assign({}, state.userMenuInfo, action.category);
+		return Object.assign({}, state, {userMenuInfo : tempObj});
+	},
+	deleteMenuCategoryItemAsyncError : function(state, action) {
+		var newState = Object.assign({}, state, {notifications : action.msg});
+		return newState;
+	},
+	addMenuCategoryItemAsyncSuccess : function(state, action) {
+		var tempObj = Object.assign({}, state.userMenuInfo, action.category);
+		return Object.assign({}, state, {userMenuInfo : tempObj});
+	},
+	addMenuCategoryItemAsyncError : function(state, action) {
+		var newState = Object.assign({}, state, {notifications : action.msg});
+		return newState;
+	},
+
+	// 清除提示
+	removeNotification : function(state, action) {
+		var newState = Object.assign({}, state, {notifications : ''});
+		return newState;
 	}
 };
 

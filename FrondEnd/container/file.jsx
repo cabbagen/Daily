@@ -2,8 +2,10 @@ import React, { PropTypes, Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import actions from '../actions';
+
 import FilterFiles from '../components/FilterFiles.jsx';
 import FileOperatePanel from '../components/FileOperatePanel.jsx';
+import MenuOperateModal from '../components/MenuOperateModal.jsx';
 import styles from '../container/file.less';
 
 
@@ -22,7 +24,7 @@ class File extends Component {
 		return (
 			<div className={styles.file_content}>
 				<FilterFiles {...filterFilesProps} />
-				<FileOperatePanel />
+				{/*<FileOperatePanel />*/}
 			</div>
 		);
 	}

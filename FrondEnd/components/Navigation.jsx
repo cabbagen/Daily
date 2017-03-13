@@ -2,6 +2,7 @@ import React, { PropTypes, Component } from 'react';
 import { Modal } from 'antd';
 
 import MsgList from './MsgList';
+import MenuOperateModal from './MenuOperateModal.jsx';
 import styles from './Navigation.less';
 
 class Navigation extends Component {
@@ -14,10 +15,12 @@ class Navigation extends Component {
       isShowUserInfoCenterPanel : false,
       imLinkmanList : [],
       isShowImLinkmanPanel : false,
-      imUnReadMsgNumber : 0
+      imUnReadMsgNumber : 0,
+      isCategotyMoaleVisible : false,
     };
   }
 
+  // 绑定事件监听
   componentDidMount() {
     var that = this;
     document.body.addEventListener('click', function() {
@@ -31,13 +34,23 @@ class Navigation extends Component {
   }
 
   render() {
-    var { userId, userName, userAvator } = this.props;
+    var { userId, userName, userAvator } = this.props.userMenuInfo;
+    var that = this;
 
     var unReadImMsgsNumber = this.getUnReadImMsgsNumber(),
       isShowImLinkmanPanel = this.renderImLinkmanPanel(),
       isShowUserInfoCenterPanel = this.renderUserInfoCenterPanel(),
       isModalShowErrorMsg = this.renderModelShowErrorMsg(),
       triangleStyle = this.getTriangleStyle();
+
+    var menuOperateModalProps = Object.assign({}, that.props, {
+      fieldTitleMap : {
+        Folders : '我的文件',
+        Calendars : '我的日程',
+        Categorys : '我的好友',
+        Groups : '我的小组'
+      }
+    });
 
     return (
       <header className={styles.top_navigation}>
@@ -47,7 +60,7 @@ class Navigation extends Component {
         <div className={styles.top_list}>
           <ul>
             <li className={styles.add}>
-              <div>
+              <div onClick={this.showCategoryModal.bind(this)}>
                 <img src="/public/images/add.png" />
               </div>
             </li>
@@ -80,6 +93,16 @@ class Navigation extends Component {
             <input className={styles.target_email} type="email" ref="targetEmail" name="email" placeholder="请输入你的邮箱地址" />
             {isModalShowErrorMsg}
         </Modal>
+
+        <Modal
+          title="选项编辑"
+          visible={this.state.isCategotyMoaleVisible}
+          onOk={this.handleCategoryModalOk.bind(this)}
+          onCancel={this.handleCategoryModalCancel.bind(this)}
+          maskClosable={false}>
+          <MenuOperateModal {...menuOperateModalProps} />
+        </Modal>
+
       </header>
     );
   }
@@ -115,6 +138,10 @@ class Navigation extends Component {
     return this.state.isShowUserInfoCenterPanel ? styles.triangle_hover : '';
   }
 
+  showCategoryModal() {
+    this.setState({isCategotyMoaleVisible : true});
+  }
+
   sendInvitationEmail() {
     this.setState({isModalVisible : true});
   }
@@ -134,7 +161,7 @@ class Navigation extends Component {
 
     if(isInputEmailValid) {
       this.setState({isModalVisible : false}, function() {
-        that.props.sendEmailToInviter(inputEmail);
+        that.props.mainActions.sendEmailInvitation(inputEmail);
       }, false);
     }
   }
@@ -166,14 +193,16 @@ class Navigation extends Component {
 
   handleCancel() {
     this.setState({isModalVisible : false});
-  } 
+  }
 
-}
+  handleCategoryModalOk() {
+    this.setState({isCategotyMoaleVisible : false});
+  }
 
+  handleCategoryModalCancel() {
+    this.setState({isCategotyMoaleVisible : false});
+  }
 
-Navigation.propTypes = {
-    sendEmailToInviter : PropTypes.func.isRequired,
-    userInfo : PropTypes.object.isRequired
 }
 
 

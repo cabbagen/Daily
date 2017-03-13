@@ -33,7 +33,7 @@ class FileOperatePanel extends Component {
 			<div className={styles.file_operate}>
 				<input type="text" className={styles.file_caption} placeholder="请输入文件名称" />
 				<div>
-					<Button>编辑</Button>
+					<Button>保存</Button>
 					<Icon type="upload" />
 					<Icon type="download" />
 					<Icon type="share-alt" />
