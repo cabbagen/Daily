@@ -1,6 +1,7 @@
 <?php
 	namespace Home\Controller;
 	use Home\Controller;
+  Vendor('markdown.markdown#class');
 
 	class FilesController extends EmailController {
 		
@@ -68,6 +69,29 @@
       }
 
     }
+
+    // markdown 测试
+    public function markdown() {
+      $markdown = new \Markdown();
+      $htmlFile = file_get_contents('./Public/files/uploadFiles/1489713670.txt');
+      // echo $htmlFile;
+
+      $md = $markdown->parseHtml( htmlspecialchars_decode($htmlFile) );
+      file_put_contents('./Public/files/uploadFiles/md.md', $md);
+      echo $md;
+
+      // echo $htmlFile;
+      // var_dump($markdown);
+      
+    }
+
+    public function demo() {
+      echo 'helo';
+    }
+
+    // public function downloadFile() {
+    //   $fileInfo = I('')
+    // }
 
     
 

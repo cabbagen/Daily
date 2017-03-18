@@ -3,115 +3,59 @@ import { Icon, Button } from 'antd';
 
 import styles from './FileOperatePanel.less';
 
-// 文本编辑器
 var editor = null;
 
 class FileOperatePanel extends Component {
 	constructor(props) {
 		super(props);
-		this.state = {
-			isEditing : true
-		};
 	}
 
-	// 首次渲染 编辑器
 	componentDidMount() {
 		editor = new Simditor({textarea : $('#editor')});
 	}
 
-	componentWillReceiveProps(nextProps) {
+	componentWillUpdate(nextProps, nextState) {
+		editor.setValue(nextProps.fileState.currentFileContent);
 		if(nextProps.fileState.currentFileObject) {
-			this.setState({isEditing : false, fileName : nextProps.fileState.currentFileName});
+			this.refs.file_name.value = nextProps.fileState.currentFileObject.file_name;
 		} else {
-			this.setState({isEditing : true, fileName : nextProps.fileState.currentFileName});
-			if(this.refs.file_name) {
-				this.refs.file_name.value = '';
-			}
-		}
-	}
-
-	componentDidUpdate() {
-		var hasTextEditor = $('#editor').length > 0 ? true : false; 
-		if(hasTextEditor) {
-			editor = new Simditor({textarea : $('#editor')});
+			this.refs.file_name.value = '';
 		}
 	}
 
 	render() {
-		
-		var {currentFileObject, currentFileContent} = this.props.fileState;
 		var that = this;
-
-		var panelHeader = currentFileObject ? this.renderHeaderForExistFile(currentFileObject) : this.renderHeaderForNoExistFile();
-		var panelContent = currentFileObject ? this.renderContentForExistFile(currentFileContent) : this.renderContentForNoExistFile();
-
+		
 		return (
 			<div className={styles.file_panel}>
-				{panelHeader}
-				{panelContent}
-			</div>
-		);
-	}
-
-	renderHeaderForExistFile(currentFileObject) {
-
-		var that = this;
-
-		return this.state.isEditing ? (
-			<div className={styles.file_operate}>
-				<input
-					ref="file_name"
-					type="text"
-					className={styles.file_caption}
-					placeholder="请输入文件名称"
-					defaultValue={currentFileObject.file_name}
-				/>
-				<div>
-					<Button onClick={that.changeSaveStateAndUpdate.bind(that)}>保存</Button>
-					<Icon type="upload" />
-					<Icon type="download" />
-					<Icon type="share-alt" />
+				<div className={styles.file_operate}>
+					<input ref="file_name" type="text" className={styles.file_caption} placeholder="请输入文件内容" />
+					<div>
+						<Button onClick={that.handleSave.bind(that)}>保存</Button>
+						<Icon type="upload" onClick={that.upload.bind(that)} />
+						<Icon type="download" onClick={that.download.bind(this)} />
+						<Icon type="share-alt" onClick={that.share.bind(that)} />
+					</div>
 				</div>
-			</div>
-		) : (
-			<div className={styles.file_operate}>
-				<h2>{currentFileObject.file_name}</h2>
-				<div>
-					<Button onClick={that.changeEditState.bind(that)}>编辑</Button>
-					<Icon type="upload" />
-					<Icon type="download" />
-					<Icon type="share-alt" />				
+				<div className={styles.file_editor_wrap}>
+					<textarea id="editor" placeholder="从这里开始写文件" autoFocus></textarea>
 				</div>
 			</div>
 		);
+
 	}
 
-	renderHeaderForNoExistFile() {
-		var that = this;
+	handleSave() {
+		var { fileState } = this.props;
 
-		return (
-			<div className={styles.file_operate}>
-				<input 
-					ref="file_name" 
-					type="text" 
-					className={styles.file_caption} 
-					placeholder="请输入文件名称" 
-				/>
-				<div>
-					<Button onClick={that.changeSaveStateAndCreate.bind(that)}>保存</Button>
-					<Icon type="upload" />
-					<Icon type="download" />
-					<Icon type="share-alt" />
-				</div>
-			</div>
-		);
+		if(fileState.currentFileObject) {
+			this.updateFile();
+		} else {
+			this.createFile();
+		}
 	}
 
-	changeEditState() {
-		this.setState({isEditing : true});
-	}
-
-	changeSaveStateAndUpdate() {
+	updateFile() {
 		var { fileState, mainActions, mainState, fileActions } = this.props;
 		var that = this;
 
@@ -127,10 +71,9 @@ class FileOperatePanel extends Component {
 
 		mainActions.updateFile(params);
 		fileActions.requireFileContent(fileState.currentFileObject.file_path, fileState.currentFileObject.id);
-
 	}
 
-	changeSaveStateAndCreate() {
+	createFile() {
 		var { mainState, mainActions, fileActions } = this.props;
 		var that = this;
 		
@@ -149,30 +92,30 @@ class FileOperatePanel extends Component {
 		fileActions.resetState();
 	}
 
-	renderContentForExistFile(currentFileContent) {
+	upload() {
+		console.log('文件上传');
+	}
 
-		if(editor) {
-			editor.destroy();
-			editor = null;
+	download() {
+		if( !this.isSelectFile() ) {
+			alert('请先选择文件');
+			return;
 		}
-
-		return this.state.isEditing ? (
-			<div className={styles.file_editor_wrap}>
-				<textarea id="editor" placeholder="从这里开始写文件" autoFocus defaultValue={currentFileContent}></textarea>
-			</div>
-		) : (
-			<div className={styles.file_editor_wrap} dangerouslySetInnerHTML={{__html : currentFileContent}}></div>
-		);
+		
+		console.log('这里是文件下载');
 	}
 
-	renderContentForNoExistFile() {
-		return (
-			<div className={styles.file_editor_wrap}>
-				<textarea id="editor" placeholder="从这里开始写文件" autoFocus></textarea>
-			</div>
-		);
+	share() {
+		if( !this.isSelectFile() ) {
+			alert('请先选择文件');
+			return;
+		}
+		console.log('文件分享');
 	}
 
+	isSelectFile() {
+		return this.props.fileState.currentFileObject ? true : false;
+	}
 
 }
 
