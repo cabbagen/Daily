@@ -1,14 +1,26 @@
 
 const mainInitState = {
+	// 用户信息内容
 	userInfo : window.userInfo,
+
+	// loading 暂时不用
 	isLoading : true,
+
+	// 错误消息通知
 	notifications : "",
+
+	// 一级菜单相关分类内容
 	userMenuInfo : window.menuCategoryInfos,
+
+	// 单个文件里的文件
 	foldersCategoryItem : [],
 	calendarsCategoryItem : [],
 	categorysCategoryItem : [],
 	groupsCategoryItem : [],
-	sharesCategoryItem : []
+	sharesCategoryItem : [],
+
+	// 当前分类的 id ， 这里匹配 `from_**_id` 字段, 这里类似于文件夹 id
+	currentCategoryId : ''
 };
 
 const mainReducerMap = {
@@ -22,50 +34,8 @@ const mainReducerMap = {
 		var newState = Object.assign({}, state, {notifications : action.msg});
 		return newState;
 	},
-	
-	// 查询二级分类列表
-	getFoldersCategoryItemAsyncSuccess : function(state, action) {
-		var tempObj = {foldersCategoryItem : action.foldersCategoryItem};
-		return Object.assign({}, state, tempObj);
-	},
-	getFoldersCategoryItemAsyncError : function(state, action) {
-		var newState = Object.assign({}, state, {notifications : action.msg});
-		return newState;
-	},
-	getCalendarsCategoryItemAsyncSuccess : function(state, action) {
-		var tempObj = {calendarsCategoryItem : action.calendarsCategoryItem};
-		return Object.assign({},state, tempObj);
-	},
-	getCalendarsCategoryItemAsyncError : function(state, action) {
-		var newState = Object.assign({}, state, {notifications : action.msg});
-		return newState;
-	},
-	getCategorysCategoryItemAsyncSuccess : function(state, action) {
-		var tempObj = {categorysCategoryItem : action.categorysCategoryItem};
-		return Object.assign({}, state, tempObj);
-	},
-	getCategorysCategoryItemAsyncError : function(state, action) {
-		var newState = Object.assign({}, state, {notifications : action.msg});
-		return newState;
-	},
-	getGroupsCategoryItemAsyncSuccess : function(state, action) {
-		var tempObj = {groupsCategoryItem : action.groupsCategoryItem};
-		return Object.assign({}, state, tempObj);
-	},
-	getGroupsCategoryItemAsyncError : function(state, action) {
-		var newState = Object.assign({}, state, {notifications : action.msg});
-		return newState;
-	},
-	getSharesCategoryItemAsyncSuccess : function(state, action) {
-		var tempObj = {sharesCategoryItem : action.sharesCategoryItem};
-		return Object.assign({}, state, tempObj);
-	},
-	getSharesCategoryItemAsyncError : function(state, action) {
-		var newState = Object.assign({}, state, {notifications : action.msg});
-		return newState;
-	},
 
-	// 一级分类编辑及确认修改函数
+	// 一级分类编辑及确认修改函数, 一级菜单内容这里从 `window.menuCategoryInfos` 获取初始数据
 	confirmMenuCategoryModifyItemAsyncSuccess : function(state, action) {
 		var tempObj = Object.assign({}, state.userMenuInfo, action.category);
 		return Object.assign({}, state, {userMenuInfo : tempObj});
@@ -99,7 +69,99 @@ const mainReducerMap = {
 	removeNotification : function(state, action) {
 		var newState = Object.assign({}, state, {notifications : ''});
 		return newState;
-	}
+	},
+	
+	// 二级分类相关操作处理
+	// 文件模块操作
+	// 获取
+	getFoldersCategoryItemAsyncSuccess : function(state, action) {
+		return Object.assign({}, state, { 
+			foldersCategoryItem : action.foldersCategoryItem, 
+			currentCategoryId : action.id
+		});
+	},
+	getFoldersCategoryItemAsyncError : function(state, action) {
+		return Object.assign({}, state, { 
+			notifications : action.msg
+		});
+	},
+
+	// 删除 
+	deleteFileAsyncSuccess : function(state, action) {
+		return Object.assign({}, state, { 
+			foldersCategoryItem : action.foldersCategoryItem 
+		});
+	},
+	deleteFileAsyncError : function(state, action) {
+		return Object.assign({}, state, {
+			notifications : action.msg
+		});
+	},
+
+	// 新建
+	createFileAsyncSuccess : function(state, action) {
+		return Object.assign({}, state, {
+			foldersCategoryItem : action.foldersCategoryItem
+		});
+	},
+	createFileAsyncError : function(state, action) {
+		return Object.assign({}, state, {
+			notifications : action.msg
+		});
+	},
+
+	// 更新
+	updateFileAsyncSuccess : function(state, action) {
+		return Object.assign({}, state, {
+			foldersCategoryItem : action.foldersCategoryItem
+		});
+	},
+	updateFileAsyncError : function(state, action) {
+		return Object.assign({}, state, {
+			notifications : action.msg
+		});
+	},
+
+
+
+
+
+
+	getCalendarsCategoryItemAsyncSuccess : function(state, action) {
+		var tempObj = {calendarsCategoryItem : action.calendarsCategoryItem, currentCategoryId : action.id};
+		return Object.assign({},state, tempObj);
+	},
+	getCalendarsCategoryItemAsyncError : function(state, action) {
+		var newState = Object.assign({}, state, {notifications : action.msg});
+		return newState;
+	},
+	getCategorysCategoryItemAsyncSuccess : function(state, action) {
+		var tempObj = {categorysCategoryItem : action.categorysCategoryItem, currentCategoryId : action.id};
+		return Object.assign({}, state, tempObj);
+	},
+	getCategorysCategoryItemAsyncError : function(state, action) {
+		var newState = Object.assign({}, state, {notifications : action.msg});
+		return newState;
+	},
+	getGroupsCategoryItemAsyncSuccess : function(state, action) {
+		var tempObj = {groupsCategoryItem : action.groupsCategoryItem, currentCategoryId : action.id};
+		return Object.assign({}, state, tempObj);
+	},
+	getGroupsCategoryItemAsyncError : function(state, action) {
+		var newState = Object.assign({}, state, {notifications : action.msg});
+		return newState;
+	},
+	getSharesCategoryItemAsyncSuccess : function(state, action) {
+		var tempObj = {sharesCategoryItem : action.sharesCategoryItem, currentCategoryId : action.id};
+		return Object.assign({}, state, tempObj);
+	},
+	getSharesCategoryItemAsyncError : function(state, action) {
+		var newState = Object.assign({}, state, {notifications : action.msg});
+		return newState;
+	},
+
+	
+
 };
 
 export default function(state = mainInitState, action) {

@@ -21,8 +21,8 @@ ReactDom.render(
 		<Router history={hashHistory}>
 			<Route path="/" component={Pagination.initLoading} />
 			<Route path="/web" component={Pagination.main}>
-				<Route path="/web/:folders" component={Pagination.file}>
-					<Route path="/web/:folders/:file" />
+				<Route path="/folders/:folders" component={Pagination.file}>
+					<Route path="/folders/:folders/:file" />
 				</Route>
 			</Route>
 		</Router>

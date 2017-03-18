@@ -6,8 +6,15 @@
 
 <block name="content">
 	<h2>这是用户个人中心页面</h2>
+	<div id="demo_content"></div>
 </block>
 
 <block name="javascript">
 	<script src="__PUBLIC__/javascript/users.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$.get("__PUBLIC__/files/uploadFiles/demo.txt", function(data) {
+			$('#demo_content').html(data);
+			
+		});
+	</script>
 </block>

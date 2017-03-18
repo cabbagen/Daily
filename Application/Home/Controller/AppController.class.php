@@ -53,30 +53,7 @@
 			return $itemInfoList;
 		}
 
-		// 渲染页面函数
-		public function app() {
-			$imUserInfos = $this->getImUserInfoFromSession();
-			$userInfos = $this->getUserInfoFromSession();
-
-			if(imUserInfos) {
-				$userInfo = array(
-					'uid' => $imUserInfos->userid,
-					'appkey' => C('IM_AppKey'),
-					'credential' => $imUserInfos->password,
-					'nickName' => $imUserInfos->nick,
-					'userId' => $userInfos['id'],
-					'avator' => $userInfos['avator'],
-				);
-
-				$this->assign('userInfo', json_encode($userInfo));
-				$this->assign('menuCategoryInfos', json_encode($this->getUserMenuInfos()));
-			}
-
-			$this->display();
-		}
-
-		// ajax 请求 用户左侧菜单相关信息
-		public function getUserMenuInfos() {
+		private function getUserMenuInfos() {
 			$userMenuInfosQueryConditon = $this->getUserMenuCatetoryInfos(array(
 				'Folders' => 'folder_name',
 				'Calendars' => 'calendar_name',
@@ -100,12 +77,37 @@
 
 		}
 
+		// 渲染页面函数
+		public function app() {
+			$imUserInfos = $this->getImUserInfoFromSession();
+			$userInfos = $this->getUserInfoFromSession();
+
+			if(imUserInfos) {
+				$userInfo = array(
+					'uid' => $imUserInfos->userid,
+					'appkey' => C('IM_AppKey'),
+					'credential' => $imUserInfos->password,
+					'nickName' => $imUserInfos->nick,
+					'userId' => $userInfos['id'],
+					'avator' => $userInfos['avator'],
+				);
+
+				$this->assign('userInfo', json_encode($userInfo));
+				$this->assign('menuCategoryInfos', json_encode($this->getUserMenuInfos()));
+			}
+
+			$this->display();
+		}
+
 		// 当用户点击左侧菜单分类时，获取获取对应的资源数据
 		public function getUserCategoryResource() {
 			if(I('resourceCategory', null) && I('id', null)) {
 				$result = $this->getCategoryItem(I('resourceCategory', null), I('id', null));
 				if($result || empty($result)) {
-					$this->ajaxReturn(array('status' => 200, 'data' => $result,));
+					$this->ajaxReturn(array('status' => 200, 'data' => array(
+						'content' => $result,
+						'id' => I('id', null),
+					)));
 				} else {
 					$this->ajaxReturnError();
 				}

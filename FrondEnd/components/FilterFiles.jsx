@@ -6,15 +6,15 @@ class FilterFiles extends Component {
   constructor(props) {
     super(props);
     this.state = {
-    	fileItem : this.props.foldersCategoryItem,
-    	fullFileItem : this.props.foldersCategoryItem
+    	fileItem : this.props.mainState.foldersCategoryItem,
+    	fullFileItem : this.props.mainState.foldersCategoryItem
     };
   }
 
   componentWillReceiveProps(nextProps) {
   	this.setState({
-  		fileItem : nextProps.foldersCategoryItem,
-    	fullFileItem : nextProps.foldersCategoryItem
+  		fileItem : nextProps.mainState.foldersCategoryItem,
+    	fullFileItem : nextProps.mainState.foldersCategoryItem
   	});
   }
 
@@ -23,7 +23,7 @@ class FilterFiles extends Component {
     return (
       <div className={styles.filter_warp}>
         <div className={styles.filter_header}>
-        	<span className={styles.add_file} title="新建文件"></span>
+        	<span onClick={this.createFile.bind(this)} className={styles.add_file} title="新建文件"></span>
           <input type="" placeholder="文档筛选" onChange={this.filterList.bind(this)} />
         </div>
         {fileContent}
@@ -47,11 +47,12 @@ class FilterFiles extends Component {
   }
 
   renderItem() {
+    var that = this;
     var fileNodeList = this.state.fileItem.map((fileObject, fileIndex) => (
-      <li key={fileIndex}>
+      <li key={fileObject.id} onClick={that.requireFile.bind(that, fileObject.file_path, fileObject.id)}>
         <p className={styles.file_name}>
           <span>{fileObject.file_name}</span>
-          <img src="/public/images/delete.png" onClick={this.deleteFile.bind(this, fileIndex)} />
+          <img src="/public/images/delete.png" onClick={that.deleteFile.bind(that, fileObject.id)} />
         </p>
         <p>{fileObject.create_time}</p>
       </li>
@@ -59,6 +60,16 @@ class FilterFiles extends Component {
 
     return fileNodeList.length === 0 ? '' : fileNodeList;
 
+  }
+
+  createFile() {
+    var { fileActions } = this.props;
+    fileActions.resetState();
+  }
+
+  requireFile(filePath, fileId) {
+    var { fileActions } = this.props;
+    fileActions.requireFileContent(filePath, fileId);
   }
 
   filterList(event) {
@@ -77,7 +88,10 @@ class FilterFiles extends Component {
 
   deleteFile(fileId, event) {
     event.stopPropagation();
-    this.props.deleteFile(fileId);
+    var { mainActions, mainState, fileActions } = this.props;
+
+    mainActions.deleteFile(fileId, mainState.currentCategoryId);
+    fileActions.resetState();
   }
 }
 

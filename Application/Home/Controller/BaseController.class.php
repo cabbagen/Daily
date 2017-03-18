@@ -33,20 +33,17 @@
 			echo 'empty';
 		}
 
-		/**
-		 * 调试时使用，进行跨域处理
-		 * @return [type] [description]
-		 */
-		public function allowCrossOrigin() {
-			header('Access-Control-Allow-Origin: *');
-			header('Access-Control-Allow-Methods:POST, GET');
-		}
-
+		// 通用 ajax 错误返回处理
 		public function ajaxReturnError($msg = "系统繁忙，请稍后重试") {
 			$this->ajaxReturn(array(
 				'status' => 500,
 				'msg' => $msg
 			));
+		}
+
+		// 返回 session 中的 userId
+		public function getUserIdFromSession() {
+			return session('userId');
 		}
 
 		

@@ -6,7 +6,6 @@
   width: @width;
   height: 500px;
   float: left;
-  overflow: scroll;
   border-right: 1px solid @border-color;
 
   .filter_header {
@@ -35,7 +34,10 @@
     }
   }
 }
-
+.filter_content {
+  height: 450px;
+  overflow-y: scroll;
+}
 .filter_content li {
   width: @width;
   height: 58px;

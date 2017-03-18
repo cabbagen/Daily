@@ -19,7 +19,7 @@ function* sendEmailInvitationAsync(action) {
 function* getFoldersCategoryItemAsync(action) {
 	var data = yield call(servers.mainServer.getUserMenuCatagoryItemAsync, action.params);
 	if(data.status && data.status === 200) {
-		yield put({type:'getFoldersCategoryItemAsyncSuccess', foldersCategoryItem:data.data})
+		yield put({type:'getFoldersCategoryItemAsyncSuccess', foldersCategoryItem:data.data.content, id : data.data.id})
 	} else if(data.status && data.status !== 200) {
 		yield put({type:'getFoldersCategoryItemAsyncError', msg : data.msg});
 	} else {
@@ -30,7 +30,7 @@ function* getFoldersCategoryItemAsync(action) {
 function* getCalendarsCategoryItemAsync(action) {
 	var data = yield call(servers.mainServer.getUserMenuCatagoryItemAsync, action.params);
 	if(data.status && data.status === 200) {
-		yield put({type:'getCalendarsCategoryItemAsyncSuccess', calendarsCategoryItem:data.data});
+		yield put({type:'getCalendarsCategoryItemAsyncSuccess', calendarsCategoryItem:data.data.content, id : data.data.id});
 	} else if(data.status && data.status !== 200) {
 		yield put({type:'getCalendarsCategoryItemAsyncError', msg : data.msg});
 	} else {
@@ -41,7 +41,7 @@ function* getCalendarsCategoryItemAsync(action) {
 function* getCategorysCategoryItemAsync(action) {
 	var data = yield call(servers.mainServer.getUserMenuCatagoryItemAsync, action.params);
 	if(data.status && data.status === 200) {
-		yield put({type:'getCategorysCategoryItemAsyncSuccess', categorysCategoryItem:data.data});
+		yield put({type:'getCategorysCategoryItemAsyncSuccess', categorysCategoryItem:data.data.content, id : data.data.id});
 	} else if(data.status && data.status !== 200) {
 		yield put({type:'getCategorysCategoryItemAsyncError', msg : data.msg});
 	} else {
@@ -52,7 +52,7 @@ function* getCategorysCategoryItemAsync(action) {
 function* getGroupsCategoryItemAsync(action) {
 	var data = yield call(servers.mainServer.getUserMenuCatagoryItemAsync, action.params);
 	if(data.status && data.status === 200) {
-		yield put({type:'getGroupsCategoryItemAsyncSuccess', groupsCategoryItem:data.data});
+		yield put({type:'getGroupsCategoryItemAsyncSuccess', groupsCategoryItem:data.data.content, id : data.data.id});
 	} else if(data.status && data.status !== 200) {
 		yield put({type:'getGroupsCategoryItemAsyncError', msg : data.msg});
 	} else {
@@ -63,7 +63,7 @@ function* getGroupsCategoryItemAsync(action) {
 function* getSharesCategoryItemAsync(action) {
 	var data = yield call(servers.mainServer.getUserMenuCatagoryItemAsync, action.params);
 	if(data.status && data.status === 200) {
-		yield put({type:'getSharesCategoryItemAsyncSuccess', sharesCategoryItem:data.data});
+		yield put({type:'getSharesCategoryItemAsyncSuccess', sharesCategoryItem:data.data.content, id : data.data.id});
 	} else if(data.status && data.status !== 200) {
 		yield put({type:'getSharesCategoryItemAsyncError', msg : data.msg});
 	} else {
@@ -109,16 +109,76 @@ function* addMenuCategoryItemAsync(action) {
 	}
 }
 
-export function* watchGetUserMenuInfo() {
+// 删除二级列表 由于数据源放在 mainState 中， 所以相关的`增删`行为放置在这里`改查`行为放在对应的页面里
+
+// 删除文件
+function* deleteFileAsync(action) {
+	var data = yield call(servers.fileServer.deleteFileAsync, action.fileId, action.from_folder_id);
+	if(data.status && data.status === 200) {
+		yield put({type : 'deleteFileAsyncSuccess', foldersCategoryItem : data.fileList});
+	} else if(data.status && data.status !== 200) {
+		yield put({type : 'deleteFileAsyncError', msg : data.msg});
+	} else {
+		yield put({type : 'deleteFileAsyncError', msg : data.msg});
+	}
+}
+
+// 新建文件
+function* createFileAsync(action) {
+	var data = yield call(servers.fileServer.createFileAsync, action.params);
+	if(data.status && data.status === 200) {
+		yield put({type : 'createFileAsyncSuccess', foldersCategoryItem : data.fileList});
+	} else if(data.status && data.status !== 200) {
+		put({type : 'createFileAsyncError', msg : data.msg});
+	} else {
+		put({type : 'createFileAsyncError', msg : data.msg});
+	}
+}
+
+// 更新文件
+function* updateFileAsync(action) {
+	var data = yield call(servers.fileServer.updateFileAsync, action.params);
+	if(data.status && data.status === 200) {
+		yield put({type : 'updateFileAsyncSuccess', foldersCategoryItem : data.fileList});
+	} else if(data.status && data.status !== 200) {
+		yield put({type : 'updateFileAsyncError', msg : data.msg});
+	} else {
+		yield put({type : 'updateFileAsyncAsyncError', msg : data.msg});
+	}
+}
+
+// 保存文件
+function* saveFileAsync(action) {
+	var data = yield call(servers.fileServer.saveFileAsync, action.params);
+	if(data.status && data.status === 200) {
+		yield put({type : 'saveFileAsyncSuccess', foldersCategoryItem : data.fileList});
+	} else if(data.status && data.status !== 200) {
+		yield put({type : 'saveFileAsyncError', msg : data.msg});
+	} else {
+		yield put({type : 'saveFileAsyncError', msg : data.msg});
+	}
+}
+
+
+
+export function* watchMain() {
+	// 发送邀请邮件
 	yield takeEvery('sendEmailInvitation', sendEmailInvitationAsync);
 
+	// 获取二级菜单
 	yield takeEvery('getFoldersCategoryItem', getFoldersCategoryItemAsync);
 	yield takeEvery('getCalendarsCategoryItem', getCalendarsCategoryItemAsync);
 	yield takeEvery('getCategorysCategoryItem', getCategorysCategoryItemAsync);
 	yield takeEvery('getGroupsCategoryItem', getGroupsCategoryItemAsync);
 	yield takeEvery('getSharesCategoryItem', getSharesCategoryItemAsync);
 
+	// 一级菜单编辑选项
 	yield takeEvery('confirmMenuCategoryModifyItem', confirmMenuCategoryModifyItemAsync);
 	yield takeEvery('deleteMenuCategoryItem', deleteMenuCategoryItemAsync);
 	yield takeEvery('addMenuCategoryItem', addMenuCategoryItemAsync);
+
+	// 二级列表操作
+	yield takeEvery('deleteFile', deleteFileAsync);
+	yield takeEvery('createFile', createFileAsync);
+	yield takeEvery('updateFile', updateFileAsync);
 };

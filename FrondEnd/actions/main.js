@@ -61,5 +61,25 @@ export const removeNotification = () => ({
 });
 
 
+// 二级菜单操作
+
+// 删除文件
+export const deleteFile = (fileId, from_folder_id) => ({
+	type : 'deleteFile',
+	fileId : fileId,
+	from_folder_id : from_folder_id
+});
+
+// 新建文件
+export const createFile = (params) => ({
+	type : 'createFile',
+	params : params
+});
+
+// 更新文件
+export const updateFile = (params) => ({
+	type : 'updateFile',
+	params : params
+});
 
 

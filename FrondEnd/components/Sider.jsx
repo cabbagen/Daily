@@ -50,7 +50,7 @@ class Sider extends Component {
 		var subMenuDomArray = [];
 
 		for(var prop in userResourceInfo) {
-				subMenuDomArray.push( that[`render${prop}`](userResourceInfo[prop]) );
+			subMenuDomArray.push( that[`render${prop}`](userResourceInfo[prop]) );
 		}
 
 		return subMenuDomArray;
@@ -61,7 +61,7 @@ class Sider extends Component {
 		var foldersNodes = foldersInfo.map((folderObject, folderIndex) => {
 			return (
 				<Menu.Item key={`${subMenuKey}-${folderIndex}`}>
-					<Link to={`/web/${folderObject.folder_name}`} onClick={this.menuCategoryLinkTo.bind(this, subMenuKey, folderObject.id)}>{folderObject.folder_name}</Link>
+					<Link to={`/folders/${folderObject.folder_name}`} onClick={this.menuCategoryLinkTo.bind(this, subMenuKey, folderObject.id)}>{folderObject.folder_name}</Link>
 				</Menu.Item>
 			);
 		});

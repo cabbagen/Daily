@@ -15,16 +15,12 @@ class File extends Component {
 	}
 
 	render() {
-		var { fileState, mainState, fileActions } = this.props;
-
-		var filterFilesProps = {
-			foldersCategoryItem : mainState.foldersCategoryItem
-		};
-
+		var {fileState, mainState, fileActions, mainActions} = this.props;
+		
 		return (
 			<div className={styles.file_content}>
-				<FilterFiles {...filterFilesProps} />
-				{/*<FileOperatePanel />*/}
+				<FilterFiles {...this.props} />
+				<FileOperatePanel {...this.props} />
 			</div>
 		);
 	}
@@ -40,7 +36,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
 	return {
-		fileActions : bindActionCreators(actions.fileActions, dispatch)
+		fileActions : bindActionCreators(actions.fileActions, dispatch),
+		mainActions : bindActionCreators(actions.mainActions, dispatch)
 	}
 }
 
