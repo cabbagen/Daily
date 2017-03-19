@@ -18,3 +18,7 @@ export const updateFileAsync = (fileInfos) => {
 export const createFileAsync = (params) => {
 	return Require.ajax('/Home/Files/createFile', 'post', params).then(data => data, e => e);
 };
+
+export const uploadFileAsync = (params) => {
+	return Require.formAjax('/Home/Files/uploadFile', 'post', params).then(data => data, e => e);
+};

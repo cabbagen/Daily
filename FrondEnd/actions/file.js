@@ -11,33 +11,24 @@ export const requireFileContent = (filePath, fileId) => ({
 	fileId : fileId
 });
 
-// 删除文件
-// export const deleteFile = (fileId) => ({
-// 	type : 'deleteFile',
-// 	fileId : fileId
-// });
-
-// 保存文件
-export const saveFile = (fileInfos) => ({
-	type : 'saveFile',
-	fileInfos : fileInfos
-});
-
-// 新建文件
-
-// 文件更名
-export const changeFileName = (fileName) => ({
-	type : 'changeFileName',
-	file_name : fileName
-});
-
 // 文件状态重置
 export const resetState = () => ({
 	type : 'resetState'
 });
 
-// 更新文件夹ID
-// export const updateFolder = (currentFolderId) => ({
-// 	type : 'updateFolder',
-// 	currentFolderId : currentFolderId
-// });
+// 上传文件
+export const uploadFile = (formData) => ({
+	type : 'uploadFile',
+	params : formData
+});
+
+// 下载文件
+export const downloadFile = () => ({
+	type : 'downloadFile'
+});
+
+
+// 取消通知
+export const removeNotification = () => ({
+	type : 'removeNotification'
+});

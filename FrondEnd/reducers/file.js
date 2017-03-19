@@ -10,6 +10,8 @@ const fileReducerMap = {
 	demo : function(state, action) {
 		return state;
 	},
+
+	// 请求文件内容
 	requireFileContentAsyncSuccess : function(state, action) {
 		return Object.assign({}, state, {
 			currentFileObject : action.fileObject, 
@@ -18,31 +20,40 @@ const fileReducerMap = {
 	},
 	requireFileContentAsyncError : function(state, action) {
 		return Object.assign({}, state, {
-			notifications : data.msg
+			notifications : action.msg
 		});
 	},
-	// saveFileAsyncSuccess : function(state, action) {
-	// 	var currentFileContent = action.fileContent;
-	// 	return Object.assign({}, state, {currentFileContent : currentFileContent});
-	// },
-	// saveFileAsyncError : function(state, action) {
-	// 	console.log(action);
-	// 	return state;
-	// },
-	// changeFileName : function(state, action) {
-	// 	var copyCurrentFileObject = Object.assign(state.currentFileObject, {
-	// 		file_name : action.file_name
-	// 	});
-	// 	console.log(action.file_name);
-	// 	return Object.assign(state, { 
-	// 		currentFileObject : copyCurrentFileObject
-	// 	});
-	// },
+
+	// 重置状态
 	resetState : function(state, action) {
 		return Object.assign({}, state, {
 			currentFileObject : null,
 			currentFileContent : ''
 		});
+	},
+
+	// 上传文件
+	uploadFileAsyncSuccess : function(state, action) {
+		return Object.assign({}, state, {
+			notifications : action.msg
+		});
+	},
+	uploadFileAsyncError : function(state, action) {
+		return Object.assign({}, state, {
+			notifications : action.msg
+		});
+	},
+
+	downloadFile : function(state, action) {
+		return Object.assign({}, state, {
+			notifications : '下载成功'
+		});
+	},
+
+	// 取消通知
+	removeNotification : function(state, action) {
+		var newState = Object.assign({}, state, {notifications : ''});
+		return newState;
 	}
 };
 

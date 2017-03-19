@@ -1,0 +1,3431 @@
+[ 2017-03-19T15:09:13+08:00 ] 127.0.0.1 /Home/Files/downloadFile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.045978s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010685s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011044s ]
+
+[ 2017-03-19T15:09:51+08:00 ] 127.0.0.1 /Home/Files/downloadFile?filePath=./Public/files/uploadFiles/demo.txt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000790s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000855s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001046s ]
+
+[ 2017-03-19T15:14:40+08:00 ] 127.0.0.1 /Home/app/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000690s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000798s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000988s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0167s ]
+NOTIC: [8] Undefined property: ResultSet::$userinfos D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = null LIMIT 1   [ RunTime:0.0076s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 85 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 87 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 89 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = null  [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = null  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = null  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = null  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.018141s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.018541s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.215956s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.216296s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015064s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015605s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.049287s ]
+INFO: [ app_end ] --END-- [ RunTime:0.049553s ]
+
+[ 2017-03-19T15:16:07+08:00 ] 127.0.0.1 /Home/app/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000909s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001755s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0098s ]
+NOTIC: [8] Undefined property: ResultSet::$userinfos D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0490s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = null LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 85 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 87 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 89 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = null  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = null  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = null  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = null  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000287s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012766s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012971s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000680s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000857s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000916s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001082s ]
+
+[ 2017-03-19T15:16:32+08:00 ] 127.0.0.1 /Home/Login/loginAccount.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000806s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000829s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000330s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048832s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049058s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000673s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000845s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000918s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001110s ]
+
+[ 2017-03-19T15:16:41+08:00 ] 127.0.0.1 /index.php/Home/Login/handleLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000632s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000774s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'Lee' AND `password` = '123' LIMIT 1   [ RunTime:0.1070s ]
+
+[ 2017-03-19T15:16:42+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000592s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000786s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0057s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0101s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'Lee' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0094s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0102s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0086s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0085s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0058s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000319s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013392s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013610s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000740s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000929s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001182s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001465s ]
+
+[ 2017-03-19T15:16:51+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001066s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001347s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0397s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '2'  [ RunTime:0.0389s ]
+
+[ 2017-03-19T15:16:56+08:00 ] 127.0.0.1 /Home/Files/requireFileContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000650s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000572s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000720s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `think_files` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0084s ]
+
+[ 2017-03-19T15:17:29+08:00 ] 127.0.0.1 /Home/Files/saveFile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001014s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000963s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001277s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0211s ]
+SQL: UPDATE `think_files` SET `file_name`='啊克力架大卡' WHERE `id` = 10 [ RunTime:0.6332s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0174s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0116s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '2'  [ RunTime:0.0008s ]
+
+[ 2017-03-19T15:17:29+08:00 ] 127.0.0.1 /Home/Files/requireFileContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001652s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001638s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0122s ]
+SQL: SELECT * FROM `think_files` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-03-19T15:26:48+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001128s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001867s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0134s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'Lee' LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0545s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0084s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0068s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0069s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000373s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015514s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015730s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000809s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000873s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001043s ]
+
+[ 2017-03-19T15:26:52+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001071s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001414s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0081s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '2'  [ RunTime:0.0016s ]
+
+[ 2017-03-19T15:26:54+08:00 ] 127.0.0.1 /Home/Files/requireFileContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000149s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000890s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0081s ]
+SQL: SELECT * FROM `think_files` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-03-19T15:27:26+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001081s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001393s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0118s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0510s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '3'  [ RunTime:0.0007s ]
+
+[ 2017-03-19T15:27:35+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000877s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001081s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001429s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '4'  [ RunTime:0.0007s ]
+
+[ 2017-03-19T15:27:37+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000738s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000817s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001140s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0094s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '2'  [ RunTime:0.0007s ]
+
+[ 2017-03-19T15:27:38+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000716s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000889s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0112s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0498s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '3'  [ RunTime:0.0004s ]
+
+[ 2017-03-19T15:27:47+08:00 ] 127.0.0.1 /Home/Files/createFile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000104s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001521s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002171s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0149s ]
+SQL: INSERT INTO `think_files` (`file_name`,`file_path`,`from_folder_id`) VALUES ('可垃圾啊看到','./Public/files/uploadFiles/1489908467txt','3') [ RunTime:0.1244s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '3'  [ RunTime:0.0004s ]
+
+[ 2017-03-19T15:27:48+08:00 ] 127.0.0.1 /Home/Files/requireFileContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001403s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001139s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0365s ]
+SQL: SELECT * FROM `think_files` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-03-19T15:27:57+08:00 ] 127.0.0.1 /Home/Files/requireFileContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001024s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000989s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001321s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `think_files` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-03-19T15:30:55+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002945s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0114s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'Lee' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0066s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000299s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012113s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012320s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000639s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000801s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000895s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001063s ]
+
+[ 2017-03-19T15:30:59+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001019s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001187s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001572s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0111s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '3'  [ RunTime:0.0005s ]
+
+[ 2017-03-19T15:31:00+08:00 ] 127.0.0.1 /Home/Files/requireFileContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000744s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001352s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0111s ]
+SQL: SELECT * FROM `think_files` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2017-03-19T15:31:16+08:00 ] 127.0.0.1 /Home/Files/createFile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001191s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001404s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0094s ]
+SQL: INSERT INTO `think_files` (`file_name`,`file_path`,`from_folder_id`) VALUES ('考虑进来咯技术的','./Public/files/uploadFiles/1489908676txt','3') [ RunTime:0.0480s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0205s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '3'  [ RunTime:0.0005s ]
+
+[ 2017-03-19T15:31:17+08:00 ] 127.0.0.1 /Home/Files/requireFileContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001200s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001196s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001505s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `think_files` WHERE `id` = 14 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-03-19T15:35:38+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001009s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001923s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002263s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0779s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'Lee' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0068s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000304s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011814s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000828s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000957s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001129s ]
+
+[ 2017-03-19T15:35:42+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001110s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001632s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0086s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '3'  [ RunTime:0.0006s ]
+
+[ 2017-03-19T15:35:53+08:00 ] 127.0.0.1 /Home/Files/createFile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001083s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001399s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0071s ]
+SQL: INSERT INTO `think_files` (`file_name`,`file_path`,`from_folder_id`) VALUES ('可垃圾啊考试的链接阿列克斯的','./Public/files/uploadFiles/1489908953.txt','3') [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0066s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '3'  [ RunTime:0.0016s ]
+
+[ 2017-03-19T15:35:55+08:00 ] 127.0.0.1 /Home/Files/requireFileContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000749s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000950s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0108s ]
+SQL: SELECT * FROM `think_files` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-03-19T15:36:25+08:00 ] 127.0.0.1 /Home/Files/requireFileContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001068s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000948s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001227s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0089s ]
+SQL: SELECT * FROM `think_files` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-03-19T15:37:37+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000151s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001655s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001720s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0137s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'Lee' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0063s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0118s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0069s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000184s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000524s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017032s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017403s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001015s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001349s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001155s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001409s ]
+
+[ 2017-03-19T15:37:40+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000249s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001633s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001849s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0108s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '3'  [ RunTime:0.0008s ]
+
+[ 2017-03-19T15:37:42+08:00 ] 127.0.0.1 /Home/Files/requireFileContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000998s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001331s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `think_files` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2017-03-19T15:37:43+08:00 ] 127.0.0.1 /Home/Files/requireFileContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000972s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001011s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001353s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0104s ]
+SQL: SELECT * FROM `think_files` WHERE `id` = 14 LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2017-03-19T15:37:44+08:00 ] 127.0.0.1 /Home/Files/requireFileContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001174s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001344s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0113s ]
+SQL: SELECT * FROM `think_files` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2017-03-19T15:37:50+08:00 ] 127.0.0.1 /Home/Files/requireFileContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001711s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000938s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001233s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0081s ]
+SQL: SELECT * FROM `think_files` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-03-19T15:38:03+08:00 ] 127.0.0.1 /Home/Files/createFile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001224s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001533s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0118s ]
+SQL: INSERT INTO `think_files` (`file_name`,`file_path`,`from_folder_id`) VALUES ('可垃圾啊','./Public/files/uploadFiles/1489909083.txt','3') [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0505s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '3'  [ RunTime:0.0009s ]
+
+[ 2017-03-19T15:38:04+08:00 ] 127.0.0.1 /Home/Files/requireFileContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001175s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001092s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001446s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0081s ]
+SQL: SELECT * FROM `think_files` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-03-19T15:38:13+08:00 ] 127.0.0.1 /Home/Files/saveFile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001118s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000921s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001222s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0135s ]
+SQL: UPDATE `think_files` SET `file_name`='可垃圾啊' WHERE `id` = 16 [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0537s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '3'  [ RunTime:0.0008s ]
+
+[ 2017-03-19T15:38:13+08:00 ] 127.0.0.1 /Home/Files/requireFileContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000099s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002212s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002274s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `think_files` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2017-03-19T15:38:33+08:00 ] 127.0.0.1 /Home/Files/saveFile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000920s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000927s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001225s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0095s ]
+SQL: UPDATE `think_files` SET `file_name`='可垃圾啊' WHERE `id` = 16 [ RunTime:0.0796s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '3'  [ RunTime:0.0007s ]
+
+[ 2017-03-19T15:38:33+08:00 ] 127.0.0.1 /Home/Files/requireFileContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000614s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001622s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `think_files` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2017-03-19T15:38:34+08:00 ] 127.0.0.1 /Home/Files/requireFileContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000623s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000809s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001065s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `think_files` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-03-19T15:38:36+08:00 ] 127.0.0.1 /Home/Files/requireFileContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000582s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000765s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `think_files` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-03-19T15:38:37+08:00 ] 127.0.0.1 /Home/Files/requireFileContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000920s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000761s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `think_files` WHERE `id` = 14 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-03-19T15:38:38+08:00 ] 127.0.0.1 /Home/Files/requireFileContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000599s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000583s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000742s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `think_files` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-03-19T15:38:39+08:00 ] 127.0.0.1 /Home/Files/requireFileContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000601s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000573s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000747s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0084s ]
+SQL: SELECT * FROM `think_files` WHERE `id` = 14 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-03-19T15:38:40+08:00 ] 127.0.0.1 /Home/Files/requireFileContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000883s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000871s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `think_files` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-03-19T15:38:41+08:00 ] 127.0.0.1 /Home/Files/requireFileContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000664s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000770s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `think_files` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-03-19T15:40:55+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001736s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0155s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'Lee' LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0058s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000205s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000582s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018868s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019257s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001026s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001347s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001416s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001755s ]
+
+[ 2017-03-19T15:40:58+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001367s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '2'  [ RunTime:0.0006s ]
+
+[ 2017-03-19T15:41:13+08:00 ] 127.0.0.1 /Home/Files/createFile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001035s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001817s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002137s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0069s ]
+SQL: INSERT INTO `think_files` (`file_name`,`file_path`,`from_folder_id`) VALUES ('新建文件','./Public/files/uploadFiles/1489909273.md','2') [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0071s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '2'  [ RunTime:0.0006s ]
+
+[ 2017-03-19T15:41:15+08:00 ] 127.0.0.1 /Home/Files/requireFileContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001121s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001876s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002374s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0826s ]
+SQL: SELECT * FROM `think_files` WHERE `id` = 17 LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2017-03-19T15:41:41+08:00 ] 127.0.0.1 /Home/Files/saveFile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000113s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002068s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.013432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013755s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0556s ]
+SQL: UPDATE `think_files` SET `file_name`='新建文件' WHERE `id` = 17 [ RunTime:0.0069s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0119s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0119s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '2'  [ RunTime:0.0007s ]
+
+[ 2017-03-19T15:41:41+08:00 ] 127.0.0.1 /Home/Files/requireFileContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000107s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001586s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001606s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0182s ]
+SQL: SELECT * FROM `think_files` WHERE `id` = 17 LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2017-03-19T15:41:42+08:00 ] 127.0.0.1 /Home/Files/requireFileContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001039s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001061s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001370s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `think_files` WHERE `id` = 17 LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2017-03-19T15:41:43+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001017s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000947s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001238s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0570s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '3'  [ RunTime:0.0008s ]
+
+[ 2017-03-19T15:41:44+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001422s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001061s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001441s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0066s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '2'  [ RunTime:0.0006s ]
+
+[ 2017-03-19T15:41:46+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001167s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000970s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001252s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0072s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0087s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '3'  [ RunTime:0.0006s ]
+
+[ 2017-03-19T15:41:47+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000130s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.017371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017718s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0066s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '4'  [ RunTime:0.0006s ]
+
+[ 2017-03-19T15:41:50+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000106s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001363s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '2'  [ RunTime:0.0006s ]
+
+[ 2017-03-19T15:41:52+08:00 ] 127.0.0.1 /Home/Files/requireFileContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000964s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001259s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0836s ]
+SQL: SELECT * FROM `think_files` WHERE `id` = 17 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-03-19T15:42:15+08:00 ] 127.0.0.1 /index.php/Home/App/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001139s ]
+
+[ 2017-03-19T15:42:26+08:00 ] 127.0.0.1 /Home/Files/requireFileContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005648s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005964s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `think_files` WHERE `id` = 17 LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2017-03-19T15:43:21+08:00 ] 127.0.0.1 /index.php/Home/App/82660a485b572f189d09.hot-update.json
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000955s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001621s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002047s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002039s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002462s ]
+
+[ 2017-03-19T15:43:22+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001110s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000790s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0085s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'Lee' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0065s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000284s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012670s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012876s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000651s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000815s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000954s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001136s ]
+
+[ 2017-03-19T15:44:00+08:00 ] 127.0.0.1 /index.php/Home/App/1ff95d0324a0a6771285.hot-update.json
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000954s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000871s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001078s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000909s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001182s ]
+
+[ 2017-03-19T15:52:27+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001770s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0122s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '2'  [ RunTime:0.0020s ]
+
+[ 2017-03-19T15:58:04+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000666s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001046s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0111s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'Lee' LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0557s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0093s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0101s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000188s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000518s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014104s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014406s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000716s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000897s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001041s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001223s ]
+
+[ 2017-03-19T16:00:10+08:00 ] 127.0.0.1 /index.php/Home/App/ba5262842b46bc7dd72b.hot-update.json
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000105s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001720s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000939s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001167s ]
+
+[ 2017-03-19T16:00:13+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000829s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000828s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0096s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'Lee' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0055s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000307s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014672s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015048s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000915s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001161s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000663s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000876s ]
+
+[ 2017-03-19T16:02:48+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000668s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000795s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000983s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0087s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'Lee' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000388s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012159s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012446s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000712s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000881s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000767s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000950s ]
+
+[ 2017-03-19T16:04:49+08:00 ] 127.0.0.1 /index.php/Home/App/a8d4f634b5c53cf1e984.hot-update.json
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000111s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001841s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001626s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002285s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000780s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000965s ]
+
+[ 2017-03-19T16:06:24+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000596s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001698s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002084s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0096s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'Lee' LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0452s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0057s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000140s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000369s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014556s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014787s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000830s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001037s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000834s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001044s ]
+
+[ 2017-03-19T16:07:51+08:00 ] 127.0.0.1 /index.php/Home/App/acf3bd1bcdc22474997f.hot-update.json
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000887s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001102s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000784s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001046s ]
+
+[ 2017-03-19T16:09:55+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000968s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000852s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001060s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0092s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0122s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'Lee' LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0529s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0098s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0082s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000169s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000428s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012407s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012796s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001098s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001440s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000790s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000962s ]
+
+[ 2017-03-19T16:11:35+08:00 ] 127.0.0.1 /index.php/Home/App/72a021dba7ea30d20097.hot-update.json
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000740s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001044s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000738s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-03-19T16:17:33+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000844s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000839s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001019s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0084s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'Lee' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000290s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011899s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012098s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000661s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000830s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000756s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000939s ]
+
+[ 2017-03-19T16:17:37+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001067s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001201s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001926s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0071s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '2'  [ RunTime:0.0009s ]
+
+[ 2017-03-19T16:17:48+08:00 ] 127.0.0.1 /Home/Files/createFile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000613s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000759s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0459s ]
+SQL: INSERT INTO `think_files` (`file_name`,`file_path`,`from_folder_id`) VALUES ('可垃圾啊考试的','./Public/files/uploadFiles/1489911468.md','2') [ RunTime:0.0065s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0069s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '2'  [ RunTime:0.0005s ]
+
+[ 2017-03-19T16:17:51+08:00 ] 127.0.0.1 /Home/Files/requireFileContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000601s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000728s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `think_files` WHERE `id` = 18 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-03-19T16:17:52+08:00 ] 127.0.0.1 /Home/Files/requireFileContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000598s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000566s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000710s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `think_files` WHERE `id` = 17 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-03-19T16:17:53+08:00 ] 127.0.0.1 /Home/Files/requireFileContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000893s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001164s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0081s ]
+SQL: SELECT * FROM `think_files` WHERE `id` = 18 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-03-19T16:18:01+08:00 ] 127.0.0.1 /Home/Files/requireFileContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000658s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000823s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `think_files` WHERE `id` = 18 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-03-19T16:18:03+08:00 ] 127.0.0.1 /Home/Files/requireFileContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000616s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000733s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `think_files` WHERE `id` = 18 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-03-19T16:18:04+08:00 ] 127.0.0.1 /Home/Files/requireFileContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000642s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000745s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `think_files` WHERE `id` = 17 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-03-19T16:18:04+08:00 ] 127.0.0.1 /Home/Files/requireFileContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000620s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000729s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `think_files` WHERE `id` = 18 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-03-19T16:18:09+08:00 ] 127.0.0.1 /Home/Files/saveFile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000923s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000886s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001211s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0082s ]
+SQL: UPDATE `think_files` SET `file_name`='可垃圾啊考试的' WHERE `id` = 18 [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0509s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '2'  [ RunTime:0.0004s ]
+
+[ 2017-03-19T16:18:09+08:00 ] 127.0.0.1 /Home/Files/requireFileContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001021s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001190s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001485s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `think_files` WHERE `id` = 18 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-03-19T16:18:11+08:00 ] 127.0.0.1 /Home/Files/requireFileContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000592s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000790s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `think_files` WHERE `id` = 18 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-03-19T16:18:12+08:00 ] 127.0.0.1 /Home/Files/requireFileContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000880s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000635s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000801s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `think_files` WHERE `id` = 17 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-03-19T16:18:13+08:00 ] 127.0.0.1 /Home/Files/requireFileContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000680s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000732s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `think_files` WHERE `id` = 18 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-03-19T16:18:14+08:00 ] 127.0.0.1 /Home/Files/requireFileContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000616s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000719s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `think_files` WHERE `id` = 17 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-03-19T16:18:15+08:00 ] 127.0.0.1 /Home/Files/requireFileContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000743s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `think_files` WHERE `id` = 18 LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2017-03-19T16:20:22+08:00 ] 127.0.0.1 /index.php/Home/App/089bb1f4df684abb0f26.hot-update.json
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000941s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001181s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001243s ]
+
+[ 2017-03-19T16:42:30+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000799s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000911s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001093s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0094s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0139s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'Lee' LIMIT 1   [ RunTime:0.0011s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0480s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0104s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000162s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000533s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012183s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012402s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000679s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000853s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000881s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001049s ]
+
+[ 2017-03-19T16:43:21+08:00 ] 127.0.0.1 /index.php/Home/App/c9e3587eee2b94ea48bc.hot-update.json
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001183s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001180s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001593s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000883s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001160s ]
+
+[ 2017-03-19T16:43:32+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000588s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001602s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0088s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'Lee' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000340s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011484s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011696s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000829s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000848s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001020s ]
+
+[ 2017-03-19T16:43:35+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001106s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000937s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001200s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'Lee' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000315s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013746s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013942s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000667s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000833s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000879s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001050s ]
+
+[ 2017-03-19T16:43:46+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001525s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000676s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000937s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0121s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'Lee' LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0057s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000438s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015036s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015338s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001442s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001292s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001552s ]
+
+[ 2017-03-19T16:43:56+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000743s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001179s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001512s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0524s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '2'  [ RunTime:0.0006s ]
+
+[ 2017-03-19T16:44:04+08:00 ] 127.0.0.1 /Home/Files/uploadFile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001005s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001298s ]
+NOTIC: [8] Undefined index: files D:\wamp\www\Daily\Application\Home\Controller\FilesController.class.php 第 105 行.
+
+[ 2017-03-19T16:44:35+08:00 ] 127.0.0.1 /index.php/Home/App/da15ab375ef2f4d8f8b9.hot-update.json
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001149s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000866s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001054s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001358s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001638s ]
+
+[ 2017-03-19T16:46:12+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000938s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000969s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001256s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0099s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'Lee' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0057s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000141s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000534s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011872s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012143s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000649s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000816s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000816s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000988s ]
+
+[ 2017-03-19T16:46:23+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001787s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '3'  [ RunTime:0.0009s ]
+
+[ 2017-03-19T16:46:34+08:00 ] 127.0.0.1 /Home/Files/uploadFile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001106s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000998s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001301s ]
+NOTIC: [8] Undefined index: files D:\wamp\www\Daily\Application\Home\Controller\FilesController.class.php 第 105 行.
+
+[ 2017-03-19T16:47:24+08:00 ] 127.0.0.1 /index.php/Home/App/b1f607fd1e19fd365dad.hot-update.json
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000084s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001523s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001966s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001776s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002231s ]
+
+[ 2017-03-19T16:47:26+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001123s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001508s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0106s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'Lee' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000183s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000580s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011437s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011637s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000671s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000882s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000837s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001005s ]
+
+[ 2017-03-19T16:47:29+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000885s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000721s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000927s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0264s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '2'  [ RunTime:0.0007s ]
+
+[ 2017-03-19T16:47:37+08:00 ] 127.0.0.1 /Home/Files/uploadFile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001134s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001491s ]
+NOTIC: [8] Undefined index: files D:\wamp\www\Daily\Application\Home\Controller\FilesController.class.php 第 105 行.
+
+[ 2017-03-19T16:49:18+08:00 ] 127.0.0.1 /index.php/Home/App/b309af16c4e973e401d8.hot-update.json
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001067s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001060s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001419s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001470s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001849s ]
+
+[ 2017-03-19T16:50:51+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000956s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000869s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001070s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0095s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'Lee' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000341s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011732s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011932s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000716s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000902s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000973s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001176s ]
+
+[ 2017-03-19T16:50:54+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000645s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001147s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001457s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0167s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '3'  [ RunTime:0.0023s ]
+
+[ 2017-03-19T16:51:00+08:00 ] 127.0.0.1 /Home/Files/uploadFile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001178s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001240s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001833s ]
+NOTIC: [8] Undefined index: files D:\wamp\www\Daily\Application\Home\Controller\FilesController.class.php 第 105 行.
+
+[ 2017-03-19T16:51:39+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000117s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001125s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001618s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002041s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'Lee' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0066s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000198s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000534s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018176s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018554s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000927s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001291s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001359s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001713s ]
+
+[ 2017-03-19T16:51:42+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001715s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0290s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0087s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '2'  [ RunTime:0.0006s ]
+
+[ 2017-03-19T16:51:47+08:00 ] 127.0.0.1 /Home/Files/uploadFile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001038s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000906s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001358s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001459s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001790s ]
+
+[ 2017-03-19T17:08:00+08:00 ] 127.0.0.1 /index.php/Home/App/950209d4edffa0339a0c.hot-update.json
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000740s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000906s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001095s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001144s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001487s ]
+
+[ 2017-03-19T17:08:20+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001124s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001198s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001572s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0141s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'Lee' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0533s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000350s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012620s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012826s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000737s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000900s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000836s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001029s ]
+
+[ 2017-03-19T17:08:24+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001175s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001507s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0075s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0102s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '2'  [ RunTime:0.0006s ]
+
+[ 2017-03-19T17:08:33+08:00 ] 127.0.0.1 /Home/Files/uploadFile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001006s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000694s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000860s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0050s ]
+SQL: INSERT INTO `think_files` (`file_name`,`file_path`,`from_folder_id`) VALUES ('上传文件','./Public/files/uploadFiles/1489914513.md','2') [ RunTime:0.0019s ]
+
+[ 2017-03-19T17:09:20+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000797s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001718s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0075s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'Lee' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000283s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011933s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012121s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000824s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000802s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000973s ]
+
+[ 2017-03-19T17:09:41+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000566s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001491s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0087s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'Lee' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000374s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011170s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011366s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000815s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000824s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000992s ]
+
+[ 2017-03-19T17:09:44+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001671s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0078s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '2'  [ RunTime:0.0005s ]
+
+[ 2017-03-19T17:09:49+08:00 ] 127.0.0.1 /Home/Files/uploadFile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001060s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001163s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001642s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0086s ]
+SQL: INSERT INTO `think_files` (`file_name`,`file_path`,`from_folder_id`) VALUES ('上传文件','./Public/files/uploadFiles/1489914589.md','2') [ RunTime:0.0012s ]
+
+[ 2017-03-19T17:11:18+08:00 ] 127.0.0.1 /Home/Files/requireFileContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002182s ]
+NOTIC: [2] preg_match(): Null byte in regex D:\wamp\www\Daily\ThinkPHP\Library\Vendor\markdown\markdown.class.php 第 114 行.
+NOTIC: [2] preg_match():  D:\wamp\www\Daily\ThinkPHP\Library\Vendor\markdown\markdown.class.php 第 114 行.
+NOTIC: [2] preg_match(): Null byte in regex D:\wamp\www\Daily\ThinkPHP\Library\Vendor\markdown\markdown.class.php 第 114 行.
+NOTIC: [2] preg_match(): Null byte in regex D:\wamp\www\Daily\ThinkPHP\Library\Vendor\markdown\markdown.class.php 第 114 行.
+NOTIC: [2] preg_match(): Null byte in regex D:\wamp\www\Daily\ThinkPHP\Library\Vendor\markdown\markdown.class.php 第 114 行.
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `think_files` WHERE `id` = 19 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-03-19T17:11:27+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000718s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001812s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0092s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0137s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'Lee' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0458s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000422s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011911s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012204s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001033s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001280s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000984s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001176s ]
+
+[ 2017-03-19T17:11:31+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000082s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001120s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001561s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '2'  [ RunTime:0.0007s ]
+
+[ 2017-03-19T17:11:33+08:00 ] 127.0.0.1 /Home/Files/requireFileContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000129s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000901s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000674s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000886s ]
+NOTIC: [2] preg_match(): Null byte in regex D:\wamp\www\Daily\ThinkPHP\Library\Vendor\markdown\markdown.class.php 第 114 行.
+NOTIC: [2] preg_match(): Null byte in regex D:\wamp\www\Daily\ThinkPHP\Library\Vendor\markdown\markdown.class.php 第 114 行.
+NOTIC: [2] preg_match(): Null byte in regex D:\wamp\www\Daily\ThinkPHP\Library\Vendor\markdown\markdown.class.php 第 114 行.
+NOTIC: [2] preg_match(): Null byte in regex D:\wamp\www\Daily\ThinkPHP\Library\Vendor\markdown\markdown.class.php 第 114 行.
+NOTIC: [2] preg_match(): Null byte in regex D:\wamp\www\Daily\ThinkPHP\Library\Vendor\markdown\markdown.class.php 第 114 行.
+NOTIC: [2] preg_match(): Null byte in regex D:\wamp\www\Daily\ThinkPHP\Library\Vendor\markdown\markdown.class.php 第 114 行.
+NOTIC: [2] preg_match(): Null byte in regex D:\wamp\www\Daily\ThinkPHP\Library\Vendor\markdown\markdown.class.php 第 114 行.
+NOTIC: [2] preg_match(): Null byte in regex D:\wamp\www\Daily\ThinkPHP\Library\Vendor\markdown\markdown.class.php 第 114 行.
+NOTIC: [2] preg_match(): Unknown modifier ''' D:\wamp\www\Daily\ThinkPHP\Library\Vendor\markdown\markdown.class.php 第 114 行.
+NOTIC: [2] preg_match():  D:\wamp\www\Daily\ThinkPHP\Library\Vendor\markdown\markdown.class.php 第 114 行.
+NOTIC: [2] preg_match(): Null byte in regex D:\wamp\www\Daily\ThinkPHP\Library\Vendor\markdown\markdown.class.php 第 114 行.
+NOTIC: [2] preg_match(): Null byte in regex D:\wamp\www\Daily\ThinkPHP\Library\Vendor\markdown\markdown.class.php 第 114 行.
+NOTIC: [2] preg_match(): Null byte in regex D:\wamp\www\Daily\ThinkPHP\Library\Vendor\markdown\markdown.class.php 第 114 行.
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0081s ]
+SQL: SELECT * FROM `think_files` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-03-19T17:11:43+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000804s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0106s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'Lee' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0055s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000297s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010696s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010884s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000815s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000814s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000982s ]
+
+[ 2017-03-19T17:11:47+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000165s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001541s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001713s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002042s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0229s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '3'  [ RunTime:0.0004s ]
+
+[ 2017-03-19T17:12:56+08:00 ] 127.0.0.1 /index.php/Home/App/c29777e71d00c4a97e40.hot-update.json
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000669s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001054s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001266s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001572s ]
+
+[ 2017-03-19T17:13:22+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000848s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001032s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'Lee' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0061s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000412s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012586s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012786s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000974s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001236s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000982s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001163s ]
+
+[ 2017-03-19T17:13:25+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001026s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001609s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0096s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '2'  [ RunTime:0.0006s ]
+
+[ 2017-03-19T17:13:34+08:00 ] 127.0.0.1 /Home/Files/uploadFile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000982s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001004s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001321s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0074s ]
+SQL: INSERT INTO `think_files` (`file_name`,`file_path`,`from_folder_id`) VALUES ('上传文件','./Public/files/uploadFiles/1489914814.md','2') [ RunTime:0.0014s ]
+NOTIC: [8] Use of undefined constant successMsg - assumed 'successMsg' D:\wamp\www\Daily\Application\Home\Controller\FilesController.class.php 第 119 行.
+
+[ 2017-03-19T17:14:24+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000705s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000944s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001220s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0081s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'Lee' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0055s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000292s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011171s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011365s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000752s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000954s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001330s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001576s ]
+
+[ 2017-03-19T17:14:27+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001626s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000953s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0097s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '2'  [ RunTime:0.0006s ]
+
+[ 2017-03-19T17:14:30+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000604s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000838s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0083s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'Lee' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0094s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0083s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000304s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011217s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011424s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000902s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000939s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001208s ]
+
+[ 2017-03-19T17:14:34+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001366s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0105s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '2'  [ RunTime:0.0004s ]
+
+[ 2017-03-19T17:14:35+08:00 ] 127.0.0.1 /Home/Files/deleteFile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001197s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001517s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0063s ]
+SQL: DELETE FROM `think_files` WHERE `id` = 21 [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '2'  [ RunTime:0.0006s ]
+
+[ 2017-03-19T17:14:46+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000944s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000773s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0087s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0103s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'Lee' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0055s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000333s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013312s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013527s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000741s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000943s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001011s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001209s ]
+
+[ 2017-03-19T17:14:49+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001136s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001595s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0257s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '2'  [ RunTime:0.0007s ]
+
+[ 2017-03-19T17:14:58+08:00 ] 127.0.0.1 /Home/Files/createFile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001016s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001298s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0088s ]
+SQL: INSERT INTO `think_files` (`file_name`,`file_path`,`from_folder_id`) VALUES ('可垃圾啊是的','./Public/files/uploadFiles/1489914898.md','2') [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0451s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '2'  [ RunTime:0.0006s ]
+
+[ 2017-03-19T17:15:00+08:00 ] 127.0.0.1 /Home/Files/requireFileContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000611s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000734s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0081s ]
+SQL: SELECT * FROM `think_files` WHERE `id` = 22 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-03-19T17:15:01+08:00 ] 127.0.0.1 /Home/Files/requireFileContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000774s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000854s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001109s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `think_files` WHERE `id` = 18 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-03-19T17:15:02+08:00 ] 127.0.0.1 /Home/Files/requireFileContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000924s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001219s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0095s ]
+SQL: SELECT * FROM `think_files` WHERE `id` = 17 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-03-19T17:15:03+08:00 ] 127.0.0.1 /Home/Files/requireFileContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000620s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000888s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001162s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0084s ]
+SQL: SELECT * FROM `think_files` WHERE `id` = 22 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-03-19T17:15:57+08:00 ] 127.0.0.1 /index.php/Home/App/93e4fe5cac873577d8f8.hot-update.json
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001129s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001794s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000925s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001135s ]
+
+[ 2017-03-19T17:19:17+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000732s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001733s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'Lee' LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0456s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000310s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011411s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000676s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000838s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000921s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001112s ]
+
+[ 2017-03-19T17:19:21+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001510s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0082s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '3'  [ RunTime:0.0005s ]
+
+[ 2017-03-19T17:19:58+08:00 ] 127.0.0.1 /index.php/Home/App/08d5c3b571aa883d5241.hot-update.json
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001121s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001113s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001503s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000876s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001158s ]
+
+[ 2017-03-19T17:34:34+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000702s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002215s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002515s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0730s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'Lee' LIMIT 1   [ RunTime:0.0009s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0513s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0092s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0087s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0061s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000313s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012901s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013155s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000683s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000858s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000947s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001124s ]
+
+[ 2017-03-19T17:34:37+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001065s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000787s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001031s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0072s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '2'  [ RunTime:0.0009s ]
+
+[ 2017-03-19T17:34:39+08:00 ] 127.0.0.1 /Home/Files/requireFileContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000586s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000843s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001084s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `think_files` WHERE `id` = 18 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-03-19T17:34:42+08:00 ] 127.0.0.1 /Home/Files/downloadFile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000997s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001446s ]
+
+[ 2017-03-19T17:40:02+08:00 ] 127.0.0.1 /index.php/Home/App/b990770a258d54e81baf.hot-update.json
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001038s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001686s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001768s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002302s ]
+
+[ 2017-03-19T17:46:32+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002508s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002150s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002569s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0152s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0229s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'Lee' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0452s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0061s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000283s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013833s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014149s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000958s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001202s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001247s ]
+
+[ 2017-03-19T17:46:35+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001004s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000990s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001298s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0102s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '2'  [ RunTime:0.0006s ]
+
+[ 2017-03-19T17:46:37+08:00 ] 127.0.0.1 /Home/Files/requireFileContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002472s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0087s ]
+SQL: SELECT * FROM `think_files` WHERE `id` = 17 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-03-19T17:46:41+08:00 ] 127.0.0.1 /Home/Files/downloadFile?file_name=%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6file_path=./Public/files/uploadFiles/1489909273.md
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001040s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002169s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002680s ]
+
+[ 2017-03-19T17:47:33+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001182s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001112s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001602s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0107s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'Lee' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000424s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011342s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011531s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000649s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000810s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000808s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2017-03-19T17:47:35+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001155s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001329s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0102s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '2'  [ RunTime:0.0004s ]
+
+[ 2017-03-19T17:47:36+08:00 ] 127.0.0.1 /Home/Files/requireFileContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000609s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000774s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `think_files` WHERE `id` = 18 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-03-19T17:47:39+08:00 ] 127.0.0.1 /Home/Files/downloadFile?file_name=%E5%8F%AF%E5%9E%83%E5%9C%BE%E5%95%8A%E8%80%83%E8%AF%95%E7%9A%84&file_path=./Public/files/uploadFiles/1489911468.md
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001052s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002051s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001477s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001892s ]
+
+[ 2017-03-19T17:48:09+08:00 ] 127.0.0.1 /index.php/Home/App/22823458bd8869e49320.hot-update.json
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001079s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000641s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000870s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001676s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002082s ]
+
+[ 2017-03-19T17:52:05+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000082s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001197s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003755s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004501s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'Lee' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000309s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011734s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000704s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000872s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000887s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001056s ]
+
+[ 2017-03-19T17:52:18+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000562s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000620s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000794s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0095s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'Lee' LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0085s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0096s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0086s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000315s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012076s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012284s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000722s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000900s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000883s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001065s ]
+
+[ 2017-03-19T17:52:22+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001187s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001142s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001468s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0093s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '2'  [ RunTime:0.0013s ]
+
+[ 2017-03-19T17:52:51+08:00 ] 127.0.0.1 /index.php/Home/App/1d7513b0936467a43f6b.hot-update.json
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001783s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001542s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001919s ]
+
+[ 2017-03-19T17:52:54+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000965s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000957s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001314s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0091s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'Lee' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0058s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0058s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000285s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011487s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011991s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001237s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001593s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001494s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001883s ]
+
+[ 2017-03-19T17:52:59+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000612s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000937s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0089s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'Lee' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000174s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000474s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011301s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011493s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000667s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000832s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000815s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000994s ]
+
+[ 2017-03-19T17:53:02+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001344s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001165s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001501s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0099s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '2'  [ RunTime:0.0005s ]
+
+[ 2017-03-19T17:53:06+08:00 ] 127.0.0.1 /Home/Files/requireFileContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000720s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `think_files` WHERE `id` = 18 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-03-19T17:53:08+08:00 ] 127.0.0.1 /Home/Files/downloadFile?file_name=%E5%8F%AF%E5%9E%83%E5%9C%BE%E5%95%8A%E8%80%83%E8%AF%95%E7%9A%84&file_path=./Public/files/uploadFiles/1489911468.md
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001128s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000806s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000814s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000991s ]
+
+[ 2017-03-19T17:53:24+08:00 ] 127.0.0.1 /index.php/Home/App/0efd6a1d55d8ffa5afb8.hot-update.json
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000965s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000994s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001326s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001582s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002805s ]
+
+[ 2017-03-19T17:54:41+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000666s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001040s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0084s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'Lee' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0058s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000301s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011604s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011837s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000845s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001024s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001236s ]
+
+[ 2017-03-19T17:54:43+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000127s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001346s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001167s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001388s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0094s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '2'  [ RunTime:0.0004s ]
+
+[ 2017-03-19T17:54:45+08:00 ] 127.0.0.1 /Home/Files/requireFileContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000586s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000762s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0097s ]
+SQL: SELECT * FROM `think_files` WHERE `id` = 18 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-03-19T17:54:48+08:00 ] 127.0.0.1 /Home/Files/downloadFile?file_name=%E5%8F%AF%E5%9E%83%E5%9C%BE%E5%95%8A%E8%80%83%E8%AF%95%E7%9A%84file_path=./Public/files/uploadFiles/1489911468.md
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000632s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000902s ]
+
+[ 2017-03-19T17:55:49+08:00 ] 127.0.0.1 /index.php/Home/App/1c5f0e5872d9e78a46d7.hot-update.json
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001022s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001005s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001372s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000847s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001034s ]
+
+[ 2017-03-19T17:58:05+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000146s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000844s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001083s ]
+
+[ 2017-03-19T17:58:17+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000855s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'Lee' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000322s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012506s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012870s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001310s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001665s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001025s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001268s ]
+
+[ 2017-03-19T17:58:21+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001807s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002341s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0069s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '2'  [ RunTime:0.0007s ]
+
+[ 2017-03-19T17:58:22+08:00 ] 127.0.0.1 /Home/Files/requireFileContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001020s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001010s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001328s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `think_files` WHERE `id` = 17 LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2017-03-19T17:58:25+08:00 ] 127.0.0.1 /Home/Files/downloadFile?file_name=%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6file_path=./Public/files/uploadFiles/1489909273.md
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000952s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001291s ]
+
+[ 2017-03-19T17:59:05+08:00 ] 127.0.0.1 /Home/Files/downloadFile?file_name=%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6file_path=./Public/files/uploadFiles/1489909273.md
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001136s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000878s ]
+
+[ 2017-03-19T17:59:08+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000657s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000788s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001082s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0094s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'Lee' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0057s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000283s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012458s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012660s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000653s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000826s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001299s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001654s ]
+
+[ 2017-03-19T17:59:11+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001195s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001577s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '2'  [ RunTime:0.0007s ]
+
+[ 2017-03-19T17:59:13+08:00 ] 127.0.0.1 /Home/Files/requireFileContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000973s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001252s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `think_files` WHERE `id` = 17 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-03-19T17:59:16+08:00 ] 127.0.0.1 /Home/Files/downloadFile?file_name=%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6&file_path=./Public/files/uploadFiles/1489909273.md
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001206s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001667s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001156s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001494s ]
+
+[ 2017-03-19T18:01:11+08:00 ] 127.0.0.1 /Home/Files/downloadFile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001834s ]
+
+[ 2017-03-19T18:01:16+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000619s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000767s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0114s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'Lee' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0057s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000287s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011214s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011412s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000850s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001091s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001108s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001368s ]
+
+[ 2017-03-19T18:01:20+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001026s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001277s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0102s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '3'  [ RunTime:0.0005s ]
+
+[ 2017-03-19T18:01:22+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001083s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001552s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0097s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '4'  [ RunTime:0.0004s ]
+
+[ 2017-03-19T18:01:23+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000753s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000798s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0386s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '2'  [ RunTime:0.0005s ]
+
+[ 2017-03-19T18:02:32+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000670s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000989s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0078s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '3'  [ RunTime:0.0011s ]
+
+[ 2017-03-19T18:02:33+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001209s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0114s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '4'  [ RunTime:0.0004s ]
+
+[ 2017-03-19T18:02:36+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001015s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002986s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0096s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `think_Calendars` INNER JOIN think_affairs on think_calendars.id = think_affairs.from_calendar_id  WHERE think_calendars.id = '1'  [ RunTime:0.0007s ]
+
+[ 2017-03-19T18:02:37+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000657s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001453s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001769s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `think_Calendars` INNER JOIN think_affairs on think_calendars.id = think_affairs.from_calendar_id  WHERE think_calendars.id = '2'  [ RunTime:0.0006s ]
+
+[ 2017-03-19T18:02:38+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000821s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000761s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0074s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `think_Calendars` INNER JOIN think_affairs on think_calendars.id = think_affairs.from_calendar_id  WHERE think_calendars.id = '3'  [ RunTime:0.0005s ]
+
+[ 2017-03-19T18:02:41+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001051s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001084s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001387s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0099s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '2'  [ RunTime:0.0006s ]
+
+[ 2017-03-19T18:02:43+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001384s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0101s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '3'  [ RunTime:0.0007s ]
+
+[ 2017-03-19T18:41:55+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000144s ]
+INFO: [ app_init ] --END-- [ RunTime:0.014126s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.016911s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017455s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0154s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'Lee' LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant imUserInfos - assumed 'imUserInfos' D:\wamp\www\Daily\Application\Home\Controller\AppController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0058s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0066s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0105s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0102s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0075s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0089s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = 1  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000223s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000586s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.120969s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.121552s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.037683s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.038255s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.061185s ]
+INFO: [ app_end ] --END-- [ RunTime:0.061699s ]
+
+[ 2017-03-19T18:41:58+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000116s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001004s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001325s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0112s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '2'  [ RunTime:0.0006s ]
+
+[ 2017-03-19T18:42:04+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001143s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000818s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001022s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0105s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '3'  [ RunTime:0.0006s ]
+
+[ 2017-03-19T18:42:07+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000896s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000856s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001091s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0093s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0700s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '4'  [ RunTime:0.0004s ]
+
+[ 2017-03-19T18:42:08+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000908s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000959s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001237s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0095s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '2'  [ RunTime:0.0005s ]
+
+[ 2017-03-19T18:42:15+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001125s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000975s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001252s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0229s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0211s ]
+SQL: SELECT * FROM `think_Calendars` INNER JOIN think_affairs on think_calendars.id = think_affairs.from_calendar_id  WHERE think_calendars.id = '1'  [ RunTime:0.0005s ]
+
+[ 2017-03-19T18:42:19+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000894s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000700s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000860s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '2'  [ RunTime:0.0004s ]
+
+[ 2017-03-19T18:42:20+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000729s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000852s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001119s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '3'  [ RunTime:0.0004s ]
+
+[ 2017-03-19T18:42:23+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001515s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000755s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000985s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0087s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `think_Calendars` INNER JOIN think_affairs on think_calendars.id = think_affairs.from_calendar_id  WHERE think_calendars.id = '1'  [ RunTime:0.0004s ]
+
+[ 2017-03-19T18:43:55+08:00 ] 127.0.0.1 /index.php/Home/App/66663e0af09659c4417f.hot-update.json
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001173s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000887s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001071s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000848s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001035s ]
+

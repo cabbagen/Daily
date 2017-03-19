@@ -1,6 +1,7 @@
 import React, { PropTypes, Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
+import { notification } from 'antd';
 import actions from '../actions';
 
 import FilterFiles from '../components/FilterFiles.jsx';
@@ -12,6 +13,25 @@ import styles from '../container/file.less';
 class File extends Component {
 	constructor(props) {
 		super(props);
+	}
+
+	componentWillUpdate(nextProps) {
+		var { fileActions, fileState } = nextProps;
+		var isShowNotification = fileState.notifications.length > 0 ? true : false;
+
+		if(isShowNotification) {
+			this.showNotification(fileState.notifications);
+		}
+	}
+
+	showNotification(description) {
+		var { fileActions } = this.props;
+		notification.open({
+			message: '系统通知',
+			description: description
+		});
+
+		fileActions.removeNotification();
 	}
 
 	render() {

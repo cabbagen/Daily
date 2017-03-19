@@ -15,7 +15,19 @@ function* requireFileContentAsync(action) {
 	}
 }
 
+// 上传文件
+function* uploadFileAsync(action) {
+	var data = yield call(servers.fileServer.uploadFileAsync, action.params);
+	if(data.status && data.status === 200) {
+		yield put({type : 'uploadFileAsyncSuccess', msg : data.successMsg});
+	} else if(data.status && data.status !== 200) {
+		yield put({type : 'uploadFileAsyncError', msg : data.msg});
+	} else {
+		yield put({type : 'uploadFileAsyncError', msg : data.msg});
+	}
+}
 
 export function* watchFile() {
 	yield takeEvery('requireFileContent', requireFileContentAsync);
+	yield takeEvery('uploadFile', uploadFileAsync);
 };

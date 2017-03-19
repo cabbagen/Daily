@@ -24,6 +24,9 @@ ReactDom.render(
 				<Route path="/folders/:folders" component={Pagination.file}>
 					<Route path="/folders/:folders/:file" />
 				</Route>
+				<Route path="/calendars/:calendars" component={Pagination.calendar}>
+					<Route path="/calendars/:calendars/:calendar" />
+				</Route>
 			</Route>
 		</Router>
 	</Provider>
