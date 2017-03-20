@@ -109,7 +109,7 @@ function* addMenuCategoryItemAsync(action) {
 	}
 }
 
-// 删除二级列表 由于数据源放在 mainState 中， 所以相关的`增删`行为放置在这里`改查`行为放在对应的页面里
+// 删除二级列表 由于数据源放在 mainState 中， 所以相关的`增删改查``行为放置在这里
 
 // 删除文件
 function* deleteFileAsync(action) {
@@ -159,7 +159,29 @@ function* saveFileAsync(action) {
 	}
 }
 
+// 删除日程任务
+function* deleteAffairAsync(action) {
+	var data = yield call(servers.calendarServer.deleteAffairAsync, action.affairId, action.from_calendar_id);
+	if(data.status && data.status === 200) {
+		yield put({type : 'deleteAffairAsyncSuccess', calendarsCategoryItem : data.affairList});
+	} else if(data.status && data.status !== 200) {
+		yield put({type : 'deleteAffairAsyncError', msg : data.msg});
+	} else {
+		yield put({type : 'deleteAffairAsyncError', msg : data.msg});
+	}
+}
 
+// 更新日程
+function* updateAffairAsync(action) {
+	var data = yield call(servers.calendarServer.updateAffairAsync, action.params);
+	if(data.status && data.status === 200) {
+		yield put({type : 'updateAffairAsyncSuccess', calendarsCategoryItem : data.affairList});
+	} else if(data.status && data.status !== 200) {
+		yield put({type : 'updateAffairAsyncError', msg : data.msg});
+	} else {
+		yield put({type : 'updateAffairAsyncError', msg : data.msg});
+	}
+}
 
 export function* watchMain() {
 	// 发送邀请邮件
@@ -181,4 +203,7 @@ export function* watchMain() {
 	yield takeEvery('deleteFile', deleteFileAsync);
 	yield takeEvery('createFile', createFileAsync);
 	yield takeEvery('updateFile', updateFileAsync);
+
+	yield takeEvery('deleteAffair', deleteAffairAsync);
+	yield takeEvery('updateAffair', updateAffairAsync);
 };

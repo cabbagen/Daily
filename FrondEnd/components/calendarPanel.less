@@ -1,7 +1,31 @@
-.calendarPanel {
-  width: 720px;
+@width: 700px;
+@border-color: #eeeeee;
+
+.calendar_panel {
+  width: @width;
+  height: 450px;
+  float: left;
+}
+.calendar_panel_header {
+  width: @width;
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid @border-color;
+
+  button {
+    margin-left: 10px;
+  }
+  i {
+    font-size: 20px;
+    margin: 16px 10px 0px 0px;
+    float: right;
+    cursor: pointer;
+  }
+}
+.calendar_panel_content {
+  width: @width;
   height: 400px;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 .events {

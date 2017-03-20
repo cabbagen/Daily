@@ -2,7 +2,7 @@
 	namespace Home\Controller;
 	use Home\Controller;
 
-	class EmailController extends ImController {
+	class EmailController extends BaseController {
 
 		private $inviteTitle = "来自sessino('username')的邀请函";
 

@@ -78,7 +78,7 @@ class Sider extends Component {
 		var calendarsNodes = calendarsInfo.map((calendarObject, calendarIndex) => {
 			return (
 				<Menu.Item key={`${subMenuKey}-${calendarIndex}`}>
-					<Link to={`/web/${calendarObject.calendar_name}`} onClick={this.menuCategoryLinkTo.bind(this, subMenuKey, calendarObject.id)}>{calendarObject.calendar_name}</Link>
+					<Link to={`/calendars/${calendarObject.calendar_name}`} onClick={this.menuCategoryLinkTo.bind(this, subMenuKey, calendarObject.id)}>{calendarObject.calendar_name}</Link>
 				</Menu.Item>
 			);
 		});
@@ -95,7 +95,7 @@ class Sider extends Component {
 		var usersNodes = categorysInfo.map((categoryObject, categoryIndex) => {
 			return (
 				<Menu.Item key={`${subMenuKey}-${categoryIndex}`}>
-					<Link to={`/web/${categoryObject.category_name}`} onClick={this.menuCategoryLinkTo.bind(this, subMenuKey, categoryObject.id)}>{categoryObject.category_name}</Link>
+					<Link to={`/categorys/${categoryObject.category_name}`} onClick={this.menuCategoryLinkTo.bind(this, subMenuKey, categoryObject.id)}>{categoryObject.category_name}</Link>
 				</Menu.Item>
 			);
 		});
@@ -112,7 +112,7 @@ class Sider extends Component {
 		var groupsNodes = groupsInfo.map((groupObject, groupIndex) => {
 			return (
 				<Menu.Item key={`${subMenuKey}-${groupIndex}`}>
-					<Link to={`/web/${groupObject.group_name}`} onClick={this.menuCategoryLinkTo.bind(this, subMenuKey, groupObject.id)}>{groupObject.group_name}</Link>
+					<Link to={`/groups/${groupObject.group_name}`} onClick={this.menuCategoryLinkTo.bind(this, subMenuKey, groupObject.id)}>{groupObject.group_name}</Link>
 				</Menu.Item>
 			);
 		});
@@ -129,7 +129,7 @@ class Sider extends Component {
 		var sharesNodes = sharesInfo.map((shareObject, shareIndex) => {
 			return (
 				<Menu.Item key={`${subMenuKey}-${shareIndex}`}>
-					<Link to={`/web/${shareObject.share_name}`} onClick={this.menuCategoryLinkTo.bind(this, subMenuKey, shareObject.id)}>{shareObject.share_name}</Link>
+					<Link to={`/shares/${shareObject.share_name}`} onClick={this.menuCategoryLinkTo.bind(this, subMenuKey, shareObject.id)}>{shareObject.share_name}</Link>
 				</Menu.Item>
 			);
 		});

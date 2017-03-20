@@ -1,5 +1,6 @@
-import * as mainSage from './main';
-import * as fileSage from './file';
+import * as mainSaga from './main';
+import * as fileSaga from './file';
+import * as calendarSaga from './calendar';
 
 const getSagaArrayFromObject = function(sagaObject) {
 	var sagaArray = [];
@@ -11,7 +12,8 @@ const getSagaArrayFromObject = function(sagaObject) {
 
 export default function* rootSaga() {
 	yield [
-		...getSagaArrayFromObject(mainSage),
-		...getSagaArrayFromObject(fileSage)
+		...getSagaArrayFromObject(mainSaga),
+		...getSagaArrayFromObject(fileSaga),
+		...getSagaArrayFromObject(calendarSaga)
 	]
 };

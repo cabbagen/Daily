@@ -37,6 +37,7 @@
     "webpack-dev-server": "^2.4.1"
   },
   "dependencies": {
-    "draft-js": "^0.10.0"
+    "draft-js": "^0.10.0",
+    "moment": "^2.18.0"
   }
 }

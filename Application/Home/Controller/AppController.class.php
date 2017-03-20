@@ -3,7 +3,7 @@
 	use Home\Controller;
 	Vendor('imSdk.TopSdk');
 
-	class AppController extends InitController {
+	class AppController extends BaseController {
 
 		private function getImUserInfoFromSession() {
 			$userModel = D('Users');

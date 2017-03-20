@@ -6,16 +6,6 @@ export const sendEmailInvitation = (emailAddress) => ({
 });
 
 // 查询二级分类列表
-// params formData =>  {resourceCategory : 'folders', id : 2}
-export const getFoldersCategoryItem = (params) => ({
-	type : 'getFoldersCategoryItem',
-	params : params
-});
-
-export const getCalendarsCategoryItem = (params) => ({
-	type : 'getCalendarsCategoryItem',
-	params : params
-});
 
 export const getCategorysCategoryItem = (params) => ({
 	type : 'getCategorysCategoryItem',
@@ -62,6 +52,13 @@ export const removeNotification = () => ({
 
 
 // 二级菜单操作
+// 文件模块
+
+// 查询文件  params formData =>  {resourceCategory : 'folders', id : 2}
+export const getFoldersCategoryItem = (params) => ({
+	type : 'getFoldersCategoryItem',
+	params : params
+});
 
 // 删除文件
 export const deleteFile = (fileId, from_folder_id) => ({
@@ -81,5 +78,30 @@ export const updateFile = (params) => ({
 	type : 'updateFile',
 	params : params
 });
+
+// 日程模块
+
+// 查询
+export const getCalendarsCategoryItem = (params) => ({
+	type : 'getCalendarsCategoryItem',
+	params : params
+});
+
+// 删除
+export const deleteAffair = (affairId, from_calendar_id) => ({
+	type : 'deleteAffair',
+	affairId : affairId,
+	from_calendar_id : from_calendar_id
+});
+
+// 更新
+export const updateAffair = (params) => ({
+	type : 'updateAffair',
+	params : params
+});
+
+
+
+
 
 

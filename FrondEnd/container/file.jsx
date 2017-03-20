@@ -6,7 +6,7 @@ import actions from '../actions';
 
 import FilterFiles from '../components/FilterFiles.jsx';
 import FileOperatePanel from '../components/FileOperatePanel.jsx';
-import MenuOperateModal from '../components/MenuOperateModal.jsx';
+// import MenuOperateModal from '../components/MenuOperateModal.jsx';
 import styles from '../container/file.less';
 
 

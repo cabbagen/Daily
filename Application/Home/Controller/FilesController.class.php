@@ -3,13 +3,12 @@
 	use Home\Controller;
   Vendor('markdown.markdown#class');
 
-	class FilesController extends EmailController {
+	class FilesController extends BaseController {
 		
     // 请求文件内容
     public function requireFileContent() {
       $markdown = new \Markdown();
       $fileContent = $markdown->parseMarkdown( file_get_contents(I('filePath', null)) );
-      // $fileContent = htmlspecialchars_decode( file_get_contents(I('filePath', null)) );
       $fileResult = D('Files')->getFile(I('fileId', null));
       if($fileContent && $fileResult) {
         $this->ajaxReturn(array(
@@ -72,10 +71,6 @@
         $this->ajaxReturnError();
       }
 
-    }
-
-    public function demo() {
-      echo 'helo';
     }
 
     // 下载处理

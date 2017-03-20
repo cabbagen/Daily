@@ -1,6 +1,6 @@
 import React, {PropTypes, Component} from 'react';
-import { Calendar } from 'antd';
-import styles from './calendarPanel.less';
+import { Calendar, Button, Icon, Modal } from 'antd';
+import styles from './CalendarPanel.less';
 
 class CalendarPanel extends Component {
   constructor(prop) {
@@ -11,9 +11,19 @@ class CalendarPanel extends Component {
   }
 
   render() {
+    var that = this;
+
     return (
-      <div className={styles.calendarPanel}>
-        <Calendar dateCellRender={this.dateCellRender.bind(this)} monthCellRender={this.monthCellRender.bind(this)} />
+      <div className={styles.calendar_panel}>
+        <div className={styles.calendar_panel_header}>
+          <Button title="新建日程任务">新建</Button>
+          <Button title="查看历史任务">历史</Button>
+          <Button title="评价日程任务">评价</Button>
+          <Icon title="查看完成图表" type="pie-chart" />
+        </div>
+        <div className={styles.calendar_panel_content}>
+          <Calendar dateCellRender={that.dateCellRender.bind(that)} />
+        </div>
       </div>
     );
   }
@@ -63,20 +73,6 @@ class CalendarPanel extends Component {
       default:
     }
     return listData;
-  }
-
-  monthCellRender(value) {
-    const num = this.getMonthData(value);
-    return num ? <div className="notes-months">
-      <section>{num}</section>
-      <span>Backlog number</span>
-    </div> : null;
-  }
-
-  getMonthData(value) {
-    if(value.month() === 8) {
-      return 1394;
-    }
   }
 
 }

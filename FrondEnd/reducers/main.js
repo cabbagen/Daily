@@ -122,11 +122,8 @@ const mainReducerMap = {
 		});
 	},
 
-
-
-
-
-
+	// 日程操作模块 
+	// 获取
 	getCalendarsCategoryItemAsyncSuccess : function(state, action) {
 		var tempObj = {calendarsCategoryItem : action.calendarsCategoryItem, currentCategoryId : action.id};
 		return Object.assign({},state, tempObj);
@@ -135,6 +132,37 @@ const mainReducerMap = {
 		var newState = Object.assign({}, state, {notifications : action.msg});
 		return newState;
 	},
+	// 删除
+	deleteAffairAsyncSuccess : function(state, action) {
+		return Object.assign({}, state, {
+			calendarsCategoryItem : action.calendarsCategoryItem
+		});
+	},
+	deleteAffairAsyncError : function(state, action) {
+		return Object.assign({}, state, {
+			notifications : action.msg
+		});
+	},
+	// 更新
+	updateAffairAsyncSuccess : function(state, action) {
+		return Object.assign({}, state, {
+			calendarsCategoryItem : action.calendarsCategoryItem
+		});
+	},
+	updateAffairAsyncError : function(state, action) {
+		return Object.assign({}, state, {
+			notifications : action.msg
+		});
+	},
+
+
+
+
+
+
+
+
+
 	getCategorysCategoryItemAsyncSuccess : function(state, action) {
 		var tempObj = {categorysCategoryItem : action.categorysCategoryItem, currentCategoryId : action.id};
 		return Object.assign({}, state, tempObj);
