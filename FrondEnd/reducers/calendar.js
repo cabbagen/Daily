@@ -12,14 +12,19 @@ const calendarReducerMap = {
 	},
 
 	// 请求本月日程任务数据
-	requireMonthDataSuccess : function(state, action) {
-		console.log(action.monthAffair);
-		return state;
+	requireMonthDataAsyncSuccess : function(state, action) {
+		return Object.assign({}, state, {
+			monthAffair : action.monthAffair
+		});
 	},
-	requireMonthDataError : function(state, action) {
+	requireMonthDataAsyncError : function(state, action) {
 		return Object.assign({}, state, {
 			notifications : action.msg
 		});
+	},
+	demo : function(state, action) {
+		console.log('0000');
+		return state;
 	}
 
 };

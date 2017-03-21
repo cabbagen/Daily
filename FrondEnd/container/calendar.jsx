@@ -14,13 +14,6 @@ class Calendar extends Component {
 		super(props);
 	}
 
-	// 拉取本月数据
-	componentWillMount() {
-		console.log('拉取本月数据');
-		var { calendarActions } = this.props;
-		calendarActions.requireMonthData();
-	}
-
 	componentWillUpdate(nextProps) {
 		var { calendarActions, calendarState } = nextProps;
 		var isShowNotification = calendarState.notifications.length > 0 ? true : false;
@@ -46,7 +39,7 @@ class Calendar extends Component {
 		return (
 			<div className={styles.calendar_content}>
 				<FilterCalendar {...this.props} />
-				<CalendarPanel />
+				<CalendarPanel {...this.props}/>
 			</div>
 		);
 	}

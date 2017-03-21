@@ -100,6 +100,11 @@ export const updateAffair = (params) => ({
 	params : params
 });
 
+// 新建
+export const addAffair = (params) => ({
+	type : 'addAffair',
+	params : params
+});
 
 
 

@@ -154,6 +154,17 @@ const mainReducerMap = {
 			notifications : action.msg
 		});
 	},
+	// 创建
+	addAffairAsyncSuccess : function(state, action) {
+		return Object.assign({}, state, {
+			calendarsCategoryItem : action.calendarsCategoryItem
+		});
+	},
+	addAffairAsyncError : function(state, action) {
+		return Object.assign({}, state, {
+			notifications : action.msg
+		});
+	},
 
 
 

@@ -183,6 +183,18 @@ function* updateAffairAsync(action) {
 	}
 }
 
+// 新建日程任务
+function* addAffairAsync(action) {
+	var data = yield call(servers.calendarServer.addAffairAsync, action.params);
+	if(data.status && data.status === 200) {
+		yield put({type : 'addAffairAsyncSuccess', calendarsCategoryItem : data.affairList});
+	} else if(data.status && data.status !== 200) {
+		yield put({type : 'addAffairAsyncError', msg : data.msg});
+	} else {
+		yield put({type : 'addAffairAsyncError', msg : data.msg});
+	}
+}
+
 export function* watchMain() {
 	// 发送邀请邮件
 	yield takeEvery('sendEmailInvitation', sendEmailInvitationAsync);
@@ -206,4 +218,5 @@ export function* watchMain() {
 
 	yield takeEvery('deleteAffair', deleteAffairAsync);
 	yield takeEvery('updateAffair', updateAffairAsync);
+	yield takeEvery('addAffair', addAffairAsync);
 };

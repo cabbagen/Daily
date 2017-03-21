@@ -5,6 +5,11 @@ export const removeNotification = () => ({
 });
 
 // 拉取本月日程任务数据
-export const requireMonthData = () => ({
-	type : 'requireMonthData'
+export const requireMonthData = (timestamp) => ({
+	type : 'requireMonthData',
+	timestamp : timestamp
+});
+
+export const demo = () => ({
+	type : 'demo'
 });
