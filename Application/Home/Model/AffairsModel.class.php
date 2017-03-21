@@ -28,5 +28,30 @@
 		public function addAffair($addAffairArray) {
 			return $this->data($addAffairArray)->add();
 		}
+
+		public function completeAffair($affairId) {
+			return $this->where(array('id' => $affairId))->setField('is_complete', 2);
+		}
+
+		public function cancelCompleteAffair($affairId) {
+			return $this->where(array('id' => $affairId))->setField('is_complete', 1);
+		}
+
+		public function getDayAffair($timestamp) {
+			$year = getdate($timestamp)['year'];
+			$month = getdate($timestamp)['mon'];
+			$day = getdate($timestamp)['mday'];
+
+			$dayStartDate = (new \DateTime("now", (new \DateTimeZone('Asia/Shanghai'))))->setDate($year, $month, $day)->format('Y-m-d');
+			$dayEndDate = (new \DateTime("now", (new \DateTimeZone('Asia/Shanghai'))))->setDate($year, $month, $day + 1)->format('Y-m-d');
+
+			return $this->where(array(
+				'affair_time' => array('between', array($dayStartDate, $dayEndDate)),
+			))->select();
+		}
+
+		
+		
 	}
+
 ?>

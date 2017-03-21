@@ -195,6 +195,29 @@ function* addAffairAsync(action) {
 	}
 }
 
+// 评价日程任务
+function* completeAffairAsync(action) {
+	var data = yield call(servers.calendarServer.completeAffairAsync, action.affairId, action.from_calendar_id);
+	if(data.status && data.status === 200) {
+		yield put({type : 'completeAffairAsyncSuccess', calendarsCategoryItem : data.affairList});
+	} else if(data.status && data.status !== 200) {
+		yield put({type : 'completeAffairAsyncError', msg : data.msg});
+	} else {
+		yield put({type : 'completeAffairAsyncError', msg : data.msg});
+	}
+}
+function* cancelCompleteAffairAsync(action) {
+	var data = yield call(servers.calendarServer.cancelCompleteAffairAsync, action.affairId, action.from_calendar_id);
+	if(data.status && data.status === 200) {
+		yield put({type : 'cancelCompleteAffairAsyncSuccess', calendarsCategoryItem : data.affairList});
+	} else if(data.status && data.status !== 200) {
+		yield put({type : 'cancelCompleteAffairAsyncError', msg : data.msg});
+	} else {
+		yield put({type : 'cancelCompleteAffairAsyncError', msg : data.msg});
+	}
+}
+
+
 export function* watchMain() {
 	// 发送邀请邮件
 	yield takeEvery('sendEmailInvitation', sendEmailInvitationAsync);
@@ -219,4 +242,6 @@ export function* watchMain() {
 	yield takeEvery('deleteAffair', deleteAffairAsync);
 	yield takeEvery('updateAffair', updateAffairAsync);
 	yield takeEvery('addAffair', addAffairAsync);
+	yield takeEvery('completeAffair', completeAffairAsync);
+	yield takeEvery('cancelCompleteAffair', cancelCompleteAffairAsync);
 };

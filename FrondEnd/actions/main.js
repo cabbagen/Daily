@@ -106,6 +106,17 @@ export const addAffair = (params) => ({
 	params : params
 });
 
+// 评价
+export const completeAffair = (affairId, from_calendar_id) => ({
+	type : 'completeAffair',
+	affairId : affairId,
+	from_calendar_id : from_calendar_id
+});
+export const cancelCompleteAffair = (affairId, from_calendar_id) => ({
+	type : 'cancelCompleteAffair',
+	affairId : affairId,
+	from_calendar_id : from_calendar_id
+});
 
 
 

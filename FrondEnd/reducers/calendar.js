@@ -1,7 +1,8 @@
 
 const initCalendarState = {
 	notifications : '',
-	monthAffair : null
+	monthAffair : null,
+	currentAffairList : []
 };
 
 const calendarReducerMap = {
@@ -22,6 +23,19 @@ const calendarReducerMap = {
 			notifications : action.msg
 		});
 	},
+
+	// 请求单日日程任务数据
+	requireDayDataAsyncSuccess : function(state, action) {
+		return Object.assign({}, state, {
+			currentAffairList : action.currentAffairList
+		});
+	},
+	requireDayDataAsyncError : function(state, action) {
+		return Object.assign({}, state, {
+			notifications : action.msg
+		});
+	},
+
 	demo : function(state, action) {
 		console.log('0000');
 		return state;

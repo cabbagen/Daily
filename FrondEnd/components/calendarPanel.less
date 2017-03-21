@@ -24,10 +24,10 @@
 }
 .calendar_panel_content {
   width: @width;
-  height: 400px;
-  overflow-y: scroll;
+  margin-top: 20px;
 }
 
+// 创建日程任务 modal
 .create_affair_modal_input {
   width: 100%;
   height: 30px;
@@ -51,7 +51,37 @@
   color: pink;
 }
 
+// 评价日程任务 modal
+.appraise_affair_list {
+  li {
+    border-bottom: 1px dashed #cccccc;
+    padding: 5px 0px;
+    p {
+      height: 25px;
+      line-height: 25px;
+      font-size: 14px;
+    }
+    button {
+      width: 50px;
+      height: 25px;
+      line-height: 25px;
+      margin-top: 4px;
+      float: right;
+      background: #eeeeee;
+      border-radius: 3px;
+      cursor: pointer;
+      outline: none;
 
+      &.isComplete {
+        background: green;
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+
+// 日历部分
 .events {
   line-height: 24px;
   list-style: none;
@@ -92,4 +122,15 @@
 }
 .notes-month section {
   font-size: 28px;
+}
+
+.circle {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  border: 1px solid red;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -15px);
 }

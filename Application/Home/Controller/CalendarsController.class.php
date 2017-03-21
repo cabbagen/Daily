@@ -49,7 +49,7 @@
     }
 
     // 获取单月日程任务数据
-    public function getMonthData() {
+    public function getMonthAffairData() {
       $monthAffair = array();
 
       if( I('timestamp', null) ) {
@@ -69,6 +69,17 @@
 
     }
 
+    // 获取单日日程数据任务数据
+    public function getDayAffairData() {
+      $dayDataResult = D('Affairs')->getDayAffair(I('timestamp', null) / 1000);
+      
+      if($dayDataResult) {
+        $this->ajaxReturn(array('status' => 200, 'dayAffairList' => $dayDataResult));
+      } else {
+        $this->ajaxReturnError();
+      }
+    }
+
     // 创建日程任务
     public function addAffair() {
       $affairResult = D('Affairs')->addAffair(array(
@@ -85,7 +96,55 @@
       }
     }
 
-    // 评价日程任务
+    // 评价日程任务 => 任务完成
+    public function completeAffair() {
+      $affairResult = D('Affairs')->completeAffair(I('affairId', null));
+      $affairList = D('Affairs')->getCategoryItemFromModel('Calendars', I('from_calendar_id', null));
+
+      if($affairResult && $affairList) {
+        $this->ajaxReturn(array('status' => 200, 'affairList' => $affairList));
+      } else {
+        $this->ajaxReturnError();
+      }
+    }
+
+    // 评价日程任务 => 任务未完成
+    public function cancelCompleteAffair() {
+      $affairResult = D('Affairs')->cancelCompleteAffair(I('affairId', null));
+      $affairList = D('Affairs')->getCategoryItemFromModel('Calendars', I('from_calendar_id', null));
+
+      if($affairResult && $affairList) {
+        $this->ajaxReturn(array('status' => 200, 'affairList' => $affairList));
+      } else {
+        $this->ajaxReturnError();
+      }
+    }
+
+    // demo 测试
+
+    private function getWeekStart() {
+			$date = getdate(time());
+			if($date['wday'] == 0) {
+				$day = $date['mday'] - 6;
+			} else {
+				$day = $date['mday'] - $date['wday'] + 1;
+			}
+
+			$startWeekDay = (new \DateTime("now", (new \DateTimeZone('Asia/Shanghai'))))->setDate($date['year'], $date['mon'], $day)->format('Y-m-d');
+			return $startWeekDay;
+		}
+
+		private function getWeekEnd() {
+			$date = getdate(time());
+			if($date['wday'] == 0) {
+				$day = $date['mday'];
+			} else {
+				$day = $date['mday'] + 7 - $date['wday'];
+			}
+
+			$endWeekDay = (new \DateTime("now", (new \DateTimeZone('Asia/Shanghai'))))->setDate($date['year'], $date['mon'], $day)->format('Y-m-d');
+			return $endWeekDay;
+		}
 
 
   }

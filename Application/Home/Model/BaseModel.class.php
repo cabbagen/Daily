@@ -10,6 +10,30 @@
 			return session('userId');
 		}
 
+		private function getWeekStart() {
+			$date = getdate(time());
+			if($date['wday'] == 0) {
+				$day = $date['mday'] - 6;
+			} else {
+				$day = $date['mday'] - $date['wday'] + 1;
+			}
+
+			$startWeekDay = (new \DateTime("now", (new \DateTimeZone('Asia/Shanghai'))))->setDate($date['year'], $date['mon'], $day)->format('Y-m-d');
+			return $startWeekDay;
+		}
+
+		private function getWeekEnd() {
+			$date = getdate(time());
+			if($date['wday'] == 0) {
+				$day = $date['mday'];
+			} else {
+				$day = $date['mday'] + 7 - $date['wday'];
+			}
+
+			$endWeekDay = (new \DateTime("now", (new \DateTimeZone('Asia/Shanghai'))))->setDate($date['year'], $date['mon'], $day)->format('Y-m-d');
+			return $endWeekDay;
+		}
+
 		private function adapterCategoryCondition($tableName, $itemId) {
 			$queryCondtion = array();
 			switch ($tableName) {
@@ -38,9 +62,17 @@
 		// 初始化页面时，获取用户相关信息
 		public function getUserMenuCatetoryInfosFromModel($tableName, $returnField) {
 			$fullTableName = $this->databasePrefix . $tableName;
-			$queryCondtion = array(
-				'from_user_id' => $this->getUserId(),
-			);
+			if($tableName == 'Calendars') {
+				$queryCondtion = array(
+					'from_user_id' => $this->getUserId(),
+					'create_time' => array('between', array($this->getWeekStart(), $this->getWeekEnd())),
+				);
+			} else {
+				$queryCondtion = array(
+					'from_user_id' => $this->getUserId(),
+				);
+			}
+			
 			$result = $this->table($fullTableName)->where($queryCondtion)->select();
 			return $result;
 		}

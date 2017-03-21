@@ -165,7 +165,27 @@ const mainReducerMap = {
 			notifications : action.msg
 		});
 	},
-
+	// 评价
+	completeAffairAsyncSuccess : function(state, action) {
+		return Object.assign({}, state, {
+			calendarsCategoryItem : action.calendarsCategoryItem
+		});
+	},
+	completeAffairAsyncError : function(state, action) {
+		return Object.assign({}, state, {
+			notifications : action.msg
+		});
+	},
+	cancelCompleteAffairAsyncSuccess : function(state, action) {
+		return Object.assign({}, state, {
+			calendarsCategoryItem : action.calendarsCategoryItem
+		});
+	},
+	cancelCompleteAffairAsyncError : function(state, action) {
+		return Object.assign({}, state, {
+			notifications : action.msg
+		});
+	},
 
 
 

@@ -162,13 +162,6 @@
 			}
 		}
 
-
-
-
-		// 测试 demo
-		public function demo() {
-			$this->ajaxReturn(array('status' => 'ok'));
-		}
 	}
 
 

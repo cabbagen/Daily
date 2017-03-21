@@ -10,6 +10,12 @@ export const requireMonthData = (timestamp) => ({
 	timestamp : timestamp
 });
 
+// 拉取当日日程任务数据
+export const requireDayData = (timestamp) => ({
+	type : 'requireDayData',
+	timestamp : timestamp
+});
+
 export const demo = () => ({
 	type : 'demo'
 });

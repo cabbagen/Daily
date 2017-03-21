@@ -11,9 +11,24 @@ export const updateAffairAsync = (params) => {
 
 export const requireMonthDataAsync = (timestamp) => {
 	var params = {timestamp};
-	return Require.ajax('/Home/Calendars/getMonthData', 'post', params).then(data => data, e => e);
+	return Require.ajax('/Home/Calendars/getMonthAffairData', 'post', params).then(data => data, e => e);
 }
 
 export const addAffairAsync = (params) => {
 	return Require.ajax('/Home/Calendars/addAffair', 'post', params).then(data => data, e => e);
 }
+
+export const completeAffairAsync = (affairId, from_calendar_id) => {
+	var params = {affairId, from_calendar_id};
+	return Require.ajax('/Home/Calendars/completeAffair', 'post', params).then(data => data, e => e);
+};	
+
+export const cancelCompleteAffairAsync = (affairId, from_calendar_id) => {
+	var params = {affairId, from_calendar_id};
+	return Require.ajax('/Home/Calendars/cancelCompleteAffair', 'post', params).then(data => data, e => e);
+}
+
+export const requireDayDataAsync = (timestamp) => {
+	var params = {timestamp};
+	return Require.ajax('/Home/Calendars/getDayAffairData', 'post', params).then(data => data, e => e);
+};
