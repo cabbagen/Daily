@@ -5,13 +5,6 @@ import styles from './CalendarPanel.less';
 
 const RadioGroup = Radio.Group;
 
-// const data = [
-//   {name: '重要且紧急的事情', uncompeleted: 4000, compeleted: 2400},
-//   {name: '重要不紧急的事情', uncompeleted: 3000, compeleted: 1398},
-//   {name: '不重要紧急的事情', uncompeleted: 2000, compeleted: 9800},
-//   {name: '不重要不紧急的事情', uncompeleted: 2780, compeleted: 3908},
-// ];
-
 class CalendarPanel extends Component {
   constructor(prop) {
     super(prop);
@@ -33,8 +26,6 @@ class CalendarPanel extends Component {
   render() {
     var that = this;
     var { calendarState, mainState } = this.props;
-
-    console.log(calendarState.chartData);
 
     var currentContent = this.state.isShowChart ? (
       <div>
@@ -212,7 +203,7 @@ class CalendarPanel extends Component {
   createAffairModalOk() {
     var affairContent = this.refs.createAffairContent.value;
     var affairType = this.state.createModalEventType;
-    var { mainActions, mainState } = this.props;
+    var { mainActions, mainState, calendarActions } = this.props;
 
     if(affairContent.length === 0) {
       alert('请写入具体的日程任务');
@@ -230,6 +221,9 @@ class CalendarPanel extends Component {
         affair_type : affairType,
         from_calendar_id : mainState.currentCategoryId
       });
+      // 创建时，再拉取一次数据
+      calendarActions.requireMonthData();
+      calendarActions.requireChartData();
     });
   }
 
@@ -258,13 +252,15 @@ class CalendarPanel extends Component {
   }
 
   completeAffair(affairId) {
-    var { mainActions, mainState } = this.props;
+    var { mainActions, mainState, calendarActions } = this.props;
     mainActions.completeAffair(affairId, mainState.currentCategoryId);
+    calendarActions.requireChartData();
   }
 
   cancelCompleteAffair(affairId) {
-    var { mainActions, mainState } = this.props;
+    var { mainActions, mainState, calendarActions } = this.props;
     mainActions.cancelCompleteAffair(affairId, mainState.currentCategoryId);
+    calendarActions.requireChartData();
   }
 
   currentDayAffairModalOk() {

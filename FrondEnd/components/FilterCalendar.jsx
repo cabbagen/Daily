@@ -130,8 +130,12 @@ class FilterCalendar extends Component {
   }
 
   deleteAffair(affairId) {
-  	var { mainState, mainActions } = this.props;
+  	var { mainState, mainActions, calendarActions } = this.props;
   	mainActions.deleteAffair(affairId, mainState.currentCategoryId);
+
+  	// 删除时拉取一次数据
+  	calendarActions.requireMonthData();
+    calendarActions.requireChartData();
   }
 
 }
