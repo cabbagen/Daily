@@ -21,13 +21,26 @@ function* requireDayDataAsync(action) {
 	if(data.status && data.status === 200) {
 		yield put({type : 'requireDayDataAsyncSuccess', currentAffairList : data.dayAffairList});
 	} else if(data.status && data.status !== 200) {
-		yield put({type : 'currentAffairListAsyncError', msg : data.msg});
+		yield put({type : 'requireDayDataAsyncError', msg : data.msg});
 	} else {
-		yield put({type : 'currentAffairListAsyncError', msg : data.msg});
+		yield put({type : 'requireDayDataAsyncError', msg : data.msg});
+	}
+}
+
+// 请求图表数据
+function* requireChartDataAsync(action) {
+	var data = yield call(servers.calendarServer.requireChartDataAsync);
+	if(data.status && data.status === 200) {
+		yield put({type : 'requireChartDataAsyncSuccess', chartData : data.data});
+	} else if(data.status && data.status !== 200) {
+		yield put({type : 'requireChartDataAsyncError', msg : data.msg});
+	} else {
+		yield put({type : 'requireChartDataAsyncError', msg : data.msg});
 	}
 }
 
 export function* watchFile() {
 	yield takeEvery('requireMonthData', requireMonthDataAsync);
 	yield takeEvery('requireDayData', requireDayDataAsync);
+	yield takeEvery('requireChartData', requireChartDataAsync);
 };

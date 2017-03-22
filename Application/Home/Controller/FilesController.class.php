@@ -26,7 +26,7 @@
       $result = D('Files')->deleteFile(I('fileId', null));
       $fileList = D('Files')->getCategoryItemFromModel('Folders', I('from_folder_id', null));
 
-      if($result && $fileList) {
+      if($result && is_array($fileList)) {
         $this->ajaxReturn(array('status' => 200, 'fileList' => $fileList));
       } else {
         $this->ajaxReturnError();
@@ -44,7 +44,7 @@
       ));
       $fileList = D('Folders')->getCategoryItemFromModel('Folders', I('from_folder_id', null));
 
-      if($fileResult && $fileList) {
+      if($fileResult && is_array($fileList)) {
         $this->ajaxReturn(array('status' => 200, 'fileList' => $fileList));
       } else {
         $this->ajaxReturnError();
@@ -65,7 +65,7 @@
       ));
       $fileList = D('Folders')->getCategoryItemFromModel('Folders', I('from_folder_id', null));
 
-      if($fileResult && $fileModelResult && $fileList) {
+      if($fileResult && $fileModelResult && is_array($fileList)) {
         $this->ajaxReturn(array('status' => 200, 'fileList' => $fileList));
       } else {
         $this->ajaxReturnError();

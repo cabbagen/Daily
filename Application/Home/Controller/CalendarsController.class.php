@@ -15,9 +15,18 @@
       return $monthAffairByDay;
     }
 
-    // 获取时间中的 `日` 信息
+    // 获取时间中的 `单日` 信息
     private function getDayFromDateTime($dateTime) {
       return date_parse($dateTime['affair_time'])['day'];
+    }
+
+    // 适配获取各类数据返回结构
+    private function adapterGetTypeCompleteData($resultMapArray, $type) {
+      return array(
+        'name' => $type,
+        'completed' => $resultMapArray['completeData'][$type],
+        'uncompleted' => $resultMapArray['unCompleteData'][$type],
+      );
     }
 
     // 删除日程任务
@@ -25,7 +34,7 @@
       $result = D('Affairs')->deleteAffair(I('affairId', null));
       $affairList = D('Affairs')->getCategoryItemFromModel('Calendars', I('from_calendar_id', null));
 
-      if($result && $affairList) {
+      if($result && is_array($affairList)) {
         $this->ajaxReturn(array('status' => 200, 'affairList' => $affairList));
       } else {
         $this->ajaxReturnError();
@@ -40,7 +49,7 @@
       ));
       $affairList = D('Affairs')->getCategoryItemFromModel('Calendars', I('from_calendar_id', null));
 
-      if($affairResult && $affairList) {
+      if($affairResult && is_array($affairList)) {
         $this->ajaxReturn(array('status' => 200, 'affairList' => $affairList));
       } else {
         $this->ajaxReturnError();
@@ -73,7 +82,7 @@
     public function getDayAffairData() {
       $dayDataResult = D('Affairs')->getDayAffair(I('timestamp', null) / 1000);
       
-      if($dayDataResult) {
+      if(is_array($dayDataResult)) {
         $this->ajaxReturn(array('status' => 200, 'dayAffairList' => $dayDataResult));
       } else {
         $this->ajaxReturnError();
@@ -89,7 +98,7 @@
       ));
       $affairList = D('Affairs')->getCategoryItemFromModel('Calendars', I('from_calendar_id', null));
 
-      if($affairResult && $affairList) {
+      if($affairResult && is_array($affairList)) {
         $this->ajaxReturn(array('status' => 200, 'affairList' => $affairList));
       } else {
         $this->ajaxReturnError();
@@ -101,7 +110,7 @@
       $affairResult = D('Affairs')->completeAffair(I('affairId', null));
       $affairList = D('Affairs')->getCategoryItemFromModel('Calendars', I('from_calendar_id', null));
 
-      if($affairResult && $affairList) {
+      if($affairResult && is_array($affairList)) {
         $this->ajaxReturn(array('status' => 200, 'affairList' => $affairList));
       } else {
         $this->ajaxReturnError();
@@ -113,39 +122,33 @@
       $affairResult = D('Affairs')->cancelCompleteAffair(I('affairId', null));
       $affairList = D('Affairs')->getCategoryItemFromModel('Calendars', I('from_calendar_id', null));
 
-      if($affairResult && $affairList) {
+      if($affairResult && is_array($affairList)) {
         $this->ajaxReturn(array('status' => 200, 'affairList' => $affairList));
       } else {
         $this->ajaxReturnError();
       }
     }
 
-    // demo 测试
+    // 获取各类完成数据
+    public function getTypeCompleteData() {
+      $resultMapArray = D('Affairs')->getCompleteRate();
+      
+      if($resultMapArray) {
+        $this->ajaxReturn(array(
+          'status' => 200, 
+          'data' => array(
+            $this->adapterGetTypeCompleteData($resultMapArray, '重要且紧急的事情'),
+            $this->adapterGetTypeCompleteData($resultMapArray, '重要不紧急的事情'),
+            $this->adapterGetTypeCompleteData($resultMapArray, '不重要紧急的事情'),
+            $this->adapterGetTypeCompleteData($resultMapArray, '不重要不紧急的事情'),
+          ),
+        ));
+      } else {
+        $this->ajaxReturnError();
+      }
+    }
 
-    private function getWeekStart() {
-			$date = getdate(time());
-			if($date['wday'] == 0) {
-				$day = $date['mday'] - 6;
-			} else {
-				$day = $date['mday'] - $date['wday'] + 1;
-			}
-
-			$startWeekDay = (new \DateTime("now", (new \DateTimeZone('Asia/Shanghai'))))->setDate($date['year'], $date['mon'], $day)->format('Y-m-d');
-			return $startWeekDay;
-		}
-
-		private function getWeekEnd() {
-			$date = getdate(time());
-			if($date['wday'] == 0) {
-				$day = $date['mday'];
-			} else {
-				$day = $date['mday'] + 7 - $date['wday'];
-			}
-
-			$endWeekDay = (new \DateTime("now", (new \DateTimeZone('Asia/Shanghai'))))->setDate($date['year'], $date['mon'], $day)->format('Y-m-d');
-			return $endWeekDay;
-		}
-
+    
 
   }
 

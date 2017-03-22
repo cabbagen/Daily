@@ -16,6 +16,11 @@ export const requireDayData = (timestamp) => ({
 	timestamp : timestamp
 });
 
+// 请求图表数据
+export const requireChartData = () => ({
+	type : 'requireChartData'
+});
+
 export const demo = () => ({
 	type : 'demo'
 });

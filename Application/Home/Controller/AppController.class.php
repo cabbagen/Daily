@@ -63,14 +63,8 @@
 
 			// 补加上分享的部分
 			$userMenuInfosQueryConditon['Shares'] = array(
-				array(
-					'id' => 1,
-					'share_name' => '来自我的分享',
-				),
-				array(
-					'id' => 2,
-					'share_name' => '我收到的分享',
-				)
+				array('id' => 1, 'share_name' => '来自我的分享',),
+				array('id' => 2, 'share_name' => '我收到的分享',)
 			);
 
 			return $userMenuInfosQueryConditon;

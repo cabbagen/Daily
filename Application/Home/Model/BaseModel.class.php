@@ -10,7 +10,7 @@
 			return session('userId');
 		}
 
-		private function getWeekStart() {
+		protected function getWeekStart() {
 			$date = getdate(time());
 			if($date['wday'] == 0) {
 				$day = $date['mday'] - 6;
@@ -22,7 +22,7 @@
 			return $startWeekDay;
 		}
 
-		private function getWeekEnd() {
+		protected function getWeekEnd() {
 			$date = getdate(time());
 			if($date['wday'] == 0) {
 				$day = $date['mday'];

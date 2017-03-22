@@ -2,7 +2,8 @@
 const initCalendarState = {
 	notifications : '',
 	monthAffair : null,
-	currentAffairList : []
+	currentAffairList : [],
+	chartData : [],
 };
 
 const calendarReducerMap = {
@@ -31,6 +32,24 @@ const calendarReducerMap = {
 		});
 	},
 	requireDayDataAsyncError : function(state, action) {
+		return Object.assign({}, state, {
+			notifications : action.msg
+		});
+	},
+
+	// 请求图表数据
+	requireChartDataAsyncSuccess : function(state, action) {
+		var adapterData = action.chartData.map(item => {
+			item.completed = item.completed ? parseInt(item.completed, 10) : 0;
+			item.uncompleted = item.uncompleted ? parseInt(item.uncompleted, 10) : 0;
+			return item;
+		});
+		return Object.assign({}, state, {
+			chartData : adapterData
+		});
+
+	},
+	requireChartDataAsyncError : function(state, action) {
 		return Object.assign({}, state, {
 			notifications : action.msg
 		});

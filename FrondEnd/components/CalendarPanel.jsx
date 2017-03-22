@@ -1,8 +1,16 @@
 import React, {PropTypes, Component} from 'react';
 import { Calendar, Button, Icon, Modal, Radio } from 'antd';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'Recharts';
 import styles from './CalendarPanel.less';
 
 const RadioGroup = Radio.Group;
+
+// const data = [
+//   {name: '重要且紧急的事情', uncompeleted: 4000, compeleted: 2400},
+//   {name: '重要不紧急的事情', uncompeleted: 3000, compeleted: 1398},
+//   {name: '不重要紧急的事情', uncompeleted: 2000, compeleted: 9800},
+//   {name: '不重要不紧急的事情', uncompeleted: 2780, compeleted: 3908},
+// ];
 
 class CalendarPanel extends Component {
   constructor(prop) {
@@ -11,7 +19,8 @@ class CalendarPanel extends Component {
       isShowCreateModal : false,
       createModalEventType : 1,
       isShowAppraiseModal : false,
-      isShowCurrentDayModal : false
+      isShowCurrentDayModal : false,
+      isShowChart : false,
     };
   }
 
@@ -25,21 +34,39 @@ class CalendarPanel extends Component {
     var that = this;
     var { calendarState, mainState } = this.props;
 
+    console.log(calendarState.chartData);
+
+    var currentContent = this.state.isShowChart ? (
+      <div>
+        <p className={styles.chart_title}>本周数据统计</p>
+        <BarChart width={600} height={380} data={calendarState.chartData} margin={{top: 30, right: 30, left: 50, bottom: 5}}>
+          <XAxis dataKey="name"/>
+          <YAxis/>
+          <CartesianGrid strokeDasharray="3 3"/>
+          <Tooltip/>
+          <Legend />
+          <Bar dataKey="completed" stackId="a" fill="#8884d8" />
+          <Bar dataKey="uncompleted" stackId="a" fill="#82ca9d" />
+        </BarChart>
+      </div>
+    ) : (
+      <Calendar
+        fullscreen={false} 
+        dateCellRender={that.dateCellRender.bind(that)} 
+        onPanelChange={that.panelChange.bind(that)}
+        onSelect={that.selectDate.bind(that)}
+      />
+    );
     return (
       <div className={styles.calendar_panel}>
         <div className={styles.calendar_panel_header}>
           <Button onClick={that.showCreateModal.bind(that)} title="新建日程任务">新建</Button>
           <Button onClick={that.showAppraiseModal.bind(that)} title="评价日程任务">评价</Button>
-          <Button title="返回日历">日历</Button>
-          <Icon title="查看完成图表" type="pie-chart" />
+          <Button title="返回日历" onClick={that.switchCalendar.bind(that)}>返回日历</Button>
+          <Icon title="查看完成图表" type="pie-chart" onClick={that.switchChart.bind(that)} />
         </div>
         <div className={styles.calendar_panel_content}>
-          <Calendar 
-            fullscreen={false}
-            dateCellRender={that.dateCellRender.bind(that)} 
-            onPanelChange={this.panelChange.bind(this)}
-            onSelect={this.selectDate.bind(this)}
-          />
+          {currentContent}
         </div>
         <Modal title="新建日程任务" 
           visible={this.state.isShowCreateModal} 
@@ -131,6 +158,17 @@ class CalendarPanel extends Component {
     }
     this.setState({
       isShowAppraiseModal : true
+    });
+  }
+
+  switchCalendar() {
+    this.setState({isShowChart : false});
+  }
+
+  switchChart() {
+    var { calendarActions } = this.props;
+    this.setState({isShowChart : true}, function() {
+      calendarActions.requireChartData();
     });
   }
 

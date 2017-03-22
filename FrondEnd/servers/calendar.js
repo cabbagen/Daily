@@ -32,3 +32,7 @@ export const requireDayDataAsync = (timestamp) => {
 	var params = {timestamp};
 	return Require.ajax('/Home/Calendars/getDayAffairData', 'post', params).then(data => data, e => e);
 };
+
+export const requireChartDataAsync = () => (
+	Require.ajax('/Home/Calendars/getTypeCompleteData', 'post').then(data => data, e => e)
+);
