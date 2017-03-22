@@ -12,25 +12,23 @@
 
 		protected function getWeekStart() {
 			$date = getdate(time());
-			if($date['wday'] == 0) {
-				$day = $date['mday'] - 6;
-			} else {
-				$day = $date['mday'] - $date['wday'] + 1;
-			}
+			$day = $date['wday'] == 0 ? $date['mday'] - 6 : $date['mday'] - $date['wday'] + 1;
 
-			$startWeekDay = (new \DateTime("now", (new \DateTimeZone('Asia/Shanghai'))))->setDate($date['year'], $date['mon'], $day)->format('Y-m-d');
+			$startWeekDay = (new \DateTime("now", (new \DateTimeZone('Asia/Shanghai'))))
+				->setDate($date['year'], $date['mon'], $day)
+				->format('Y-m-d');
+
 			return $startWeekDay;
 		}
 
 		protected function getWeekEnd() {
 			$date = getdate(time());
-			if($date['wday'] == 0) {
-				$day = $date['mday'];
-			} else {
-				$day = $date['mday'] + 7 - $date['wday'];
-			}
+			$day = $date['wday'] == 0 ? $date['mday'] : $date['mday'] + 7 - $date['wday'];
 
-			$endWeekDay = (new \DateTime("now", (new \DateTimeZone('Asia/Shanghai'))))->setDate($date['year'], $date['mon'], $day)->format('Y-m-d');
+			$endWeekDay = (new \DateTime("now", (new \DateTimeZone('Asia/Shanghai'))))
+				->setDate($date['year'], $date['mon'], $day)
+				->format('Y-m-d');
+
 			return $endWeekDay;
 		}
 

@@ -32,7 +32,9 @@
 		}
 
 		public function updateAffair($updateArray) {
-			return $this->where(array('id' => $updateArray['id']))->setField('affair_content', $updateArray['affair_content']);
+			return $this->where(array(
+				'id' => $updateArray['id']
+			))->setField('affair_content', $updateArray['affair_content']);
 		}
 
 		public function getMonthAffair($timestamp) {
@@ -40,11 +42,16 @@
 			$month = getdate($timestamp)['mon'];
 			$day = 1;
 
-			$monthStartDate = (new \DateTime("now", (new \DateTimeZone('Asia/Shanghai'))))->setDate($year, $month, $day)->format('Y-m-d');
-			$monthEndDate = (new \DateTime("now", (new \DateTimeZone('Asia/Shanghai'))))->setDate($year, $month + 1, $day)->format('Y-m-d');
+			$monthStartDate = (new \DateTime("now", (new \DateTimeZone('Asia/Shanghai'))))
+				->setDate($year, $month, $day)
+				->format('Y-m-d');
+
+			$monthEndDate = (new \DateTime("now", (new \DateTimeZone('Asia/Shanghai'))))
+				->setDate($year, $month + 1, $day)
+				->format('Y-m-d');
 
 			return $this->where(array(
-				'affair_time' => array('between', array($monthStartDate, $monthEndDate)),
+				'affair_time' => array('between', array($monthStartDate, $monthEndDate))
 			))->select();
 		}
 
@@ -65,8 +72,13 @@
 			$month = getdate($timestamp)['mon'];
 			$day = getdate($timestamp)['mday'];
 
-			$dayStartDate = (new \DateTime("now", (new \DateTimeZone('Asia/Shanghai'))))->setDate($year, $month, $day)->format('Y-m-d');
-			$dayEndDate = (new \DateTime("now", (new \DateTimeZone('Asia/Shanghai'))))->setDate($year, $month, $day + 1)->format('Y-m-d');
+			$dayStartDate = (new \DateTime("now", (new \DateTimeZone('Asia/Shanghai'))))
+				->setDate($year, $month, $day)
+				->format('Y-m-d');
+
+			$dayEndDate = (new \DateTime("now", (new \DateTimeZone('Asia/Shanghai'))))
+				->setDate($year, $month, $day + 1)
+				->format('Y-m-d');
 
 			return $this->where(array(
 				'affair_time' => array('between', array($dayStartDate, $dayEndDate)),

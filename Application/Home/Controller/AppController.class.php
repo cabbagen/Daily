@@ -23,7 +23,6 @@
 
 		private function getUserInfoFromSession() {
 			$userModel = D('Users');
-
 			return $userModel->getUserInfo(array(
 				'username' => session('username'),
 			));
@@ -31,7 +30,6 @@
 
 		private function getUserMenuCatetoryInfos($dbTofiled) {
 			$userCategoryInfos = array();
-			
 			foreach ($dbTofiled as $key => $value) {
 				$categoryInfo = D($key)->getUserMenuCatetoryInfosFromModel($key, $value);
 				if($categoryInfo) {
@@ -41,7 +39,6 @@
 					$userCategoryInfos[$key] = array();
 				}
 			}
-
 			return $userCategoryInfos;
 		}
 
@@ -60,7 +57,6 @@
 				'Categorys' => 'category_name',
 				'Groups' => 'group_name',
 			));
-
 			// 补加上分享的部分
 			$userMenuInfosQueryConditon['Shares'] = array(
 				array('id' => 1, 'share_name' => '来自我的分享',),
@@ -75,7 +71,6 @@
 		public function app() {
 			$imUserInfos = $this->getImUserInfoFromSession();
 			$userInfos = $this->getUserInfoFromSession();
-
 			if(imUserInfos) {
 				$userInfo = array(
 					'uid' => $imUserInfos->userid,
@@ -85,7 +80,6 @@
 					'userId' => $userInfos['id'],
 					'avator' => $userInfos['avator'],
 				);
-
 				$this->assign('userInfo', json_encode($userInfo));
 				$this->assign('menuCategoryInfos', json_encode($this->getUserMenuInfos()));
 			}
@@ -113,12 +107,10 @@
 		// 确认修改一级菜单子项内容
 		public function confirmModify() {
 			$result = D(I('confirmObject')['type'])->cofirmModifyNameFromModel(I('confirmObject'));
-
 			if($result) {
 				$updateData = $this->getUserMenuCatetoryInfos(array(
 					I('confirmObject')['type'] => lcfirst( I('confirmObject')['type'] ) . '_name',
 				));
-
 				$this->ajaxReturn(array('status' => 200, 'data' => $updateData));
 			} else {
 				$this->ajaxReturnError();
@@ -128,12 +120,10 @@
 		// 添加一级菜单子项
 		public function addItem() {
 			$result = D(I('addItemObject')['type'])->addItemFromModel(I('addItemObject'));
-
 			if($result) {
 				$updateData = $this->getUserMenuCatetoryInfos(array(
 					I('addItemObject')['type'] => lcfirst( I('addItemObject')['type'] ) . '_name',
 				));
-
 				$this->ajaxReturn(array('status' => 200, 'data' => $updateData));
 			} else {
 				$this->ajaxReturnError();
@@ -144,12 +134,10 @@
 		// 删除一级菜单子项
 		public function deleteItem() {
 			$result = D(I('deleteItemObject')['type'])->deleteItemFromModel(I('deleteItemObject'));
-
 			if($result) {
 				$updateData = $this->getUserMenuCatetoryInfos(array(
 					I('deleteItemObject')['type'] => lcfirst( I('deleteItemObject')['type'] ) . '_name',
 				));
-
 				$this->ajaxReturn(array('status' => 200, 'data' => $updateData));
 			} else {
 				$this->ajaxReturnError();
