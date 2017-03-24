@@ -144,6 +144,11 @@
 			}
 		}
 
+		// chat 窗口
+		public function chat() {
+			$this->display();
+		}
+
 	}
 
 

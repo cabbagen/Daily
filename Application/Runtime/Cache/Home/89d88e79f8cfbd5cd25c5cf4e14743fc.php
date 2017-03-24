@@ -5,6 +5,7 @@
 		<meta name="description" content="daily application tool" />
 		<meta name="keywords" content="daily" />
 		<title>daily application tool</title>
+		<link rel="icon" href="/Public/images/icon.png" />
 		<!-- 引入样式 -->
 		<link rel="stylesheet" type="text/css" href="/Public/lib/style/reset.css" />
 		<link rel="stylesheet" type="text/css" href="/Public/lib/style/common.css" />
@@ -46,16 +47,16 @@
 			<div class="field gender">
 				<span>性别</span>
 				<strong>
-					<label for="man">男</label>
-					<input type="radio" name="gender" value="man" id="man" data-condition="required" />
+					<label for="M">男</label>
+					<input type="radio" name="gender" value="M" id="man" data-condition="required" />
 				</strong>
 				<strong>
-					<label for="woman">女</label>
-					<input type="radio" name="gender" value="woman" id="woman" data-condition="required" />
+					<label for="F">女</label>
+					<input type="radio" name="gender" value="F" id="woman" data-condition="required" />
 				</strong>
 				<strong>
-					<label for="unknow">保密</label>
-					<input type="radio" name="gender" value="unknow" id="unknow" data-condition="required" />
+					<label for="N">保密</label>
+					<input type="radio" name="gender" value="N" id="unknow" data-condition="required" />
 				</strong>
 				<i class="error">这里不能为空！</i>
 			</div>

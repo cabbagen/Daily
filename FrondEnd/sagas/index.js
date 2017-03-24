@@ -1,6 +1,7 @@
 import * as mainSaga from './main';
 import * as fileSaga from './file';
 import * as calendarSaga from './calendar';
+import * as categorySaga from './category';
 
 const getSagaArrayFromObject = function(sagaObject) {
 	var sagaArray = [];
@@ -14,6 +15,7 @@ export default function* rootSaga() {
 	yield [
 		...getSagaArrayFromObject(mainSaga),
 		...getSagaArrayFromObject(fileSaga),
-		...getSagaArrayFromObject(calendarSaga)
+		...getSagaArrayFromObject(calendarSaga),
+		...getSagaArrayFromObject(categorySaga)
 	]
 };

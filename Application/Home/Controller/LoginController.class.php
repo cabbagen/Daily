@@ -48,7 +48,7 @@
 		}
 
 		public function handleLogin() {
-			$userModel = D('users');
+			$userModel = D('Users');
 			$result = $userModel->checkUser( I('post.username'), I('post.password') );
 
 			if($result) {
@@ -63,11 +63,14 @@
 		}
 
 		public function handleRegist() {
-			$userModel = D('users');
+			$userModel = D('Users');
 			$userInfos = array_merge(I('post.', null), array(
-				'avatorUrl' => $this->avatorUrl,
+				'avator' => $this->avatorUrl,
 				'password' => md5( I('post.password', null) ),
 			));
+
+			var_dump($userInfos);
+			die('');
 
 			$result = $userModel->createUser($userInfos);
 
@@ -98,6 +101,7 @@
 				));
 			}
 		}
+
 	}
 ?>
 

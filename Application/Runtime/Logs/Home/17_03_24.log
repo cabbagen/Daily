@@ -1,0 +1,31 @@
+[ 2017-03-24T10:45:25+08:00 ] 127.0.0.1 /Home/Login/loginAccount.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.078797s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.033219s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.033529s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.041910s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.042117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.281173s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.281363s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.022737s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.022945s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.025085s ]
+INFO: [ app_end ] --END-- [ RunTime:0.025314s ]
+
+[ 2017-03-24T10:45:29+08:00 ] 127.0.0.1 /index.php/Home/Login/regist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000813s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000720s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000908s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000847s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001038s ]
+

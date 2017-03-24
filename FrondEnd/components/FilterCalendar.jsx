@@ -24,7 +24,7 @@ class FilterCalendar extends Component {
 		return (
 			<div className={styles.filter_wrap}>
 				<div className={styles.filter_header}>
-          <input type="" placeholder="日程筛选" onChange={this.filterList.bind(this)} />
+          <input type="text" placeholder="日程筛选" onChange={this.filterList.bind(this)} />
         </div>
         {content}
 			</div>

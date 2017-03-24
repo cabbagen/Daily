@@ -28,10 +28,8 @@ ReactDom.render(
 					<Route path="/folders/:folders/:file" />
 				</Route>
 				<Route path="/calendars/:calendars" component={Pagination.calendar} />
+				<Route path="/categorys/:categorys" component={Pagination.category} />
 				{/*
-				<Route path="/categorys/:categorys" component={Pagination.category}>
-					<Route path="/categorys/:categorys/:category" />
-				</Route>
 				<Route path="/groups/:groups" component={Pagination.group}>
 					<Route path="/groups/:groups/:group" />
 				</Route>

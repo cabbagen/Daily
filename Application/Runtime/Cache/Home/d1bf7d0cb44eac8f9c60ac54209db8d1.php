@@ -5,6 +5,7 @@
 		<meta name="description" content="daily application tool" />
 		<meta name="keywords" content="daily" />
 		<title>daily application tool</title>
+		<link rel="icon" href="/Public/images/icon.png" />
 		<!-- 引入样式 -->
 		<link rel="stylesheet" type="text/css" href="/Public/lib/style/reset.css" />
 		<link rel="stylesheet" type="text/css" href="/Public/lib/style/common.css" />

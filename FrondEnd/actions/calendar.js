@@ -20,7 +20,3 @@ export const requireDayData = (timestamp) => ({
 export const requireChartData = () => ({
 	type : 'requireChartData'
 });
-
-export const demo = () => ({
-	type : 'demo'
-});

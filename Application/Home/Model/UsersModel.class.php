@@ -6,20 +6,16 @@
 	class UsersModel extends BaseModel {
 		
 		public function checkUser($username, $password) {
-			$userModel = M('users');
-			$condition = array(
+			return $this->where(array(
 				'username' => $username,
 				'password' => $password,
-			);
-
-			$result = $userModel->where($condition)->find();
-
-			return $result;
+			))->find();
 		}
 
 		public function createUser($userInfos) {
-			$userModel = M('users');
-			$result = $userModel->create($userInfos)->add();
+
+
+			$result = $this->date($userInfos)->add();
 
 			if($result) {
 				$userInfos = array(
@@ -28,7 +24,6 @@
 					'nick' => $userInfos['nick'],
 				);
 				return $imResult = $this->imAddUser($userInfos);
-
 			} else {
 				return false;
 			}
@@ -60,10 +55,10 @@
 		}
 
 		public function getUserInfo($queryArray) {
-			$userModel = M('users');
-
-			return $userModel->where($queryArray)->find();
+			return $this->where($queryArray)->find();
 		}
+
+
 
 	}
 
