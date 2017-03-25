@@ -88,10 +88,9 @@ class FileterCategory extends Component {
   }
 
   deleteFriend(friendId) {
-  	console.log('删除好友');
   	var { mainActions, mainState, categoryActions } = this.props;
 
-  	// 删除好友操作之后，拉取好友列表，拉取动作放在 saga 中
+  	// 删除好友操作之后，拉取好友列表
   	mainActions.deleteFriend({
   		friend_id : friendId, 
   		from_category_id : mainState.currentCategoryId,

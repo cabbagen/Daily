@@ -18,7 +18,6 @@ const categoryReducerMap = {
 
 	// 请求人员列表
 	requireUserForAddFriendListAsyncSuccess : function(state, action) {
-		console.log('请求人员列表--------');
 		return Object.assign({}, state, {
 			currentUserList : action.currentUserList,
 			searchTotalPage : action.searchTotalPage,

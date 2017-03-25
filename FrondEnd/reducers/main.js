@@ -200,7 +200,6 @@ const mainReducerMap = {
 	},
 	// 添加好友
 	addFriendAsyncSuccess : function(state, action) {
-		console.log('添加好友-----');
 		return Object.assign({}, state, {
 			categorysCategoryItem : action.categorysCategoryItem
 		});
@@ -212,7 +211,6 @@ const mainReducerMap = {
 	},
 	// 删除好友
 	deleteFriendAsyncSuccess : function(state, action) {
-		console.log('删除好友--------');
 		return Object.assign({}, state, {
 			categorysCategoryItem : action.categorysCategoryItem
 		});
