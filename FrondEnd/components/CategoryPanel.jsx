@@ -109,12 +109,6 @@ class CategoryPanel extends Component {
 			pageSize : PAGE_SIZE,
 			keyWord : keyWord
 		});
-		
-		// categoryActions.requireUserForAddFriendList({
-		// 	currentPage : categoryState.searchCurrentPage,
-		// 	pageSize : PAGE_SIZE,
-		// 	keyWord : keyWord
-		// });
 
 	}
 }

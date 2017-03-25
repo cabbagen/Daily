@@ -98,11 +98,6 @@ class FileterCategory extends Component {
   		currentPage : 1,
   		pageSize : PAGE_SIZE
   	});
-  	
-  	// categoryActions.requireUserForAddFriendList({
-  	// 	currentPage : 1,
-			// pageSize : PAGE_SIZE
-  	// });
   }
 }
 

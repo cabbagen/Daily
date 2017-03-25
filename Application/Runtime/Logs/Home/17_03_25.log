@@ -7388,3 +7388,14 @@ SQL: SELECT * FROM `think_friends` WHERE `user_id` = 6 AND `friend_id` = 5 LIMIT
 SQL: SELECT * FROM `think_friends` WHERE `user_id` = 6 AND `friend_id` = 7 LIMIT 1   [ RunTime:0.0002s ]
 SQL: SELECT * FROM `think_friends` WHERE `user_id` = 6 AND `friend_id` = 8 LIMIT 1   [ RunTime:0.0002s ]
 
+[ 2017-03-25T21:18:17+08:00 ] 127.0.0.1 /index.php/Home/App/9c2a32015652411ad188.hot-update.json
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000734s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000925s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001290s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001181s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001559s ]
+
