@@ -33,6 +33,9 @@ requirejs(['formVerifier', 'fetchRequire'], function(FormVerifier, fetchRequire)
 			if(isSelectFile) {
 				formData.append('avatorImg', sourceInput[0].files[0]);
 				var promise = fetchRequire('/Home/Login/uploadAvator', 'POST', formData);
+				promise.then(function(data) {
+					$('<img src="' + data.data + '" />').appendTo(targetImg);
+				});
 			}
 		}
 	};

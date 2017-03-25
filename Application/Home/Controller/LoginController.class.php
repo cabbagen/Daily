@@ -8,7 +8,7 @@
 
 		private $registSuccessResponse = array(
 			'status' => 300,
-			'redirectUrl' => "U('Home/App/app')",
+			'data' => array('redirectUrl' => '/Home/app/app.html'),
 		);
 
 		private $registErrorResponse = array(
@@ -54,8 +54,8 @@
 			if($result) {
 				$this->addWebsiteSession($result['username'], $result['id']);
 				$this->hasLoginError = false;
-				
-				$this->redirect('App/app');
+		
+				$this->redirect('/Home/App/app');
 			} else {
 				$this->hasLoginError = true;
 				$this->redirect('Login/loginAccount');
@@ -69,9 +69,6 @@
 				'password' => md5( I('post.password', null) ),
 			));
 
-			var_dump($userInfos);
-			die('');
-
 			$result = $userModel->createUser($userInfos);
 
 			if($result) {
@@ -81,6 +78,22 @@
 				$this->ajaxReturn($this->registErrorResponse);
 			}
 
+		}
+
+		public function addUserDemo() {
+			$userInfos = array(
+				'username' => 'test_5',
+				'password' => '123456',
+				'email' => '12312@qq.com',
+				'nickname' => 'test_5',
+				'extra' => 'hello world',
+				'avator' => '/',
+				'gender' => 'F'
+			);
+
+			$result = D('Users')->createUser($userInfos);
+
+			var_dump($result);
 		}
 
 		public function uploadAvator() {
@@ -93,7 +106,7 @@
 					'data' => $avatorUpload->getError(),
 				));
 			} else {
-				$this->avatorUrl = '/public/files/' . substr($info['savepath'].$info['savename'], 1);
+				$this->avatorUrl = '/public/files' . substr($info['savepath'].$info['savename'], 1);
 
 				$this->ajaxReturn(array(
 					'status' => 200,

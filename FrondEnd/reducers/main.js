@@ -188,12 +188,8 @@ const mainReducerMap = {
 	},
 
 
-
-
-
-
-
-
+	// 好友模块
+	// 获取
 	getCategorysCategoryItemAsyncSuccess : function(state, action) {
 		var tempObj = {categorysCategoryItem : action.categorysCategoryItem, currentCategoryId : action.id};
 		return Object.assign({}, state, tempObj);
@@ -202,6 +198,38 @@ const mainReducerMap = {
 		var newState = Object.assign({}, state, {notifications : action.msg});
 		return newState;
 	},
+	// 添加好友
+	addFriendAsyncSuccess : function(state, action) {
+		console.log('添加好友-----');
+		return Object.assign({}, state, {
+			categorysCategoryItem : action.categorysCategoryItem
+		});
+	},
+	addFriendAsyncError : function(state, action) {
+		return Object.assign({}, state, {
+			notifications : action.msg
+		});
+	},
+	// 删除好友
+	deleteFriendAsyncSuccess : function(state, action) {
+		console.log('删除好友--------');
+		return Object.assign({}, state, {
+			categorysCategoryItem : action.categorysCategoryItem
+		});
+	},
+	deleteFriendAsyncError : function(state, action) {
+		return Object.assign({}, state, {
+			notifications : action.msg
+		});
+	},
+
+
+
+
+
+
+
+	
 	getGroupsCategoryItemAsyncSuccess : function(state, action) {
 		var tempObj = {groupsCategoryItem : action.groupsCategoryItem, currentCategoryId : action.id};
 		return Object.assign({}, state, tempObj);

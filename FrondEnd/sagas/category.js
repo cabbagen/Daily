@@ -8,7 +8,8 @@ function* requireUserForAddFriendListAsync(action) {
 		yield put({
 			type : 'requireUserForAddFriendListAsyncSuccess', 
 			currentUserList : data.data.usersList, 
-			searchTotalPage : data.data.totalPage
+			searchTotalPage : data.data.totalPage,
+			searchCurrentPage : data.data.currentPage
 		});
 	} else if(data.status && data.status !== 200) {
 		yield put({type : 'requireUserForAddFriendListAsyncError', msg : data.msg});

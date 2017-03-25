@@ -27,6 +27,7 @@
 	<script type="text/javascript">
 		window.userInfo = <?php echo ($userInfo); ?>;
     window.menuCategoryInfos = <?php echo ($menuCategoryInfos); ?>;
+    window.location.hash = '/web';
 	</script>
   <script type="text/javascript" src="/public/lib/javascript/module.min.js"></script>
   <script type="text/javascript" src="/public/lib/javascript/hotkeys.min.js"></script>

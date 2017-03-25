@@ -47,7 +47,7 @@
 		</div>
 		<div class="login-helper">
 			<div class="helper-item">
-				<a href="<?php echo U('Home/Login/regist');?>">现在注册</a>
+				<a href="<?php echo U('Home/Login/registAccount');?>">现在注册</a>
 			</div>
 			<div class="helper-item">
 				<a href="<?php echo U('Home/Login/forgetPassword');?>">忘记密码</a>

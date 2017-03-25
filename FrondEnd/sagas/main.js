@@ -1,6 +1,6 @@
 
 import { delay } from 'redux-saga';
-import { put, takeEvery, call } from 'redux-saga/effects';
+import { put, takeEvery, call, race } from 'redux-saga/effects';
 import servers from '../servers';
 
 // 发送邀请邮件
@@ -206,6 +206,7 @@ function* completeAffairAsync(action) {
 		yield put({type : 'completeAffairAsyncError', msg : data.msg});
 	}
 }
+
 function* cancelCompleteAffairAsync(action) {
 	var data = yield call(servers.calendarServer.cancelCompleteAffairAsync, action.affairId, action.from_calendar_id);
 	if(data.status && data.status === 200) {
@@ -214,6 +215,45 @@ function* cancelCompleteAffairAsync(action) {
 		yield put({type : 'cancelCompleteAffairAsyncError', msg : data.msg});
 	} else {
 		yield put({type : 'cancelCompleteAffairAsyncError', msg : data.msg});
+	}
+}
+
+
+// 添加好友
+// 这里会拉取用户列表
+function* addFriendAsync(action) {
+	var data = yield call(servers.categoryServer.addFriendAsync, action.params);
+	if(data.status && data.status === 200) {
+		yield put({type : 'addFriendAsyncSuccess', categorysCategoryItem : data.data.friendList});
+		yield put({
+			type : 'requireUserForAddFriendListAsyncSuccess', 
+			currentUserList : data.data.searchPage.usersList,
+			searchTotalPage : data.data.searchPage.totalPage,
+			searchCurrentPage : data.data.searchPage.currentPage
+		});
+	} else if(data.status && data.status !== 200) {
+		yield put({type : 'addFriendAsyncError', msg : data.msg});
+	} else {
+		yield put({type : 'addFriendAsyncError', msg : data.msg});
+	}
+}
+
+// 删除好友
+// 这里会拉取用户列表
+function* deleteFriendAsync(action) {
+	var data = yield call(servers.categoryServer.deleteFriendAsync, action.params);
+	if(data.status && data.status === 200) {
+		yield put({type : 'deleteFriendAsyncSuccess', categorysCategoryItem : data.data.friendList});
+		yield put({
+			type : 'requireUserForAddFriendListAsyncSuccess', 
+			currentUserList : data.data.searchPage.usersList,
+			searchTotalPage : data.data.searchPage.totalPage,
+			searchCurrentPage : data.data.searchPage.currentPage
+		});
+	} else if(data.status && data.status !== 200) {
+		yield put({type : 'deleteFriendAsyncError', msg : data.msg});
+	} else {
+		yield put({type : 'deleteFriendAsyncError', msg : data.msg});
 	}
 }
 
@@ -244,4 +284,7 @@ export function* watchMain() {
 	yield takeEvery('addAffair', addAffairAsync);
 	yield takeEvery('completeAffair', completeAffairAsync);
 	yield takeEvery('cancelCompleteAffair', cancelCompleteAffairAsync);
+
+	yield takeEvery('addFriend', addFriendAsync);
+	yield takeEvery('deleteFriend', deleteFriendAsync);
 };

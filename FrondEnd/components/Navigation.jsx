@@ -34,7 +34,7 @@ class Navigation extends Component {
   }
 
   render() {
-    var { userId, userName, userAvator } = this.props.userMenuInfo;
+    var { userId, nickName, avator } = this.props.userInfo;
     var that = this;
 
     var unReadImMsgsNumber = this.getUnReadImMsgsNumber(),
@@ -77,8 +77,8 @@ class Navigation extends Component {
               {isShowImLinkmanPanel}
             </li>
             <li className={styles.user_info} onClick={this.showUserInfoCenterPanel.bind(this)}>
-              <img src="/public/images/avatorExample.png" />
-              <span>十七</span>
+              <img src={avator} />
+              <span>{nickName}</span>
               <i className={triangleStyle}></i>
               {isShowUserInfoCenterPanel}
             </li>
@@ -120,10 +120,11 @@ class Navigation extends Component {
   }
 
   renderUserInfoCenterPanel() {
+    var { userId } = this.props.userInfo;
     return this.state.isShowUserInfoCenterPanel ? (
       <ol onClick={(e) => {e.stopPropagation()}}>
-        <li><a href="#">个人中心</a></li>
-        <li><a href="#">登出</a></li>
+        <li><a href={`/Home/UserInfo/${userId}.html`}>个人中心</a></li>
+        <li><a href="/Home/Login/loginAccount.html">登出</a></li>
       </ol>
     ) : '';
   }

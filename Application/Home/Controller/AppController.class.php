@@ -6,9 +6,8 @@
 	class AppController extends BaseController {
 
 		private function getImUserInfoFromSession() {
-			$userModel = D('Users');
-			$imTop = $userModel->initIm();
-			$uid = session('username');
+			$imTop = D('Users')->initIm();
+			$uid = md5( session('username') );
 
 			$req = new \OpenimUsersGetRequest;
 			$req->setUserids($uid);
@@ -22,8 +21,7 @@
 		}
 
 		private function getUserInfoFromSession() {
-			$userModel = D('Users');
-			return $userModel->getUserInfo(array(
+			return D('Users')->getUserInfo(array(
 				'username' => session('username'),
 			));
 		}
@@ -71,20 +69,24 @@
 		public function app() {
 			$imUserInfos = $this->getImUserInfoFromSession();
 			$userInfos = $this->getUserInfoFromSession();
-			if(imUserInfos) {
+
+			if($imUserInfos && $userInfos) {
 				$userInfo = array(
 					'uid' => $imUserInfos->userid,
 					'appkey' => C('IM_AppKey'),
 					'credential' => $imUserInfos->password,
-					'nickName' => $imUserInfos->nick,
+					'nickName' => $userInfos['nickname'],
 					'userId' => $userInfos['id'],
 					'avator' => $userInfos['avator'],
 				);
 				$this->assign('userInfo', json_encode($userInfo));
 				$this->assign('menuCategoryInfos', json_encode($this->getUserMenuInfos()));
+
+				$this->display();
+			} else {
+				$this->redirect('Login/loginAccount');
 			}
 
-			$this->display();
 		}
 
 		// 当用户点击左侧菜单分类时，获取获取对应的资源数据

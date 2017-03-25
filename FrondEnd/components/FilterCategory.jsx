@@ -1,6 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import styles from './FilterCategory.less';
 
+const PAGE_SIZE = 6;
 
 class FileterCategory extends Component {
 	constructor(props) {
@@ -59,7 +60,7 @@ class FileterCategory extends Component {
 	    		<div className={`${styles.infos} ${styles.fl}`}>
 	    			<p className={styles.name}>{item.nickname}</p>
 	    			<p className={styles.autograph}>{item.extra}</p>
-	    			<img className={styles.delete} src="/public/images/delete.png" />
+	    			<img className={styles.delete} src="/public/images/delete.png" onClick={this.deleteFriend.bind(this, item.friend_id)} />
 	    		</div>
 				</li>
 			);
@@ -84,6 +85,24 @@ class FileterCategory extends Component {
   openChat() {
   	console.log('打开聊天窗口');
   	window.open('/Home/App/chat', 'chatWindow', 'toolbar=no, status=no, scrollbars=0,resizable=0,menubar＝0,location=0,width=700,height=500');
+  }
+
+  deleteFriend(friendId) {
+  	console.log('删除好友');
+  	var { mainActions, mainState, categoryActions } = this.props;
+
+  	// 删除好友操作之后，拉取好友列表，拉取动作放在 saga 中
+  	mainActions.deleteFriend({
+  		friend_id : friendId, 
+  		from_category_id : mainState.currentCategoryId,
+  		currentPage : 1,
+  		pageSize : PAGE_SIZE
+  	});
+  	
+  	// categoryActions.requireUserForAddFriendList({
+  	// 	currentPage : 1,
+			// pageSize : PAGE_SIZE
+  	// });
   }
 }
 

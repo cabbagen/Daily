@@ -5,6 +5,7 @@ const initCalendarState = {
 	// 当页人员数据列表
 	currentUserList : null, 
 	searchTotalPage : undefined,
+	searchCurrentPage : undefined,
 };
 
 
@@ -17,9 +18,11 @@ const categoryReducerMap = {
 
 	// 请求人员列表
 	requireUserForAddFriendListAsyncSuccess : function(state, action) {
+		console.log('请求人员列表--------');
 		return Object.assign({}, state, {
 			currentUserList : action.currentUserList,
-			searchTotalPage : action.searchTotalPage
+			searchTotalPage : action.searchTotalPage,
+			searchCurrentPage : action.searchCurrentPage
 		});
 	},
 	requireUserForAddFriendListAsyncError : function(state, action) {

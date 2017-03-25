@@ -78,6 +78,10 @@ form {
 	background: url('/public/images/avator.png') no-repeat center;
 	cursor: pointer;
 }
+.image-show img {
+	width: 100%;
+	height: 100%;
+}
 .avator {
 	text-align: center;
 }

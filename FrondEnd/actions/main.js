@@ -119,5 +119,17 @@ export const cancelCompleteAffair = (affairId, from_calendar_id) => ({
 });
 
 
+// 好友模块
 
+// 添加好友
+export const addFriend = (params) => ({
+	type : 'addFriend',
+	params : params
+});
+
+// 删除好友
+export const deleteFriend = (params) => ({
+	type : 'deleteFriend',
+	params : params
+});
 

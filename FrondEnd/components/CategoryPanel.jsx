@@ -13,10 +13,11 @@ class CategoryPanel extends Component {
 	render() {
 		var { categoryState } = this.props;
 		var userList = this.renderUserList();
-		var myPagination = categoryState.currentUserList && categoryState.currentUserList.length > PAGE_SIZE ? (
+		var myPagination = categoryState.currentUserList && categoryState.searchTotalPage > PAGE_SIZE ? (
 			<div className={styles.pagination}>
 				<Pagination 
 					defaultCurrent={1} 
+					current={parseInt(categoryState.searchCurrentPage, 10)}
 					total={categoryState.searchTotalPage} 
 					pageSize={PAGE_SIZE} 
 					onChange={this.changePage.bind(this)} 
@@ -42,8 +43,8 @@ class CategoryPanel extends Component {
 
 		if(hasNodes) {
 			var userNodes = categoryState.currentUserList.map((item) => {
-				var button = item.is_added === '0' ? (
-					<button className={styles.not_added} type="button">添加好友</button>
+				var button = item.is_added === 0 ? (
+					<button className={styles.not_added} type="button" title="添加好友" onClick={this.addFriend.bind(this, item.id)}>添加好友</button>
 				) : (
 					<button className={styles.added} type="button">已添加</button>
 				); 
@@ -71,8 +72,14 @@ class CategoryPanel extends Component {
 	}
 
 	changePage(currentPage, pageSize) {
-		console.log(currentPage);
-		console.log(pageSize);
+		var { categoryActions } = this.props;
+		var keyWord = this.refs.search.value;
+
+		categoryActions.requireUserForAddFriendList({
+			currentPage : currentPage,
+			pageSize : pageSize,
+			keyWord : keyWord
+		});
 	}
 
 	searchUser() {
@@ -84,6 +91,31 @@ class CategoryPanel extends Component {
 			pageSize : PAGE_SIZE,
 			keyWord : keyWord
 		});
+	}
+
+	addFriend(userId) {
+		var { mainState, mainActions, categoryState, categoryActions } = this.props;
+		var keyWord = this.refs.search.value;
+
+		if(mainState.currentCategoryId.length === 0) {
+			alert('请先选择好友分组，再进行添加好友吧！');
+			return;
+		}
+
+		mainActions.addFriend({
+			friend_id : userId,
+			from_category_id : mainState.currentCategoryId,
+			currentPage : categoryState.searchCurrentPage,
+			pageSize : PAGE_SIZE,
+			keyWord : keyWord
+		});
+		
+		// categoryActions.requireUserForAddFriendList({
+		// 	currentPage : categoryState.searchCurrentPage,
+		// 	pageSize : PAGE_SIZE,
+		// 	keyWord : keyWord
+		// });
+
 	}
 }
 

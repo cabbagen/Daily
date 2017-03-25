@@ -8,20 +8,17 @@
 		public function checkUser($username, $password) {
 			return $this->where(array(
 				'username' => $username,
-				'password' => $password,
+				'password' => md5($password),
 			))->find();
 		}
 
 		public function createUser($userInfos) {
-
-
-			$result = $this->date($userInfos)->add();
-
+			$result = $this->data($userInfos)->add();
 			if($result) {
 				$userInfos = array(
 					'userid' => md5($userInfos['username']),
 					'password' => substr($userInfos['password'], 0, 10),
-					'nick' => $userInfos['nick'],
+					'nick' => $userInfos['nickname'],
 				);
 				return $imResult = $this->imAddUser($userInfos);
 			} else {
@@ -32,7 +29,7 @@
 		public function imAddUser($userinfoArray) {
 			$imTop = $this->initIm();
 			$imReq = new \OpenimUsersAddRequest;
-			$userInfos = new Userinfos;
+			$userInfos = new \Userinfos;
 
 			$userInfos->userid = $userinfoArray['userid'];
 			$userInfos->password = $userinfoArray['password'];
@@ -56,6 +53,33 @@
 
 		public function getUserInfo($queryArray) {
 			return $this->where($queryArray)->find();
+		}
+
+		// 好友部分相关
+		public function getTotalUserCount($keyWord) {
+			$userId = $this->getUserId();
+			// 如果有 关键词 则进行模糊查询
+			if( strlen($keyWord) != 0 ) {
+				return $this->where("username like '%$keyWord%'")->count();
+			} else {
+				return $this->count() - 1;
+			}
+		}
+
+		// 好友部分相关
+		public function getUsersForPagination($currentPage, $pageSize, $keyWord) {
+			$userId = $this->getUserId();
+			// 如果有 关键词 则进行模糊查询
+			if( strlen($keyWord) != 0 ) {
+				$sql = "select id, username, avator, extra, nickname from think_users " . 
+					"where id != $userId and username like '%$keyWord%' limit $currentPage, $pageSize";
+			} else {
+				$sql = "select id, username, avator, extra, nickname from think_users " . 
+					"where id != $userId limit $currentPage, $pageSize";
+			}
+
+			return $this->query($sql);
+
 		}
 
 
