@@ -20,7 +20,7 @@
 	<body>
 		<!-- 文档内容 -->
 		
-
+  <p><?php echo ($friendId); ?></p>
 
 	</body>
 	<!-- 脚本文件 -->
@@ -29,11 +29,13 @@
   
   <script type="text/javascript" src="https://g.alicdn.com/aliww/??h5.imsdk/2.1.0/scripts/yw/wsdk.js,h5.openim.kit/0.3.7/scripts/kit.js" charset="utf-8"></script>
 	<script type="text/javascript">
-		WKIT.init({
-      uid: 'Lee',
-      appkey: 23454789,
-      credential: '123456',
-      touid: 'suxia'
+    window.selfImInfo = <?php echo ($selfImInfo); ?>;
+    window.toImInfo = <?php echo ($toImInfo); ?>;
+    WKIT.init({
+      uid : window.selfImInfo.userid,
+      appkey : 23454789,
+      credential : window.selfImInfo.password,
+      touid : window.toImInfo.userid
     });
 	</script>
 

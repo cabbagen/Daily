@@ -6,8 +6,12 @@
 	class AppController extends BaseController {
 
 		private function getImUserInfoFromSession() {
+			return $this->getImUserInfoFromUsername( session('username') );
+		}
+
+		private function getImUserInfoFromUsername($username) {
 			$imTop = D('Users')->initIm();
-			$uid = md5( session('username') );
+			$uid = md5( $username );
 
 			$req = new \OpenimUsersGetRequest;
 			$req->setUserids($uid);
@@ -148,6 +152,14 @@
 
 		// chat 窗口
 		public function chat() {
+			$frindId = I('get.friendId', null);
+			$frindUsername = D('Users')->getUserInfo(array('id' => $frindId))['username'];
+			
+			$selfImInfo = $this->getImUserInfoFromSession();
+			$toImInfo = $this->getImUserInfoFromUsername($frindUsername);
+
+			$this->assign('selfImInfo', json_encode($selfImInfo));
+			$this->assign('toImInfo', json_encode($toImInfo));
 			$this->display();
 		}
 

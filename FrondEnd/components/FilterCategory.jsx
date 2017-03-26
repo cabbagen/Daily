@@ -52,7 +52,7 @@ class FileterCategory extends Component {
 		var nodes = this.state.categoryItem.map((item) => {
 			var unreadNode = item.unreadNum ? <span>{item.unreadNum}</span> : '';
 			return (
-				<li key={item.friend_id} title="双击打开聊天窗口" onDoubleClick={this.openChat.bind(this)}>
+				<li key={item.friend_id} title="双击打开聊天窗口" onDoubleClick={this.openChat.bind(this, item.friend_id)}>
 					<div className={`${styles.avator} ${styles.fl}`}>
 	    			<img src="/public/images/avator_1.png" />
 	    			{unreadNode}
@@ -82,9 +82,9 @@ class FileterCategory extends Component {
 
   }
 
-  openChat() {
+  openChat(friendId) {
   	console.log('打开聊天窗口');
-  	window.open('/Home/App/chat', 'chatWindow', 'toolbar=no, status=no, scrollbars=0,resizable=0,menubar＝0,location=0,width=700,height=500');
+  	window.open('/Home/App/chat?friendId=' + friendId, 'chatWindow', 'toolbar=no, status=no, scrollbars=0,resizable=0,menubar＝0,location=0,width=700,height=500');
   }
 
   deleteFriend(friendId) {
