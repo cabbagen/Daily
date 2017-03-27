@@ -95,7 +95,6 @@ class CategoryPanel extends Component {
 
 	addFriend(userId) {
 		var { mainState, mainActions, categoryState, categoryActions } = this.props;
-		var keyWord = this.refs.search.value;
 
 		if(mainState.currentCategoryId.length === 0) {
 			alert('请先选择好友分组，再进行添加好友吧！');
@@ -103,11 +102,8 @@ class CategoryPanel extends Component {
 		}
 
 		mainActions.addFriend({
-			friend_id : userId,
-			from_category_id : mainState.currentCategoryId,
-			currentPage : categoryState.searchCurrentPage,
-			pageSize : PAGE_SIZE,
-			keyWord : keyWord
+			to_user_id : userId,
+			type : 'addFriend'
 		});
 
 	}

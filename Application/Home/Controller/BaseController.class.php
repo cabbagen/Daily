@@ -40,38 +40,36 @@
 
 		// ==================== 消息通知长轮询部分 =========================
 
-		private $msgLongNotificationPool = array();
-
 		public function listenMsgLongNotification() {
-			session_write_close();
-			header("Content-Type: text/event-stream\n\n");
-			header('Cache: no-cache');
-			$counter = rand(1, 10);
-
-			while(1) {
-				echo "event: ping \n";
-				$curDate = date();
-				echo 'data: {"time": "' . $curDate . '"}';
-				echo "\n\n";
-
-				$counter--;
-				if(!$counter) {
-					echo 'data: This is a message at time ' . $curDate . "\n\n";
-					$counter = rand(1, 10);
-				}
-				ob_end_flush();
-				flush();
-				sleep(1);
+			$msg = $this->getOneMsgNotification();
+			if($msg) {
+				$this->ajaxReturn(array(
+					'status' => 200,
+					'data' => json_encode($msg),
+				));
+			} else {
+				$this->ajaxReturn(array(
+					'status' => 205,
+					'msg' => '当前没有消息',
+					'toUserId' => $this->getUserIdFromSession(),
+				));
 			}
 		}
 		
-		public function addMsgNotification() {
-			D('Message')->addMessage(array(
-				'type' => 'addFriend',
-				'to_user_id' => 2,
-				'from_user_id' => 1
-			));
-			$this->ajaxReturnError();
+		public function addMsgNotification($messageArray) {
+			return D('Message')->addMessage($messageArray);
+		}
+
+		public function getOneMsgNotification() {
+			$userId = $this->getUserIdFromSession();
+			$msg = D('Message')->getMessage($userId);
+
+			if($msg) {
+				D('Message')->deleteMessage((int)$msg['to_user_id']);
+				return $msg;
+			} else {
+				return false;
+			}
 		}
 		
 

@@ -208,7 +208,7 @@ const mainReducerMap = {
 	// 添加好友
 	addFriendAsyncSuccess : function(state, action) {
 		return Object.assign({}, state, {
-			categorysCategoryItem : action.categorysCategoryItem
+			notifications : action.msg
 		});
 	},
 	addFriendAsyncError : function(state, action) {
@@ -228,6 +228,15 @@ const mainReducerMap = {
 		});
 	},
 
+
+	// 监听处理
+	listenMsgLongNotificationAsyncSuccess : function(state, action) {
+		console.log(action.data);
+		return state;
+	},
+	listenMsgLongNotificationAsyncError : function(state, action) {
+		return state;
+	},
 
 
 

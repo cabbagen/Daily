@@ -139,3 +139,8 @@ export const deleteFriend = (params) => ({
 	params : params
 });
 
+
+// 监听消息
+export const listenerMsgFromServer = () => ({
+	type : 'listenerMsgFromServer'
+});

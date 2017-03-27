@@ -37,3 +37,8 @@ export const addMenuCategoryItemAsync = (addItemObject) => {
 	};
 	return Require.ajax('/Home/app/addItem', 'post', params).then(data => data, e => e);
 };
+
+// 监听处理
+export const listenerMsgFromServerAsync = () => {
+	return Require.ajax('/Home/base/listenMsgLongNotification', 'post', {}).then(data => data, e => e);
+}

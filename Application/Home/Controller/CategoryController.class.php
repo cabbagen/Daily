@@ -46,30 +46,53 @@
     }
 
     // 添加好友，并且拉取查询数据
-    public function addFriendAndQueryUsers() {
-      $userId = $this->getUserIdFromSession();
-      $addResult = D('Friends')->addFriend(array(
-        'from_category_id' => I('post.from_category_id', null),
-        'user_id' => $userId,
-        'friend_id' => I('post.friend_id', null),
+    // public function addFriendAndQueryUsers() {
+    //   $userId = $this->getUserIdFromSession();
+    //   $addResult = D('Friends')->addFriend(array(
+    //     'from_category_id' => I('post.from_category_id', null),
+    //     'user_id' => $userId,
+    //     'friend_id' => I('post.friend_id', null),
+    //   ));
+    //   $friendList = D('Friends')->getCategoryItemFromModel('Categorys', I('post.from_category_id', null));
+
+    //   $queryResult = $this->prePaginationForAddAndDelete( I('post.', null) );
+
+    //   if(is_array($queryResult['userList']) && $addResult) {
+    //     $resultUserList = $this->adapterFrinedFromUser($queryResult['userList']);
+    //     $this->ajaxReturn(array('status' => 200, 'data' => array(
+    //       'searchPage' => array(
+    //         'usersList' => $resultUserList,
+    //         'totalPage' => $queryResult['totalPage'],
+    //         'currentPage' => I('post.currentPage', null)
+    //       ),
+    //       'friendList' => $friendList
+    //     )));
+    //   } else {
+    //     $this->ajaxReturnError();
+    //   }
+
+    // 添加好友，并向对方发送通知
+    public function addFriendAndAddMsg() {
+      $addResult = $this->addMsgNotification(array(
+        'type' => I('type', null),
+        'from_user_id' => $this->getUserIdFromSession(),
+        'to_user_id' => I('to_user_id', null),
       ));
-      $friendList = D('Friends')->getCategoryItemFromModel('Categorys', I('post.from_category_id', null));
-
-      $queryResult = $this->prePaginationForAddAndDelete( I('post.', null) );
-
-      if(is_array($queryResult['userList']) && $addResult) {
-        $resultUserList = $this->adapterFrinedFromUser($queryResult['userList']);
-        $this->ajaxReturn(array('status' => 200, 'data' => array(
-          'searchPage' => array(
-            'usersList' => $resultUserList,
-            'totalPage' => $queryResult['totalPage'],
-            'currentPage' => I('post.currentPage', null)
-          ),
-          'friendList' => $friendList
-        )));
+      if($addResult) {
+        $this->ajaxReturn(array(
+          'status' => 200,
+          'msg' => '消息已发出，正在等待对方响应',
+        ));
       } else {
         $this->ajaxReturnError();
       }
+    }
+
+    public function agressAddFriend() {
+
+    }
+
+    public function noAgressAddFriend() {
 
     }
 

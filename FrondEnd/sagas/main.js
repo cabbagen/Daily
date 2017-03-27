@@ -224,13 +224,7 @@ function* cancelCompleteAffairAsync(action) {
 function* addFriendAsync(action) {
 	var data = yield call(servers.categoryServer.addFriendAsync, action.params);
 	if(data.status && data.status === 200) {
-		yield put({type : 'addFriendAsyncSuccess', categorysCategoryItem : data.data.friendList});
-		yield put({
-			type : 'requireUserForAddFriendListAsyncSuccess', 
-			currentUserList : data.data.searchPage.usersList,
-			searchTotalPage : data.data.searchPage.totalPage,
-			searchCurrentPage : data.data.searchPage.currentPage
-		});
+		yield put({type : 'addFriendAsyncSuccess', msg : data.msg});
 	} else if(data.status && data.status !== 200) {
 		yield put({type : 'addFriendAsyncError', msg : data.msg});
 	} else {
@@ -256,6 +250,18 @@ function* deleteFriendAsync(action) {
 		yield put({type : 'deleteFriendAsyncError', msg : data.msg});
 	}
 }
+
+// 监听消息 
+function* listenerMsgFromServerAsync() {
+	var data = yield call(servers.mainServer.listenerMsgFromServerAsync);
+	if(data.status && data.status === 200) {
+		yield put({type : 'listenerMsgFromServerAsyncSuccess', data : data.data});
+	} else if(data.status && data.status !== 200) {
+		yield put({type : 'listenerMsgFromServerAsyncError'});
+	} else {
+		yield put({type : 'listenerMsgFromServerAsyncError'});
+	}
+} 
 
 
 export function* watchMain() {
@@ -287,4 +293,6 @@ export function* watchMain() {
 
 	yield takeEvery('addFriend', addFriendAsync);
 	yield takeEvery('deleteFriend', deleteFriendAsync);
+
+	yield takeEvery('listenerMsgFromServer', listenerMsgFromServerAsync);
 };

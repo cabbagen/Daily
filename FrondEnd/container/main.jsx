@@ -18,11 +18,11 @@ class Main extends Component {
 	// 在这里登录 IM 服务器
 	componentDidMount() {
 
-		// 当浏览器不支持时，会alert”对不起,当前浏览器不支持聊天,请更换浏览器“
+		// 当浏览器不支持时，会alert "对不起,当前浏览器不支持聊天,请更换浏览器"
     window.__WSDK__POSTMESSAGE__DEBUG__ = true;
     this.loginImServer();
 
-    this.receiveMsgFromServer();
+    this.listenMsgFromServer();
 	}
 
 	loginImServer() {
@@ -58,18 +58,11 @@ class Main extends Component {
 
 	}
 
-	receiveMsgFromServer() {
-		// source-event
-    var evtSource = new EventSource('http://www.daily.com:8080/Home/app/listenMsgLongNotification');
-    evtSource.onopen = function() {
-    	console.log('open ok');
-    }
-    evtSource.onerror = function() {
-    	console.log('faile');
-    }
-    evtSource.onmessage = function(e) {
-    	console.log(e.data);
-    }
+	listenMsgFromServer() {
+		var { mainActions } = this.props;
+		window.setInterval(function() {
+			mainActions.listenerMsgFromServer();
+		}, 10000);
 	}
 
 	componentWillUpdate(nextProps) {
