@@ -17499,3 +17499,263 @@ INFO: [ app_begin ] --END-- [ RunTime:0.000926s ]
 SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0093s ]
 SQL: SELECT * FROM `think_message` INNER JOIN think_users on think_users.id = think_message.to_user_id  WHERE `to_user_id` = '5' LIMIT 1   [ RunTime:0.0008s ]
 
+[ 2017-03-27T20:37:47+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001145s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001454s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `think_message` INNER JOIN think_users on think_users.id = think_message.to_user_id  WHERE `to_user_id` = '6' LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2017-03-27T20:37:49+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000584s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000582s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000760s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `think_message` INNER JOIN think_users on think_users.id = think_message.to_user_id  WHERE `to_user_id` = '5' LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2017-03-27T20:37:57+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000629s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000745s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000932s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `think_message` INNER JOIN think_users on think_users.id = think_message.to_user_id  WHERE `to_user_id` = '6' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-03-27T20:37:59+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000965s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000713s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `think_message` INNER JOIN think_users on think_users.id = think_message.to_user_id  WHERE `to_user_id` = '5' LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2017-03-27T20:38:07+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000799s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000584s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000737s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `think_message` INNER JOIN think_users on think_users.id = think_message.to_user_id  WHERE `to_user_id` = '6' LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2017-03-27T20:38:09+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000586s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000564s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000715s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `think_message` INNER JOIN think_users on think_users.id = think_message.to_user_id  WHERE `to_user_id` = '5' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-03-27T20:38:17+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000105s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001170s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001109s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001407s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `think_message` INNER JOIN think_users on think_users.id = think_message.to_user_id  WHERE `to_user_id` = '6' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-03-27T20:38:19+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000594s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000579s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000730s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `think_message` INNER JOIN think_users on think_users.id = think_message.to_user_id  WHERE `to_user_id` = '5' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-03-27T20:38:27+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000553s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000724s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `think_message` INNER JOIN think_users on think_users.id = think_message.to_user_id  WHERE `to_user_id` = '6' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-03-27T20:38:29+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000723s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000735s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `think_message` INNER JOIN think_users on think_users.id = think_message.to_user_id  WHERE `to_user_id` = '5' LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2017-03-27T20:38:37+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000668s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000721s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `think_message` INNER JOIN think_users on think_users.id = think_message.to_user_id  WHERE `to_user_id` = '6' LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2017-03-27T20:38:39+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000807s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000703s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `think_message` INNER JOIN think_users on think_users.id = think_message.to_user_id  WHERE `to_user_id` = '5' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-03-27T20:38:47+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000899s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000929s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001130s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `think_message` INNER JOIN think_users on think_users.id = think_message.to_user_id  WHERE `to_user_id` = '6' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-03-27T20:38:49+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000621s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000866s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `think_message` INNER JOIN think_users on think_users.id = think_message.to_user_id  WHERE `to_user_id` = '5' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-03-27T20:38:57+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000614s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000676s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000852s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `think_message` INNER JOIN think_users on think_users.id = think_message.to_user_id  WHERE `to_user_id` = '6' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-03-27T20:38:59+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000711s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000825s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000980s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `think_message` INNER JOIN think_users on think_users.id = think_message.to_user_id  WHERE `to_user_id` = '5' LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2017-03-27T20:39:07+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000574s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000693s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `think_message` INNER JOIN think_users on think_users.id = think_message.to_user_id  WHERE `to_user_id` = '6' LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2017-03-27T20:39:09+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000845s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000705s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0195s ]
+SQL: SELECT * FROM `think_message` INNER JOIN think_users on think_users.id = think_message.to_user_id  WHERE `to_user_id` = '5' LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2017-03-27T20:39:17+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000768s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000750s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000916s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.4198s ]
+SQL: SELECT * FROM `think_message` INNER JOIN think_users on think_users.id = think_message.to_user_id  WHERE `to_user_id` = '6' LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2017-03-27T20:39:19+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001121s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001444s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `think_message` INNER JOIN think_users on think_users.id = think_message.to_user_id  WHERE `to_user_id` = '5' LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2017-03-27T20:39:27+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001019s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000851s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `think_message` INNER JOIN think_users on think_users.id = think_message.to_user_id  WHERE `to_user_id` = '6' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-03-27T20:39:29+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000727s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000719s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `think_message` INNER JOIN think_users on think_users.id = think_message.to_user_id  WHERE `to_user_id` = '5' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-03-27T20:39:37+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000619s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000552s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000706s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `think_message` INNER JOIN think_users on think_users.id = think_message.to_user_id  WHERE `to_user_id` = '6' LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2017-03-27T20:39:39+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000558s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000573s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000724s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0444s ]
+SQL: SELECT * FROM `think_message` INNER JOIN think_users on think_users.id = think_message.to_user_id  WHERE `to_user_id` = '5' LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2017-03-27T20:39:47+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000680s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000829s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0081s ]
+SQL: SELECT * FROM `think_message` INNER JOIN think_users on think_users.id = think_message.to_user_id  WHERE `to_user_id` = '6' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-03-27T20:39:49+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000606s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000993s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001235s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `think_message` INNER JOIN think_users on think_users.id = think_message.to_user_id  WHERE `to_user_id` = '5' LIMIT 1   [ RunTime:0.0005s ]
+
