@@ -14,21 +14,31 @@ class Sider extends Component {
 		};
 	}
 
+	// 渲染滚动条样式
+	componentDidMount() {
+		// $('._3SRiHe-LwuTxq2gu7I5Fmv').mCustomScrollbar();
+		// console.log($(''))
+	}
+
 	render() {
 		var { userMenuInfo } = this.props;
 
 		return (
-			<div className={styles.sider}>
-				<Menu
-					mode="inline"
-					openKeys={this.state.openKeys}
-					selectedKeys={[this.state.current]}
-					style={{ width: 240 }}
-					onOpenChange={this.onOpenChange.bind(this)}
-					onClick={this.handleClick.bind(this)}
-				>
-				{this.renderSubMenuCategory(userMenuInfo)}
-				</Menu>
+			<div className={styles.sider_outer}>
+				<div className={styles.sider_inner}>
+					<div className={styles.sider}>
+						<Menu
+							mode="inline"
+							openKeys={this.state.openKeys}
+							selectedKeys={[this.state.current]}
+							style={{ width: 240 }}
+							onOpenChange={this.onOpenChange.bind(this)}
+							onClick={this.handleClick.bind(this)}
+						>
+						{this.renderSubMenuCategory(userMenuInfo)}
+						</Menu>
+					</div>
+				</div>
 			</div>
 		);
 

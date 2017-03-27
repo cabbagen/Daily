@@ -9,15 +9,16 @@
     }
 
     public function getMessage($toUserId) {
-      return $this->where(array(
-        'to_user_id' => $toUserId
-      ))->join('think_users on think_users.id = think_message.to_user_id')->find();
+      // $sql 
+      $sql = "select *, think_message.id as msgId from think_message join " . 
+        "think_users on think_users.id = think_message.to_user_id where " . 
+        "think_message.to_user_id = $toUserId limit 1";
+
+      return $this->query($sql);
     }
 
-    public function deleteMessage($toUserId) {
-      return $this->where(array(
-        'to_user_id' => $toUserId,
-      ))->delete();
+    public function deleteMessage($msgId) {
+      return $this->delete($msgId);
     }
 		
 	}

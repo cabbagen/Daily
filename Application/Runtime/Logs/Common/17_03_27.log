@@ -10,3 +10,57 @@ INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000949s ]
 ERR: 无法加载模块:Favicon
 
+[ 2017-03-27T20:49:20+08:00 ] 127.0.0.1 /public/lib/javascript/jquery.mCustomScrollbar.concat.min
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001368s ]
+ERR: 无法加载模块:Public
+
+[ 2017-03-27T20:51:56+08:00 ] 127.0.0.1 /public/lib/javascript/jquery.mCustomScrollbar.concat.min
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001196s ]
+ERR: 无法加载模块:Public
+
+[ 2017-03-27T20:52:16+08:00 ] 127.0.0.1 /public/lib/javascript/jquery.mCustomScrollbar.concat.min
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000899s ]
+ERR: 无法加载模块:Public
+
+[ 2017-03-27T20:52:17+08:00 ] 127.0.0.1 /public/lib/javascript/jquery.mCustomScrollbar.concat.min
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000919s ]
+ERR: 无法加载模块:Public
+
+[ 2017-03-27T20:53:00+08:00 ] 127.0.0.1 /public/lib/javascript/jquery.mCustomScrollbar.concat.min
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000082s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001125s ]
+ERR: 无法加载模块:Public
+
+[ 2017-03-27T20:53:00+08:00 ] 127.0.0.1 /public/lib/javascript/jquery.mCustomScrollbar.concat.min
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000822s ]
+ERR: 无法加载模块:Public
+
+[ 2017-03-27T20:54:00+08:00 ] 127.0.0.1 /public/lib/javascript/jquery.mCustomScrollbar.concat.min
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000468s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009947s ]
+ERR: 无法加载模块:Public
+
+[ 2017-03-27T21:08:27+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000618s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-03-27T21:08:27+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001099s ]
+ERR: 无法加载模块:Favicon
+

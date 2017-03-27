@@ -65,7 +65,7 @@
 			$msg = D('Message')->getMessage($userId);
 
 			if($msg) {
-				D('Message')->deleteMessage((int)$msg['to_user_id']);
+				D('Message')->deleteMessage((int)$msg['msgId']);
 				return $msg;
 			} else {
 				return false;
