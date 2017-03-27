@@ -50,6 +50,12 @@ export const removeNotification = () => ({
 	type : 'removeNotification'
 });
 
+// 添加错误提示
+export const addNotification = (msg) => ({
+	type : 'addNotification',
+	msg : msg
+});
+
 
 // 二级菜单操作
 // 文件模块

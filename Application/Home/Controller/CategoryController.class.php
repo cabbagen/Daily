@@ -4,6 +4,7 @@
 
   class CategoryController extends BaseController {
 
+
     private function adapterFrinedFromUser($userList) {
       $friendModel = D('Friends');
       $adapterUserList = array();
@@ -79,11 +80,15 @@
         'user_id' => $userId,
         'friend_id' => I('post.friend_id', null),
       ));
+      $deleteResultFriend = D('Friends')->deleteFriend(array(
+        'user_id' => I('post.friend_id', null),
+        'frined_id' => $userId,
+      ));
       $friendList = D('Friends')->getCategoryItemFromModel('Categorys', I('post.from_category_id', null));
 
       $queryResult = $this->prePaginationForAddAndDelete( I('post.', null) );
 
-      if(is_array($queryResult['userList']) && $deleteResult) {
+      if(is_array($queryResult['userList']) && $deleteResult && $deleteResultFriend) {
         $resultUserList = $this->adapterFrinedFromUser($queryResult['userList']);
         $this->ajaxReturn(array('status' => 200, 'data' => array(
           'searchPage' => array(

@@ -83,7 +83,6 @@ class FileterCategory extends Component {
   }
 
   openChat(friendId) {
-  	console.log('打开聊天窗口');
   	window.open('/Home/App/chat?friendId=' + friendId, 'chatWindow', 'toolbar=no, status=no, scrollbars=0,resizable=0,menubar＝0,location=0,width=700,height=500');
   }
 

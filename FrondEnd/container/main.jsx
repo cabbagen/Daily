@@ -8,10 +8,68 @@ import Navigation from '../components/Navigation.jsx';
 import Sider from '../components/Sider.jsx';
 import styles from '../container/main.less';
 
+const sdk = new WSDK();
 
 class Main extends Component {
 	constructor(props) {
 		super(props);
+	}
+
+	// 在这里登录 IM 服务器
+	componentDidMount() {
+
+		// 当浏览器不支持时，会alert”对不起,当前浏览器不支持聊天,请更换浏览器“
+    window.__WSDK__POSTMESSAGE__DEBUG__ = true;
+    this.loginImServer();
+
+    this.receiveMsgFromServer();
+	}
+
+	loginImServer() {
+		var { mainState, mainActions } = this.props;
+		var that = this;
+
+		sdk.Base.login({
+			uid : mainState.userInfo.uid,
+			appkey : mainState.userInfo.appkey,
+			credential : mainState.userInfo.credential,
+			success : function(data) {
+				console.log('登录成功');
+				that.getImUnReaderMsg();
+			},
+			error : function(e) {
+				console.log('登录失败');
+				mainActions.addNotification('登录 IM 服务失败，请稍后重试！');
+			}
+		});
+	}
+
+	getImUnReaderMsg() {
+		sdk.Base.getUnreadMsgCount({
+			count : 100,
+			success : function(data) {
+				console.log(data);
+			},
+			error : function(e) {
+				console.log('获取未读消息失败');
+				console.log(e);
+			}
+		});
+
+	}
+
+	receiveMsgFromServer() {
+		// source-event
+    var evtSource = new EventSource('http://www.daily.com:8080/Home/app/listenMsgLongNotification');
+    evtSource.onopen = function() {
+    	console.log('open ok');
+    }
+    evtSource.onerror = function() {
+    	console.log('faile');
+    }
+    evtSource.onmessage = function(e) {
+    	console.log(e.data);
+    }
 	}
 
 	componentWillUpdate(nextProps) {

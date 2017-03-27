@@ -10,35 +10,36 @@
 		<link rel="stylesheet" type="text/css" href="/Public/lib/style/reset.css" />
 		<link rel="stylesheet" type="text/css" href="/Public/lib/style/common.css" />
 		
-  <style type="text/css">
-    ::-webkit-scrollbar {
-      width: 0px;
-    }
-    .error-tip {
-      text-align: center;
-      margin-top: 50px;
-    }
-    .error-tip b {
-      font-size: 40px;
-    }
-  </style>
 
 	</head>
 	<body>
 		<!-- 文档内容 -->
 		
-  <?php if($errorTip): ?><div class="error-tip">
-      <p><b>500</b></p>
-      <p><?php echo ($errorTip); ?></p>
-    </div><?php endif; ?>
+  <h2>长轮询示例</h2>
+  <button type="button" class="btn">click</button>
 
 	</body>
 	<!-- 脚本文件 -->
 	<script type="text/javascript" src="/Public/lib/javascript/jquery.js"></script>
 	
-  <script type="text/javascript" src="https://g.alicdn.com/aliww/??h5.imsdk/2.1.0/scripts/yw/wsdk.js,h5.openim.kit/0.3.7/scripts/kit.js" charset="utf-8"></script>
-	<script type="text/javascript">
-    WKIT.init(<?php echo ($imInfos); ?>);
-	</script>
+  <script type="text/javascript">
+    var evtSource = new EventSource('http://www.daily.com:8080/Home/app/listenMsgLongNotification');
+    evtSource.onmessage = function(e) {
+      console.log(e.data);
+    }
+    evtSource.onerror = function() {
+      console.log('faile');
+    }
+    evtSource.onopen = function(e) {
+      console.log('open ok')
+    }
+
+    $('.btn').click(function() {
+      $.get('/Home/app/addMsgNotification', function(data) {
+        console.log('wewe');
+      });
+    })
+    
+  </script>
 
 </html>

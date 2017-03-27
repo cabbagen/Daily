@@ -70,6 +70,13 @@ const mainReducerMap = {
 		var newState = Object.assign({}, state, {notifications : ''});
 		return newState;
 	},
+	// 添加提示
+	addNotification : function(state, action) {
+		return Object.assign({}, state, {
+			notifications : action.msg
+		});
+	},
+
 	
 	// 二级分类相关操作处理
 	// 文件模块操作

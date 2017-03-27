@@ -1,0 +1,920 @@
+[ 2017-03-26T10:53:09+08:00 ] 127.0.0.1 /index.php/Home/App/b216beb70ae0067b67a7.hot-update.json
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000082s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001866s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003181s ]
+
+[ 2017-03-26T10:53:13+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001161s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001126s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001509s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0658s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'test_1' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0113s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 6  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0481s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0093s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 6 AND `create_time` BETWEEN '2017-03-20' AND '2017-03-26'  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0071s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 6  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0074s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0091s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = 6  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000206s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000599s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019154s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019562s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002736s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003234s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001502s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001891s ]
+
+[ 2017-03-26T10:53:18+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000911s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002245s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0425s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `think_Categorys` INNER JOIN think_friends on think_categorys.id = think_friends.from_category_id INNER JOIN think_users on think_users.id = think_friends.friend_id  WHERE think_categorys.id = '3'  [ RunTime:0.0009s ]
+
+[ 2017-03-26T10:53:18+08:00 ] 127.0.0.1 /Home/Category/searchFriends?num=0.4269912839081751
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001038s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001659s ]
+NOTIC: [8] Undefined index: keyWord D:\wamp\www\Daily\Application\Home\Controller\CategoryController.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0073s ]
+SQL: select id, username, avator, extra, nickname from think_users where id != 6 limit 0, 6 [ RunTime:0.1109s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_users` LIMIT 1   [ RunTime:0.0154s ]
+SQL: SHOW COLUMNS FROM `think_friends` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `think_friends` WHERE `user_id` = 6 AND `friend_id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_friends` WHERE `user_id` = 6 AND `friend_id` = 2 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_friends` WHERE `user_id` = 6 AND `friend_id` = 3 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_friends` WHERE `user_id` = 6 AND `friend_id` = 5 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_friends` WHERE `user_id` = 6 AND `friend_id` = 7 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_friends` WHERE `user_id` = 6 AND `friend_id` = 8 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-03-26T10:54:02+08:00 ] 127.0.0.1 /Home/App/chat?friendId=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001705s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001117s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001610s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0335s ]
+SQL: SELECT * FROM `think_users` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000200s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000555s ]
+NOTIC: [8] Undefined variable: friendId D:\wamp\www\Daily\Application\Runtime\Cache\Home\504c372619c0529da7413233a597c374.php 第 23 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015167s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015560s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000884s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001198s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000927s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001167s ]
+
+[ 2017-03-26T10:57:19+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001147s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002806s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003365s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0114s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'test_1' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0069s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 6  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 6 AND `create_time` BETWEEN '2017-03-20' AND '2017-03-26'  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0058s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 6  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = 6  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000211s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000612s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017213s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017599s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001035s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001415s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001396s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001774s ]
+
+[ 2017-03-26T10:57:25+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001185s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001932s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0071s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `think_Categorys` INNER JOIN think_friends on think_categorys.id = think_friends.from_category_id INNER JOIN think_users on think_users.id = think_friends.friend_id  WHERE think_categorys.id = '3'  [ RunTime:0.0009s ]
+
+[ 2017-03-26T10:57:25+08:00 ] 127.0.0.1 /Home/Category/searchFriends?num=0.7129616726329486
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001168s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001965s ]
+NOTIC: [8] Undefined index: keyWord D:\wamp\www\Daily\Application\Home\Controller\CategoryController.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0076s ]
+SQL: select id, username, avator, extra, nickname from think_users where id != 6 limit 0, 6 [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_users` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_friends` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `think_friends` WHERE `user_id` = 6 AND `friend_id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_friends` WHERE `user_id` = 6 AND `friend_id` = 2 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_friends` WHERE `user_id` = 6 AND `friend_id` = 3 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_friends` WHERE `user_id` = 6 AND `friend_id` = 5 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_friends` WHERE `user_id` = 6 AND `friend_id` = 7 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_friends` WHERE `user_id` = 6 AND `friend_id` = 8 LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2017-03-26T10:58:05+08:00 ] 127.0.0.1 /index.php/Home/App/cdc49343ed3f5089a215.hot-update.json
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000575s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000828s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000747s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000934s ]
+
+[ 2017-03-26T10:58:49+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000595s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000786s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'test_1' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 6  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 6 AND `create_time` BETWEEN '2017-03-20' AND '2017-03-26'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 6  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = 6  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000291s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010212s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010415s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000558s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000724s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000620s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000799s ]
+
+[ 2017-03-26T10:58:53+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000627s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000936s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001235s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `think_Categorys` INNER JOIN think_friends on think_categorys.id = think_friends.from_category_id INNER JOIN think_users on think_users.id = think_friends.friend_id  WHERE think_categorys.id = '3'  [ RunTime:0.0007s ]
+
+[ 2017-03-26T10:58:53+08:00 ] 127.0.0.1 /Home/Category/searchFriends?num=0.7179374940642183
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000765s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001004s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001312s ]
+NOTIC: [8] Undefined index: keyWord D:\wamp\www\Daily\Application\Home\Controller\CategoryController.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0070s ]
+SQL: select id, username, avator, extra, nickname from think_users where id != 6 limit 0, 6 [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_users` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_friends` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `think_friends` WHERE `user_id` = 6 AND `friend_id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_friends` WHERE `user_id` = 6 AND `friend_id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_friends` WHERE `user_id` = 6 AND `friend_id` = 3 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_friends` WHERE `user_id` = 6 AND `friend_id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_friends` WHERE `user_id` = 6 AND `friend_id` = 7 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_friends` WHERE `user_id` = 6 AND `friend_id` = 8 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-03-26T10:58:58+08:00 ] 127.0.0.1 /Home/App/chat?friendId=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000862s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002023s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0688s ]
+SQL: SELECT * FROM `think_users` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000188s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000484s ]
+NOTIC: [8] Undefined variable: friendId D:\wamp\www\Daily\Application\Runtime\Cache\Home\504c372619c0529da7413233a597c374.php 第 23 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014897s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015202s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000617s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000871s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000895s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001163s ]
+
+[ 2017-03-26T11:06:25+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000650s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000747s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000932s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'test_1' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0849s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 6  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0462s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 6 AND `create_time` BETWEEN '2017-03-20' AND '2017-03-26'  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0061s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 6  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0137s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = 6  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000196s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000570s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019374s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019771s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000917s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001283s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002229s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003189s ]
+
+[ 2017-03-26T11:06:31+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001164s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001507s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002192s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0104s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `think_Categorys` INNER JOIN think_friends on think_categorys.id = think_friends.from_category_id INNER JOIN think_users on think_users.id = think_friends.friend_id  WHERE think_categorys.id = '3'  [ RunTime:0.0021s ]
+
+[ 2017-03-26T11:06:31+08:00 ] 127.0.0.1 /Home/Category/searchFriends?num=0.4622021120532931
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001144s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001496s ]
+NOTIC: [8] Undefined index: keyWord D:\wamp\www\Daily\Application\Home\Controller\CategoryController.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0062s ]
+SQL: select id, username, avator, extra, nickname from think_users where id != 6 limit 0, 6 [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_users` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_friends` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `think_friends` WHERE `user_id` = 6 AND `friend_id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_friends` WHERE `user_id` = 6 AND `friend_id` = 2 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_friends` WHERE `user_id` = 6 AND `friend_id` = 3 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_friends` WHERE `user_id` = 6 AND `friend_id` = 5 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_friends` WHERE `user_id` = 6 AND `friend_id` = 7 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_friends` WHERE `user_id` = 6 AND `friend_id` = 8 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2017-03-26T11:06:33+08:00 ] 127.0.0.1 /Home/App/chat?friendId=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001433s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002011s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0145s ]
+SQL: SELECT * FROM `think_users` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-26T11:07:13+08:00 ] 127.0.0.1 /Home/App/chat?friendId=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001136s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000978s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001358s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `think_users` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000187s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000604s ]
+NOTIC: [8] Undefined variable: imInfos D:\wamp\www\Daily\Application\Runtime\Cache\Home\504c372619c0529da7413233a597c374.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017189s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017674s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000894s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001263s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001288s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001704s ]
+
+[ 2017-03-26T11:08:32+08:00 ] 127.0.0.1 /Home/App/chat?friendId=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001846s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0102s ]
+SQL: SELECT * FROM `think_users` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000215s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000604s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016632s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017051s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000923s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001276s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001940s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002422s ]
+
+[ 2017-03-26T11:08:45+08:00 ] 127.0.0.1 /Home/App/chat?friendId=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001405s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0113s ]
+SQL: SELECT * FROM `think_users` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000186s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000571s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017491s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000915s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001274s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001489s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001859s ]
+
+[ 2017-03-26T11:11:03+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002441s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'test_1' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0082s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 6  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0065s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 6 AND `create_time` BETWEEN '2017-03-20' AND '2017-03-26'  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0194s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 6  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0082s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = 6  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000211s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000600s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017736s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018128s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000869s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001209s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001698s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002071s ]
+
+[ 2017-03-26T11:11:07+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000082s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001126s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001443s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0131s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0535s ]
+SQL: SELECT * FROM `think_Categorys` INNER JOIN think_friends on think_categorys.id = think_friends.from_category_id INNER JOIN think_users on think_users.id = think_friends.friend_id  WHERE think_categorys.id = '3'  [ RunTime:0.0008s ]
+
+[ 2017-03-26T11:11:07+08:00 ] 127.0.0.1 /Home/Category/searchFriends?num=0.2741319978559098
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001103s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002529s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003369s ]
+NOTIC: [8] Undefined index: keyWord D:\wamp\www\Daily\Application\Home\Controller\CategoryController.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0071s ]
+SQL: select id, username, avator, extra, nickname from think_users where id != 6 limit 0, 6 [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_users` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_friends` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `think_friends` WHERE `user_id` = 6 AND `friend_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_friends` WHERE `user_id` = 6 AND `friend_id` = 2 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_friends` WHERE `user_id` = 6 AND `friend_id` = 3 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_friends` WHERE `user_id` = 6 AND `friend_id` = 5 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_friends` WHERE `user_id` = 6 AND `friend_id` = 7 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_friends` WHERE `user_id` = 6 AND `friend_id` = 8 LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2017-03-26T11:11:09+08:00 ] 127.0.0.1 /Home/App/chat?friendId=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000108s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001164s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002712s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0103s ]
+SQL: SELECT * FROM `think_users` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000257s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000917s ]
+NOTIC: [8] Undefined variable: imInfos D:\wamp\www\Daily\Application\Runtime\Cache\Home\504c372619c0529da7413233a597c374.php 第 34 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018927s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019327s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000986s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001351s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001498s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002117s ]
+
+[ 2017-03-26T11:12:28+08:00 ] 127.0.0.1 /Home/App/chat?friendId=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001119s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001427s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `think_users` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] simplexml_load_string(): Entity: line 1: parser error : AttValue: &quot; or ' expected D:\wamp\www\Daily\ThinkPHP\Library\Think\Template\TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string(): &lt;tpl&gt;&lt;tag condition=$errorTip /&gt;&lt;/tpl&gt; D:\wamp\www\Daily\ThinkPHP\Library\Think\Template\TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string():                     ^ D:\wamp\www\Daily\ThinkPHP\Library\Think\Template\TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 1: parser error : attributes construct error D:\wamp\www\Daily\ThinkPHP\Library\Think\Template\TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string(): &lt;tpl&gt;&lt;tag condition=$errorTip /&gt;&lt;/tpl&gt; D:\wamp\www\Daily\ThinkPHP\Library\Think\Template\TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string():                     ^ D:\wamp\www\Daily\ThinkPHP\Library\Think\Template\TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 1: parser error : Couldn't find end of Start Tag tag line 1 D:\wamp\www\Daily\ThinkPHP\Library\Think\Template\TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string(): &lt;tpl&gt;&lt;tag condition=$errorTip /&gt;&lt;/tpl&gt; D:\wamp\www\Daily\ThinkPHP\Library\Think\Template\TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string():                     ^ D:\wamp\www\Daily\ThinkPHP\Library\Think\Template\TagLib.class.php 第 80 行.
+ERR: XML标签语法错误 : condition=$errorTip
+
+[ 2017-03-26T11:13:08+08:00 ] 127.0.0.1 /Home/App/chat?friendId=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001028s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001504s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `think_users` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000194s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000593s ]
+NOTIC: [8] Undefined variable: imInfos D:\wamp\www\Daily\Application\Runtime\Cache\Home\504c372619c0529da7413233a597c374.php 第 35 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019907s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020309s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002319s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002867s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001359s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001732s ]
+
+[ 2017-03-26T11:16:51+08:00 ] 127.0.0.1 /Home/App/chat?friendId=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001157s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001926s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `think_users` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000185s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000557s ]
+NOTIC: [8] Undefined variable: imInfos D:\wamp\www\Daily\Application\Runtime\Cache\Home\504c372619c0529da7413233a597c374.php 第 41 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020342s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020763s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001046s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001397s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001579s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002029s ]
+
+[ 2017-03-26T11:17:02+08:00 ] 127.0.0.1 /Home/App/chat?friendId=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000082s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001943s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002371s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0124s ]
+SQL: SELECT * FROM `think_users` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000190s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000569s ]
+NOTIC: [8] Undefined variable: imInfos D:\wamp\www\Daily\Application\Runtime\Cache\Home\504c372619c0529da7413233a597c374.php 第 41 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019292s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019805s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001138s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001540s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003446s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003937s ]
+
+[ 2017-03-26T11:19:38+08:00 ] 127.0.0.1 /index.php/Home/App/b86db792686a80ab8ef5.hot-update.json
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001032s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001192s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001556s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001118s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001429s ]
+
+[ 2017-03-26T11:30:07+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001165s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002791s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'test_1' LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0123s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0489s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 6  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0073s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 6 AND `create_time` BETWEEN '2017-03-20' AND '2017-03-26'  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0082s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 6  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0066s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = 6  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000269s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000721s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036314s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037023s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001028s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001404s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001617s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002069s ]
+
+[ 2017-03-26T11:30:37+08:00 ] 127.0.0.1 /index.php/Home/App/7817b23260898474eb29.hot-update.json
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001875s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001111s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001444s ]
+
+[ 2017-03-26T11:30:40+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000563s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003183s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0087s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'test_1' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 6  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 6 AND `create_time` BETWEEN '2017-03-20' AND '2017-03-26'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0055s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 6  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = 6  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000296s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010478s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010681s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000619s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000886s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000910s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001105s ]
+
+[ 2017-03-26T11:32:04+08:00 ] 127.0.0.1 /index.php/Home/App/14fe821182d918dfdef1.hot-update.json
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000995s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001322s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000913s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001192s ]
+
+[ 2017-03-26T11:40:21+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001537s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000865s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001138s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0094s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'test_1' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0083s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 6  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0551s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0119s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 6 AND `create_time` BETWEEN '2017-03-20' AND '2017-03-26'  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0071s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 6  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = 6  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000305s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001053s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019720s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020368s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000949s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001292s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001070s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001354s ]
+
+[ 2017-03-26T11:44:57+08:00 ] 127.0.0.1 /index.php/Home/App/e24e5950beb40c52b2b8.hot-update.json
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000913s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001074s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001414s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001258s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001617s ]
+
+[ 2017-03-26T11:53:30+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000839s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002873s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0093s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'test_1' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0087s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 6  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0486s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 6 AND `create_time` BETWEEN '2017-03-20' AND '2017-03-26'  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 6  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = 6  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000307s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010804s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011158s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000755s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000718s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000888s ]
+
+[ 2017-03-26T11:53:48+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000668s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001399s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001913s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'test_1' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0058s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 6  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0065s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 6 AND `create_time` BETWEEN '2017-03-20' AND '2017-03-26'  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 6  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = 6  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000192s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000555s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014174s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014493s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000849s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001194s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001183s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001539s ]
+
+[ 2017-03-26T13:06:04+08:00 ] 127.0.0.1 /Home/Category/searchFriends?num=0.3960751855229627
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.014465s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001592s ]
+NOTIC: [8] Undefined index: keyWord D:\wamp\www\Daily\Application\Home\Controller\CategoryController.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0876s ]
+SQL: select id, username, avator, extra, nickname from think_users where id != 6 limit 0, 6 [ RunTime:0.0452s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_users` LIMIT 1   [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `think_friends` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `think_friends` WHERE `user_id` = 6 AND `friend_id` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_friends` WHERE `user_id` = 6 AND `friend_id` = 2 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_friends` WHERE `user_id` = 6 AND `friend_id` = 3 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_friends` WHERE `user_id` = 6 AND `friend_id` = 5 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_friends` WHERE `user_id` = 6 AND `friend_id` = 7 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_friends` WHERE `user_id` = 6 AND `friend_id` = 8 LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2017-03-26T13:06:04+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000309s ]
+INFO: [ app_init ] --END-- [ RunTime:0.014791s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002923s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0077s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `think_Categorys` INNER JOIN think_friends on think_categorys.id = think_friends.from_category_id INNER JOIN think_users on think_users.id = think_friends.friend_id  WHERE think_categorys.id = '3'  [ RunTime:0.0012s ]
+
+[ 2017-03-26T13:06:20+08:00 ] 127.0.0.1 /Home/Login/loginAccount.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000560s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000805s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000331s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.092603s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.092795s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.020408s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.020611s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.016867s ]
+INFO: [ app_end ] --END-- [ RunTime:0.017078s ]
+
+[ 2017-03-26T13:06:28+08:00 ] 127.0.0.1 /index.php/Home/Login/handleLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000981s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'test_3' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0470s ]
+
+[ 2017-03-26T13:06:29+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000632s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000780s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'test_3' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0127s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0483s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 7  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0088s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0097s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 7 AND `create_time` BETWEEN '2017-03-20' AND '2017-03-26'  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 7  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = 7  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000272s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000637s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.083436s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.084285s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001197s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001554s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001589s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001932s ]
+
+[ 2017-03-26T13:44:05+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.014779s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001180s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001375s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'test_3' LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0097s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0091s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 7  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0111s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 7 AND `create_time` BETWEEN '2017-03-20' AND '2017-03-26'  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0063s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 7  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `think_Groups` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `think_Groups` WHERE `from_user_id` = 7  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000321s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.109424s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.109645s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009675s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009866s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001483s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001671s ]
+

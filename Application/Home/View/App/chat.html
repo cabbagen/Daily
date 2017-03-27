@@ -5,24 +5,27 @@
     ::-webkit-scrollbar {
       width: 0px;
     }
+    .error-tip {
+      text-align: center; margin-top: 50px;
+    }
+    .error-tip b {
+      font-size: 40px;
+    }
   </style>
 </block>
 
 <block name="content">
-  <p>{$friendId}</p>
+  <if condition="$errorTip">
+    <div class="error-tip">
+      <p><b>500</b></p>
+      <p>{$errorTip}</p>
+    </div>
+  </if>
 </block>
 
 <block name="javascript">
-  
   <script type="text/javascript" src="https://g.alicdn.com/aliww/??h5.imsdk/2.1.0/scripts/yw/wsdk.js,h5.openim.kit/0.3.7/scripts/kit.js" charset="utf-8"></script>
 	<script type="text/javascript">
-    window.selfImInfo = {$selfImInfo};
-    window.toImInfo = {$toImInfo};
-    WKIT.init({
-      uid : window.selfImInfo.userid,
-      appkey : 23454789,
-      credential : window.selfImInfo.password,
-      touid : window.toImInfo.userid
-    });
+    WKIT.init({$imInfos});
 	</script>
 </block>

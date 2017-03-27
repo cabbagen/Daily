@@ -158,8 +158,21 @@
 			$selfImInfo = $this->getImUserInfoFromSession();
 			$toImInfo = $this->getImUserInfoFromUsername($frindUsername);
 
-			$this->assign('selfImInfo', json_encode($selfImInfo));
-			$this->assign('toImInfo', json_encode($toImInfo));
+			if($selfImInfo && $toImInfo && 0) {
+				$this->assign('imInfos', json_encode(array(
+					'uid' => $selfImInfo->userid,
+					'appkey' => C('IM_AppKey'),
+					'credential' => $selfImInfo->password,
+					'touid' => $toImInfo->userid,
+				)));
+			} else {
+				$this->assign('errorTip', '服务器繁忙，请稍后重试！');
+			}
+
+			$this->display();
+		}
+
+		public function demo() {
 			$this->display();
 		}
 
