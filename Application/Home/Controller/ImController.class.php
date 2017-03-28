@@ -36,33 +36,6 @@
 
 		}
 
-		public function addImUser() {
-			$imTop = $this->initIm();
-			$req = new \OpenimUsersAddRequest;
-			$userinfos = new \UserInfos;
-			$userinfos->nick="king";
-			$userinfos->email="uid@taobao.com";
-			$userinfos->mobile="18600000000";
-			$userinfos->taobaoid="tbnick123";
-			$userinfos->userid="imuser123";
-			$userinfos->password="xxxxxx";
-			$userinfos->remark="demo";
-			$userinfos->extra="{}";
-			$userinfos->career="demo";
-			$userinfos->vip="{}";
-			$userinfos->address="demo";
-			$userinfos->name="demo";
-			$userinfos->age="123";
-			$userinfos->gender="M";
-			$userinfos->wechat="demo";
-			$userinfos->qq="demo";
-			$userinfos->weibo="demo";
-
-			$req->setUserinfos(json_encode($userinfos));
-			$resp = $imTop->execute($req);
-
-			var_dump($resp);
-		}
 
 		public function queryUserFromIm() {
 			$imTop = $this->initIm();
@@ -72,4 +45,149 @@
 
 			var_dump($resq->userinfos);
 		}
+		
+		// 创建群
+		public function createImGroup() {
+			$imTop = $this->initIm();
+			$req = new \OpenimTribeCreateRequest();
+			$user = new \OpenImUser;
+			$user->uid = md5("test_1");
+			$user->taobao_account = "false";
+			$user->app_key = C("IM_AppKey");
+			$req->setUser(json_encode($user));
+			$req->setTribeName("tribenamedemp");
+			$req->setNotice("tribenamedemp");
+			$req->setTribeType("0");
+			$members->uid = md5("test_1");
+			$members->taobao_account = "false";
+			$members->app_key = C("IM_AppKey");
+
+			$req->setMembers(json_encode($members));
+			$resp = $imTop->execute($req);
+
+			var_dump($resp);
+
+		}
+
+		// 获取群成员
+		public function getTribeMembers() {
+			$imTop = $this->initIm();
+			$req = new \OpenimTribeGetmembersRequest;
+			$user = new \OpenImUser;
+			$user->uid = md5("test_1");
+			$user->taobao_account = "false";
+			$user->app_key = C("IM_AppKey");
+
+			$req->setUser(json_encode($user));
+			$req->setTribeId("117146911");
+			$resp = $imTop->execute($req);
+
+			var_dump($resp->tribe_user_list);
+		}
+
+		// 获取用户群列表
+		public function getUserTribeList() {
+			$imTop = $this->initIm();
+			$req = new \OpenimTribeGetalltribesRequest;
+			$user = new \OpenImUser;
+			$user->uid = md5("test_1");
+			$user->taobao_account = "false";
+			$user->app_key = C("IM_AppKey");
+			$req->setUser(json_encode($user));
+			$req->setTribeTypes("0");
+			$resp = $imTop->execute($req);
+
+			var_dump($resp->tribe_info_list);
+		}
+
+		// 解散群
+		public function deleteTribe() {
+			$imTop = $this->initIm();
+			$req = new \OpenimTribeDismissRequest;
+			$user = new \OpenImUser;
+			$user->uid = md5("test_1");
+			$user->taobao_account = "false";
+			$user->app_key = C("IM_AppKey");
+
+			$req->setUser(json_encode($user));
+			$req->setTribeId("117146911");
+
+			$resp = $imTop->execute($req);
+			var_dump($resp);
+
+		}
+
+		// 邀请加群
+		public function invititeTribe() {
+			$imTop = $this->initIm();
+			$req = new \OpenimTribeInviteRequest;
+			$req->setTribeId('117146911');
+			$members = new \OpenImUser;
+			$members->uid = md5("test_1");
+			$members->taobao_account = "false";
+			$members->app_key = C("IM_AppKey");
+			$req->setMembers(json_encode($members));
+			$user = new \OpenImUser;
+			$user->uid = md5("test_2");
+			$user->taobao_account = "false";
+			$user->app_key = C("IM_AppKey");
+			$req->setUser(json_encode($user));
+
+			$reps = $imTop->execute($req);
+
+			var_dump($reps);
+		}
+
+		// 主动加群
+		public function joinTribe() {
+			$imTop = $this->initIm();
+			$req = new \OpenimTribeJoinRequest;
+			$user = new \OpenImUser;
+			$user->uid = md5("test_2");
+			$user->taobao_account = "false";
+			$user->app_key = C("IM_AppKey");
+			$req->setUser(json_encode($user));
+			$req->setTribeId("117146907");
+
+			$resp = $imTop->execute($req);
+
+			var_dump($resp);
+		}
+
+		// 修改群信息
+		public function modifyTribe() {
+			$username = "test_1";
+			$imTop = $this->initIm();
+
+			$req = new \OpenimTribeModifytribeinfoRequest;
+			$user = new \OpenImUser;
+			$user->uid = md5($username);
+			$user->taobao_account = "false";
+			$user->app_key = C("IM_AppKey");
+			$req->setUser(json_encode($user));
+			$req->setTribeName("22222");
+			$req->setNotice("22222");
+			$req->setTribeId("117146907");
+
+			$resp = $imTop->execute($req);
+
+			var_dump($resp);
+			die('');
+
+			if($resp->tribe_code) {
+				return true;
+			} else {
+				return false;
+			}
+		}
+
+		// 测试
+		public function demo() {
+			echo md5("test_1");
+			echo "\n\n==========";
+			echo md5("test_2");
+		}
+
 	}
+
+?>

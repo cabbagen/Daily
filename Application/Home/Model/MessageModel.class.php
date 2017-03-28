@@ -9,7 +9,6 @@
     }
 
     public function getMessage($toUserId) {
-      // $sql 
       $sql = "select *, think_message.id as msgId from think_message join " . 
         "think_users on think_users.id = think_message.to_user_id where " . 
         "think_message.to_user_id = $toUserId limit 1";

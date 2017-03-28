@@ -14,12 +14,6 @@ class Sider extends Component {
 		};
 	}
 
-	// 渲染滚动条样式
-	componentDidMount() {
-		// $('._3SRiHe-LwuTxq2gu7I5Fmv').mCustomScrollbar();
-		// console.log($(''))
-	}
-
 	render() {
 		var { userMenuInfo } = this.props;
 
@@ -122,7 +116,7 @@ class Sider extends Component {
 		var groupsNodes = groupsInfo.map((groupObject, groupIndex) => {
 			return (
 				<Menu.Item key={`${subMenuKey}-${groupIndex}`}>
-					<Link to={`/groups/${groupObject.group_name}`} onClick={this.menuCategoryLinkTo.bind(this, subMenuKey, groupObject.id)}>{groupObject.group_name}</Link>
+					<Link to={`/groups/${groupObject.name}`} onClick={this.menuCategoryLinkTo.bind(this, subMenuKey, groupObject.tribe_id)}>{groupObject.name}</Link>
 				</Menu.Item>
 			);
 		});

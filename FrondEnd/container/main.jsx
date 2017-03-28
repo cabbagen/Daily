@@ -17,12 +17,14 @@ class Main extends Component {
 
 	// 在这里登录 IM 服务器
 	componentDidMount() {
-
+		var that = this;
 		// 当浏览器不支持时，会alert "对不起,当前浏览器不支持聊天,请更换浏览器"
     window.__WSDK__POSTMESSAGE__DEBUG__ = true;
     this.loginImServer();
-
-    this.listenMsgFromServer();
+    // 第一次登录 IM 规律性失败，这里延迟 2 秒登录
+    window.setTimeout(function() {
+    	that.listenMsgFromServer();
+    }, 2000);
 	}
 
 	loginImServer() {
@@ -36,6 +38,11 @@ class Main extends Component {
 			success : function(data) {
 				console.log('登录成功');
 				that.getImUnReaderMsg();
+				sdk.Base.startListenAllMsg();
+				sdk.Event.on('START_RECEIVE_ALL_MSG', function(data) {
+					console.log('接收到的消息');
+					console.log(data);
+				});
 			},
 			error : function(e) {
 				console.log('登录失败');
@@ -62,7 +69,7 @@ class Main extends Component {
 		var { mainActions } = this.props;
 		window.setInterval(function() {
 			mainActions.listenerMsgFromServer();
-		}, 10000);
+		}, 15000);
 	}
 
 	componentWillUpdate(nextProps) {

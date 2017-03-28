@@ -32,8 +32,9 @@ class MenuOperateModal extends Component {
 
 		var itemNodes = typeData.map((itemData) => {
 			var isShowEdit = that.renderMenuCatagoryItem(type, itemData);
+			var keyId = itemData.id || itemData.tribe_id;
 			return (
-				<li key={itemData.id}>
+				<li key={keyId}>
 					{isShowEdit}
 				</li>
 			);
@@ -57,19 +58,22 @@ class MenuOperateModal extends Component {
 
  	renderMenuCatagoryItem(type, itemData) {
  		var showDom = '';
+ 		var keyId = itemData.id || itemData.tribe_id;
+ 		var name = itemData[`${type[0].toLowerCase() + type.slice(1, -1)}_name`] || itemData.name;
+
  		// 初始状态 => itemData.isEditing == undefined
  		if(itemData.isEditing) {
  			showDom = (
  				<input type="text" autoFocus placeholder="输入名称" 
- 					onBlur={this.confirmModifyFromBlur.bind(this, type, itemData.id)} 
- 					onKeyDown={this.confirmModifyFromKeyDown.bind(this, type, itemData.id)} 
+ 					onBlur={this.confirmModifyFromBlur.bind(this, type, keyId)} 
+ 					onKeyDown={this.confirmModifyFromKeyDown.bind(this, type, keyId)} 
  				/>
  			);
  		} else {
  			showDom = (
- 				<div className={styles.menu_category_item} onDoubleClick={this.editItem.bind(this, type, itemData.id)}>
-					<span>{itemData[`${type[0].toLowerCase() + type.slice(1, -1)}_name`]}</span>
-					<i className={styles.menu_category_delete} onClick={this.deleteItem.bind(this, type, itemData.id)}>
+ 				<div className={styles.menu_category_item} onDoubleClick={this.editItem.bind(this, type, keyId)}>
+					<span>{name}</span>
+					<i className={styles.menu_category_delete} onClick={this.deleteItem.bind(this, type, keyId)}>
 						<Icon type="close" />
 					</i>
 				</div>
@@ -110,9 +114,16 @@ class MenuOperateModal extends Component {
  		var { userMenuInfo, mainActions } = this.props;
 
  		var categoryList = userMenuInfo[type].map(item => {
- 			if(item.id === id) {
- 				item[`${type[0].toLowerCase() + type.slice(1, -1)}_name`] = '',
-	 			item.isEditing = true
+ 			if(item.id) {
+				if(item.id === id) {
+	 				item[`${type[0].toLowerCase() + type.slice(1, -1)}_name`] = '';
+		 			item.isEditing = true;
+	 			}
+ 			} else {
+ 				if(item.tribe_id === id) {
+ 					item['name'] = '';
+ 					item.isEditing = true;
+ 				}
  			}
  			return item;
  		});

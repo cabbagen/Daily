@@ -4,28 +4,9 @@
 </block>
 
 <block name="content">
-  <h2>长轮询示例</h2>
-  <button type="button" class="btn">click</button>
+  <h2>群聊测试</h2>
 </block>
 
 <block name="javascript">
-  <script type="text/javascript">
-    var evtSource = new EventSource('http://www.daily.com:8080/Home/app/listenMsgLongNotification');
-    evtSource.onmessage = function(e) {
-      console.log(e.data);
-    }
-    evtSource.onerror = function() {
-      console.log('faile');
-    }
-    evtSource.onopen = function(e) {
-      console.log('open ok')
-    }
-
-    $('.btn').click(function() {
-      $.get('/Home/app/addMsgNotification', function(data) {
-        console.log('wewe');
-      });
-    })
-    
-  </script>
+  <script type="text/javascript"></script>
 </block>

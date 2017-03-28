@@ -20,7 +20,9 @@ const mainInitState = {
 	sharesCategoryItem : [],
 
 	// 当前分类的 id ， 这里匹配 `from_**_id` 字段, 这里类似于文件夹 id
-	currentCategoryId : ''
+	currentCategoryId : '',
+	// 消息通知对象
+	msgFromServer : null,
 };
 
 const mainReducerMap = {

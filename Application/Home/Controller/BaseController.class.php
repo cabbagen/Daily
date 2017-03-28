@@ -33,12 +33,8 @@
 			return session('userId');
 		}
 
-		// ==================== email 模块相关 ============================
-		
 
-
-
-		// ==================== 消息通知长轮询部分 =========================
+		// ==================== 消息通知监听 =========================
 
 		public function listenMsgLongNotification() {
 			$msg = $this->getOneMsgNotification();
