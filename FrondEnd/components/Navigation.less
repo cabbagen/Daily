@@ -1,160 +1,160 @@
 
 .triangle_to_down(@border) {
-	display: block;
-	width: 0px;
-	height: 0px;
-	border-top: @border solid #ffffff;
-	border-left: @border solid transparent;
-	border-right: @border solid transparent;
+  display: block;
+  width: 0px;
+  height: 0px;
+  border-top: @border solid #ffffff;
+  border-left: @border solid transparent;
+  border-right: @border solid transparent;
 }
 
 .top_navigation {
-	height: 60px;
-	width: 100%;
-	background: #404040;
+  height: 60px;
+  width: 100%;
+  background: #404040;
 }
 .logo {
-	float: left;
-	img {
-		width: 140px;
-		margin: 3px 0px 0px 72px;
-	}
+  float: left;
+  img {
+    width: 140px;
+    margin: 3px 0px 0px 72px;
+  }
 }
 
 .top_list {
-	float: right;
-	margin-right: 72px;
-	height: 60px;
-	line-height: 60px;
-	color: #ffffff;
-	li {
-		padding: 0px 10px;
-		height: 60px;
-		float: left;
-		cursor: pointer;
-		position: relative;
-		top: 0px;
-		left: 0px;
-	}
-	.invite, .msg, .add {
-		top: 5px;
-		& > div {
-			width: 42px;
-			height: 42px;
-			border-radius: 50%;
-			margin-top: 5px;
-			position: relative;
-			top: 0px;
-			left: 0px;
-			&:hover {
-				background: #333333;
-			}
-			& > img {
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-			}
-		}
-	}
-	.add {
-		margin-right: 10px;
-		& > div > img {
-			width: 25px;
-			height: 25px;
-		}
-	}
-	.invite {
-		& > div > img {
-			width: 28px;
-			height: 28px;
-		}
-	}
-	.msg {
-		margin: 0px 15px 0px 10px;
-		& > div > img {
-			width: 44px;
-			height: 44px;
-		}
-		.msg_all_number {
-			display: block;
-			padding: 5px;
-			line-height: 7px;
-			background: red;
-			color: #ffffff;
-			border-radius: 10px;
-			position: absolute;
-			top: 7px;
-			right: 13px;
-		}
-	}
-	.user_info {
-		width: 135px;
-		&:hover {
-			background: #333333;
-		}
-		i {
-			.triangle_to_down(5px);
-			position: absolute;
-			top: 50%;
-			right: 10%;
-			transform: translate(0%, -50%) rotate(0deg);
-			transition: transform .2s linear;
-		}
-		.triangle_hover {
-			transform: translate(0%, -50%) rotate(180deg);
-			transition: transform .2s linear;
-		}
-		img {
-			width: 35px;
-			height: 35px;
-			position: relative;
-			top: 13px;
-		}
-		ol {
-			position: relative;
-			top: 0px;
-			left: -10px;
-			width: 136px;
-			border: 1px solid #eeeeee;
-			border-top: none;
-			background: #ffffff;
-			li {
-				float: none;
-				padding: 0px;
-				height: 35px;
-				a {
-					display: block;
-					width: 136px;
-					height: 35px;
-					color: #666666;
-					line-height: 35px;
-					text-align: center;
-				}
-				&:nth-child(1) a {
-					border-bottom: 1px solid #eeeeee;
-				}
-			}
-		}
-		span {
-			position: relative;
-			top: 0px;
-			margin: 0 10px;
-		}
-	}
+  float: right;
+  margin-right: 72px;
+  height: 60px;
+  line-height: 60px;
+  color: #ffffff;
+  li {
+    padding: 0px 10px;
+    height: 60px;
+    float: left;
+    cursor: pointer;
+    position: relative;
+    top: 0px;
+    left: 0px;
+  }
+  .invite, .msg, .add {
+    top: 5px;
+    & > div {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      margin-top: 5px;
+      position: relative;
+      top: 0px;
+      left: 0px;
+      &:hover {
+        background: #333333;
+      }
+      & > img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+  .add {
+    margin-right: 10px;
+    & > div > img {
+      width: 25px;
+      height: 25px;
+    }
+  }
+  .invite {
+    & > div > img {
+      width: 28px;
+      height: 28px;
+    }
+  }
+  .msg {
+    margin: 0px 15px 0px 10px;
+    & > div > img {
+      width: 44px;
+      height: 44px;
+    }
+    .msg_all_number {
+      display: block;
+      padding: 5px;
+      line-height: 7px;
+      background: red;
+      color: #ffffff;
+      border-radius: 10px;
+      position: absolute;
+      top: 7px;
+      right: 13px;
+    }
+  }
+  .user_info {
+    width: 135px;
+    &:hover {
+      background: #333333;
+    }
+    i {
+      .triangle_to_down(5px);
+      position: absolute;
+      top: 50%;
+      right: 10%;
+      transform: translate(0%, -50%) rotate(0deg);
+      transition: transform .2s linear;
+    }
+    .triangle_hover {
+      transform: translate(0%, -50%) rotate(180deg);
+      transition: transform .2s linear;
+    }
+    img {
+      width: 35px;
+      height: 35px;
+      position: relative;
+      top: 13px;
+    }
+    ol {
+      position: relative;
+      top: 0px;
+      left: -10px;
+      width: 136px;
+      border: 1px solid #eeeeee;
+      border-top: none;
+      background: #ffffff;
+      li {
+        float: none;
+        padding: 0px;
+        height: 35px;
+        a {
+          display: block;
+          width: 136px;
+          height: 35px;
+          color: #666666;
+          line-height: 35px;
+          text-align: center;
+        }
+        &:nth-child(1) a {
+          border-bottom: 1px solid #eeeeee;
+        }
+      }
+    }
+    span {
+      position: relative;
+      top: 0px;
+      margin: 0 10px;
+    }
+  }
 }
 
 .target_email {
-	width: 300px;
-	height: 30px;
-	line-height: 30px;
-	border: 1px solid #EEEEEE;
-	margin-top: 10px;
-	border-radius: 5px;
-	padding-left: 3px;
+  width: 300px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #EEEEEE;
+  margin-top: 10px;
+  border-radius: 5px;
+  padding-left: 3px;
 }
 
 .email_error {
-	margin-top: 5px;
-	color: red;
+  margin-top: 5px;
+  color: red;
 }

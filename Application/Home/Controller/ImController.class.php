@@ -74,7 +74,7 @@
 			$imTop = $this->initIm();
 			$req = new \OpenimTribeGetmembersRequest;
 			$user = new \OpenImUser;
-			$user->uid = md5("test_1");
+			$user->uid = md5("test_2");
 			$user->taobao_account = "false";
 			$user->app_key = C("IM_AppKey");
 
@@ -117,27 +117,6 @@
 
 		}
 
-		// 邀请加群
-		public function invititeTribe() {
-			$imTop = $this->initIm();
-			$req = new \OpenimTribeInviteRequest;
-			$req->setTribeId('117146911');
-			$members = new \OpenImUser;
-			$members->uid = md5("test_1");
-			$members->taobao_account = "false";
-			$members->app_key = C("IM_AppKey");
-			$req->setMembers(json_encode($members));
-			$user = new \OpenImUser;
-			$user->uid = md5("test_2");
-			$user->taobao_account = "false";
-			$user->app_key = C("IM_AppKey");
-			$req->setUser(json_encode($user));
-
-			$reps = $imTop->execute($req);
-
-			var_dump($reps);
-		}
-
 		// 主动加群
 		public function joinTribe() {
 			$imTop = $this->initIm();
@@ -147,12 +126,28 @@
 			$user->taobao_account = "false";
 			$user->app_key = C("IM_AppKey");
 			$req->setUser(json_encode($user));
-			$req->setTribeId("117146907");
+			$req->setTribeId("117146911");
 
 			$resp = $imTop->execute($req);
 
 			var_dump($resp);
 		}
+
+		// 退群
+		public function leaveTribe() {
+      $imTop = $this->initIm();
+      $req = new \OpenimTribeQuitRequest;
+      $user = new \OpenImUser;
+      $user->uid = md5("test_2");
+      $user->taobao_account = "false";
+      $user->app_key = C("IM_AppKey");
+      $req->setUser(json_encode($user));
+      $req->setTribeId("117146911");
+
+      $resp = $imTop->execute($req);
+
+      var_dump($resp);	
+    }
 
 		// 修改群信息
 		public function modifyTribe() {
@@ -172,14 +167,26 @@
 			$resp = $imTop->execute($req);
 
 			var_dump($resp);
-			die('');
-
-			if($resp->tribe_code) {
-				return true;
-			} else {
-				return false;
-			}
 		}
+
+    public function expelTribe() {
+      $imTop = $this->initIm();
+      $req = new \OpenimTribeExpelRequest;
+      $user = new \OpenImUser;
+      $user->uid = md5("test_1");
+      $user->taobao_account = "false";
+      $user->app_key = C("IM_AppKey");
+      $req->setUser(json_encode($user));
+      $req->setTribeId('117146911');
+      $member = new \OpenImUser;
+      $member->uid = md5("test_2");
+      $member->taobao_account = "false";
+      $member->app_key = C("IM_AppKey");
+      $req->setMember(json_encode($member));
+      $resp = $imTop->execute($req);
+
+      var_dump($resp);
+    }
 
 		// 测试
 		public function demo() {

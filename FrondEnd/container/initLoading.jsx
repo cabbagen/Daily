@@ -8,38 +8,38 @@ import actions from '../actions';
 import styles from './InitLoading.less';
 
 class InitLoading extends Component {
-	constructor(props) {
-		super(props);
-	}
+  constructor(props) {
+    super(props);
+  }
 
-	componentWillUpdate(nextProps) {
-		var { mainState } = nextProps;
-		if(!mainState.isLoading) {
-			window.location.hash = '#web';
-		}
-	}
+  componentWillUpdate(nextProps) {
+    var { mainState } = nextProps;
+    if(!mainState.isLoading) {
+      window.location.hash = '#web';
+    }
+  }
 
-	render() {
-		return (
-			<div className={styles.spinner}>
-				<div className={styles.cube1}></div>
-				<div className={styles.cube2}></div>
-			</div>
-		);
-	}
+  render() {
+    return (
+      <div className={styles.spinner}>
+        <div className={styles.cube1}></div>
+        <div className={styles.cube2}></div>
+      </div>
+    );
+  }
 
 }
 
 const mapStateToProps = (state) => {
-	return {
-		mainState : state.main
-	};
+  return {
+    mainState : state.main
+  };
 };
 
 const mapDispatchToProps = (dispatch) => {
-	return {
-		mainActions : bindActionCreators(actions.mainActions, dispatch)
-	}
+  return {
+    mainActions : bindActionCreators(actions.mainActions, dispatch)
+  }
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(InitLoading);

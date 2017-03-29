@@ -1,0 +1,32 @@
+@width: 700px;
+@border-color: #eeeeee;
+
+.group_panel {
+  width: @width;
+  height: 450px;
+  float: left;
+}
+.group_panel_header {
+  width: @width;
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid @border-color;
+  padding: 0 10px;
+
+  .chargeman {
+    float: left;
+    font-size: 16px;
+  }
+  .panel_operate {
+    float: right;
+
+    button {
+      margin: -10px 0 0 10px;
+    }
+    i {
+      font-size: 20px;
+      margin: 16px 10px 0px 0px;
+      cursor: pointer;
+    }
+  }
+}
