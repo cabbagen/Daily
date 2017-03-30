@@ -263,6 +263,29 @@ function* listenerMsgFromServerAsync() {
   }
 } 
 
+// 小组群模块
+// 退群
+function* leaveTribeAsync(action) {
+  var data = yield call(servers.groupServer.leaveTribeAsync, action.tribeId);
+  if(data.status && data.status === 200) {
+    yield put({type : 'leaveTribeAsyncSuccess', groupList : data.groupList});
+  } else if(data.status && data.status !== 200) {
+    yield put({type : 'leaveTribeAsyncError', msg : data.msg});
+  } else {
+    yield put({type : 'leaveTribeAsyncError', msg : data.msg});
+  }
+}
+// 删除群
+function* deleteTribeAsync(action) {
+  var data = yield call(servers.groupServer.deleteTribeAsync, action.tribeId);
+  if(data.status && data.status === 200) {
+    yield put({type : 'deleteTribeAsyncSuccess', groupList : data.groupList});
+  } else if(data.status && data.status !== 200) {
+    yield put({type : 'deleteTribeAsyncError', msg : data.msg});
+  } else {
+    yield put({type : 'deleteTribeAsyncError', msg : data.msg});
+  }
+}
 
 export function* watchMain() {
   // 发送邀请邮件
@@ -295,4 +318,8 @@ export function* watchMain() {
   yield takeEvery('deleteFriend', deleteFriendAsync);
 
   yield takeEvery('listenerMsgFromServer', listenerMsgFromServerAsync);
+
+  yield takeEvery('leaveTribe', leaveTribeAsync);
+  yield takeEvery('deleteTribe', deleteTribeAsync);
+
 };

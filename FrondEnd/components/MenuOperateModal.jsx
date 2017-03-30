@@ -149,7 +149,7 @@ class MenuOperateModal extends Component {
       from_user_id : userInfo.userId
     };
 
-    addItemObj[`${type[0].toLowerCase() + type.slice(1, -1)}_name`] = '新建';
+    addItemObj[`${type[0].toLowerCase() + type.slice(1, -1)}_name`] = '新建分组';
 
     mainActions.addMenuCategoryItem(addItemObj);
   }

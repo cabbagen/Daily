@@ -40,14 +40,18 @@ class GroupPanel extends Component {
   }
 
   leaveTribe() {
-    var { mainState, groupActions } = this.props;
+    var { mainState, mainActions } = this.props;
     var tribeId = mainState.currentCategoryId;
     
-    groupActions.leaveTribe(tribeId);
+    mainActions.leaveTribe(tribeId);
     console.log('退群');
   }
 
   deleteTribe() {
+    var { mainState, mainActions } = this.props;
+    var tribeId = mainState.currentCategoryId;
+
+    mainActions.deleteTribe(tribeId);
     console.log('删除群');
   }
 

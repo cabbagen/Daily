@@ -144,3 +144,17 @@ export const deleteFriend = (params) => ({
 export const listenerMsgFromServer = () => ({
   type : 'listenerMsgFromServer'
 });
+
+
+// 小组群模块
+// 退群
+export const leaveTribe = (tribeId) => ({
+  type : 'leaveTribe',
+  tribeId : tribeId
+});
+
+// 解散群
+export const deleteTribe = (tribeId) => ({
+  type : 'deleteTribe',
+  tribeId : tribeId
+});

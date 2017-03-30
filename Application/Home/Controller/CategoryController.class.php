@@ -77,6 +77,7 @@
         'type' => I('type', null),
         'from_user_id' => $this->getUserIdFromSession(),
         'to_user_id' => I('to_user_id', null),
+        'from_category_id' => I('from_category_id', null)
       ));
       if($addResult) {
         $this->ajaxReturn(array(
@@ -89,11 +90,54 @@
     }
 
     public function agressAddFriend() {
+      $friendFromCategoryId = I('friend_from_category_id', null);
+      $friendId = I('friendId', null);
+      $userId = $this->getUserIdFromSession();
+      $userFromCategoryId = I('from_category_id', null);
+
+      $addUserResult = D('Friends')->addFriend(array(
+        'user_id' => $userId,
+        'from_category_id' => $userFromCategoryId,
+        'friend_id' => $friendId,
+      ));
+      $addFriendResult = D('Friends')->addFriend(array(
+        'user_id' => $friendId,
+        'from_category_id' => $friendFromCategoryId,
+        'friend_id' => $userId,
+      ));
+
+      $addMsgResult = $this->addMsgNotification(array(
+        'type' => 'arre',
+        'from_user_id' => $userId,
+        'to_user_id' => $friendId
+      ));
+
+      if($addUserResult && $addFriendResult) {
+        $this->ajaxReturn(array(
+          'status' => 200,
+          'msg' => '您已添加成功',
+        ));
+      } else {
+        $this->ajaxReturnError();
+      }
+
 
     }
 
-    public function noAgressAddFriend() {
-
+    public function rejectAddFriend() {
+      $addResult = $this->addMsgNotification(array(
+        'type' => I('type', null),
+        'from_user_id' => $this->getUserIdFromSession(),
+        'to_user_id' => I('to_user_id', null),
+      ));
+      if($addResult) {
+        $this->ajaxReturn(array(
+          'status' => 200,
+          'msg' => '消息已回复!',
+        ));
+      } else {
+        $this->ajaxReturnError();
+      }
     }
 
     // 删除数据，并且获取用户列表

@@ -103,7 +103,8 @@ class CategoryPanel extends Component {
 
     mainActions.addFriend({
       to_user_id : userId,
-      type : 'addFriend'
+      type : 'addFriend',
+      from_category_id : mainState.currentCategoryId
     });
 
   }

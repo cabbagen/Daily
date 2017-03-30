@@ -41,7 +41,7 @@
 			if($msg) {
 				$this->ajaxReturn(array(
 					'status' => 200,
-					'data' => json_encode($msg),
+					'data' => $msg,
 				));
 			} else {
 				$this->ajaxReturn(array(
@@ -61,8 +61,8 @@
 			$msg = D('Message')->getMessage($userId);
 
 			if($msg) {
-				D('Message')->deleteMessage((int)$msg['msgId']);
-				return $msg;
+				D('Message')->deleteMessage((int)$msg[0]['msgid']);
+				return $msg[0];
 			} else {
 				return false;
 			}

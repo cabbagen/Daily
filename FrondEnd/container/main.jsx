@@ -5,6 +5,7 @@ import actions from '../actions';
 
 import { notification } from 'antd';
 import Navigation from '../components/Navigation.jsx';
+import MsgServer from '../components/MsgServer.jsx';
 import Sider from '../components/Sider.jsx';
 import styles from '../container/main.less';
 
@@ -13,6 +14,27 @@ const sdk = new WSDK();
 class Main extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      visible : false
+    }
+  }
+
+  componentWillMount() {
+    var { mainState } = this.props;
+    if(mainState.msgFromServer) {
+      this.setState({
+        visible : true
+      });
+    }
+  }
+
+  componentWillReceiveProps(nextProps) {
+    var { mainState } = nextProps;
+    if(mainState.msgFromServer) {
+      this.setState({
+        visible : true
+      });
+    }
   }
 
   // 在这里登录 IM 服务器
@@ -46,6 +68,7 @@ class Main extends Component {
       },
       error : function(e) {
         console.log('登录失败');
+        console.log(e);
         mainActions.addNotification('登录 IM 服务失败，请稍后重试！');
       }
     });
@@ -91,8 +114,34 @@ class Main extends Component {
     mainActions.removeNotification();
   }
 
+  inviteModalOk(type) {
+    console.log(type);
+    console.log('同意');
+  }
+
+  inviteModalCancel(type) {
+    console.log(type);
+    console.log('不同意')
+  }
+
+  createCategory(type) {
+    var { mainActions, mainState } = this.props;
+
+    var addItemObj = {
+      type : 'Categorys',
+      from_user_id : mainState.userInfo.userId,
+      'category_name' : '新建分组'
+    };
+
+    mainActions.addMenuCategoryItem(addItemObj);
+  }
+
+
+
+
   render() {
     var { mainActions, mainState } = this.props;
+    var that = this;
 
     var navigationProps = {
       userMenuInfo : mainState.userMenuInfo,
@@ -105,9 +154,20 @@ class Main extends Component {
       mainActions : mainActions
     };
 
+    var MsgServerProps = mainState.msgFromServer ? {
+      inviteModalOk : that.inviteModalOk.bind(that),
+      inviteModalCancel : that.inviteModalCancel.bind(that),
+      inviteInfo : mainState.msgFromServer,
+      inviteList : mainState.userMenuInfo.Categorys,
+      createCategory : that.createCategory.bind(that)
+    } : null;
+
+    var MsgFromServerNode = mainState.msgFromServer ? <MsgServer {...MsgServerProps} /> : '';
+
     return (
       <div>
         <Navigation {...navigationProps} />
+        {MsgFromServerNode}
         <div className={styles.main_content}>
           <Sider {...SiderProps} />
           {this.props.children}

@@ -151,7 +151,7 @@
 
 		// 修改群信息
 		public function modifyTribe() {
-			$username = "test_1";
+			$username = "test_2";
 			$imTop = $this->initIm();
 
 			$req = new \OpenimTribeModifytribeinfoRequest;
@@ -160,7 +160,7 @@
 			$user->taobao_account = "false";
 			$user->app_key = C("IM_AppKey");
 			$req->setUser(json_encode($user));
-			$req->setTribeName("22222");
+			$req->setTribeName("333333");
 			$req->setNotice("22222");
 			$req->setTribeId("117146907");
 

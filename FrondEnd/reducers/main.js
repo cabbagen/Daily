@@ -21,6 +21,7 @@ const mainInitState = {
 
   // 当前分类的 id ， 这里匹配 `from_**_id` 字段, 这里类似于文件夹 id
   currentCategoryId : '',
+
   // 消息通知对象
   msgFromServer : null,
 };
@@ -232,20 +233,18 @@ const mainReducerMap = {
 
 
   // 监听处理
-  listenMsgLongNotificationAsyncSuccess : function(state, action) {
+  listenerMsgFromServerAsyncSuccess : function(state, action) {
     console.log(action.data);
+    return Object.assign({}, state, {
+      msgFromServer : action.data
+    });
+  },
+  listenerMsgFromServerAsyncError : function(state, action) {
     return state;
   },
-  listenMsgLongNotificationAsyncError : function(state, action) {
-    return state;
-  },
 
-
-
-
-
-
-  
+  // 小组群模块
+  // 获取
   getGroupsCategoryItemAsyncSuccess : function(state, action) {
     var tempObj = {groupsCategoryItem : action.groupsCategoryItem, currentCategoryId : action.id};
     return Object.assign({}, state, tempObj);
@@ -254,6 +253,32 @@ const mainReducerMap = {
     var newState = Object.assign({}, state, {notifications : action.msg});
     return newState;
   },
+
+  // 主动退群
+  leaveTribeAsyncSuccess : function(state, action) {
+    var tempObj = Object.assign({}, state.userMenuInfo, {Groups : action.groupList});
+    return Object.assign({}, state, {userMenuInfo : tempObj});
+  },
+  leaveTribeAsyncError : function(state, action) {
+    return Object.assign({}, state, {
+      notifications : action.msg
+    });
+  },
+
+  // 删除群
+  deleteTribeAsyncSuccess : function(state, action) {
+    var tempObj = Object.assign({}, state.userMenuInfo, {Groups : action.groupList});
+    return Object.assign({}, state, {userMenuInfo : tempObj});
+  },
+  deleteTribeAsyncError : function(state, action) {
+    return Object.assign({}, state, {
+      notifications : action.msg
+    });
+  },
+
+
+
+  
   getSharesCategoryItemAsyncSuccess : function(state, action) {
     var tempObj = {sharesCategoryItem : action.sharesCategoryItem, currentCategoryId : action.id};
     return Object.assign({}, state, tempObj);
