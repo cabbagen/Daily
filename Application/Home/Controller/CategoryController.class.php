@@ -63,6 +63,7 @@
       }
     }
 
+    // 同意加好友
     public function agressAddFriend() {
       $friendFromCategoryId = I('friendFromCategoryId', null);
       $friendId = I('friendId', null);
@@ -98,6 +99,7 @@
 
     }
 
+    // 拒绝加好友
     public function rejectAddFriend() {
       $addResult = $this->addMsgNotification(array(
         'type' => 'reject',

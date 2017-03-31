@@ -219,6 +219,7 @@ const mainReducerMap = {
       notifications : action.msg
     });
   },
+  // 确认添加好友
   confirmAddFriendAsyncSuccess : function(state, action) {
     return Object.assign({}, state, {
       notifications : action.msg,
@@ -226,6 +227,18 @@ const mainReducerMap = {
     });
   },
   confirmAddFriendAsyncError : function(state, action) {
+    return Object.assign({}, state, {
+      notifications : action.msg,
+      msgFromServer : null
+    });
+  },
+  rejectRequireAsyncSuccess : function(state, action) {
+    return Object.assign({}, state, {
+      notifications : action.msg,
+      msgFromServer : null
+    });
+  },
+  rejectRequireAsyncError : function(state, action) {
     return Object.assign({}, state, {
       notifications : action.msg,
       msgFromServer : null
@@ -252,21 +265,12 @@ const mainReducerMap = {
     });
   },
   listenerMsgFromServerAsyncError : function(state, action) {
-    return state;
-  },
-  rejectRequireAsyncSuccess : function(state, action) {
+    // 状态码 为 205 不显示信息
     return Object.assign({}, state, {
-      notifications : action.msg,
-      msgFromServer : null
+      notifications : action.msg || ''
     });
   },
-  rejectRequireAsyncError : function(state, action) {
-    return Object.assign({}, state, {
-      notifications : action.msg,
-      msgFromServer : null
-    });
-  },
-
+  
   // 小组群模块
   // 获取
   getGroupsCategoryItemAsyncSuccess : function(state, action) {
@@ -299,8 +303,41 @@ const mainReducerMap = {
       notifications : action.msg
     });
   },
-
-
+  // 邀请加群
+  inviteJoinTribeAsyncSuccess : function(state, action) {
+    return Object.assign({}, state, {
+      notifications : action.msg
+    });
+  },
+  inviteJoinTribeAsyncError : function(state, action) {
+    return Object.assign({}, state, {
+      notifications : action.msg
+    });
+  },
+  // 同意加群
+  confirmJoinTribeAsyncSuccess : function(state, action) {
+    return Object.assign({}, state, {
+      notifications : action.msg,
+      msgFromServer : null
+    });
+  },
+  confirmJoinTribeAsyncError : function(state, action) {
+    return Object.assign({}, state, {
+      notifications : action.msg,
+      msgFromServer : null
+    });
+  },
+  // 群组踢人 
+  expelTribeMemberAsyncSuccess : function(state, action) {
+    return Object.assign({}, state, {
+      groupsCategoryItem : action.memberList
+    });
+  },
+  expelTribeMemberAsyncError : function(state, action) {
+    return Object.assign({}, state, {
+      notifications : action.msg
+    });
+  },
 
   
   getSharesCategoryItemAsyncSuccess : function(state, action) {

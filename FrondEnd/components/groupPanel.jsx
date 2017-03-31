@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import { Icon, Button, modal } from 'antd';
+import { Icon, Button, Modal } from 'antd';
 
 import styles from './GroupPanel.less';
 
@@ -7,6 +7,10 @@ class GroupPanel extends Component {
 
   constructor(props) {
     super(props);
+    this.state = {
+      visible : false,
+      modalErrorMsg : ''
+    }
   }
 
   render() {
@@ -29,14 +33,20 @@ class GroupPanel extends Component {
         <div className={styles.group_panel_content}>
           
         </div>
+        <Modal title="邀请入群" 
+          visible={this.state.visible} 
+          onOk={this.inviteAddTribeModalOk.bind(this)} 
+          onCancel={this.inviteAddTribeModalCancel.bind(this)}>
+            <p>请输入对方的 Email</p>
+            <input className={styles.email} type="email" required="required" ref="email" />
+            {this.state.modalErrorMsg.length > 0 ? <p className={styles.error}>{this.state.modalErrorMsg}</p> : ''}
+        </Modal>
       </div>
     );
   }
 
   inviteTribe() {
-    var { mainState } = this.props;
-    console.log(mainState.currentCategoryId);
-    console.log('邀请入群');
+    this.setState({visible:true});
   }
 
   leaveTribe() {
@@ -44,7 +54,6 @@ class GroupPanel extends Component {
     var tribeId = mainState.currentCategoryId;
     
     mainActions.leaveTribe(tribeId);
-    console.log('退群');
   }
 
   deleteTribe() {
@@ -52,11 +61,46 @@ class GroupPanel extends Component {
     var tribeId = mainState.currentCategoryId;
 
     mainActions.deleteTribe(tribeId);
-    console.log('删除群');
   }
 
   changeTribeFiles() {
     console.log('查看群文件');
+  }
+
+  inviteAddTribeModalOk() {
+    var email = this.refs.email.value;
+    var isPassCheck = this.checkEmail();
+    var { mainState, mainActions } = this.props;
+
+    if(isPassCheck) {
+      this.setState({visible : false, modalErrorMsg : ''}, function() {
+        mainActions.inviteJoinTribe({
+          email : email,
+          imTribeId : mainState.currentCategoryId
+        });
+      });
+    }
+  }
+
+  inviteAddTribeModalCancel() {
+    this.setState({visible : false, modalErrorMsg : ''});
+  }
+
+  checkEmail() {
+    var emailReg = /^([a-zA-Z0-9]+[_|_|.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|_|.]?)*[a-zA-Z0-9]+.[a-zA-Z]{2,4}$/,
+      inputEmail = this.refs.email.value;
+
+    if(inputEmail.length == 0) {
+      this.setState({modalErrorMsg : '邮箱地址不能为空！'});
+      return false;
+    }
+
+    if(!emailReg.test(inputEmail)) {
+      this.setState({modalErrorMsg : '请输入合法的邮箱地址哦！'});
+      return false;
+    }
+
+    return true;
   }
 
 }

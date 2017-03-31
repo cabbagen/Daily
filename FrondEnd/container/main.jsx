@@ -120,16 +120,12 @@ class Main extends Component {
     if(type === 'addFriend') {
       mainActions.confirmAddFriend(params);
     } else {
-
+      mainActions.confirmJoinTribe(params);
     }
-    console.log(type);
-    console.log(params);
-    console.log('同意');
   }
 
   inviteModalCancel(type, toUserId) {
     // 拒绝加好友和加群 处理相同
-    console.log('不同意  ' + type);
     var { mainState, mainActions } = this.props;
     mainActions.rejectRequire(toUserId);
 

@@ -123,7 +123,7 @@
 
       $resp = $imTop->execute($req);
 
-      if(isset($resp->tribe_id)) {
+      if(isset($resp->tribe_code)) {
         return true;
       } else {
         return false;
@@ -144,7 +144,7 @@
 
       $resp = $imTop->execute($req);
 
-      if(isset($resp->tribe_id)) {
+      if(isset($resp->tribe_code)) {
         return true;
       } else {
         return false;

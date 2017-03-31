@@ -35,7 +35,6 @@
 
 
     // ==================== 消息通知监听 =========================
-
     public function listenMsgLongNotification() {
       $msg = $this->getOneMsgNotification();
       if($msg) {
@@ -44,7 +43,7 @@
         } else if($msg['type'] == 'reject') {
           $this->ajaxReturn(array('status' => 204, 'msg' => '对方拒绝了你的请求'));
         } else if($msg['type'] == 'agress') {
-          $this->ajaxReturn(array('status' => 204, 'msg' => '对方已经同意你的请求，请刷新查看！'));
+          $this->ajaxReturn(array('status' => 203, 'msg' => '对方已经同意你的请求，请刷新查看！'));
         }
       } else {
         $this->ajaxReturn(array('status' => 205, 'msg' => '当前没有消息'));
@@ -57,7 +56,11 @@
 
     public function getOneMsgNotification() {
       $userId = $this->getUserIdFromSession();
+      // $userId = I('userId', null);
       $msg = D('Message')->getMessage($userId);
+
+      // var_dump($msg);
+      // die('');
 
       if($msg) {
         D('Message')->deleteMessage((int)$msg[0]['msgid']);

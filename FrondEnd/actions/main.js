@@ -151,9 +151,9 @@ export const listenerMsgFromServer = () => ({
 });
 // 拒绝加好友或加群
 export const rejectRequire = (toUserId) => ({
-  type : 'rejectRequire'
+  type : 'rejectRequire',
+  toUserId : toUserId
 });
-
 
 // 小组群模块
 // 退群
@@ -166,4 +166,22 @@ export const leaveTribe = (tribeId) => ({
 export const deleteTribe = (tribeId) => ({
   type : 'deleteTribe',
   tribeId : tribeId
+});
+
+// 邀请加群
+export const inviteJoinTribe = (params) => ({
+  type : 'inviteJoinTribe',
+  params : params
+});
+
+// 同意加群
+export const confirmJoinTribe = (params) => ({
+  type : 'confirmJoinTribe',
+  params : params
+});
+
+// 群组踢人
+export const expelTribeMember = (params) => ({
+  type : 'expelTribeMember',
+  params : params
 });

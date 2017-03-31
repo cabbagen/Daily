@@ -263,20 +263,9 @@ function* deleteFriendAsync(action) {
   }
 }
 
-// 监听消息 
-function* listenerMsgFromServerAsync() {
-  var data = yield call(servers.mainServer.listenerMsgFromServerAsync);
-  if(data.status && data.status === 200) {
-    yield put({type : 'listenerMsgFromServerAsyncSuccess', data : data.data});
-  } else if(data.status && data.status !== 200) {
-    yield put({type : 'listenerMsgFromServerAsyncError'});
-  } else {
-    yield put({type : 'listenerMsgFromServerAsyncError'});
-  }
-} 
 // 拒绝加好友或加群
 function* rejectRequireAsync(action) {
-  var data = yield call(servers.mainServer.rejectRequireAsync, action.toUserId);
+  var data = yield call(servers.categoryServer.rejectRequireAsync, action.toUserId);
   if(data.status && data.status === 200) {
     yield put({type : 'rejectRequireAsyncSuccess', msg : data.msg});
   } else if(data.status && data.status !== 200) {
@@ -285,6 +274,18 @@ function* rejectRequireAsync(action) {
     yield put({type : 'rejectRequireAsyncError', msg : data.msg});
   }
 }
+
+// 监听消息 
+function* listenerMsgFromServerAsync() {
+  var data = yield call(servers.mainServer.listenerMsgFromServerAsync);
+  if(data.status && data.status === 200) {
+    yield put({type : 'listenerMsgFromServerAsyncSuccess', data : data.data});
+  } else if(data.status && data.status !== 205) {
+    yield put({type : 'listenerMsgFromServerAsyncError', msg : data.msg});
+  } else {
+    yield put({type : 'listenerMsgFromServerAsyncError'});
+  }
+} 
 
 
 // 小组群模块
@@ -308,6 +309,40 @@ function* deleteTribeAsync(action) {
     yield put({type : 'deleteTribeAsyncError', msg : data.msg});
   } else {
     yield put({type : 'deleteTribeAsyncError', msg : data.msg});
+  }
+}
+// 邀请加群
+function* inviteJoinTribeAsync(action) {
+  var data = yield call(servers.groupServer.inviteJoinTribeAsync, action.params);
+  if(data.status && data.status === 200) {
+    yield put({type : 'inviteJoinTribeAsyncSuccess', msg : data.msg});
+  } else if(data.status && data.status !== 200) {
+    yield put({type : 'inviteJoinTribeAsyncError', msg : data.msg});
+  } else {
+    yield put({type : 'inviteJoinTribeAsyncError', msg : data.msg});
+  }
+}
+// 同意加群
+function* confirmJoinTribeAsync(action) {
+  var data = yield call(servers.groupServer.confirmJoinTribeAsync, action.params);
+  if(data.status && data.status === 200) {
+    yield put({type : 'confirmJoinTribeAsyncSuccess', msg : data.msg});
+  } else if(data.status && data.status !== 200) {
+    yield put({type : 'confirmJoinTribeAsyncError', msg : data.msg});
+  } else {
+    yield put({type : 'confirmJoinTribeAsyncError', msg : data.msg});
+  }
+}
+
+// 群组踢人
+function* expelTribeMemberAsync(action) {
+  var data = yield call(servers.groupServer.expelTribeMemberAsync, action.params);
+  if(data.status && data.status === 200) {
+    yield put({type : 'expelTribeMemberAsyncSuccess', memberList : data.memberList});
+  } else if(data.status && data.status !== 200) {
+    yield put({type : 'expelTribeMemberAsyncError', msg : data.msg});
+  } else {
+    yield put({type : 'expelTribeMemberAsyncError', msg : data.msg});
   }
 }
 
@@ -347,5 +382,9 @@ export function* watchMain() {
 
   yield takeEvery('leaveTribe', leaveTribeAsync);
   yield takeEvery('deleteTribe', deleteTribeAsync);
+  yield takeEvery('inviteJoinTribe', inviteJoinTribeAsync);
+  yield takeEvery('confirmJoinTribe', confirmJoinTribeAsync);
+  yield takeEvery('expelTribeMember', expelTribeMemberAsync);
+
 
 };

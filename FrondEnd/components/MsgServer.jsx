@@ -110,7 +110,10 @@ class MsgServer extends Component {
         fromCategoryId : selectCategoryId
       };
     } else {
-      console.log('加群处理');
+      params = {
+        friendId : this.props.inviteInfo.from_user_id,
+        tribeId : this.props.inviteInfo.im_tribe_id
+      };
     }
     this.setState({visible : false}, function() {
       this.props.inviteModalOk(type, params);

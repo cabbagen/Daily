@@ -34,11 +34,15 @@ class Group extends Component {
   }
 
   openChat(friendId) {
-    console.log(friendId);
+    // 这里方法留空 不做处理
   }
 
   deleteFriend(friendId) {
-    console.log(friendId);
+    var { mainState, mainActions } = this.props;
+    mainActions.expelTribeMember({
+      userId : friendId,
+      tribeId : mainState.currentCategoryId
+    });
   }
 
   render() {
