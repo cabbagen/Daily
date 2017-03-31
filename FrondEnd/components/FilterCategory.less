@@ -39,9 +39,24 @@
   }
 }
 
+.wrap {
+  position: relative;
+  overflow: hidden;
+  width: @width;
+  height: 450px;
+  float: left;
+}
+.inner {
+  position: absolute;
+  left: 0;
+  overflow-x: hidden;
+  height: 450px;
+  overflow-y: scroll;
+}
+
 .filter_content {
   width: @width;
-  overflow-y: scroll;
+  height: 450px;
 
   li {
     height: 58px;

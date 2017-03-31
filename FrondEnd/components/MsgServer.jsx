@@ -93,14 +93,35 @@ class MsgServer extends Component {
   }
 
   inviteModalOk(type) {
+    var params = null;
+    var selectCategoryId = '';
+
+    if(type === 'addFriend') {
+      var selectCategory = this.state.inviteList.find(item => item.isSelected);
+      if(!selectCategory) {
+        alert('请先选择分组');
+        return;
+      } else {
+        selectCategoryId = selectCategory['id'];
+      }
+      params = {
+        friendId : this.props.inviteInfo.id,
+        friendFromCategoryId : this.props.inviteInfo.from_category_id,
+        fromCategoryId : selectCategoryId
+      };
+    } else {
+      console.log('加群处理');
+    }
     this.setState({visible : false}, function() {
-      this.props.inviteModalOk(type);
+      this.props.inviteModalOk(type, params);
     });
   }
 
   inviteModalCancel(type) {
+    var toUserId = type === 'addFriend' ? this.props.inviteInfo.id : this.props.inviteInfo.from_user_id;
+    
     this.setState({visible : false}, function() {
-      this.props.inviteModalCancel(type);
+      this.props.inviteModalCancel(type, toUserId);
     });
   }
 

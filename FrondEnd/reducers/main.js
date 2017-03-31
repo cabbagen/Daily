@@ -219,6 +219,18 @@ const mainReducerMap = {
       notifications : action.msg
     });
   },
+  confirmAddFriendAsyncSuccess : function(state, action) {
+    return Object.assign({}, state, {
+      notifications : action.msg,
+      msgFromServer : null
+    });
+  },
+  confirmAddFriendAsyncError : function(state, action) {
+    return Object.assign({}, state, {
+      notifications : action.msg,
+      msgFromServer : null
+    });
+  },
   // 删除好友
   deleteFriendAsyncSuccess : function(state, action) {
     return Object.assign({}, state, {
@@ -241,6 +253,18 @@ const mainReducerMap = {
   },
   listenerMsgFromServerAsyncError : function(state, action) {
     return state;
+  },
+  rejectRequireAsyncSuccess : function(state, action) {
+    return Object.assign({}, state, {
+      notifications : action.msg,
+      msgFromServer : null
+    });
+  },
+  rejectRequireAsyncError : function(state, action) {
+    return Object.assign({}, state, {
+      notifications : action.msg,
+      msgFromServer : null
+    });
   },
 
   // 小组群模块

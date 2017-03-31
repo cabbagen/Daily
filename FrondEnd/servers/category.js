@@ -8,6 +8,10 @@ export const addFriendAsync = (params) => {
   return Require.ajax('/Home/Category/addFriendAndAddMsg', 'post', params).then(data => data, e => e);
 };
 
+export const confirmAddFriendAsync = (params) => {
+	return Require.ajax('/Home/Category/agressAddFriend', 'post', params).then(data => data, e => e);
+}
+
 export const deleteFriendAsync = (params) => {
   return Require.ajax('/Home/Category/deleteFriendAndQueryUsers', 'post', params).then(data => data, e => e);
 };

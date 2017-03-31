@@ -132,6 +132,11 @@ export const addFriend = (params) => ({
   type : 'addFriend',
   params : params
 });
+// 确认添加好友
+export const confirmAddFriend = (params) => ({
+  type : 'confirmAddFriend',
+  params : params
+});
 
 // 删除好友
 export const deleteFriend = (params) => ({
@@ -143,6 +148,10 @@ export const deleteFriend = (params) => ({
 // 监听消息
 export const listenerMsgFromServer = () => ({
   type : 'listenerMsgFromServer'
+});
+// 拒绝加好友或加群
+export const rejectRequire = (toUserId) => ({
+  type : 'rejectRequire'
 });
 
 

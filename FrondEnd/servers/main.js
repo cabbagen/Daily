@@ -42,3 +42,9 @@ export const addMenuCategoryItemAsync = (addItemObject) => {
 export const listenerMsgFromServerAsync = () => {
   return Require.ajax('/Home/base/listenMsgLongNotification', 'post', {}).then(data => data, e => e);
 }
+
+// 拒绝加好友加群
+export const rejectRequireAsync = (to_user_id) => {
+  var params = {to_user_id};
+  return Require.ajax('/Home/category/rejectAddFriend', 'post', params).then(data => data, e => e);
+}

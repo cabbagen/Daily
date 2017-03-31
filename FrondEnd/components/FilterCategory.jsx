@@ -7,8 +7,6 @@ class FileterCategory extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      // categoryItem : this.props.mainState.categorysCategoryItem,
-      // fullItem : this.props.mainState.categorysCategoryItem
       categoryItem : this.props.list,
       fullItem : this.props.list
     };
@@ -16,8 +14,6 @@ class FileterCategory extends Component {
 
   componentWillReceiveProps(nextProps) {
     this.setState({
-      // categoryItem : nextProps.mainState.categorysCategoryItem,
-      // fullItem : nextProps.mainState.categorysCategoryItem
       categoryItem : nextProps.list,
       fullItem : nextProps.list
     });
@@ -42,9 +38,13 @@ class FileterCategory extends Component {
     var itemNodes = this.renderItem();
 
     return hasItem ? (
-      <ul className={styles.filter_content}>
-        {itemNodes}
-      </ul>
+      <div className={styles.wrap}>
+        <div className={styles.inner}>
+          <ul className={styles.filter_content}>
+            {itemNodes}
+          </ul>
+        </div>
+      </div>
     ) : (
       <div className={styles.no_more}>
         <p>~~空空如也~~</p>

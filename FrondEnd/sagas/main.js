@@ -232,6 +232,18 @@ function* addFriendAsync(action) {
   }
 }
 
+// 确认添加好友
+function* confirmAddFriendAsync(action) {
+  var data = yield call(servers.categoryServer.confirmAddFriendAsync, action.params);
+  if(data.status && data.status === 200) {
+    yield put({type : 'confirmAddFriendAsyncSuccess', msg : data.msg});
+  } else if(data.status && data.status !== 200) {
+    yield put({type : 'confirmAddFriendAsyncError', msg : data.msg});
+  } else {
+    yield put({type : 'confirmAddFriendAsyncError', msg : data.msg});
+  }
+}
+
 // 删除好友
 // 这里会拉取用户列表
 function* deleteFriendAsync(action) {
@@ -262,6 +274,18 @@ function* listenerMsgFromServerAsync() {
     yield put({type : 'listenerMsgFromServerAsyncError'});
   }
 } 
+// 拒绝加好友或加群
+function* rejectRequireAsync(action) {
+  var data = yield call(servers.mainServer.rejectRequireAsync, action.toUserId);
+  if(data.status && data.status === 200) {
+    yield put({type : 'rejectRequireAsyncSuccess', msg : data.msg});
+  } else if(data.status && data.status !== 200) {
+    yield put({type : 'rejectRequireAsyncError', msg : data.msg});
+  } else {
+    yield put({type : 'rejectRequireAsyncError', msg : data.msg});
+  }
+}
+
 
 // 小组群模块
 // 退群
@@ -315,9 +339,11 @@ export function* watchMain() {
   yield takeEvery('cancelCompleteAffair', cancelCompleteAffairAsync);
 
   yield takeEvery('addFriend', addFriendAsync);
+  yield takeEvery('confirmAddFriend', confirmAddFriendAsync);
   yield takeEvery('deleteFriend', deleteFriendAsync);
 
   yield takeEvery('listenerMsgFromServer', listenerMsgFromServerAsync);
+  yield takeEvery('rejectRequire', rejectRequireAsync);
 
   yield takeEvery('leaveTribe', leaveTribeAsync);
   yield takeEvery('deleteTribe', deleteTribeAsync);

@@ -60,7 +60,7 @@ class Main extends Component {
       success : function(data) {
         console.log('登录成功');
         that.getImUnReaderMsg();
-        sdk.Base.startListenAllMsg();
+        // sdk.Base.startListenAllMsg();
         sdk.Event.on('START_RECEIVE_ALL_MSG', function(data) {
           console.log('接收到的消息');
           console.log(data);
@@ -114,14 +114,25 @@ class Main extends Component {
     mainActions.removeNotification();
   }
 
-  inviteModalOk(type) {
+  inviteModalOk(type, params) {
+    var { mainActions } = this.props;
+
+    if(type === 'addFriend') {
+      mainActions.confirmAddFriend(params);
+    } else {
+
+    }
     console.log(type);
+    console.log(params);
     console.log('同意');
   }
 
-  inviteModalCancel(type) {
-    console.log(type);
-    console.log('不同意')
+  inviteModalCancel(type, toUserId) {
+    // 拒绝加好友和加群 处理相同
+    console.log('不同意  ' + type);
+    var { mainState, mainActions } = this.props;
+    mainActions.rejectRequire(toUserId);
+
   }
 
   createCategory(type) {

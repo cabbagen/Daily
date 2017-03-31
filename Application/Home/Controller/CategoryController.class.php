@@ -45,32 +45,6 @@
       
     }
 
-    // 添加好友，并且拉取查询数据
-    // public function addFriendAndQueryUsers() {
-    //   $userId = $this->getUserIdFromSession();
-    //   $addResult = D('Friends')->addFriend(array(
-    //     'from_category_id' => I('post.from_category_id', null),
-    //     'user_id' => $userId,
-    //     'friend_id' => I('post.friend_id', null),
-    //   ));
-    //   $friendList = D('Friends')->getCategoryItemFromModel('Categorys', I('post.from_category_id', null));
-
-    //   $queryResult = $this->prePaginationForAddAndDelete( I('post.', null) );
-
-    //   if(is_array($queryResult['userList']) && $addResult) {
-    //     $resultUserList = $this->adapterFrinedFromUser($queryResult['userList']);
-    //     $this->ajaxReturn(array('status' => 200, 'data' => array(
-    //       'searchPage' => array(
-    //         'usersList' => $resultUserList,
-    //         'totalPage' => $queryResult['totalPage'],
-    //         'currentPage' => I('post.currentPage', null)
-    //       ),
-    //       'friendList' => $friendList
-    //     )));
-    //   } else {
-    //     $this->ajaxReturnError();
-    //   }
-
     // 添加好友，并向对方发送通知
     public function addFriendAndAddMsg() {
       $addResult = $this->addMsgNotification(array(
@@ -90,10 +64,10 @@
     }
 
     public function agressAddFriend() {
-      $friendFromCategoryId = I('friend_from_category_id', null);
+      $friendFromCategoryId = I('friendFromCategoryId', null);
       $friendId = I('friendId', null);
       $userId = $this->getUserIdFromSession();
-      $userFromCategoryId = I('from_category_id', null);
+      $userFromCategoryId = I('fromCategoryId', null);
 
       $addUserResult = D('Friends')->addFriend(array(
         'user_id' => $userId,
@@ -107,7 +81,7 @@
       ));
 
       $addMsgResult = $this->addMsgNotification(array(
-        'type' => 'arre',
+        'type' => 'agress',
         'from_user_id' => $userId,
         'to_user_id' => $friendId
       ));
@@ -115,7 +89,7 @@
       if($addUserResult && $addFriendResult) {
         $this->ajaxReturn(array(
           'status' => 200,
-          'msg' => '您已添加成功',
+          'msg' => '您已添加成功, 请刷新查看',
         ));
       } else {
         $this->ajaxReturnError();
@@ -126,14 +100,14 @@
 
     public function rejectAddFriend() {
       $addResult = $this->addMsgNotification(array(
-        'type' => I('type', null),
+        'type' => 'reject',
         'from_user_id' => $this->getUserIdFromSession(),
         'to_user_id' => I('to_user_id', null),
       ));
       if($addResult) {
         $this->ajaxReturn(array(
           'status' => 200,
-          'msg' => '消息已回复!',
+          'msg' => '拒绝消息已回复!',
         ));
       } else {
         $this->ajaxReturnError();
