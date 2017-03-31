@@ -36,9 +36,13 @@ class FilterCalendar extends Component {
     var calendarItems = this.renderItem();
 
     return hasItem ? (
-      <ul className={styles.filter_content}>
-        {calendarItems}
-      </ul>
+      <div className={styles.wrap}>
+        <div className={styles.inner}>
+          <ul className={styles.filter_content}>
+            {calendarItems}
+          </ul>
+        </div>
+      </div>
     ) : (
       <div className={styles.no_more}>
         <p>~~空空如也~~</p>

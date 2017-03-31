@@ -36,9 +36,13 @@ class FilterFiles extends Component {
     var hasFile = fileList.length > 0 ? true : false;
 
     return hasFile ? (
-      <ul className={styles.filter_content}>
-        {fileList}
-      </ul>
+      <div className={styles.wrap}>
+        <div className={styles.inner}>
+          <ul className={styles.filter_content}>
+            {fileList}
+          </ul>
+        </div>
+      </div>
     ) : (
       <div className={styles.no_more}>
         <p>~~空空如也~~</p>
