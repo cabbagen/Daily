@@ -70,6 +70,7 @@
       // 这里在 拒绝加好友处处理
     }
 
+    // 群组踢人
     public function expelTribeMember() {
       $userInfo = D('Users')->getUserInfo(array('id' => I('userId', null)));
       $isAdmin = D('Groups')->checkTribeAdmin(I('tribeId', null));
@@ -77,7 +78,7 @@
       if($isAdmin) {
         $expelResult = D('Groups')->expelTribe(I('tribeId', null), $userInfo['username']);
         $memberList = D('Groups')->getCategoryItemFromModel('Groups', I('tribeId', null));
-        
+
         if($expelResult && $memberList) {
           $this->ajaxReturn(array('status' => 200, 'memberList' => $memberList));
         } else {
