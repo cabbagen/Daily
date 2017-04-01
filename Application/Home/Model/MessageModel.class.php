@@ -9,7 +9,7 @@
         "think_users on think_users.id = think_message.from_user_id where " . 
         "think_message.to_user_id = $toUserId and think_message.type != 'addTribe' limit 1";
       
-      return $this->query($sql);  
+      return $this->query($sql);
     }
 
     private function getAddTribeMessage($toUserId) {

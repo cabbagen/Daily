@@ -40,7 +40,7 @@
     public function queryUserFromIm() {
       $imTop = $this->initIm();
       $req = new \OpenimUsersGetRequest;
-      $req->setUserids("4e70ffa82fbe886e3c4ac00ac374c29b");
+      $req->setUserids("d538fbe2b36de3168cbd69b6c5c43d85");
       $resq = $imTop->execute($req);
 
       var_dump($resq->userinfos);
@@ -79,7 +79,7 @@
       $user->app_key = C("IM_AppKey");
 
       $req->setUser(json_encode($user));
-      $req->setTribeId("117146911");
+      $req->setTribeId("117146907");
       $resp = $imTop->execute($req);
 
       var_dump($resp->tribe_user_list);
@@ -122,19 +122,13 @@
       $imTop = $this->initIm();
       $req = new \OpenimTribeJoinRequest;
       $user = new \OpenImUser;
-      $user->uid = md5("test_2");
+      $user->uid = md5("test_3");
       $user->taobao_account = "false";
       $user->app_key = C("IM_AppKey");
       $req->setUser(json_encode($user));
       $req->setTribeId("117146907");
 
       $resp = $imTop->execute($req);
-
-      if(isset($resp->tribe_id)) {
-        echo 'sdsd';
-      } else {
-        echo 'sssss';
-      }
 
       var_dump($resp);
     }
@@ -200,12 +194,9 @@
 
     // 测试
     public function demo() {
-      $num = 0;
-      if(isset($num)) {
-        echo 'sd';
-      } else {
-        echo 'ss';
-      }
+      echo md5("test_1");
+      echo "====";
+      echo md5("test_2");
     }
 
   }

@@ -109,6 +109,14 @@
       }
     }
 
+    // 获取群文件
+    public function getTribeFiles() {
+      $tribeId = I('tribeId', null);
+      $tribeFiles = D('Tribefiles')->getTribeFiles($tribeId);
+
+      var_dump($tribeFiles);
+    }
+
   }
 
 ?>

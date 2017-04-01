@@ -1,7 +1,6 @@
 <?php
   namespace Home\Controller;
   use Think\Controller;
-  // Vendor('msgNotification.notification#class');
 
   class BaseController extends Controller {
 

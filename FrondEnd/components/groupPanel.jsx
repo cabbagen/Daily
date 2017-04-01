@@ -21,17 +21,25 @@ class GroupPanel extends Component {
         <div className={styles.group_panel_header}>
           <p className={styles.chargeman}>组长: 小小夏同学</p>
           <p className={styles.panel_operate}>
-            <Icon type="file-add" />
-            <Icon type="download" />
-            <Icon type="delete" />
+            <Icon title="新建群文件" type="file-add" />
+            <Icon title="下载群文件" type="download" />
+            <Icon title="删除群文件" type="delete" />
             <Button onClick={that.inviteTribe.bind(that)}>邀请</Button>
             <Button onClick={that.leaveTribe.bind(that)}>退群</Button>
             <Button onClick={that.deleteTribe.bind(that)}>解散群</Button>
             <Button onClick={that.changeTribeFiles.bind(that)}>群文件</Button>
+            <Button onClick={that.openTribeChat.bind(that)}>群聊天</Button>
           </p>
         </div>
         <div className={styles.group_panel_content}>
-          
+          <ul>
+            <li>
+              <div className={styles.file}>
+                <Icon type="file-text" />
+                <p>我的文件</p>
+              </div>
+            </li>
+          </ul>
         </div>
         <Modal title="邀请入群" 
           visible={this.state.visible} 
@@ -65,6 +73,10 @@ class GroupPanel extends Component {
 
   changeTribeFiles() {
     console.log('查看群文件');
+  }
+
+  openTribeChat() {
+    console.log('打开群聊窗口');
   }
 
   inviteAddTribeModalOk() {
