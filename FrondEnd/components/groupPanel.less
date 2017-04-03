@@ -1,5 +1,11 @@
 @width: 700px;
 @border-color: #eeeeee;
+// 单行显示省略
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
 
 .group_panel {
   width: @width;
@@ -55,8 +61,11 @@
     border-radius: 3px;
     margin-right: 10px;
     cursor: pointer;
+    position: relative;
+    top: 0px;
+    left: 0px;
 
-    &:hover {
+    &.fileSelected {
       background: #cccccc;
     }
   }
@@ -69,7 +78,7 @@
     margin: 10px 0px 0px 10px;
     border: 1px solid #dedede;
     border-radius: 3px;
-
+    
     i {
       font-size: 60px;
       color: #eeeeee;
@@ -77,6 +86,32 @@
     p {
       height: 25px;
       line-height: 25px;
+      width: 80px;
+      margin: 0 auto; 
+      .ellipsis;
+    }
+  }
+  .selected {
+    width: 20px;
+    height: 20px;
+    background: #cccccc;
+    position: absolute;
+    top: 7px;
+    left: 7px;
+
+    div {
+      background: #ffffff;
+      width: 13px;
+      height: 13px;
+    }
+    span {
+      width: 12px;
+      height: 20px;
+      display: block;
+      border-style: solid;
+      border-color: #555555;
+      border-width: 0px 4px 4px 0px; 
+      transform: rotate(40deg) translate(-2px, -6px);
     }
   }
 }

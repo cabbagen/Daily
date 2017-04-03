@@ -24,13 +24,13 @@ class Group extends Component {
   }
 
   showNotification(description) {
-    var { fileActions } = this.props;
+    var { groupActions } = this.props;
     notification.open({
       message: '系统通知',
       description: description
     });
 
-    fileActions.removeNotification();
+    groupActions.removeNotification();
   }
 
   openChat(friendId) {

@@ -21,3 +21,18 @@ export const inviteJoinTribeAsync = (params) => {
 export const expelTribeMemberAsync = (params) => {
   return Require.ajax('/Home/Group/expelTribeMember', 'post', params).then(data => data, e => e);
 }
+
+export const getTribeFilesAsync = (tribeId) => {
+	var params = {tribeId};
+	return Require.ajax('/Home/Group/getTribeFiles', 'post', params).then(data => data, e => e);
+}
+
+export const getTirbeAdminInfoAsync = (tribeId) => {
+	var params = {tribeId};
+	return Require.ajax('/Home/Group/getTirbeAdminInfo', 'post', params).then(data => data, e => e);
+}
+
+export const deleteTribeFilesAsync = (tribeFileIds, tribeId) => {
+	var params = {tribeFileIds, tribeId};
+	return Require.ajax('/Home/Group/deleteTribeFiles', 'post', params).then(data => data, e => e);
+}

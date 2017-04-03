@@ -16,10 +16,7 @@
         $groupList = D('Groups')->getUserMenuCatetoryInfosFromModel('Group', $tribeId);
 
         if($leaveTribeResult && $groupList) {
-          $this->ajaxReturn(array(
-            'status' => 200,
-            'groupList' => $groupList,
-          ));
+          $this->ajaxReturn(array('status' => 200,'groupList' => $groupList));
         } else {
           $this->ajaxReturnError();
         }
@@ -114,7 +111,83 @@
       $tribeId = I('tribeId', null);
       $tribeFiles = D('Tribefiles')->getTribeFiles($tribeId);
 
-      var_dump($tribeFiles);
+      if(is_array($tribeFiles)) {
+        $this->ajaxReturn(array('status' => 200, 'data' => $tribeFiles));
+      } else {
+        $this->ajaxReturnError();
+      }
+
+    }
+
+    // 获取群组管理员信息
+    public function getTirbeAdminInfo() {
+      $tribeId = I('tribeId', null);
+      $adminInfo = D('Groups')->getTribeAdminInfo($tribeId);
+
+      if($adminInfo) {
+        $this->ajaxReturn(array('status' => 200, 'data' => $adminInfo));
+      } else {
+        $this->ajaxReturnError();
+      }
+    }
+    
+    // 批量下载文件
+    public function downloadTribeFiles() {
+      $tribeFileId = I('fileIds', null);
+
+      $zipName = './Public/zip/temp.zip';
+      $zip = new \ZipArchive;
+      $zip->open($zipName, \ZipArchive::CREATE);
+      $zip->addEmptyDir('files');  // 增加空目录
+
+      foreach($tribeFileId as $key => $value) {
+        $fileInfo = D('Files')->getFile($value);
+        $fileContent = file_get_contents($fileInfo['file_path']);
+        if($fileContent) {
+          $zip->addFromString('files/' . md5($fileInfo['file_name']) . '.md', $fileContent);
+        }
+      }
+      $zip->close();
+
+      $file = fopen($zipName, 'r');
+
+      header('Content-type: application/octet-stream');   
+      header('Accept-Range: bytes');
+      header('Accept-Length: ' . filesize($file));
+      header('Content-Disposition: attachment; filename=files.zip');
+
+      $buffer = 1024;
+      while(!feof($file)) {
+        $file_data = fread($file, $buffer);
+        echo $file_data;
+      }
+
+      fclose($file);
+      unlink($zipName);
+     
+
+    }
+
+    // 批量群组删除文件
+    public function deleteTribeFiles() {
+      $tribeFileIds = I('tribeFileIds', null);
+      $tribeId = I('tribeId', null);
+      $result = array();
+
+      foreach($tribeFileIds as $key => $value) {
+        array_push($result, D('Tribefiles')->deleteTribeFile($value));
+      }
+
+      $tribeFiles = D('Tribefiles')->getTribeFiles($tribeId);
+      if(in_array(0, $result)) {
+        $this->ajaxReturnError();
+      }
+
+      if(is_array($tribeFiles)) {
+        $this->ajaxReturn(array('status' => 200, 'tribeFiles' => $tribeFiles));
+      } else {
+        $this->ajaxReturnError();
+      }
     }
 
   }

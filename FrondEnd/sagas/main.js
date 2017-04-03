@@ -49,14 +49,37 @@ function* getCategorysCategoryItemAsync(action) {
   }
 }
 
+// 在这个接口获取 群组成员 和 群组文件
 function* getGroupsCategoryItemAsync(action) {
-  var data = yield call(servers.mainServer.getUserMenuCatagoryItemAsync, action.params);
+
+  var [data, filesData, tribeAdminData] = yield [
+    call(servers.mainServer.getUserMenuCatagoryItemAsync, action.params),
+    call(servers.groupServer.getTribeFilesAsync, action.params.id),
+    call(servers.groupServer.getTirbeAdminInfoAsync, action.params.id)
+  ];
+
   if(data.status && data.status === 200) {
     yield put({type:'getGroupsCategoryItemAsyncSuccess', groupsCategoryItem:data.data.content, id : data.data.id});
   } else if(data.status && data.status !== 200) {
     yield put({type:'getGroupsCategoryItemAsyncError', msg : data.msg});
   } else {
     yield put({type:'getGroupsCategoryItemAsyncError', msg : data.msg});
+  }
+
+  if(filesData.status && filesData.status === 200) {
+    yield put({type : 'getTribeFilesAsyncSuccess', tribeFiles : filesData.data});
+  } else if(filesData.status && filesData.status !== 200) {
+    yield put({type : 'getTribeFilesAsyncError', msg : filesData.msg});
+  } else {
+    yield put({type : 'getTribeFilesAsyncError', msg : filesData.msg});
+  }
+
+  if(tribeAdminData.status && tribeAdminData.status === 200) {
+    yield put({type : 'getTirbeAdminInfoAsyncSuccess', tribeAdminInfo : tribeAdminData.data});
+  } else if(tribeAdminData.status && tribeAdminData.status !== 200) {
+    yield put({type : 'getTirbeAdminInfoAsyncError', msg : tribeAdminData.msg});
+  } else {
+    yield put({type : 'getTirbeAdminInfoAsyncError', msg : tribeAdminData.msg});
   }
 }
 

@@ -256,6 +256,7 @@
       $memberResult = array();
       if($imMembers) {
         // $users = D('Users')->where(array('username' => array('NEQ', $username)))->select();
+        // 稍后修改
         $users = D('Users')->select();
         foreach($users as $key=>$val) {
           foreach($imMembers as $k=>$v) {
@@ -277,6 +278,12 @@
       } else {
         return false;
       }
+    }
+
+    public function getTribeAdminInfo($tribeId) {
+      return $this->where(array('im_tribe_id' => $tribeId))
+        ->join('think_users on think_groups.from_user_id = think_users.id')
+        ->find();
     }
 
     
