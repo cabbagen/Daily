@@ -2,14 +2,16 @@
 	namespace Home\Controller;
 	use Home\Controller;
   Vendor('markdown.markdown#class');
+  Vendor('php-markdown-lib.Michelf.Markdown#inc');
+  Vendor('Markdownify-master.src.index');
 
 	class FilesController extends BaseController {
 		
     // 请求文件内容
     public function requireFileContent() {
-      $markdown = new \Markdown();
-      $fileContent = $markdown->parseMarkdown( file_get_contents(I('filePath', null)) );
+      $fileContent = \Michelf\Markdown::defaultTransform( file_get_contents(I('filePath', null)) );
       $fileResult = D('Files')->getFile(I('fileId', null));
+      
       if($fileContent && $fileResult) {
         $this->ajaxReturn(array(
           'status' => 200, 
@@ -35,8 +37,9 @@
     
     // 保存文件, 便于 上传和下载 md 文件，这里进行 存储转化
     public function saveFile() {
-      $markdown = new \Markdown();
-      $fileContent = $markdown->parseHtml( htmlspecialchars_decode(I('fileContent', null)) );
+      $converter = new \Markdownify\Converter;
+      $fileContent = $converter->parseString( htmlspecialchars_decode(I('fileContent', null)) );
+
       $fileResult = file_put_contents(I('file_path', null), $fileContent);
       $fileModelResult = D('Files')->updateFile(array(
         'file_name' => I('file_name', null),
@@ -53,8 +56,9 @@
 
     // 新建文件接口
     public function createFile() {
-      $markdown = new \Markdown();
-      $fileContent = $markdown->parseHtml( htmlspecialchars_decode(I('fileContent', null)) );
+      $converter = new \Markdownify\Converter;
+      $fileContent = $converter->parseString( htmlspecialchars_decode(I('fileContent', null)) );
+
       $fileName = './Public/files/uploadFiles/' . time() . '.md';
 
       $fileResult = file_put_contents($fileName, $fileContent);

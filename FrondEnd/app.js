@@ -30,14 +30,7 @@ ReactDom.render(
         <Route path="/calendars/:calendars" component={Pagination.calendar} />
         <Route path="/categorys/:categorys" component={Pagination.category} />
         <Route path="/groups/:group" component={Pagination.group} />
-        {/*
-        <Route path="/groups/:groups" component={Pagination.group}>
-          <Route path="/groups/:groups/:group" />
-        </Route>
-        <Route path="/shares/:shares" component={Pagination.share}>
-          <Route path="/shares/:shares/:share" />
-        </Route>
-        */}
+        <Route path="/shares/:share" component={Pagination.share} />
       </Route>
     </Router>
   </Provider>

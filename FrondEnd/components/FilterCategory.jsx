@@ -88,20 +88,10 @@ class FileterCategory extends Component {
 
   openChat(friendId) {
     this.props.openChat(friendId);
-    // window.open('/Home/App/chat?friendId=' + friendId, 'chatWindow', 'toolbar=no, status=no, scrollbars=0,resizable=0,menubar＝0,location=0,width=700,height=500');
   }
 
   deleteFriend(friendId) {
     this.props.deleteFriend(friendId);
-    // var { mainActions, mainState, categoryActions } = this.props;
-
-    // 删除好友操作之后，拉取好友列表
-    // mainActions.deleteFriend({
-    //   friend_id : friendId, 
-    //   from_category_id : mainState.currentCategoryId,
-    //   currentPage : 1,
-    //   pageSize : PAGE_SIZE
-    // });
   }
 }
 

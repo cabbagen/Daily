@@ -185,3 +185,11 @@ export const expelTribeMember = (params) => ({
   type : 'expelTribeMember',
   params : params
 });
+
+// === 分享模块
+// 删除分享文件
+export const deleteShareFile = (fileId, type) => ({
+  type : 'deleteShareFile',
+  fileId : fileId,
+  shareType : type
+});

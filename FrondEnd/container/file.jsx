@@ -35,15 +35,42 @@ class File extends Component {
 
   render() {
     var {fileState, mainState, fileActions, mainActions} = this.props;
+    var that = this;
+
+    var filterFilesProps = {
+      list : mainState.foldersCategoryItem,
+      createFile : that.createFile.bind(that),
+      requireFile : that.requireFile.bind(that),
+      deleteFile : that.deleteFile.bind(that)
+    }
     
     return (
       <div className={styles.file_content}>
-        <FilterFiles {...this.props} />
+        <FilterFiles {...filterFilesProps} />
         <FileOperatePanel {...this.props} />
       </div>
     );
   }
 
+  // 重置文件状态
+  createFile() {
+    var { fileActions } = this.props;
+    fileActions.resetState();
+  }
+
+  // 请求文件内容
+  requireFile(filePath, fileId) {
+    var { fileActions } = this.props;
+    fileActions.requireFileContent(filePath, fileId); 
+  }
+
+  // 删除文件
+  deleteFile(fileId) {
+    var { mainActions, mainState, fileActions } = this.props;
+
+    mainActions.deleteFile(fileId, mainState.currentCategoryId);
+    fileActions.resetState();
+  }
 }
 
 const mapStateToProps = (state) => {

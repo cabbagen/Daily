@@ -4,6 +4,7 @@ import file from './file';
 import calendar from './calendar';
 import category from './category';
 import group from './group';
+import share from './share';
 
 
 const rootReducer = combineReducers({
@@ -12,6 +13,7 @@ const rootReducer = combineReducers({
   calendar,
   category,
   group,
+  share,
 });
 
 export default rootReducer;

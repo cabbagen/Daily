@@ -1,0 +1,1474 @@
+[ 2017-04-05T08:37:51+08:00 ] 127.0.0.1 /Home/shares/markdownDemo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.036587s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.025364s ]
+INFO: [ app_end ] --END-- [ RunTime:0.025600s ]
+
+[ 2017-04-05T08:52:33+08:00 ] 127.0.0.1 /Home/shares/markdownDemo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000792s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001205s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001678s ]
+
+[ 2017-04-05T08:52:36+08:00 ] 127.0.0.1 /Home/shares/markdownDemo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000652s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000692s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000951s ]
+
+[ 2017-04-05T08:52:49+08:00 ] 127.0.0.1 /Home/shares/markdownDemo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000104s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001422s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001894s ]
+
+[ 2017-04-05T08:52:51+08:00 ] 127.0.0.1 /Home/shares/markdownDemo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000608s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002133s ]
+
+[ 2017-04-05T08:52:52+08:00 ] 127.0.0.1 /Home/shares/markdownDemo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000624s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001874s ]
+
+[ 2017-04-05T08:53:02+08:00 ] 127.0.0.1 /Home/shares/markdownDemo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000650s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001627s ]
+
+[ 2017-04-05T08:53:03+08:00 ] 127.0.0.1 /Home/shares/markdownDemo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000136s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001876s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000937s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001289s ]
+
+[ 2017-04-05T08:54:20+08:00 ] 127.0.0.1 /Home/shares/markdownDemo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000807s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001027s ]
+
+[ 2017-04-05T08:54:20+08:00 ] 127.0.0.1 /Home/shares/markdownDemo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000800s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000898s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001155s ]
+
+[ 2017-04-05T08:54:21+08:00 ] 127.0.0.1 /Home/shares/markdownDemo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001004s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001389s ]
+
+[ 2017-04-05T08:54:21+08:00 ] 127.0.0.1 /Home/shares/markdownDemo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000995s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001402s ]
+
+[ 2017-04-05T08:54:21+08:00 ] 127.0.0.1 /Home/shares/markdownDemo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000621s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000984s ]
+
+[ 2017-04-05T08:54:21+08:00 ] 127.0.0.1 /Home/shares/markdownDemo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001012s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000945s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001322s ]
+
+[ 2017-04-05T08:54:26+08:00 ] 127.0.0.1 /Home/shares/markdownDemo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000822s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000764s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000994s ]
+
+[ 2017-04-05T08:55:07+08:00 ] 127.0.0.1 /Home/shares/markdownDemo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000952s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001208s ]
+
+[ 2017-04-05T08:55:07+08:00 ] 127.0.0.1 /Home/shares/markdownDemo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001474s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001706s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002233s ]
+
+[ 2017-04-05T08:55:07+08:00 ] 127.0.0.1 /Home/shares/markdownDemo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000712s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000979s ]
+
+[ 2017-04-05T08:55:08+08:00 ] 127.0.0.1 /Home/shares/markdownDemo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000943s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000882s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001122s ]
+
+[ 2017-04-05T08:55:11+08:00 ] 127.0.0.1 /Home/shares/markdownDemo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001370s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002068s ]
+
+[ 2017-04-05T08:55:11+08:00 ] 127.0.0.1 /Home/shares/markdownDemo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001191s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001543s ]
+
+[ 2017-04-05T09:03:08+08:00 ] 127.0.0.1 /Home/shares/htmlDome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000870s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000924s ]
+
+[ 2017-04-05T09:03:24+08:00 ] 127.0.0.1 /Home/shares/htmlDome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000595s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000586s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000872s ]
+
+[ 2017-04-05T09:03:49+08:00 ] 127.0.0.1 /Home/shares/htmlDome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000786s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002160s ]
+
+[ 2017-04-05T09:08:13+08:00 ] 127.0.0.1 /Home/shares/htmlDome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001022s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001187s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001638s ]
+
+[ 2017-04-05T09:16:37+08:00 ] 127.0.0.1 /Home/shares/htmlDome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000645s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001596s ]
+NOTIC: [2] require_once(./Environment.php): failed to open stream: No such file or directory D:\wamp\www\Daily\ThinkPHP\Library\Vendor\html-to-markdown-master\src\HtmlConverter.php 第 4 行.
+
+[ 2017-04-05T09:17:24+08:00 ] 127.0.0.1 /Home/shares/htmlDome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000574s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000780s ]
+
+[ 2017-04-05T09:31:13+08:00 ] 127.0.0.1 /Home/shares/htmlDome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000084s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001173s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001543s ]
+
+[ 2017-04-05T09:33:33+08:00 ] 127.0.0.1 /Home/shares/htmlDome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000791s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001620s ]
+
+[ 2017-04-05T09:42:46+08:00 ] 127.0.0.1 /Home/shares/htmlDome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001162s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001222s ]
+
+[ 2017-04-05T11:23:35+08:00 ] 127.0.0.1 /Home/shares/htmlDome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.017908s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011113s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011331s ]
+
+[ 2017-04-05T11:27:31+08:00 ] 127.0.0.1 /Home/shares/htmlDome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000708s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000763s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000961s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015571s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015788s ]
+
+[ 2017-04-05T11:27:56+08:00 ] 127.0.0.1 /Home/shares/htmlDome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000615s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000982s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001197s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000755s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000941s ]
+
+[ 2017-04-05T11:32:09+08:00 ] 127.0.0.1 /Home/Login/loginAccount.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000985s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001083s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001392s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.018550s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.018862s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.322069s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.322329s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.008822s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000865s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001062s ]
+
+[ 2017-04-05T11:33:35+08:00 ] 127.0.0.1 /index.php/Home/Login/handleLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000902s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001158s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.1749s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'test_1' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0093s ]
+
+[ 2017-04-05T11:33:36+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000587s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000969s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001308s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'test_1' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0360s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 6  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0221s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 6 AND `create_time` BETWEEN '2017-04-03' AND '2017-04-09'  [ RunTime:0.0236s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0310s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0088s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 6  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0392s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000196s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000537s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070823s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071150s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001301s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001695s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001545s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001871s ]
+
+[ 2017-04-05T11:34:09+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001053s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001204s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001616s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'test_1' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 6  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 6 AND `create_time` BETWEEN '2017-04-03' AND '2017-04-09'  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 6  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0055s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000304s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012112s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012462s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000567s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000769s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000698s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000876s ]
+
+[ 2017-04-05T11:34:27+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000119s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001187s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000750s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000931s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0134s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'test_1' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 6  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 6 AND `create_time` BETWEEN '2017-04-03' AND '2017-04-09'  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 6  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0044s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000281s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011280s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011497s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000581s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000756s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000796s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000975s ]
+
+[ 2017-04-05T11:34:45+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000586s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000693s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0282s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0850s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0517s ]
+
+[ 2017-04-05T11:35:00+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000580s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000772s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0077s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0005s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0003s ]
+
+[ 2017-04-05T11:35:15+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000676s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000685s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000890s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0083s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0004s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0003s ]
+
+[ 2017-04-05T11:35:30+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000787s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000740s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000979s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0125s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0004s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0003s ]
+
+[ 2017-04-05T11:35:45+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000647s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000684s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0078s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0004s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0003s ]
+
+[ 2017-04-05T11:36:00+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000587s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000710s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0083s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0005s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0003s ]
+
+[ 2017-04-05T11:36:10+08:00 ] 127.0.0.1 /index.php/Home/App/4b875a857b12243bb70a.hot-update.json
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001105s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001087s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001456s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001191s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001500s ]
+
+[ 2017-04-05T11:36:12+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000866s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001131s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'test_1' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 6  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 6 AND `create_time` BETWEEN '2017-04-03' AND '2017-04-09'  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 6  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0048s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000393s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010865s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011066s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000712s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000960s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001053s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001293s ]
+
+[ 2017-04-05T11:36:24+08:00 ] 127.0.0.1 /index.php/Home/App/57d13bf0708bee2e2154.hot-update.json
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000620s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000777s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000784s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001066s ]
+
+[ 2017-04-05T11:36:29+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000675s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000714s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000905s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0088s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'test_1' LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0119s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 6  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0434s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 6 AND `create_time` BETWEEN '2017-04-03' AND '2017-04-09'  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0073s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0095s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 6  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0073s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000141s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000380s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012811s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013053s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000835s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001022s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000873s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001083s ]
+
+[ 2017-04-05T11:36:34+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001799s ]
+SQL: SHOW COLUMNS FROM `think_shares` [ RunTime:0.0280s ]
+SQL: SELECT * FROM `think_shares` INNER JOIN think_files on think_files.id = think_shares.share_file_id  WHERE `from_user_id` = '6'  [ RunTime:0.0980s ]
+
+[ 2017-04-05T11:36:47+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000563s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000674s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0076s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0004s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0003s ]
+
+[ 2017-04-05T11:37:02+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000560s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000683s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0077s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0004s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0003s ]
+
+[ 2017-04-05T11:37:17+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000751s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001023s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0087s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0005s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0004s ]
+
+[ 2017-04-05T11:37:32+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000627s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000787s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0082s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0005s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0003s ]
+
+[ 2017-04-05T11:37:47+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000653s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000938s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0094s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0004s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0004s ]
+
+[ 2017-04-05T11:38:02+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000546s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000890s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0079s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0004s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0003s ]
+
+[ 2017-04-05T11:38:17+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000644s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000582s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000737s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0084s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0006s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0004s ]
+
+[ 2017-04-05T11:38:32+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000997s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000855s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0047s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0005s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0003s ]
+
+[ 2017-04-05T11:38:47+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001002s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000709s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0077s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0004s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0003s ]
+
+[ 2017-04-05T11:39:02+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000913s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000983s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001261s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0074s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0004s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0003s ]
+
+[ 2017-04-05T11:39:17+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000545s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000744s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0078s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0004s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0003s ]
+
+[ 2017-04-05T11:39:32+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000697s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000768s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0083s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0005s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0003s ]
+
+[ 2017-04-05T11:39:47+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000743s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000909s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0041s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0004s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0004s ]
+
+[ 2017-04-05T11:40:02+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000838s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000778s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001012s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0082s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0004s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0003s ]
+
+[ 2017-04-05T11:40:17+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000635s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000798s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0080s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0005s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0004s ]
+
+[ 2017-04-05T11:40:32+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000678s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000856s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0078s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0004s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0003s ]
+
+[ 2017-04-05T11:40:47+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000750s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000749s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000897s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0079s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0005s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0003s ]
+
+[ 2017-04-05T11:41:02+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000640s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000822s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0111s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0006s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0004s ]
+
+[ 2017-04-05T11:41:17+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000540s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000672s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0079s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0004s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0003s ]
+
+[ 2017-04-05T11:41:32+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000686s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000817s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0076s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0004s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0003s ]
+
+[ 2017-04-05T11:41:47+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000096s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000759s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0075s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0004s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0003s ]
+
+[ 2017-04-05T11:42:02+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000706s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000586s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000755s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0080s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0004s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0003s ]
+
+[ 2017-04-05T11:42:17+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000614s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000807s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0084s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0004s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0003s ]
+
+[ 2017-04-05T11:42:32+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000700s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0049s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0004s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0003s ]
+
+[ 2017-04-05T11:42:47+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000695s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000872s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0079s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0004s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0003s ]
+
+[ 2017-04-05T11:43:02+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000660s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001326s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0082s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0005s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0003s ]
+
+[ 2017-04-05T11:43:17+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000529s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000677s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0081s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0004s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0003s ]
+
+[ 2017-04-05T11:43:32+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000940s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000584s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000730s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0075s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0004s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0003s ]
+
+[ 2017-04-05T11:43:47+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001169s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000564s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000711s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0602s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0004s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0003s ]
+
+[ 2017-04-05T11:44:02+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000561s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000582s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000726s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0079s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0005s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0004s ]
+
+[ 2017-04-05T11:44:17+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000570s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000706s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0075s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0004s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0003s ]
+
+[ 2017-04-05T11:44:32+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000592s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000685s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000899s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0077s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0004s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0003s ]
+
+[ 2017-04-05T11:44:47+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000763s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000858s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0368s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0007s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0006s ]
+
+[ 2017-04-05T11:45:02+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000557s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000722s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0086s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0004s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0004s ]
+
+[ 2017-04-05T11:45:13+08:00 ] 127.0.0.1 /index.php/Home/App/app.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000101s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001552s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000875s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001158s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `think_users` WHERE `username` = 'test_1' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `think_Folders` WHERE `from_user_id` = 6  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_calendars` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `think_Calendars` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `think_Calendars` WHERE `from_user_id` = 6 AND `create_time` BETWEEN '2017-04-03' AND '2017-04-09'  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_categorys` [ RunTime:0.0074s ]
+SQL: SHOW COLUMNS FROM `think_Categorys` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `think_Categorys` WHERE `from_user_id` = 6  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `think_groups` [ RunTime:0.0073s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000428s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013028s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013412s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001010s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001231s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001404s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001779s ]
+
+[ 2017-04-05T11:45:18+08:00 ] 127.0.0.1 /Home/app/getUserCategoryResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000952s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000869s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001104s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0058s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '5'  [ RunTime:0.0005s ]
+
+[ 2017-04-05T11:45:31+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000563s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000620s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000764s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0042s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0005s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0003s ]
+
+[ 2017-04-05T11:45:46+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000744s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000774s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0118s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0004s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0003s ]
+
+[ 2017-04-05T11:46:01+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000567s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000706s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0078s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0004s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0003s ]
+
+[ 2017-04-05T11:46:16+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001132s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001152s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001473s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0079s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0005s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0003s ]
+
+[ 2017-04-05T11:46:31+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000543s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000697s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0077s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0004s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0003s ]
+
+[ 2017-04-05T11:46:46+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001353s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0099s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0005s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0003s ]
+
+[ 2017-04-05T11:47:01+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001143s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000862s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0406s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0004s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0003s ]
+
+[ 2017-04-05T11:47:16+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001199s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001555s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0076s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0004s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0003s ]
+
+[ 2017-04-05T11:47:31+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000127s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001128s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001736s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0241s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0004s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0003s ]
+
+[ 2017-04-05T11:47:46+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000775s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001007s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001345s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0086s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0004s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0002s ]
+
+[ 2017-04-05T11:48:01+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000893s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000895s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001189s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0083s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0004s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0003s ]
+
+[ 2017-04-05T11:48:16+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000902s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000778s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0077s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0005s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0004s ]
+
+[ 2017-04-05T11:48:31+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000848s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000906s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001156s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0091s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0006s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0003s ]
+
+[ 2017-04-05T11:48:46+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001014s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000761s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0082s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0005s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0005s ]
+
+[ 2017-04-05T11:49:01+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001035s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000843s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001075s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0075s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0004s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0004s ]
+
+[ 2017-04-05T11:49:16+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001816s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000919s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001117s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0085s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0004s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0003s ]
+
+[ 2017-04-05T11:49:31+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000745s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001161s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001400s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0079s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0004s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0002s ]
+
+[ 2017-04-05T11:49:46+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000124s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001927s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0698s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0009s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0008s ]
+
+[ 2017-04-05T11:50:01+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000084s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001138s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001521s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001962s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0079s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0006s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0004s ]
+
+[ 2017-04-05T11:50:16+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000598s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001151s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001834s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0090s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0004s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0003s ]
+
+[ 2017-04-05T11:50:31+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000619s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000711s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0098s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0005s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0003s ]
+
+[ 2017-04-05T11:50:46+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000103s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000867s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001265s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0603s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0005s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0004s ]
+
+[ 2017-04-05T11:51:01+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000809s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001039s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0079s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0005s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0003s ]
+
+[ 2017-04-05T11:51:16+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001502s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000635s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000807s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0057s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0008s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0003s ]
+
+[ 2017-04-05T11:51:31+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000935s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000897s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001126s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0071s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0004s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0003s ]
+
+[ 2017-04-05T11:51:46+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000096s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001518s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001826s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0048s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0004s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0003s ]
+
+[ 2017-04-05T11:52:01+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001079s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001755s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002062s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0060s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0004s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0003s ]
+
+[ 2017-04-05T11:52:16+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000095s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000877s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0077s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0004s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0002s ]
+
+[ 2017-04-05T11:52:31+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001133s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000774s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001025s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0079s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0004s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0003s ]
+
+[ 2017-04-05T11:52:46+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001174s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000705s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000973s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0085s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0005s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0002s ]
+
+[ 2017-04-05T11:52:51+08:00 ] 127.0.0.1 /Home/Files/requireFileContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001169s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000970s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001293s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `think_files` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0094s ]
+
+[ 2017-04-05T11:53:01+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000166s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001420s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001162s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001614s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0096s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0007s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0006s ]
+
+[ 2017-04-05T11:53:16+08:00 ] 127.0.0.1 /Home/Files/createFile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001151s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001135s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001446s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0047s ]
+SQL: INSERT INTO `think_files` (`file_name`,`file_path`,`from_folder_id`) VALUES ('就卡死的','./Public/files/uploadFiles/1491364395.md','5') [ RunTime:0.0670s ]
+SQL: SHOW COLUMNS FROM `think_folders` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `think_Folders` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `think_Folders` INNER JOIN think_files on think_folders.id = think_files.from_folder_id  WHERE think_folders.id = '5'  [ RunTime:0.0006s ]
+
+[ 2017-04-05T11:53:16+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001614s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000888s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001216s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0081s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0005s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0004s ]
+
+[ 2017-04-05T11:53:18+08:00 ] 127.0.0.1 /Home/Files/requireFileContent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000145s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001669s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001972s ]
+SQL: SHOW COLUMNS FROM `think_files` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `think_files` WHERE `id` = 24 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-05T11:53:31+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000692s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000942s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001358s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0077s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0004s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0002s ]
+
+[ 2017-04-05T11:53:46+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000813s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001367s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0056s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0004s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0003s ]
+
+[ 2017-04-05T11:54:01+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001038s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001631s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0045s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0004s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0002s ]
+
+[ 2017-04-05T11:54:16+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001399s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001065s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001433s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0104s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0004s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0002s ]
+
+[ 2017-04-05T11:54:31+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000802s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000985s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0099s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0006s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0003s ]
+
+[ 2017-04-05T11:54:46+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001119s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000712s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000955s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0087s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0004s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0005s ]
+
+[ 2017-04-05T11:54:56+08:00 ] 127.0.0.1 /index.php/Home/App/4a530887e7db7c008886.hot-update.json
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001127s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002087s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002503s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001320s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001683s ]
+
+[ 2017-04-05T11:55:01+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001757s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0098s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0008s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0003s ]
+
+[ 2017-04-05T11:55:16+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001141s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002391s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0062s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0007s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0005s ]
+
+[ 2017-04-05T11:55:31+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002081s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0102s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' limit 1 [ RunTime:0.0006s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' limit 1 [ RunTime:0.0003s ]
+

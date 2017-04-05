@@ -369,6 +369,19 @@ function* expelTribeMemberAsync(action) {
   }
 }
 
+// === 分享模块
+// 删除分享文件
+function* deleteShareFileAsync(action) {
+  var data = yield call(servers.shareServer.deleteShareFileAsync, action.fileId, action.shareType);
+  if(data.status && data.status === 200) {
+    yield put({type : 'deleteShareFileAsyncSuccess', shareFiles : data.shareFiles});
+  } else if(data.status && data.status !== 200) {
+    yield put({type : 'deleteShareFileAsyncError', msg : data.msg});
+  } else {
+    yield put({type : 'deleteShareFileAsyncError', msg : data.msg});
+  }
+}
+
 export function* watchMain() {
   // 发送邀请邮件
   yield takeEvery('sendEmailInvitation', sendEmailInvitationAsync);
@@ -409,5 +422,6 @@ export function* watchMain() {
   yield takeEvery('confirmJoinTribe', confirmJoinTribeAsync);
   yield takeEvery('expelTribeMember', expelTribeMemberAsync);
 
+  yield takeEvery('deleteShareFile', deleteShareFileAsync);
 
 };

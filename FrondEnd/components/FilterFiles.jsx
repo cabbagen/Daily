@@ -6,15 +6,15 @@ class FilterFiles extends Component {
   constructor(props) {
     super(props);
     this.state = {
-    	fileItem : this.props.mainState.foldersCategoryItem,
-    	fullFileItem : this.props.mainState.foldersCategoryItem
+      fileItem : this.props.list,
+      fullFileItem : this.props.list
     };
   }
 
   componentWillReceiveProps(nextProps) {
   	this.setState({
-  		fileItem : nextProps.mainState.foldersCategoryItem,
-    	fullFileItem : nextProps.mainState.foldersCategoryItem
+      fileItem : nextProps.list,
+      fullFileItem : nextProps.list
   	});
   }
 
@@ -67,13 +67,11 @@ class FilterFiles extends Component {
   }
 
   createFile() {
-    var { fileActions } = this.props;
-    fileActions.resetState();
+    this.props.createFile();
   }
 
   requireFile(filePath, fileId) {
-    var { fileActions } = this.props;
-    fileActions.requireFileContent(filePath, fileId);
+    this.props.requireFile(filePath, fileId);
   }
 
   filterList(event) {
@@ -84,19 +82,21 @@ class FilterFiles extends Component {
       return filterReg.test(fileObject.file_name);
     });
 
-    this.setState({
-      fileItem : filterList
-    });
+    this.setState({fileItem : filterList});
 
   }
 
   deleteFile(fileId, event) {
     event.stopPropagation();
-    var { mainActions, mainState, fileActions } = this.props;
-
-    mainActions.deleteFile(fileId, mainState.currentCategoryId);
-    fileActions.resetState();
+    this.props.deleteFile(fileId);
   }
 }
+
+FilterFiles.PropTypes = {
+  list : PropTypes.array.isRequired,
+  createFile : PropTypes.func,
+  requireFile : PropTypes.func,
+  deleteFile : PropTypes.func
+};
 
 export default FilterFiles;

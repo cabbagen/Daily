@@ -3,6 +3,7 @@ import * as fileSaga from './file';
 import * as calendarSaga from './calendar';
 import * as categorySaga from './category';
 import * as groupSage from './group';
+import * as shareSage from './share';
 
 const getSagaArrayFromObject = function(sagaObject) {
   var sagaArray = [];
@@ -19,5 +20,6 @@ export default function* rootSaga() {
     ...getSagaArrayFromObject(calendarSaga),
     ...getSagaArrayFromObject(categorySaga),
     ...getSagaArrayFromObject(groupSage),
+    ...getSagaArrayFromObject(shareSage),
   ]
 };

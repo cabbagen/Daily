@@ -9,6 +9,7 @@ import MsgServer from '../components/MsgServer.jsx';
 import Sider from '../components/Sider.jsx';
 import styles from '../container/main.less';
 
+// 暂时注释 wsdk
 const sdk = new WSDK();
 
 class Main extends Component {
@@ -40,13 +41,15 @@ class Main extends Component {
   // 在这里登录 IM 服务器
   componentDidMount() {
     var that = this;
-    // 当浏览器不支持时，会alert "对不起,当前浏览器不支持聊天,请更换浏览器"
-    window.__WSDK__POSTMESSAGE__DEBUG__ = true;
-    this.loginImServer();
-    // 第一次登录 IM 规律性失败，这里延迟 2 秒登录
-    window.setTimeout(function() {
-      that.listenMsgFromServer();
-    }, 2000);
+    window.addEventListener('load', function() {
+      // 当浏览器不支持时，会alert "对不起,当前浏览器不支持聊天,请更换浏览器"
+      window.__WSDK__POSTMESSAGE__DEBUG__ = true;
+      that.loginImServer();
+      // 第一次登录 IM 规律性失败，这里延迟 2 秒登录
+      window.setTimeout(function() {
+        that.listenMsgFromServer();
+      }, 2000);
+    }, false);
   }
 
   loginImServer() {

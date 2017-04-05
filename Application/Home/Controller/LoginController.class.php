@@ -80,22 +80,6 @@
 
 		}
 
-		public function addUserDemo() {
-			$userInfos = array(
-				'username' => 'test_5',
-				'password' => '123456',
-				'email' => '12312@qq.com',
-				'nickname' => 'test_5',
-				'extra' => 'hello world',
-				'avator' => '/',
-				'gender' => 'F'
-			);
-
-			$result = D('Users')->createUser($userInfos);
-
-			var_dump($result);
-		}
-
 		public function uploadAvator() {
 			$avatorUpload = new \Think\Upload($this->avatorUploadConfig);
 			$info = $avatorUpload->uploadOne($_FILES['avatorImg']);

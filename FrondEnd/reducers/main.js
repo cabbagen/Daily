@@ -339,7 +339,8 @@ const mainReducerMap = {
     });
   },
 
-  
+  // === 分享模块
+  // 获取分享子分类文件
   getSharesCategoryItemAsyncSuccess : function(state, action) {
     var tempObj = {sharesCategoryItem : action.sharesCategoryItem, currentCategoryId : action.id};
     return Object.assign({}, state, tempObj);
@@ -349,6 +350,17 @@ const mainReducerMap = {
     return newState;
   },
 
+  // 删除分享文件
+  deleteShareFileAsyncSuccess : function(state, action) {
+    return Object.assign({}, state, {
+      sharesCategoryItem : action.shareFiles
+    });
+  },
+  deleteShareFileAsyncError : function(state, action) {
+    return Object.assign({}, state, {
+      notifications : action.msg
+    });
+  }
   
 
 };
