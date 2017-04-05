@@ -27,3 +27,20 @@ export const downloadFile = () => ({
 export const removeNotification = () => ({
   type : 'removeNotification'
 });
+
+// 监听文件名称变化
+export const fileNameChange = (fileName) => ({
+	type : 'fileNameChange',
+	fileName : fileName
+});
+
+// 监听文件内容变化
+export const fileContentChange = (fileContent) => ({
+	type : 'fileContentChange',
+	fileContent : fileContent
+});
+
+// 取消重置
+export const cancelResetEditState = () => ({
+	type : 'cancelResetEditState'
+});

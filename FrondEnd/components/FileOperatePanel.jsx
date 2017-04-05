@@ -9,18 +9,27 @@ var editor = null;
 class FileOperatePanel extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      fileId : this.props.fileState.currentFileObject && this.props.fileState.currentFileObject.id || '',
+    }
   }
 
   componentDidMount() {
     editor = new Simditor({textarea : $('#editor')});
   }
 
-  componentWillUpdate(nextProps, nextState) {
-    editor.setValue(nextProps.fileState.currentFileContent);
-    if(nextProps.fileState.currentFileObject) {
-      this.refs.file_name.value = nextProps.fileState.currentFileObject.file_name;
-    } else {
-      this.refs.file_name.value = '';
+  componentWillReceiveProps(nextProps) {
+    var isChangeFile = (nextProps.fileState.currentFileObject && nextProps.fileState.currentFileObject.id !== this.state.fileId) ?
+      true : false;
+    var isCreateFile = nextProps.fileState.resetEditState;
+    var that = this;
+
+    if(isChangeFile || isCreateFile) {
+      editor.setValue(nextProps.fileState.currentFileContent);
+      that.refs.file_name.value = nextProps.fileState.currentFileObject && nextProps.fileState.currentFileObject.file_name || '';
+      if(isCreateFile) {
+        this.props.fileActions.cancelResetEditState();
+      }
     }
   }
 
@@ -49,7 +58,6 @@ class FileOperatePanel extends Component {
 
   handleSave() {
     var { fileState } = this.props;
-
     if(fileState.currentFileObject) {
       this.updateFile();
     } else {

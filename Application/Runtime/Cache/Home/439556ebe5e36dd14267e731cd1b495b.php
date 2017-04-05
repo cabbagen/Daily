@@ -29,7 +29,7 @@
     window.menuCategoryInfos = <?php echo ($menuCategoryInfos); ?>;
     window.location.hash = '/web';
 	</script>
-  <script type="text/javascript" src="https://g.alicdn.com/aliww/h5.imsdk/2.1.5/scripts/yw/wsdk.js" charset="utf-8"></script>
+  <!--<script type="text/javascript" src="https://g.alicdn.com/aliww/h5.imsdk/2.1.5/scripts/yw/wsdk.js" charset="utf-8"></script>-->
   <script type="text/javascript" src="/public/lib/javascript/module.min.js"></script>
   <script type="text/javascript" src="/public/lib/javascript/hotkeys.min.js"></script>
   <script type="text/javascript" src="/public/lib/javascript/uploader.min.js"></script>

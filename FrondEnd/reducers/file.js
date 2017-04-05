@@ -2,7 +2,8 @@
 const initFileState = {
   currentFileObject : null,
   currentFileContent : '',
-  notifications : ''
+  notifications : '',
+  resetEditState : false
 };
 
 const fileReducerMap = {
@@ -24,7 +25,15 @@ const fileReducerMap = {
   resetState : function(state, action) {
     return Object.assign({}, state, {
       currentFileObject : null,
-      currentFileContent : ''
+      currentFileContent : '',
+      resetEditState : true
+    });
+  },
+
+  // 取消重置状态
+  cancelResetEditState : function(state, action) {
+    return Object.assign({}, state, {
+      resetEditState : false
     });
   },
 
@@ -50,6 +59,23 @@ const fileReducerMap = {
   removeNotification : function(state, action) {
     var newState = Object.assign({}, state, {notifications : ''});
     return newState;
+  },
+
+  // 文件标题修改
+  fileNameChange : function(state, action) {
+    var newFileObject = Object.assign({}, state, {
+      file_name : action.fileName
+    });
+    return Object.assign({}, state, {
+      currentFileObject : newFileObject
+    });
+  },
+
+  // 文件内容修改
+  fileContentChange : function(state, action) {
+    return Object.assign({}, state, {
+      currentFileContent : action.fileContent
+    });
   }
 };
 
