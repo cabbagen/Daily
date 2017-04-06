@@ -182,6 +182,18 @@ function* saveFileAsync(action) {
   }
 }
 
+// 分享文件
+function* shareFileAsync(action) {
+  var data = yield call(servers.fileServer.shareFileAsync, action.params);
+  if(data.status && data.status === 200) {
+    yield put({type : 'shareFileAsyncSuccess', msg : data.msg});
+  } else if(data.status && data.status !== 200) {
+    yield put({type : 'shareFileAsyncError', msg : data.msg});
+  } else {
+    yield put({type : 'shareFileAsyncError', msg : data.msg});
+  }
+}
+
 // 删除日程任务
 function* deleteAffairAsync(action) {
   var data = yield call(servers.calendarServer.deleteAffairAsync, action.affairId, action.from_calendar_id);
@@ -402,6 +414,7 @@ export function* watchMain() {
   yield takeEvery('deleteFile', deleteFileAsync);
   yield takeEvery('createFile', createFileAsync);
   yield takeEvery('updateFile', updateFileAsync);
+  yield takeEvery('shareFile', shareFileAsync);
 
   yield takeEvery('deleteAffair', deleteAffairAsync);
   yield takeEvery('updateAffair', updateAffairAsync);

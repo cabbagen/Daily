@@ -132,6 +132,18 @@ const mainReducerMap = {
     });
   },
 
+  // 分享
+  shareFileAsyncSuccess : function(state, action) {
+    return Object.assign({}, state, {
+      notifications : action.msg
+    });
+  },
+  shareFileAsyncError : function(state, action) {
+    return Object.assign({}, state, {
+      notifications : action.msg
+    });
+  },
+
   // 日程操作模块 
   // 获取
   getCalendarsCategoryItemAsyncSuccess : function(state, action) {

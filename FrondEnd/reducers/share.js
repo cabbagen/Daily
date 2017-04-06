@@ -1,6 +1,9 @@
 
 const initShareState = {
+  currentFileObject : null,
+  currentFileContent : '',
   notifications : '',
+  resetEditState : false
 };
 
 const shareReducerMap = {
@@ -10,6 +13,19 @@ const shareReducerMap = {
     return newState;
   },
 
+  // 请求文件内容
+  requireFileContentAsyncSuccess : function(state, action) {
+  	return Object.assign({}, state, {
+      currentFileObject : action.fileObject, 
+      currentFileContent : action.fileContent
+    });
+  },
+  requireFileContentAsyncError : function(state, action) {
+  	return Object.assign({}, state, {
+  		notifications : action.msg
+  	});
+  }
+  
   
 }
 

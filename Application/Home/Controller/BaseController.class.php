@@ -43,6 +43,8 @@
           $this->ajaxReturn(array('status' => 204, 'msg' => '对方拒绝了你的请求'));
         } else if($msg['type'] == 'agress') {
           $this->ajaxReturn(array('status' => 203, 'msg' => '对方已经同意你的请求，请刷新查看！'));
+        } else if($msg['type'] == 'shareFile') {
+          $this->ajaxReturn(array('status' => 203, 'msg' => '有人给你分享了文件，请注意查看！'));
         }
       } else {
         $this->ajaxReturn(array('status' => 205, 'msg' => '当前没有消息'));
@@ -55,11 +57,7 @@
 
     public function getOneMsgNotification() {
       $userId = $this->getUserIdFromSession();
-      // $userId = I('userId', null);
       $msg = D('Message')->getMessage($userId);
-
-      // var_dump($msg);
-      // die('');
 
       if($msg) {
         D('Message')->deleteMessage((int)$msg[0]['msgid']);

@@ -1,5 +1,5 @@
 import React, { PropTypes, Component } from 'react';
-import { Icon, Button } from 'antd';
+import { Icon, Button, Modal } from 'antd';
 var path = require('path');
 
 import styles from './FileOperatePanel.less';
@@ -10,7 +10,9 @@ class FileOperatePanel extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      fileId : this.props.fileState.currentFileObject && this.props.fileState.currentFileObject.id || '',
+      fileId : this.props.currentFileObject && this.props.currentFileObject.id || '',
+      shareModalvisible : false,
+      modalErrorMsg : '',
     }
   }
 
@@ -19,17 +21,19 @@ class FileOperatePanel extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    var isChangeFile = (nextProps.fileState.currentFileObject && nextProps.fileState.currentFileObject.id !== this.state.fileId) ?
+    var isChangeFile = (nextProps.currentFileObject && nextProps.currentFileObject.id !== this.state.fileId) ?
       true : false;
-    var isCreateFile = nextProps.fileState.resetEditState;
+    var isCreateFile = nextProps.resetEditState;
     var that = this;
 
     if(isChangeFile || isCreateFile) {
-      editor.setValue(nextProps.fileState.currentFileContent);
-      that.refs.file_name.value = nextProps.fileState.currentFileObject && nextProps.fileState.currentFileObject.file_name || '';
-      if(isCreateFile) {
-        this.props.fileActions.cancelResetEditState();
-      }
+      this.setState({fileId : nextProps.currentFileObject && nextProps.currentFileObject.id || ''}, function() {
+        editor.setValue(nextProps.currentFileContent);
+        that.refs.file_name.value = nextProps.currentFileObject && nextProps.currentFileObject.file_name || '';
+        if(isCreateFile) {
+          nextProps.cancelResetEditState();
+        }
+      });
     }
   }
 
@@ -51,14 +55,18 @@ class FileOperatePanel extends Component {
         <div className={styles.file_editor_wrap}>
           <textarea id="editor" placeholder="从这里开始写文件" autoFocus></textarea>
         </div>
+        <Modal title="分享文件" onOk={this.handleModalOk.bind(this)} onCancel={this.handleModalCancel.bind(this)} visible={this.state.shareModalvisible}>
+          <p>请输入对方的 Email </p>
+          <input className={styles.shareInput} type="email" name="email" ref="email" />
+          {this.state.modalErrorMsg.length > 0 ? <p className={styles.error}>{this.state.modalErrorMsg}</p> : ''}
+        </Modal>
       </div>
     );
 
   }
 
-  handleSave() {
-    var { fileState } = this.props;
-    if(fileState.currentFileObject) {
+  handleSave() { 
+    if(this.props.currentFileObject) {
       this.updateFile();
     } else {
       this.createFile();
@@ -66,40 +74,13 @@ class FileOperatePanel extends Component {
   }
 
   updateFile() {
-    var { fileState, mainActions, mainState, fileActions } = this.props;
     var that = this;
-
-    var params = Object.assign({}, fileState.currentFileObject, {
-      fileContent : editor.getValue(),
-      file_name : that.refs.file_name.value
-    });
-
-    if(params.file_name.length === 0) {
-      alert('请输入文件名称再保存');
-      return;
-    }
-
-    mainActions.updateFile(params);
-    fileActions.requireFileContent(fileState.currentFileObject.file_path, fileState.currentFileObject.id);
+    this.props.updateEditFile(that.refs.file_name.value, editor.getValue());
   }
 
   createFile() {
-    var { mainState, mainActions, fileActions } = this.props;
     var that = this;
-    
-    var params = {
-      fileContent : editor.getValue(),
-      file_name : that.refs.file_name.value,
-      from_folder_id : mainState.currentCategoryId
-    };
-
-    if(params.file_name.length === 0) {
-      alert('请输入文件名称再保存');
-      return;
-    }
-
-    mainActions.createFile(params);
-    fileActions.resetState();
+    this.props.createEditFile(that.refs.file_name.value, editor.getValue());
   }
 
   showUpload() {
@@ -107,38 +88,16 @@ class FileOperatePanel extends Component {
   }
 
   upload(event) {
-    var input = event.target;
-    var formData = new FormData();
-    var { mainState, fileActions } = this.props;
-
-    if(mainState.currentCategoryId.length === 0) {
-      alert('请先选择文件夹再上传文件');
-      return;
-    }
-
-    if(path.extname(input.value) !== '.md') {
-      alert('请传入 .md 的markdown 文件');
-      return;
-    }
-
-    if(input.value.length !== 0) {
-      formData.append('file', input.files[0]);
-      formData.append('from_folder_id', mainState.currentCategoryId);
-
-      fileActions.uploadFile(formData);
-    }
+    this.props.uploadFile(event.target);
   }
 
   download() {
-    var { fileState, fileActions } = this.props;
-    
     if( !this.isSelectFile() ) {
       alert('请先选择文件');
       return;
     }
 
-    window.location.href = `/Home/Files/downloadFile?file_name=${fileState.currentFileObject.file_name}&file_path=${fileState.currentFileObject.file_path}`;
-    fileActions.downloadFile();
+    this.props.downloadFile();
   }
 
   share() {
@@ -146,13 +105,58 @@ class FileOperatePanel extends Component {
       alert('请先选择文件');
       return;
     }
-    console.log('文件分享');
+    this.setState({shareModalvisible : true});
   }
 
   isSelectFile() {
-    return this.props.fileState.currentFileObject ? true : false;
+    return this.props.currentFileObject ? true : false;
+  }
+
+  handleModalCancel() {
+    this.setState({shareModalvisible:false});
+  }
+
+  handleModalOk() {
+    var isPassEmail = this.checkEmail();
+    if(isPassEmail) {
+      var email = this.refs.email.value;
+      var fileId = this.props.currentFileObject.id;
+      this.setState({shareModalvisible : false}, function() {
+        this.props.shareFile(fileId, email);
+      });  
+    }
+  }
+
+  checkEmail() {
+    var emailReg = /^([a-zA-Z0-9]+[_|_|.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|_|.]?)*[a-zA-Z0-9]+.[a-zA-Z]{2,4}$/,
+      inputEmail = this.refs.email.value;
+
+    if(inputEmail.length == 0) {
+      this.setState({modalErrorMsg : '邮箱地址不能为空！'});
+      return false;
+    }
+
+    if(!emailReg.test(inputEmail)) {
+      this.setState({modalErrorMsg : '请输入合法的邮箱地址哦！'});
+      return false;
+    }
+
+    return true;
   }
 
 }
+
+FileOperatePanel.PropTypes = {
+  currentFileObject : PropTypes.object.isRequired,
+  currentFileContent : PropTypes.string.isRequired,
+  resetEditState : PropTypes.string,
+  cancelResetEditState : PropTypes.func,
+  updateEditFile : PropTypes.func,
+  createEditFile : PropTypes.func,
+  uploadFile : PropTypes.func,
+  downloadFile : PropTypes.func,
+  shareFile : PropTypes.func
+};
+
 
 export default FileOperatePanel;

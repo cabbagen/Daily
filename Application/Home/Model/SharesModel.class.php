@@ -25,6 +25,7 @@
 			return $shareResult;
 		}
 
+		// 删除分享文件
 		public function deleteShareFile($shareFileId, $shareType) {
 			$condition = array('share_file_id' => $shareFileId);
 			if($shareType == $this->fromUserInvitation) {
@@ -34,6 +35,11 @@
 			}
 
 			return $this->where($condition)->delete();
+		}
+
+		// 添加分享文件
+		public function addShareFile($shareInfo) {
+			return $this->data($shareInfo)->add();
 		}
 
 		

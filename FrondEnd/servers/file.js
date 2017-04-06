@@ -22,3 +22,7 @@ export const createFileAsync = (params) => {
 export const uploadFileAsync = (params) => {
   return Require.formAjax('/Home/Files/uploadFile', 'post', params).then(data => data, e => e);
 };
+
+export const shareFileAsync = (params) => {
+	return Require.ajax('/Home/Files/shareFile', 'post', params).then(data => data, e => e);
+}

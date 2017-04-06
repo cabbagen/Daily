@@ -85,6 +85,12 @@ export const updateFile = (params) => ({
   params : params
 });
 
+// 分享文件
+export const shareFile = (params) => ({
+  type : 'shareFile',
+  params : params
+});
+
 // 日程模块
 
 // 查询
@@ -187,6 +193,7 @@ export const expelTribeMember = (params) => ({
 });
 
 // === 分享模块
+
 // 删除分享文件
 export const deleteShareFile = (fileId, type) => ({
   type : 'deleteShareFile',

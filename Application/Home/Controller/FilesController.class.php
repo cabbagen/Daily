@@ -11,7 +11,7 @@
     public function requireFileContent() {
       $fileContent = \Michelf\Markdown::defaultTransform( file_get_contents(I('filePath', null)) );
       $fileResult = D('Files')->getFile(I('fileId', null));
-      
+
       if($fileContent && $fileResult) {
         $this->ajaxReturn(array(
           'status' => 200, 
@@ -118,6 +118,41 @@
           $this->ajaxReturnError();
         }
       }
+    }
+
+    // 分享文件
+    public function shareFile() {
+      $userId = $this->getUserIdFromSession();
+      $toUserId = D('Users')->getUserInfo(array('email' => I('email', null)))['id'];
+
+      $getShareFileResult = D('Shares')->getShareFile(array(
+        'share_file_id' => I('fileId', null),
+        'from_user_id' => $userId,
+        'to_user_id' => $toUserId,
+      ));
+
+      if($getShareFileResult) {
+        $this->ajaxReturn(array('status' => 200, 'msg' => '你已经分享过了'));
+      } else {
+        $msgResult = D('Message')->addMessage(array(
+          'type' => 'shareFile',
+          'from_user_id' => $userId,
+          'to_user_id' => $toUserId,
+        ));
+
+        $shareResult = D('Shares')->addShareFile(array(
+          'share_file_id' => I('fileId', null),
+          'from_user_id' => $userId,
+          'to_user_id' => $toUserId,
+        ));
+
+        if($msgResult && $shareResult) {
+          $this->ajaxReturn(array('status' => 200, 'msg' => '已分享成功!'));
+        } else {
+          $this->ajaxReturnError();
+        }
+      }
+      
     }
 
     

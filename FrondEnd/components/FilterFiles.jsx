@@ -53,7 +53,7 @@ class FilterFiles extends Component {
   renderItem() {
     var that = this;
     var fileNodeList = this.state.fileItem.map((fileObject, fileIndex) => (
-      <li key={fileObject.id} onClick={that.requireFile.bind(that, fileObject.file_path, fileObject.id)}>
+      <li key={fileIndex} onClick={that.requireFile.bind(that, fileObject.file_path, fileObject.id)}>
         <p className={styles.file_name}>
           <span>{fileObject.file_name}</span>
           <img src="/public/images/delete.png" onClick={that.deleteFile.bind(that, fileObject.id)} />

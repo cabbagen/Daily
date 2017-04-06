@@ -71,14 +71,14 @@
 
     // 渲染页面函数
     public function app() {
-      // $imUserInfos = $this->getImUserInfoFromSession();
+      $imUserInfos = $this->getImUserInfoFromSession();
       $userInfos = $this->getUserInfoFromSession();
-
-      if($userInfos) {
+      
+      if($imUserInfos && $userInfos) {
         $userInfo = array(
-          'uid' => '',
+          'uid' => $imUserInfos->userid,
           'appkey' => C('IM_AppKey'),
-          'credential' => '',
+          'credential' => $imUserInfos->password,
           'nickName' => $userInfos['nickname'],
           'userId' => $userInfos['id'],
           'avator' => $userInfos['avator'],
@@ -90,23 +90,6 @@
       } else {
         $this->redirect('Login/loginAccount');
       }
-
-      // if($imUserInfos && $userInfos) {
-      //   $userInfo = array(
-      //     'uid' => $imUserInfos->userid,
-      //     'appkey' => C('IM_AppKey'),
-      //     'credential' => $imUserInfos->password,
-      //     'nickName' => $userInfos['nickname'],
-      //     'userId' => $userInfos['id'],
-      //     'avator' => $userInfos['avator'],
-      //   );
-      //   $this->assign('userInfo', json_encode($userInfo));
-      //   $this->assign('menuCategoryInfos', json_encode($this->getUserMenuInfos()));
-
-      //   $this->display();
-      // } else {
-      //   $this->redirect('Login/loginAccount');
-      // }
 
     }
 
