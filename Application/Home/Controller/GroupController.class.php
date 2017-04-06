@@ -1,8 +1,42 @@
 <?php 
   namespace Home\Controller;
 	use Home\Controller;
+  Vendor('markdown.markdown#class');
+  Vendor('php-markdown-lib.Michelf.Markdown#inc');
+  Vendor('Markdownify-master.src.index');
 
   class GroupController extends BaseController {
+
+    // 创建群文件
+    private function createTribeFile($file_name, $file_content, $im_tribe_id) {
+      $converter = new \Markdownify\Converter;
+      $fileContent = $converter->parseString( htmlspecialchars_decode($file_content) );
+
+      $fileName = './Public/files/uploadFiles/' . time() . '.md';
+
+      $fileResult = file_put_contents($fileName, $fileContent);
+      $fileModelResult = D('Files')->saveFile(array(
+        'file_name' => $file_name,
+        'file_path' => $fileName,
+        'from_folder_id' => null,
+      ));
+
+      $fileInfo = D('files')->where(array('file_path' => $fileName))->find();
+      $addResult = D('Tribefiles')->addTribeFile($im_tribe_id, $fileInfo['id']);
+
+      return ($fileModelResult && $addResult) ? true : false;
+      
+    }
+
+    // 更新群文件
+    private function updateTribeFile($file_content, $file_path) {
+      $converter = new \Markdownify\Converter;
+      $fileContent = $converter->parseString( htmlspecialchars_decode( $file_content ) );
+
+      $fileResult = file_put_contents($file_path, $fileContent);
+
+      return $fileResult ? true : false;
+    }
 
     // 退出群
     public function leaveTribe() {
@@ -13,10 +47,9 @@
         $this->ajaxReturn(array('status' => 205, 'msg' => '您是群主，不能退出该群!'));
       } else {
         $leaveTribeResult = D('Groups')->leaveTribe($tribeId);
-        $groupList = D('Groups')->getUserMenuCatetoryInfosFromModel('Group', $tribeId);
 
-        if($leaveTribeResult && $groupList) {
-          $this->ajaxReturn(array('status' => 200,'groupList' => $groupList));
+        if($leaveTribeResult) {
+          $this->ajaxReturn(array('status' => 200,'msg' => '你已成功退群，请刷新查看！'));
         } else {
           $this->ajaxReturnError();
         }
@@ -85,7 +118,6 @@
         $this->ajaxReturn(array('status' => 204, 'msg' => '您不是管理员不能踢人!'));
       }
     }
-
 
     // 解散群
     public function dismissTribe() {
@@ -188,6 +220,25 @@
       } else {
         $this->ajaxReturnError();
       }
+    }
+
+    // 保存群文件
+    public function saveTribeFile() {
+      $isNewTribeFile = I('fileId', null) ? false : true;
+
+      if($isNewTribeFile) {
+        $saveResult = $this->createTribeFile(I('fileName', null), I('fileContent', null), I('tribeId', null));
+      } else {
+        $filePath = D('Files')->getFile(I('fileId', null))['file_path'];
+        $saveResult = $this->updateTribeFile(I('fileContent', null), $filePath);
+      }
+
+      if($saveResult) {
+        $this->ajaxReturn(array('status' => 200, 'msg' => '群文件已保存成功！'));
+      } else {
+        $this->ajaxReturnError();
+      }
+
     }
 
   }

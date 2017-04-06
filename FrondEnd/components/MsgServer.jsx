@@ -85,7 +85,7 @@ class MsgServer extends Component {
     var { inviteInfo } = this.props;
     return (
       <div className={styles.inviteInfo}>
-        <img className={styles.avator} src="" />
+        <img className={styles.avator} src="https://img.alicdn.com/tps/TB1mIGOLVXXXXa6XpXXXXXXXXXX-100-100.png" />
         <p className={styles.confirmMsg}>{inviteInfo.group_name}</p>
         <p className={styles.confirmMsg}>邀请您加入群</p>
       </div>

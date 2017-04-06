@@ -328,7 +328,7 @@ function* listenerMsgFromServerAsync() {
 function* leaveTribeAsync(action) {
   var data = yield call(servers.groupServer.leaveTribeAsync, action.tribeId);
   if(data.status && data.status === 200) {
-    yield put({type : 'leaveTribeAsyncSuccess', groupList : data.groupList});
+    yield put({type : 'leaveTribeAsyncSuccess', msg : data.msg});
   } else if(data.status && data.status !== 200) {
     yield put({type : 'leaveTribeAsyncError', msg : data.msg});
   } else {

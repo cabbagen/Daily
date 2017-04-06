@@ -62,7 +62,7 @@ class Main extends Component {
       credential : mainState.userInfo.credential,
       success : function(data) {
         console.log('登录成功');
-        that.getImUnReaderMsg();
+        // that.getImUnReaderMsg();
         // sdk.Base.startListenAllMsg();
         sdk.Event.on('START_RECEIVE_ALL_MSG', function(data) {
           console.log('接收到的消息');

@@ -3,6 +3,8 @@ import { Icon, Button, Modal } from 'antd';
 
 import styles from './GroupPanel.less';
 
+var editor = null;
+
 class GroupPanel extends Component {
 
   constructor(props) {
@@ -10,8 +12,13 @@ class GroupPanel extends Component {
     this.state = {
       visible : false,
       modalErrorMsg : '',
+      isShowCreateTribeFileModal : false,
+      modalNewFileErrorMsg : '',
       tribeAdminInfo : this.props.groupState.tribeAdminInfo,
-      tribeFiles : this.props.groupState.currentTribeFiles
+      tribeFiles : this.props.groupState.currentTribeFiles,
+      tribeFileContent : this.props.groupState.tribeFileContent,
+      tribeFileObject : this.props.groupState.tribeFileObject,
+      isEditState : false,
     }
   }
 
@@ -19,22 +26,44 @@ class GroupPanel extends Component {
     if(nextProps.groupState.tribeAdminInfo && nextProps.groupState.currentTribeFiles) {
       this.setState({
         tribeAdminInfo : nextProps.groupState.tribeAdminInfo,
-        tribeFiles : nextProps.groupState.currentTribeFiles
+        tribeFiles : nextProps.groupState.currentTribeFiles,
+        tribeFileContent : nextProps.groupState.tribeFileContent,
+        tribeFileObject : nextProps.groupState.tribeFileObject,
       });
+    }
+  }
+
+  componentWillUpdate(nextProps, nextState) {
+    var { groupActions } = this.props;
+    if(nextProps.groupState.isGetInitTribeFileContent) {
+      if(editor) {
+        editor.setValue(nextProps.groupState.tribeFileContent);
+      }
+      groupActions.resetGetInitTribeFileContent();
+    }
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    var { isEditState, tribeFileContent } = this.state;
+    if(isEditState && !editor) {
+      editor = new Simditor({textarea : $('#tribeFileEditor')});
     }
   }
 
   render() {
     var that = this;
-    var { tribeAdminInfo, tribeFiles } = this.state;
+    var { tribeAdminInfo, tribeFiles, isEditState } = this.state;
     var nickname = tribeAdminInfo && tribeAdminInfo.nickname || '';
-    var fileContent = tribeFiles ? this.renderFiles(tribeFiles) : this.renderFiles();
+    var fileContent = isEditState ? (
+      <textarea ref="tribeFileEditor" id="tribeFileEditor" placeholder="开始写群文件"></textarea>
+    ) : (tribeFiles ? this.renderFiles(tribeFiles) : this.renderFiles());
 
     return (
       <div className={styles.group_panel}>
         <div className={styles.group_panel_header}>
           <p className={styles.chargeman}>组长: {nickname}</p>
           <p className={styles.panel_operate}>
+            <Icon title="保存文件" type="hdd" onClick={that.saveTribeFile.bind(that)} />
             <Icon title="新建群文件" type="file-add" onClick={that.createTribeFile.bind(that)} />
             <Icon title="下载群文件" type="download" onClick={that.downloadTribeFile.bind(that)} />
             <Icon title="删除群文件" type="delete" onClick={that.deleteTribeFile.bind(that)} />
@@ -53,8 +82,16 @@ class GroupPanel extends Component {
           onOk={this.inviteAddTribeModalOk.bind(this)} 
           onCancel={this.inviteAddTribeModalCancel.bind(this)}>
             <p>请输入对方的 Email</p>
-            <input placeholder="请输入对方的 Email" className={styles.email} type="email" required="required" ref="email" />
+            <input className={styles.email} type="email" required="required" ref="email" />
             {this.state.modalErrorMsg.length > 0 ? <p className={styles.error}>{this.state.modalErrorMsg}</p> : ''}
+        </Modal>
+        <Modal title="保存群文件"
+          visible={this.state.isShowCreateTribeFileModal}
+          onOk={this.saveNewTribeFile.bind(this)}
+          onCancel={this.cancelSaveNewTribeFile.bind(this)}>
+            <p>请输入文件名称</p>
+            <input className={styles.email} type="text" required="required" ref="newTribeFile" />
+            {this.state.modalNewFileErrorMsg.length > 0 ? <p className={styles.error}>{this.state.modalNewFileErrorMsg}</p> : ''}
         </Modal>
       </div>
     );
@@ -64,27 +101,32 @@ class GroupPanel extends Component {
     var that = this;
     var nodes = tribeFiles.map(file => {
       return file.isSelected ? (
-        <li key={file.id} className={styles.fileSelected} onClick={that.cancelSelectFile.bind(that, file.id)}>
-          <div className={styles.file}>
-            <Icon type="file-text" />
-            <p>{file.file_name}</p>
-          </div>
-          <div className={styles.selected}>
-            <div><span></span></div>
-          </div>
+        <li key={file.id} 
+          className={styles.fileSelected} 
+          onClick={that.cancelSelectFile.bind(that, file.id)}
+          onDoubleClick={that.openTribeFile.bind(that, file.file_path, file.id)}>
+            <div className={styles.file}>
+              <Icon type="file-text" />
+              <p>{file.file_name}</p>
+            </div>
+            <div className={styles.selected}>
+              <div><span></span></div>
+            </div>
         </li>
       ) : (
-        <li key={file.id} onClick={that.selecteFile.bind(that, file.id)}>
-          <div className={styles.file}>
-            <Icon type="file-text" />
-            <p>{file.file_name}</p>
-          </div>
+        <li key={file.id} 
+          onClick={that.selecteFile.bind(that, file.id)} 
+          onDoubleClick={that.openTribeFile.bind(that, file.file_path, file.id)}>
+            <div className={styles.file}>
+              <Icon type="file-text" />
+              <p>{file.file_name}</p>
+            </div>
         </li>
       );
     });
 
     return (
-      <ul>
+      <ul className={styles.files}>
         {nodes}
       </ul>
     );
@@ -110,12 +152,53 @@ class GroupPanel extends Component {
     this.setState({tribeFiles : newTribeFiles});
   }
 
+  openTribeFile(tribeFilePath, tribeFileId) {
+    var { groupActions } = this.props;
+    this.setState({isEditState:true}, function() {
+      groupActions.getTribeFileContent(tribeFilePath, tribeFileId);
+    });
+  }
+
+  saveTribeFile() {
+    var { tribeFileObject, isEditState } = this.state;
+    var { mainState } = this.props;
+
+    if(!isEditState) {
+      // 如果文件未处在编辑状态，则提示不能保存
+      alert('请编辑之后在进行保存！');
+      return;
+    } else {
+      // 如果文件处在编辑状态，则需按照是否为新建文件进行保存处理
+      if(tribeFileObject) {
+        this.handleSaveTribeFile({
+          fileId : tribeFileObject.id,
+          fileName : tribeFileObject.file_name,
+          fileContent : editor.getValue(),
+          tribeId : mainState.currentCategoryId
+        })
+      } else {
+        this.setState({isShowCreateTribeFileModal : true});
+      }
+    }
+
+    console.log('保存群文件');
+  }
+
+  handleSaveTribeFile(params) {
+    var { groupActions } = this.props;
+    groupActions.saveTribeFile(params);
+    // 处理保存群文件
+  }
+
   createTribeFile() {
-    console.log('创建群文件');
+    var { groupActions } = this.props;
+    this.changeTribeFiles();
+    this.setState({isEditState : true}, function() {
+      groupActions.createTribeFile();
+    });
   }
 
   downloadTribeFile() {
-    console.log('下载群文件');
     var { groupActions } = this.props;
     var fileIds = this.state.tribeFiles.filter(file => file.isSelected).map(file => file.id);
     var params = [];
@@ -134,7 +217,6 @@ class GroupPanel extends Component {
   }
 
   deleteTribeFile() {
-    console.log('删除群文件');
     var { groupActions, mainState } = this.props;
     var fileIds = this.state.tribeFiles.filter(file => file.isSelected).map(file => file.tribe_id);
 
@@ -166,7 +248,15 @@ class GroupPanel extends Component {
   }
 
   changeTribeFiles() {
-    console.log('查看群文件');
+    var { groupActions, mainState } = this.props;
+    // 删除编辑器
+    if(editor) {
+      editor.destroy();
+      editor = null;
+    }
+    this.setState({isEditState:false}, function() {
+      groupActions.getTribeFiles(mainState.currentCategoryId);
+    });
   }
 
   openTribeChat() {
@@ -208,6 +298,45 @@ class GroupPanel extends Component {
 
     return true;
   }
+
+  saveNewTribeFile() {
+    var isPassCheck = this.checkFileName();
+    var fileName = this.refs.newTribeFile.value;
+    var { mainState } = this.props;
+    var that = this;
+
+    if(isPassCheck) {
+      // 创建群文件处理
+      this.setState({isShowCreateTribeFileModal : false}, function() {
+        that.handleSaveTribeFile({
+          fileName : fileName,
+          fileContent : editor.getValue(),
+          tribeId : mainState.currentCategoryId
+        });
+      })
+    }
+  }
+
+  cancelSaveNewTribeFile() {
+    this.setState({isShowCreateTribeFileModal : false, modalNewFileErrorMsg : ''});
+  }
+
+  checkFileName() {
+    var inputFileName = this.refs.newTribeFile.value;
+    var blankReg = /\s+/;
+    
+    if(inputFileName.length === 0) {
+      this.setState({modalNewFileErrorMsg : '文件名称不能为空！'});
+      return false;
+    }
+
+    if(blankReg.test(inputFileName)) {
+      this.setState({modalNewFileErrorMsg : '文件名称不能包含空格！'});
+      return false;
+    }
+
+    return true;
+  } 
 
 }
 

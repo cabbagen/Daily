@@ -296,8 +296,9 @@ const mainReducerMap = {
 
   // 主动退群
   leaveTribeAsyncSuccess : function(state, action) {
-    var tempObj = Object.assign({}, state.userMenuInfo, {Groups : action.groupList});
-    return Object.assign({}, state, {userMenuInfo : tempObj});
+    return Object.assign({}, state, {
+      notifications : action.msg
+    });
   },
   leaveTribeAsyncError : function(state, action) {
     return Object.assign({}, state, {

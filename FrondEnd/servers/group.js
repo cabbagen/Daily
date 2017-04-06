@@ -36,3 +36,7 @@ export const deleteTribeFilesAsync = (tribeFileIds, tribeId) => {
 	var params = {tribeFileIds, tribeId};
 	return Require.ajax('/Home/Group/deleteTribeFiles', 'post', params).then(data => data, e => e);
 }
+
+export const saveTribeFileAsync = (params) => {
+  return Require.ajax('/Home/Group/saveTribeFile', 'post', params).then(data => data, e => e);
+}

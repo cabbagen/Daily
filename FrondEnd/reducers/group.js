@@ -3,6 +3,9 @@ const initGroupState = {
   notifications : '',
   currentTribeFiles : null,
   tribeAdminInfo : null,
+  tribeFileContent : '',
+  tribeFileObject : null,
+  isGetInitTribeFileContent : false,
 };
 
 const groupReducerMap = {
@@ -47,6 +50,46 @@ const groupReducerMap = {
       notifications : action.msg
     });
   },
+
+  // 请求群文件内容
+  getTribeFileContentAsyncSuccess : function(state, action) {
+    return Object.assign({}, state, {
+      isGetInitTribeFileContent : true,
+      tribeFileContent : action.fileContent,
+      tribeFileObject : action.fileObject
+    });
+  },
+  getTribeFileContentAsyncError : function(state, action) {
+    return Object.assign({}, state, {
+      notifications : action.msg
+    });
+  },
+
+  // 重置初始化文件内容
+  resetGetInitTribeFileContent : function(state, action) {
+    return Object.assign({}, state, {
+      isGetInitTribeFileContent : false
+    });
+  },
+
+  // 创建群文件
+  createTribeFile : function(state, action) {
+    return Object.assign({}, state, {
+      tribeFileObject : null
+    });
+  },
+
+  // 保存文件
+  saveTribeFileAsyncSuccess : function(state, action) {
+    return Object.assign({}, state, {
+      notifications : action.msg
+    });
+  },
+  saveTribeFileAsyncError : function(state, action) {
+    return Object.assign({}, state, {
+      notifications : action.msg
+    });
+  }
 };
 
 export default function(state=initGroupState, action) {
