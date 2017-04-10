@@ -1,0 +1,30 @@
+<extend name="Base:layout" />
+
+<block name="style">
+  <style type="text/css">
+    #root img {
+      width: 615px;
+      height: 450px;
+      margin: 35px auto;
+      display: block;
+    }
+    .footer {
+      position: absolute;
+      bottom: 5px;
+      left: 50%;
+      transform: translate(-50%, 0);
+    } 
+  </style>
+</block>
+
+<block name="content">
+  	<include file="Base:header" /> 
+    <div id="root">
+      <img src="/Public/images/404.jpg" />
+    </div>
+    <include file="Base:footer" />
+</block>
+
+<block name="javascript">
+	
+</block>

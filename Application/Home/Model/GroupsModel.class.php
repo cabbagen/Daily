@@ -286,6 +286,10 @@
         ->find();
     }
 
+    public function getTribeInfo($imTribeId) {
+      return $this->where(array('im_tribe_id' => $imTribeId))->find();
+    }
+
     
 
   }

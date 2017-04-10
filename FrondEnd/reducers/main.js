@@ -24,6 +24,11 @@ const mainInitState = {
 
   // 消息通知对象
   msgFromServer : null,
+
+  // IM 群组未读消息对象
+  imTribeInfos : [],
+  // IM 好友未读消息对象
+  imFriendInfos : [],
 };
 
 const mainReducerMap = {
@@ -373,8 +378,83 @@ const mainReducerMap = {
     return Object.assign({}, state, {
       notifications : action.msg
     });
-  }
+  },
   
+  // 查询好友信息
+  getFriendInfosAsyncSuccess : function(state, action) {
+    return Object.assign({}, state, {
+      imFriendInfos : action.friendInfos
+    });
+  },
+  getFriendInfosAsyncError : function(state, action) {
+    return Object.assign({}, state, {
+      notifications : action.msg
+    });
+  },
+
+  // 查询群组信息 
+  getTribeInfosAsyncSuccess : function(state, action) {
+    return Object.assign({}, state, {
+      imTribeInfos : action.tribeInfos
+    });
+  },
+  getTribeInfosAsyncError : function(state, action) {
+    return Object.assign({}, state, {
+      notifications : action.msg
+    });
+  },
+
+  // 添加未读消息
+  addFriendUnReadMsgAsyncSuccess : function(state, action) {
+    var isInUnReadList = false;
+
+    var imFriendInfos = state.imFriendInfos.map(item => {
+      if(item.concact === action.friendInfo.concact) {
+        isInUnReadList = true;
+        item.msgCount++;
+      }
+      return item;
+    });
+
+    if(!isInUnReadList) {
+      imFriendInfos.push(action.friendInfo);
+    }
+
+    return Object.assign({},state, {
+      imFriendInfos : imFriendInfos
+    });
+  },
+  addFriendUnReadMsgAsyncError : function(state, action) {
+    return Object.assign({}, state, {
+      notifications : action.msg
+    });
+  },
+  addTribeUnReadMsgAsyncSuccess : function(state, action) {
+    var isInUnReadList = false;
+
+    var imTribeInfos = state.imTribeInfos.map(item => {
+      if(item.concact === action.tribeInfo.concact) {
+        isInUnReadList = true;
+        item.msgCount++;
+      }
+      return item;
+    });
+
+    if(!isInUnReadList) {
+      imTribeInfos.push(action.tribeInfo);
+    }
+
+    return Object.assign({}, state, {
+      imTribeInfos : imTribeInfos
+    });
+  },
+  addTribeUnReadMsgAsyncError : function(state, action) {
+    return Object.assign({}, state, {
+      notifications : action.msg
+    });
+  }
+
+
 
 };
 

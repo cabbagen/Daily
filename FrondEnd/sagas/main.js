@@ -394,6 +394,52 @@ function* deleteShareFileAsync(action) {
   }
 }
 
+// 消息模块
+function* getFriendInfosAsync(action) {
+  var friendInfosData = yield call(servers.categoryServer.getFriendInfosAsync, action.friendInfos);
+  if(friendInfosData.status && friendInfosData.status === 200) {
+    yield put({type : 'getFriendInfosAsyncSuccess', friendInfos : friendInfosData.friendInfos});
+  } else if(friendInfosData.status && friendInfosData.status !== 200) {
+    yield put({type : 'getFriendInfosAsyncError', msg : friendInfosData.msg});
+  } else {
+    yield put({type : 'getFriendInfosAsyncError', msg : friendInfosData.msg});
+  }
+}
+
+function* getTribeInfosAsync(action) {
+  var tribeInfosData = yield call(servers.groupServer.getTribeInfosAsync, action.tribeInfos);
+  if(tribeInfosData.status && tribeInfosData.status === 200) {
+    yield put({type : 'getTribeInfosAsyncSuccess', tribeInfos : tribeInfosData.tribeInfos});
+  } else if(tribeInfosData.status && tribeInfosData.status !== 200) {
+    yield put({type : 'getTribeInfosAsyncError', msg : tribeInfosData.msg});
+  } else {
+    yield put({type : 'getTribeInfosAsyncError', msg : tribeInfosData.msg});
+  }
+}
+
+function* addFriendUnReadMsgAsync(action) {
+  var data = yield call(servers.categoryServer.addFriendUnReadMsgAsync, action.fromUid);
+  if(data.status && data.status === 200) {
+    yield put({type : 'addFriendUnReadMsgAsyncSuccess', friendInfo : data.friendInfo});
+  } else if(data.status && data.status !== 200) {
+    yield put({type : 'addFriendUnReadMsgAsyncError', msg : data.msg});
+  } else {
+    yield put({type : 'addFriendUnReadMsgAsyncError', msg : data.msg});
+  }
+}
+
+function* addTribeUnReadMsgAsync(action) {
+  var data = yield call(servers.groupServer.addTribeUnReadMsgAsync, action.fromUid);
+  if(data.status && data.status === 200) {
+    yield put({type : 'addTribeUnReadMsgAsyncSuccess', tribeInfo : data.tribeInfo});
+  } else if(data.status && data.status !== 200) {
+    yield put({type : 'addFriendUnReadMsgAsyncError', msg : data.msg});
+  } else {
+    yield put({type : 'addFriendUnReadMsgAsyncError', msg : data.msg});
+  }
+}
+
+
 export function* watchMain() {
   // 发送邀请邮件
   yield takeEvery('sendEmailInvitation', sendEmailInvitationAsync);
@@ -436,5 +482,10 @@ export function* watchMain() {
   yield takeEvery('expelTribeMember', expelTribeMemberAsync);
 
   yield takeEvery('deleteShareFile', deleteShareFileAsync);
+
+  yield takeEvery('getFriendInfos', getFriendInfosAsync);
+  yield takeEvery('getTribeInfos', getTribeInfosAsync);
+  yield takeEvery('addFriendUnReadMsg', addFriendUnReadMsgAsync);
+  yield takeEvery('addTribeUnReadMsg', addTribeUnReadMsgAsync);
 
 };

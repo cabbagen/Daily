@@ -4,7 +4,7 @@
 
 	class FoldersModel extends BaseModel {
 
-		
-
+	
 	}
+	
 ?>

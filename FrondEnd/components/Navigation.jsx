@@ -33,6 +33,33 @@ class Navigation extends Component {
     }, false);
   }
 
+  // shouldComponentUpdate(nextProps, nextState) {
+  //   console.log(nextProps);
+  //   return true;
+  // }
+
+  componentWillReceiveProps(nextProps) {
+    if(nextProps.imFriendInfos && nextProps.imTribeInfos) {
+      var imLinkmanList = nextProps.imFriendInfos.concat(nextProps.imTribeInfos);
+      var imUnReadMsgNumber = this.getArraySum(imLinkmanList.map(obj => (parseInt(obj.msgCount, 10))));
+
+      this.setState({
+        imLinkmanList : imLinkmanList,
+        imUnReadMsgNumber : imUnReadMsgNumber
+      });
+    }
+  }
+
+  getArraySum(array) {
+    var sum = 0;
+
+    array.forEach((value) => {
+      sum += value
+    });
+
+    return sum;
+  }
+
   render() {
     var { userId, nickName, avator } = this.props.userInfo;
     var that = this;

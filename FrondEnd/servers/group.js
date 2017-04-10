@@ -40,3 +40,13 @@ export const deleteTribeFilesAsync = (tribeFileIds, tribeId) => {
 export const saveTribeFileAsync = (params) => {
   return Require.ajax('/Home/Group/saveTribeFile', 'post', params).then(data => data, e => e);
 }
+
+export const getTribeInfosAsync = (tribeInfos) => {
+  var params = {tribeInfos};
+  return Require.ajax('/Home/Group/getTribeInfos', 'post', params).then(data => data, e => e);
+}
+
+export const addTribeUnReadMsgAsync = (fromUid) => {
+  var params = {fromUid};
+  return Require.ajax('/Home/Group/queryTribeInfo', 'post', params).then(data => data, e => e);
+}

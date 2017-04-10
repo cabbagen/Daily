@@ -158,7 +158,7 @@
       $selfImInfo = $this->getImUserInfoFromSession();
       $toImInfo = $this->getImUserInfoFromUsername($frindUsername);
 
-      if($selfImInfo && $toImInfo && 0) {
+      if($selfImInfo && $toImInfo) {
         $this->assign('imInfos', json_encode(array(
           'uid' => $selfImInfo->userid,
           'appkey' => C('IM_AppKey'),
@@ -172,7 +172,15 @@
       $this->display();
     }
 
+
+    // demo 测试页面
     public function demo() {
+      $this->display();
+    }
+
+    // IM 群聊页面
+    public function tribeChat() {
+      
       $this->display();
     }
 

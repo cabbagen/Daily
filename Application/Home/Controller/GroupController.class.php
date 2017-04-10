@@ -238,7 +238,49 @@
       } else {
         $this->ajaxReturnError();
       }
+    }
 
+    // 获取未读消息查询群信息
+    public function getTribeInfos() {
+      $tribeInfos = I('tribeInfos', null);
+      $tribeInfosResult = array();
+
+      if( empty($tribeInfos) ) {
+        $this->ajaxReturn(array('status' => 200, 'tribeInfos' => array(), 'msg' => 'ook'));
+      }
+
+      foreach($tribeInfos as $key => $value) {
+        $tribeInfo = D('Groups')->getTribeInfo( substr($value['contact'], 8) );
+        array_push($tribeInfosResult, array_merge($value, array(
+          'tribeName' => $tribeInfo['group_name'],
+          'imTribeId' => $tribeInfo['im_tribe_id'],
+        )));
+      }
+
+      $this->ajaxReturn(array('status' => 200, 'tribeInfos' => $tribeInfosResult));
+    }
+
+    // 接收消息查询群信息
+    public function queryTribeInfo() {
+      $tribeId = I('fromUid', null);
+      if($tribeId) { 
+        $tribeInfo = D('Groups')->getTribeInfo(substr($tribeId, 8));
+        if($tribeInfo) {
+          $this->ajaxReturn(array(
+            'status' => 200,
+            'tribeInfo' => array(
+              'tribeName' => $tribeInfo['group_name'],
+              'imTribeId' => $tribeInfo['im_tribe_id'],
+              'timestamp' => time(),
+              'contact' => $tribeId
+            )
+          ));
+        } else {
+          $this->ajaxReturnError();
+        }
+      } else {
+        $this->ajaxReturnError();
+      }
     }
 
   }

@@ -147,6 +147,45 @@
 
     }
     
+    // 接收未读消息查询好友信息
+    public function getFriendInfos() {
+      $friendInfos = I('friendInfos', null);
+      $friendInfosResult = array();
+
+      if(empty($friendInfos)) {
+        $this->ajaxReturn(array('status' => 200, 'friendInfos' => array()));
+      }
+      
+      foreach($friendInfos as $key => $value) {
+        $userInfo = D('Users')->getUserInfo(array('im_user_id' => substr($value['contact'], 8)));
+        array_push($friendInfosResult, array_merge($value, array(
+          'nickname' => $userInfo['nickname'],
+          'avator' => $userInfo['avator'],
+        )));
+      }
+
+      $this->ajaxReturn(array('status' => 200, 'friendInfos' => $friendInfosResult));
+
+    }
+
+    // 接收消息查询好友信息
+    public function queryFriendInfo() {
+      $uid = I('fromUid', null);
+      if($uid) {
+        $friendInfo = D('Users')->getUserInfo(array('im_user_id' => substr($uid, 8)));
+        if($friendInfo) {
+          $this->ajaxReturn(array(
+            'status' => 200, 
+            'friendInfo' => array_merge($friendInfo, array('timestamp' => time(), 'contact' => $uid)),
+          ));
+        } else {
+          $this->ajaxReturnError();
+        }
+      } else {
+        $this->ajaxReturnError();
+      }
+    }
+
     
 
   }

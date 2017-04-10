@@ -16,8 +16,9 @@
       }
     }
 
+    // 页面 404 处理
     protected function _empty() {
-      echo 'empty';
+      $this->display('app/notFind');
     }
 
     // 通用 ajax 错误返回处理

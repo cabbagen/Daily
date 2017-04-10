@@ -62,12 +62,8 @@ class Main extends Component {
       credential : mainState.userInfo.credential,
       success : function(data) {
         console.log('登录成功');
-        // that.getImUnReaderMsg();
-        // sdk.Base.startListenAllMsg();
-        sdk.Event.on('START_RECEIVE_ALL_MSG', function(data) {
-          console.log('接收到的消息');
-          console.log(data);
-        });
+        that.getImUnReaderMsg();
+        that.listenAllMsgFromIm();
       },
       error : function(e) {
         console.log('登录失败');
@@ -78,10 +74,25 @@ class Main extends Component {
   }
 
   getImUnReaderMsg() {
+    var recentTribes = [];
+    var recentFriends = [];
+    var { mainState, mainActions } = this.props;
+
     sdk.Base.getUnreadMsgCount({
       count : 100,
       success : function(data) {
-        console.log(data);
+        if(data.code === 1000) {
+          data.data.forEach(item => {
+            if(item.contact.substring(0, 8) === 'chntribe') {
+              recentTribes.push(item);
+            } else {
+              recentFriends.push(item);
+            }
+          });
+          mainActions.getFriendInfos(recentFriends);
+          mainActions.getTribeInfos(recentTribes);
+        }
+        
       },
       error : function(e) {
         console.log('获取未读消息失败');
@@ -89,6 +100,24 @@ class Main extends Component {
       }
     });
 
+  }
+
+  listenAllMsgFromIm() {
+    var { mainState, mainActions } = this.props;
+    
+    sdk.Base.startListenAllMsg();
+    sdk.Event.on('START_RECEIVE_ALL_MSG', function(data) {
+      if(data.code === 1000) {
+        var fromUid = data.data.msgs[0].from;
+
+        if(fromUid.length === 40) {
+          mainActions.addFriendUnReadMsg(fromUid);
+        } else {
+          mainActions.addTribeUnReadMsg(fromUid);
+        }
+        
+      }
+    });
   }
 
   listenMsgFromServer() {
@@ -156,7 +185,9 @@ class Main extends Component {
     var navigationProps = {
       userMenuInfo : mainState.userMenuInfo,
       userInfo : mainState.userInfo,
-      mainActions : mainActions
+      mainActions : mainActions,
+      imFriendInfos : mainState.imFriendInfos,
+      imTribeInfos : mainState.imTribeInfos
     };
 
     var SiderProps = {

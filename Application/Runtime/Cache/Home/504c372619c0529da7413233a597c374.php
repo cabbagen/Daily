@@ -15,8 +15,7 @@
       width: 0px;
     }
     .error-tip {
-      text-align: center;
-      margin-top: 50px;
+      text-align: center; margin-top: 50px;
     }
     .error-tip b {
       font-size: 40px;

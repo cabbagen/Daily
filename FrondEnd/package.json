@@ -1,7 +1,7 @@
 {
-  "name": "todo_mvc",
+  "name": "daily",
   "version": "1.0.0",
-  "description": "a redux mvc demo",
+  "description": "a single page application",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

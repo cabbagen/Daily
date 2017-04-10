@@ -200,3 +200,25 @@ export const deleteShareFile = (fileId, type) => ({
   fileId : fileId,
   shareType : type
 });
+
+
+// IM 消息通知模块
+export const getFriendInfos = (friendInfos) => ({
+  type : 'getFriendInfos',
+  friendInfos : friendInfos
+});
+
+export const getTribeInfos = (tribeInfos) => ({
+  type : 'getTribeInfos',
+  tribeInfos : tribeInfos
+});
+
+export const addFriendUnReadMsg = (fromUid) => ({
+  type : 'addFriendUnReadMsg',
+  fromUid : fromUid
+});
+
+export const addTribeUnReadMsg = (fromUid) => ({
+  type : 'addTribeUnReadMsg',
+  fromUid : fromUid
+});

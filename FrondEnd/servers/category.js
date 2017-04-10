@@ -21,3 +21,14 @@ export const rejectRequireAsync = (to_user_id) => {
   var params = {to_user_id};
   return Require.ajax('/Home/category/rejectAddFriend', 'post', params).then(data => data, e => e);
 };
+
+// 获取好友信息
+export const getFriendInfosAsync = (friendInfos) => {
+	var params = {friendInfos};
+	return Require.ajax('/Home/category/getFriendInfos', 'post', params).then(data => data, e => e);
+}
+
+export const addFriendUnReadMsgAsync = (fromUid) => {
+	var params = {fromUid};
+	return Require.ajax('/Home/category/queryFriendInfo', 'post', params).then(data => data, e => e);
+}
