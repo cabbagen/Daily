@@ -2,7 +2,13 @@
 # Daily
 a single page application
 
-集成了在线文档，日程管理与 IM 功能的一个单页应用
+### 项目简介
+
+该项目是集成了在线文档，日程管理与 IM 功能的一个单页应用
+
+前端技术：react、redux
+
+后端：thinkPHP、mysql
 
 部分效果图
 
