@@ -69,30 +69,6 @@
 
     }
 
-    // 渲染页面函数
-    public function app() {
-      $imUserInfos = $this->getImUserInfoFromSession();
-      $userInfos = $this->getUserInfoFromSession();
-      
-      if($imUserInfos && $userInfos) {
-        $userInfo = array(
-          'uid' => $imUserInfos->userid,
-          'appkey' => C('IM_AppKey'),
-          'credential' => $imUserInfos->password,
-          'nickName' => $userInfos['nickname'],
-          'userId' => $userInfos['id'],
-          'avator' => $userInfos['avator'],
-        );
-        $this->assign('userInfo', json_encode($userInfo));
-        $this->assign('menuCategoryInfos', json_encode($this->getUserMenuInfos()));
-
-        $this->display();
-      } else {
-        $this->redirect('Login/loginAccount');
-      }
-
-    }
-
     // 当用户点击左侧菜单分类时，获取获取对应的资源数据
     public function getUserCategoryResource() {
       if(I('resourceCategory', null) && I('id', null)) {
@@ -150,13 +126,46 @@
       }
     }
 
+        // 渲染页面函数
+    public function app() {
+      $imUserInfos = $this->getImUserInfoFromSession();
+      $userInfos = $this->getUserInfoFromSession();
+      
+      if($imUserInfos && $userInfos) {
+        $userInfo = array(
+          'uid' => $imUserInfos->userid,
+          'appkey' => C('IM_AppKey'),
+          'credential' => $imUserInfos->password,
+          'nickName' => $userInfos['nickname'],
+          'userId' => $userInfos['id'],
+          'avator' => $userInfos['avator'],
+        );
+        $this->assign('userInfo', json_encode($userInfo));
+        $this->assign('menuCategoryInfos', json_encode($this->getUserMenuInfos()));
+
+        $this->display();
+      } else {
+        $this->redirect('Login/loginAccount');
+      }
+
+    }
+
     // chat 窗口
     public function chat() {
-      $frindId = I('get.friendId', null);
-      $frindUsername = D('Users')->getUserInfo(array('id' => $frindId))['username'];
+      $friendId = I('get.friendId', null);
+      $friendImId = I('get.friendImId', null);
+
+      if($friendId) {
+        // 主动发起 打开聊天窗口
+        $friendUsername = D('Users')->getUserInfo(array('id' => $friendId))['username'];
+      } else {
+        // 接收到消息 打开聊天窗口
+        $friendUsername = D('Users')->getUserInfo(array('im_user_id' => $friendImId))['username'];
+      }
+      
       
       $selfImInfo = $this->getImUserInfoFromSession();
-      $toImInfo = $this->getImUserInfoFromUsername($frindUsername);
+      $toImInfo = $this->getImUserInfoFromUsername($friendUsername);
 
       if($selfImInfo && $toImInfo) {
         $this->assign('imInfos', json_encode(array(
@@ -172,15 +181,22 @@
       $this->display();
     }
 
-
-    // demo 测试页面
-    public function demo() {
-      $this->display();
-    }
-
     // IM 群聊页面
     public function tribeChat() {
-      
+      $tribeId = I('get.tribeId', null);
+      $selfImInfo = $this->getImUserInfoFromSession();
+
+      if($selfImInfo) {
+        $this->assign('imInfos', json_encode(array(
+          'uid' => $selfImInfo->userid,
+          'appkey' => C('IM_AppKey'),
+          'credential' => $selfImInfo->password,
+          'tid' => $tribeId
+        )));
+      } else {
+        $this->assign('errorTip', '服务器繁忙，请稍后重试！');
+      }
+
       $this->display();
     }
 

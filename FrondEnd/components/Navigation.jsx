@@ -23,20 +23,17 @@ class Navigation extends Component {
   // 绑定事件监听
   componentDidMount() {
     var that = this;
-    document.body.addEventListener('click', function() {
+    document.body.addEventListener('click', function(e) {
       if(that.state.isShowImLinkmanPanel) {
-        that.setState({isShowImLinkmanPanel : false});
+        if(e.target.className !== 'DoDInMZftM4QXkata_ChG' && $(e.target).parents('.DoDInMZftM4QXkata_ChG').length === 0) {
+          that.setState({isShowImLinkmanPanel : false});
+        }
       }
       if(that.state.isShowUserInfoCenterPanel) {
         that.setState({isShowUserInfoCenterPanel : false});
       }
     }, false);
   }
-
-  // shouldComponentUpdate(nextProps, nextState) {
-  //   console.log(nextProps);
-  //   return true;
-  // }
 
   componentWillReceiveProps(nextProps) {
     if(nextProps.imFriendInfos && nextProps.imTribeInfos) {
@@ -142,7 +139,7 @@ class Navigation extends Component {
 
   renderImLinkmanPanel() {
     return this.state.isShowImLinkmanPanel ? (
-      <MsgList msgList={this.state.imLinkmanList} /> 
+      <MsgList msgList={this.state.imLinkmanList} openChat={this.openChat.bind(this)}/> 
     ) : '';
   }
 
@@ -229,6 +226,15 @@ class Navigation extends Component {
 
   handleCategoryModalCancel() {
     this.setState({isCategotyMoaleVisible : false});
+  }
+
+  openChat(contact) {
+    console.log(contact);
+    if(contact.slice(0, 8) === 'chntribe') {
+      window.open('/Home/App/tribeChat?tribeId=' + contact.slice(8), 'chatWindow', 'toolbar=no, status=no, scrollbars=0,resizable=0,menubar＝0,location=0,width=700,height=500');
+    } else {
+      window.open('/Home/App/chat?friendImId=' + contact.slice(8), 'chatWindow', 'toolbar=no, status=no, scrollbars=0,resizable=0,menubar＝0,location=0,width=700,height=500');
+    }
   }
 
 }

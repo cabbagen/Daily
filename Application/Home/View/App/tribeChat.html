@@ -24,8 +24,16 @@
 </block>
 
 <block name="javascript">
-  <script type="text/javascript" src="https://g.alicdn.com/aliww/??h5.imsdk/2.1.0/scripts/yw/wsdk.js,h5.openim.kit/0.3.7/scripts/kit.js" charset="utf-8"></script>
+  <script type="text/javascript" src="__PUBLIC__/lib/javascript/mkit.js"></script>  
 	<script type="text/javascript">
-    WKIT.init({$imInfos});
+    var imInfos = {$imInfos};
+    var sdk = new WSDK();
+    console.log( sdk.Tribe.setReadState );
+    // imInfos = $.extend({}, imInfos, {
+    //   onMsgSent: function(msg) {
+    //     alert(JSON.stringify(msg));
+    //   }
+    // });
+    // WKIT.init(imInfos);
 	</script>
 </block>

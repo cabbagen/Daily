@@ -19,10 +19,9 @@ class MsgList extends Component {
   renderItem() {
     var { msgList } = this.props,
       msgItems = [];
-
     if(msgList.length > 0) {
       msgItems = msgList.map((msgItem, index) => (
-        <li key={index}>
+        <li key={index} onClick={this.openChat.bind(this, msgItem.contact)}>
           <div className={styles.msgListAvator}>
             <img src={msgItem.avator || 'https://img.alicdn.com/tps/TB1mIGOLVXXXXa6XpXXXXXXXXXX-100-100.png'} />
             <span className={styles.msgNumber}>{msgItem.msgCount}</span>
@@ -64,12 +63,16 @@ class MsgList extends Component {
 
     return year + '-' + month + '-' + day;
   }
-
   
+  openChat(contact) {
+    console.log('------');
+    this.props.openChat(contact);
+  }
 }
 
 MsgList.propTypes = {
-    msgList : PropTypes.array.isRequired
+    msgList : PropTypes.array.isRequired,
+    openChat : PropTypes.func.isRequired
 }
 
 export default MsgList;
