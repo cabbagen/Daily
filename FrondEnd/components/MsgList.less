@@ -1,66 +1,67 @@
 /* 滚动条样式 start */
 ::-webkit-scrollbar {
-    width:0px;
+  width:0px;
 }
 ol.msgList {
-    position: absolute;
-    top: 55px;
-    left: -200px;
-    border: 1px solid #fafafa;
-    background: #ffffff;
-    box-shadow: 0px 2px 10px #cccccc;
-    height: 310px;
-    width: 260px;
-    padding:5px;
-    overflow-y: scroll;
-    li {
-        float: none;
-        padding: 0px;
-        height: 50px;
-        width: 250px;
-        border-bottom: 1px solid #eeeeee;
-    }
+  position: absolute;
+  top: 55px;
+  left: -200px;
+  border: 1px solid #fafafa;
+  background: #ffffff;
+  box-shadow: 0px 2px 10px #cccccc;
+  height: 310px;
+  width: 260px;
+  padding:5px;
+  overflow-y: scroll;
+  z-index: 20;
+  li {
+    float: none;
+    padding: 0px;
+    height: 50px;
+    width: 250px;
+    border-bottom: 1px solid #eeeeee;
+  }
 }
 .msgListAvator {
-    float: left;
-    width: 45px;
-    height: 50px;
+  float: left;
+  width: 45px;
+  height: 50px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
     position: relative;
+    top: 5px;
+    left: 5px;
+  }
+  span {
+    display: block;
+    border-radius: 10px;
+    line-height: 7px;
+    position: absolute;
     top: 0px;
-    left: 0px;
-    img {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        position: relative;
-        top: 5px;
-        left: 5px;
-    }
-    span {
-        display: block;
-        border-radius: 10px;
-        line-height: 7px;
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        padding: 5px;
-        background: red;
-        color: #ffffff;
-    }
+    right: 0px;
+    padding: 5px;
+    background: red;
+    color: #ffffff;
+  }
 }
 .msgListContent {
-    float: left;
-    width: 190px;
-    height: 45px;
-    margin-left: 10px;
-    p {
-        line-height: 18px;
-        color: #333333;
-        position: relative;
-        top: 7px;
-        i {
-            font-style: normal;
-            float: right;
-        }
+  float: left;
+  width: 190px;
+  height: 45px;
+  margin-left: 10px;
+  p {
+    line-height: 18px;
+    color: #333333;
+    position: relative;
+    top: 7px;
+    i {
+      font-style: normal;
+      float: right;
     }
+  }
 }

@@ -38,14 +38,7 @@
   <script type="text/javascript" src="/Public/lib/javascript/mkit.js"></script>  
 	<script type="text/javascript">
     var imInfos = <?php echo ($imInfos); ?>;
-    var sdk = new WSDK();
-    console.log( sdk.Tribe.setReadState );
-    // imInfos = $.extend({}, imInfos, {
-    //   onMsgSent: function(msg) {
-    //     alert(JSON.stringify(msg));
-    //   }
-    // });
-    // WKIT.init(imInfos);
+    WKIT.init(imInfos);
 	</script>
 
 </html>

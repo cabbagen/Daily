@@ -65,7 +65,6 @@ class MsgList extends Component {
   }
   
   openChat(contact) {
-    console.log('------');
     this.props.openChat(contact);
   }
 }

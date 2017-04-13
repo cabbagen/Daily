@@ -15,6 +15,14 @@
       return $imTop;
     }
 
+    // 获取聊天记录时间区间
+    private function getImLogTimeZone() {
+      return array(
+        'begin' => time() - 60 * 60 * 24 * 20 . "",
+        'end' => time() . ""
+      );
+    }
+
     // 获取群列表
     public function getTribeList() {
       $username = session("username");
@@ -192,6 +200,25 @@
 
       if($resp->tribe_user_list) {
         return $resp->tribe_user_list->tribe_user;
+      } else {
+        return false;
+      }
+    }
+
+    // 获取群组聊天记录
+    public function getTribeMessageLogs($tribeId) {
+      $imTop = $this->initIm();
+      $imLogTimeZone = $this->getImLogTimeZone();
+
+      $req = new \OpenimTribelogsGetRequest;
+      $req->setTribeId($tribeId);
+      $req->setBegin($imLogTimeZone['begin']);
+      $req->setEnd($imLogTimeZone['end']);
+      $req->setCount("200");
+      $resp = $imTop->execute($req);
+
+      if($resp->data->messages->tribe_message) {
+        return $resp->data->messages->tribe_message;
       } else {
         return false;
       }

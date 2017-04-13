@@ -4,6 +4,13 @@
   Vendor('imSdk.TopSdk');
 
   class ImController extends BaseController {
+
+    private function getImLogTimeZone() {
+      return array(
+        'begin' => time() - 60 * 60 * 24 * 20 . "",
+        'end' => time() . ""
+      );
+    }
     public function initIm() {
       $imTop = new \TopClient;
       $imTop->appkey = C('IM_AppKey');
@@ -191,12 +198,35 @@
       }
       var_dump($resp);
     }
+    
+    // 查询群聊天记录
+    public function getTribeLog() {
+      $imTop = $this->initIm();
+      $imLogTimeZone = $this->getImLogTimeZone();
+
+      $req = new \OpenimTribelogsGetRequest;
+      $req->setTribeId('117146907');
+      $req->setBegin($imLogTimeZone['begin']);
+      $req->setEnd($imLogTimeZone['end']);
+      $req->setCount("200");
+      $resp = $imTop->execute($req);
+
+      // var_dump($resp->data->messages->tribe_message[0]->content->message_item);
+
+      foreach($resp->data->messages->tribe_message as $key => $value) {
+       echo $value->content->message_item[0]->value;
+       echo '<br />';
+      }
+
+      // var_dump($resp->data->messages->tribe_message);
+    }
+
 
     // 测试
     public function demo() {
-      echo md5("test_1");
+      echo time() - 60 * 60 * 24 * 20;
       echo "====";
-      echo md5("test_2");
+      echo time();
     }
 
   }

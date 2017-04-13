@@ -1,0 +1,41 @@
+.content {
+  height: 490px;
+}
+.content h2 {
+  font-size: 20px;
+  height: 30px;
+  line-height: 30px;
+  padding-bottom: 25px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #cccccc;
+}
+.content h3 {
+  font-size: 16px;
+}
+
+.content p {
+  line-height: 30px;
+  margin: 10px 0px;
+}
+.content ul li {
+  margin: 10px 0px;
+}
+.footer {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

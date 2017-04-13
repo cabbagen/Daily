@@ -108,14 +108,12 @@ class Main extends Component {
     sdk.Base.startListenAllMsg();
     sdk.Event.on('START_RECEIVE_ALL_MSG', function(data) {
       if(data.code === 1000) {
-        var fromUid = data.data.msgs[0].from;
-
+        var fromUid = data.data.touid;
         if(fromUid.length === 40) {
           mainActions.addFriendUnReadMsg(fromUid);
         } else {
           mainActions.addTribeUnReadMsg(fromUid);
         }
-        
       }
     });
   }

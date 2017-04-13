@@ -28,4 +28,11 @@
 	<script type="text/javascript">
     WKIT.init({$imInfos});
 	</script>
+  <script type="text/javascript">
+    // 离开此页面时，提示用户刷新主页面
+    document.addEventListener('unload', function() {
+      alert('关闭聊天页面，您需要刷新主页面');
+    }, false);
+    
+  </script>
 </block>

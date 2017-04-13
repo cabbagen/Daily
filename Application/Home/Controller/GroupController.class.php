@@ -138,6 +138,8 @@
       }
     }
 
+    
+
     // 获取群文件
     public function getTribeFiles() {
       $tribeId = I('tribeId', null);
@@ -240,20 +242,38 @@
       }
     }
 
+    // 获取群消息未读数目
+    public function getTribeUnreadMsgNumber($tribeId) {
+      $imUid = D('Users')->getUserInfo(array('id' => $this->getUserIdFromSession()))['im_user_id'];
+      $tribeMsgLogs = D('Groups')->getTribeMessageLogs($tribeId);
+
+      foreach($tribeMsgLogs as $key => $value) {
+        if($value->from_id->uid == $imUid) {
+          return $key;
+        }
+      }
+
+      return sizeof($tribeMsgLogs);
+    }
+
     // 获取未读消息查询群信息
     public function getTribeInfos() {
       $tribeInfos = I('tribeInfos', null);
+      $imUid = D('Users')->getUserInfo(array('id' => $this->getUserIdFromSession()))['im_user_id'];
       $tribeInfosResult = array();
 
       if( empty($tribeInfos) ) {
-        $this->ajaxReturn(array('status' => 200, 'tribeInfos' => array(), 'msg' => 'ook'));
+        $this->ajaxReturn(array('status' => 200, 'tribeInfos' => array()));
       }
 
       foreach($tribeInfos as $key => $value) {
         $tribeInfo = D('Groups')->getTribeInfo( substr($value['contact'], 8) );
+        $tribeUnreadMsgNumber = $this->getTribeUnreadMsgNumber(substr($value['contact'], 8));
+
         array_push($tribeInfosResult, array_merge($value, array(
           'tribeName' => $tribeInfo['group_name'],
           'imTribeId' => $tribeInfo['im_tribe_id'],
+          'msgCount' => $tribeUnreadMsgNumber,
         )));
       }
 
@@ -264,7 +284,7 @@
     public function queryTribeInfo() {
       $tribeId = I('fromUid', null);
       if($tribeId) { 
-        $tribeInfo = D('Groups')->getTribeInfo(substr($tribeId, 8));
+        $tribeInfo = D('Groups')->getTribeInfo($tribeId);
         if($tribeInfo) {
           $this->ajaxReturn(array(
             'status' => 200,
@@ -272,7 +292,7 @@
               'tribeName' => $tribeInfo['group_name'],
               'imTribeId' => $tribeInfo['im_tribe_id'],
               'timestamp' => time(),
-              'contact' => $tribeId
+              'contact' => 'chntribe' . $tribeId
             )
           ));
         } else {

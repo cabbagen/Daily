@@ -1,13 +1,41 @@
 <extend name="Base:layout" /> 
 
 <block name="style">
-	<link href="__PUBLIC__/style/regist.css" rel="stylesheet" type="text/css" />
+	<link href="__PUBLIC__/style/understandMore.css" rel="stylesheet" type="text/css" />
 </block>
 
 <block name="content">
-	<h2>这是用户注册页面</h2>
+	<include file="Base:header" />
+	<section class="content">
+		<h2>我是 Daily， 优雅生活将会从这里开始</h2>
+		<h3>我们的简介</h3>
+		<p>我会帮助您打理生活，相信我们一定能使您的生活更加充满乐趣，将优秀培养成一种习惯。</p>
+		<h3>我们的特长</h3>
+		<ul>
+			<li>
+				<strong>在线云文档：</strong>
+				<span>这是一个能够安静写字的环境，将生活的点点滴滴都记录下来，将美好永久封存。</span>
+			</li>
+			<li>
+				<strong>日程管理：</strong>
+				<span>合理的安排管理，高效的利用时间，这不仅仅是一项优秀的技能，更是我们对待生活的态度。</span>
+			</li>
+			<li>
+				<strong>实时通讯：</strong>
+				<span>能经常和志同道合的好友聊天，一定会让你每天都离梦想更近一点点。</span>
+			</li>
+			<li>
+				<strong>小组群聊：</strong>
+				<span>小组群聊使协作更加高效，工作起来更加轻松愉快。</span>
+			</li>
+			<li>
+				<strong>文件分享：</strong>
+				<span>好的文章大家就一起分享起来吧。</span>
+			</li>
+		</ul>
+	</section>
+	<include file="Base:footer" />
 </block>
 
 <block name="javascript">
-	<script src="__PUBLIC__/lib/javascript/require.js" data-main="__PUBLIC__/javascript/regist.js" type="text/javascript"></script>
 </block>

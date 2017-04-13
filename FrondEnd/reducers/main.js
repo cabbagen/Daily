@@ -395,7 +395,7 @@ const mainReducerMap = {
   // 查询群组信息 
   getTribeInfosAsyncSuccess : function(state, action) {
     return Object.assign({}, state, {
-      imTribeInfos : action.tribeInfos
+      imTribeInfos : action.tribeInfos.filter((item) => (item.msgCount > 0))
     });
   },
   getTribeInfosAsyncError : function(state, action) {
@@ -417,7 +417,7 @@ const mainReducerMap = {
     });
 
     if(!isInUnReadList) {
-      imFriendInfos.push(action.friendInfo);
+      imFriendInfos.push(Object.assign(action.friendInfo, {msgCount : 1}));
     }
 
     return Object.assign({},state, {
@@ -441,7 +441,7 @@ const mainReducerMap = {
     });
 
     if(!isInUnReadList) {
-      imTribeInfos.push(action.tribeInfo);
+      imTribeInfos.push(Object.assign(action.tribeInfo, {msgCount : 1}));
     }
 
     return Object.assign({}, state, {
