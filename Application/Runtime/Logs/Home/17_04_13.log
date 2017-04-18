@@ -13310,3 +13310,159 @@ SQL: select *, think_message.id as msgId from think_message join think_users on 
 SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 5 and think_message.type != 'addFriend' and think_message.type != 'shareFile' limit 1 [ RunTime:0.0002s ]
 SQL: select *, think_message.id as msgId from think_message where think_message.to_user_id = 5 and think_message.type != 'addFriend' and think_message.type != 'addTribe' limit 1 [ RunTime:0.0002s ]
 
+[ 2017-04-13T22:09:13+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000719s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000822s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001118s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0097s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' and think_message.type != 'shareFile' limit 1 [ RunTime:0.0006s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' and think_message.type != 'shareFile' limit 1 [ RunTime:0.0005s ]
+SQL: select *, think_message.id as msgId from think_message where think_message.to_user_id = 6 and think_message.type != 'addFriend' and think_message.type != 'addTribe' limit 1 [ RunTime:0.0004s ]
+
+[ 2017-04-13T22:09:20+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000894s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001010s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001347s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0051s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 5 and think_message.type != 'addTribe' and think_message.type != 'shareFile' limit 1 [ RunTime:0.0004s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 5 and think_message.type != 'addFriend' and think_message.type != 'shareFile' limit 1 [ RunTime:0.0003s ]
+SQL: select *, think_message.id as msgId from think_message where think_message.to_user_id = 5 and think_message.type != 'addFriend' and think_message.type != 'addTribe' limit 1 [ RunTime:0.0003s ]
+
+[ 2017-04-13T22:09:28+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001010s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000917s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001266s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0074s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' and think_message.type != 'shareFile' limit 1 [ RunTime:0.0006s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' and think_message.type != 'shareFile' limit 1 [ RunTime:0.0005s ]
+SQL: select *, think_message.id as msgId from think_message where think_message.to_user_id = 6 and think_message.type != 'addFriend' and think_message.type != 'addTribe' limit 1 [ RunTime:0.0004s ]
+
+[ 2017-04-13T22:09:35+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000119s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001010s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001004s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001306s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0098s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 5 and think_message.type != 'addTribe' and think_message.type != 'shareFile' limit 1 [ RunTime:0.0006s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 5 and think_message.type != 'addFriend' and think_message.type != 'shareFile' limit 1 [ RunTime:0.0005s ]
+SQL: select *, think_message.id as msgId from think_message where think_message.to_user_id = 5 and think_message.type != 'addFriend' and think_message.type != 'addTribe' limit 1 [ RunTime:0.0004s ]
+
+[ 2017-04-13T22:09:43+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000944s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000951s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001244s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0050s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' and think_message.type != 'shareFile' limit 1 [ RunTime:0.0005s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' and think_message.type != 'shareFile' limit 1 [ RunTime:0.0003s ]
+SQL: select *, think_message.id as msgId from think_message where think_message.to_user_id = 6 and think_message.type != 'addFriend' and think_message.type != 'addTribe' limit 1 [ RunTime:0.0003s ]
+
+[ 2017-04-13T22:09:50+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000599s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001014s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0093s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 5 and think_message.type != 'addTribe' and think_message.type != 'shareFile' limit 1 [ RunTime:0.0007s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 5 and think_message.type != 'addFriend' and think_message.type != 'shareFile' limit 1 [ RunTime:0.0004s ]
+SQL: select *, think_message.id as msgId from think_message where think_message.to_user_id = 5 and think_message.type != 'addFriend' and think_message.type != 'addTribe' limit 1 [ RunTime:0.0003s ]
+
+[ 2017-04-13T22:09:58+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001159s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001475s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0102s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 6 and think_message.type != 'addTribe' and think_message.type != 'shareFile' limit 1 [ RunTime:0.0007s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 6 and think_message.type != 'addFriend' and think_message.type != 'shareFile' limit 1 [ RunTime:0.0005s ]
+SQL: select *, think_message.id as msgId from think_message where think_message.to_user_id = 6 and think_message.type != 'addFriend' and think_message.type != 'addTribe' limit 1 [ RunTime:0.0004s ]
+
+[ 2017-04-13T22:10:05+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000988s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001152s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001453s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0115s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 5 and think_message.type != 'addTribe' and think_message.type != 'shareFile' limit 1 [ RunTime:0.0007s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 5 and think_message.type != 'addFriend' and think_message.type != 'shareFile' limit 1 [ RunTime:0.0005s ]
+SQL: select *, think_message.id as msgId from think_message where think_message.to_user_id = 5 and think_message.type != 'addFriend' and think_message.type != 'addTribe' limit 1 [ RunTime:0.0004s ]
+
+[ 2017-04-13T22:10:20+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000579s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000758s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0062s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 5 and think_message.type != 'addTribe' and think_message.type != 'shareFile' limit 1 [ RunTime:0.0008s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 5 and think_message.type != 'addFriend' and think_message.type != 'shareFile' limit 1 [ RunTime:0.0006s ]
+SQL: select *, think_message.id as msgId from think_message where think_message.to_user_id = 5 and think_message.type != 'addFriend' and think_message.type != 'addTribe' limit 1 [ RunTime:0.0004s ]
+
+[ 2017-04-13T22:10:36+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000980s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001951s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0094s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 5 and think_message.type != 'addTribe' and think_message.type != 'shareFile' limit 1 [ RunTime:0.0006s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 5 and think_message.type != 'addFriend' and think_message.type != 'shareFile' limit 1 [ RunTime:0.0005s ]
+SQL: select *, think_message.id as msgId from think_message where think_message.to_user_id = 5 and think_message.type != 'addFriend' and think_message.type != 'addTribe' limit 1 [ RunTime:0.0004s ]
+
+[ 2017-04-13T22:10:50+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000582s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001142s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001406s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0071s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 5 and think_message.type != 'addTribe' and think_message.type != 'shareFile' limit 1 [ RunTime:0.0004s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 5 and think_message.type != 'addFriend' and think_message.type != 'shareFile' limit 1 [ RunTime:0.0003s ]
+SQL: select *, think_message.id as msgId from think_message where think_message.to_user_id = 5 and think_message.type != 'addFriend' and think_message.type != 'addTribe' limit 1 [ RunTime:0.0002s ]
+
+[ 2017-04-13T22:11:05+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000559s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000681s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0334s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 5 and think_message.type != 'addTribe' and think_message.type != 'shareFile' limit 1 [ RunTime:0.0005s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 5 and think_message.type != 'addFriend' and think_message.type != 'shareFile' limit 1 [ RunTime:0.0005s ]
+SQL: select *, think_message.id as msgId from think_message where think_message.to_user_id = 5 and think_message.type != 'addFriend' and think_message.type != 'addTribe' limit 1 [ RunTime:0.0004s ]
+
+[ 2017-04-13T22:11:20+08:00 ] 127.0.0.1 /Home/base/listenMsgLongNotification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000120s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001059s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000581s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000766s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.0074s ]
+SQL: select *, think_message.id as msgId from think_message join think_users on think_users.id = think_message.from_user_id where think_message.to_user_id = 5 and think_message.type != 'addTribe' and think_message.type != 'shareFile' limit 1 [ RunTime:0.0005s ]
+SQL: select *, think_message.id as msgId from think_message join think_groups on think_groups.im_tribe_id = think_message.im_tribe_id where think_message.to_user_id = 5 and think_message.type != 'addFriend' and think_message.type != 'shareFile' limit 1 [ RunTime:0.0004s ]
+SQL: select *, think_message.id as msgId from think_message where think_message.to_user_id = 5 and think_message.type != 'addFriend' and think_message.type != 'addTribe' limit 1 [ RunTime:0.0003s ]
+

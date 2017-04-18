@@ -11,21 +11,21 @@
 		<h2 class="title">用户注册</h2>
 		<form action="" method="post">
 			<div class="field">
-				<label><span>用户名</span><input type="text" name="username" data-condition="required" /></label>
+				<label><span>用户名</span><input type="text" name="username" data-condition="required" placeholder="用户名" /></label>
 				<i class="error">这里不能为空！</i>
 			</div>
 			<div class="field">
-				<label><span>昵称</span><input type="text" name="nickname" data-condition="required" /></label>
+				<label><span>昵称</span><input type="text" name="nickname" data-condition="required" placeholder="昵称" /></label>
 				<i class="error">这里不能为空！</i>
 			</div>
 			<div class="field">
-				<label><span>密码</span><input type="password" name="password" data-condition="required" /></label>
+				<label><span>密码</span><input type="password" name="password" data-condition="required" placeholder="密码" /></label>
 				<i class="error">这里不能为空！</i>
 			</div>
 			<div class="field">
 				<label>
 					<span>Email</span>
-					<input type="email" name="email" data-condition="^([a-zA-Z0-9]+[_|_|.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|_|.]?)*[a-zA-Z0-9]+.[a-zA-Z]{2,4}$ required" />
+					<input placeholder="email" type="email" name="email" data-condition="^([a-zA-Z0-9]+[_|_|.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|_|.]?)*[a-zA-Z0-9]+.[a-zA-Z]{2,4}$ required" />
 				</label>
 				<i class="error">请输入合法的Email！</i>
 			</div>

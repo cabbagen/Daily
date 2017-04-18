@@ -55,6 +55,10 @@
 			return $this->where($queryArray)->find();
 		}
 
+		public function resetPassword($condition, $password) {
+			return $this->where($condition)->setField('password', $password);
+		}
+
 		// 好友部分相关
 		public function getTotalUserCount($keyWord) {
 			$userId = $this->getUserId();

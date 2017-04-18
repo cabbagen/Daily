@@ -10,15 +10,22 @@
 
 		private $findPasswordTitle = "找回密码通知";
 
-		private $findPasswordContent = "<p>您的密码已成功找回，请不要泄露给其他人！</p><p>新的密码为：</p>";
+		private $findPasswordContent = "<p>您的密码已成功找回，请不要泄露给其他人！</p><p>新的密码为：";
 
 		private function createRandomPassword() {
-			
+			$alphabet = array('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'l', 'j', 'k'); 
+			$password = '';
+			for($i=0; $i<=10; $i++) {
+				$password .= $alphabet[$this->getRandomNumberInRange(0, 12)];
+			}
+			return $password;
+		}
+
+		private function getRandomNumberInRange($min, $max) {
+			return mt_rand($min, $max);
 		}
 
 		public function sendEmailToInviter() {
-			$this->allowCrossOrigin();
-
 			$isSendSuccess = sendEmail(I('post.email', null), $this->inviteTitle, $this->inviteContent);
 
 			if($isSendSuccess) {
@@ -31,14 +38,23 @@
 		}
 
 		public function findPasswordFromEmail() {
-			$this->allowCrossOrigin();
 			$newPassword = $this->createRandomPassword();
+			$resetPasswordResult = D('Users')->resetPassword(array(
+				'email' => I('post.email', null),
+			), md5($newPassword));
 
-			if($newPassword) {
-				
+			if($resetPasswordResult) {
+				$isSendSuccess = sendEmail(I('post.email', null), $this->findPasswordTitle, $this->findPasswordContent . $newPassword . "</p>");
+				if($isSendSuccess) {
+					$this->ajaxReturn(array('status' => 200));
+				} else {
+					$this->ajaxReturnError();
+				}
 			} else {
-				
+					$this->ajaxReturnError();				
 			}
+
+			
 
 		}
 	}
