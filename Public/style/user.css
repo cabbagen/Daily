@@ -1,0 +1,138 @@
+.content {
+  height: 490px;
+}
+.avator {
+  width: 400px;
+  height: 100px;
+  margin: 30px auto 50px auto;
+  text-align: center;
+}
+.avator img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}
+.avator p {
+  margin: 5px auto;
+}
+.infos > div {
+  clear: both;
+  width: 530px;
+  margin: 10px auto;
+}
+
+.infos p {
+  width: 245px;
+  padding: 0px 10px;
+  height: 35px;
+  line-height: 35px;
+  float: left;
+  text-align: center;
+}
+.infos p strong {
+  display: inline-block;
+  width: 60px;
+}
+.infos p a, .avator p a {
+  font-size: 12px;
+  color: deepskyblue;
+}
+.footer {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* 模态框 */
+.model-wrap {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .2);
+}
+.model {
+  display: none;
+  background: #ffffff;
+  border-radius: 3px;
+  position: absolute;
+  width: 500px;
+  padding: 10px 10px;
+}
+.model-title {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  font-weight: bold;
+  border-bottom: 1px solid #eeeeee;
+}
+.model-body {
+  margin: 5px 0px;
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 10px;
+}
+.model-body > p {
+  height: 35px;
+  line-height: 35px;
+}
+.model-body label {
+  display: inline-block;
+  width: 70px;
+  height: 35px;
+  line-height: 35px;
+}
+.model-body input[type="text"], .model-body input[type="email"] {
+  display: inline-block;
+  width: 416px;
+  height: 25px;
+  line-height: 25px;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  outline: none;
+  padding-left: 4px;
+  font-size: 12px;
+}
+.model-footer {
+  height: 30px;
+  line-height: 30px;
+  text-align: right;
+}
+.model-footer button {
+  width: 50px;
+  height: 25px;
+  line-height: 25px;
+  background: deepskyblue;
+  color: #ffffff;
+  border-radius: 3px;
+  outline: none;
+}
+.model-footer button:hover {
+  background: dodgerblue;
+  cursor: pointer;
+}
+.model-show {
+  display: block;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  animation: model-show .3s ease-in;
+}
+
+@keyframes model-show {
+  0% {
+    top: 0px;
+    left: 0px;
+    transform: translate(0, 0);
+    display: none;
+  }
+
+  100% {
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    display: block; 
+  }
+}

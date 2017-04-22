@@ -147,7 +147,7 @@ class Navigation extends Component {
     var { userId } = this.props.userInfo;
     return this.state.isShowUserInfoCenterPanel ? (
       <ol onClick={(e) => {e.stopPropagation()}}>
-        <li><a href={`/Home/UserInfo/${userId}.html`}>个人中心</a></li>
+        <li><a href={`/Home/UserInfo/users.html`}>个人中心</a></li>
         <li><a href="/Home/Login/loginAccount.html">登出</a></li>
       </ol>
     ) : '';

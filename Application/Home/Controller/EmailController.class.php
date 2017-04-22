@@ -53,9 +53,6 @@
 			} else {
 					$this->ajaxReturnError();				
 			}
-
-			
-
 		}
 	}
 

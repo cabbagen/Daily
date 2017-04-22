@@ -86,6 +86,39 @@
 
 		}
 
+		public function changeUserInfo($modifyFieldArray) {
+			$key = $modifyFieldArray['type'];
+			$value = $modifyFieldArray['value'];
+
+			if($key === 'nickname') {
+				$changeFromImResult = $this->changeNicknameFromIm($value);
+				if($changeFromImResult) {
+					return $this->where(array('id' => $this->getUserId()))->setField($key, $value);					
+				} else {
+					return false;
+				}
+			} else {
+				return $this->where(array('id' => $this->getUserId()))->setField($key, $value);
+			}
+			 
+		}
+
+		public function changeNicknameFromIm($nickname) {
+			$imTop = $this->initIm();
+			$req = new \OpenimUsersUpdateRequest;
+			$userInfos = new \Userinfos;
+			$userInfos->nick = $nickname;
+			$userInfos->uid = $this->getUserInfo(array('id' => $this->getUserId()))['im_user_id'];
+			$req->setUserinfos(json_encode($userInfos));
+			$resp = $imTop->execute($req);
+
+			if($resp->sub_code) {
+				return false;
+			} else {
+				return true;
+			}
+		}
+
 
 
 	}

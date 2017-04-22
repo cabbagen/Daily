@@ -4,3 +4,57 @@ INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000902s ]
 ERR: 无法加载模块:Favicon
 
+[ 2017-04-18T09:48:59+08:00 ] 127.0.0.1 /public/images/default.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000100s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001657s ]
+ERR: 无法加载模块:Public
+
+[ 2017-04-18T09:49:42+08:00 ] 127.0.0.1 /public/images/default.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001005s ]
+ERR: 无法加载模块:Public
+
+[ 2017-04-18T09:49:55+08:00 ] 127.0.0.1 /public/images/default.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001174s ]
+ERR: 无法加载模块:Public
+
+[ 2017-04-18T09:50:34+08:00 ] 127.0.0.1 /public/images/default.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000991s ]
+ERR: 无法加载模块:Public
+
+[ 2017-04-18T09:50:48+08:00 ] 127.0.0.1 /public/images/default.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001576s ]
+ERR: 无法加载模块:Public
+
+[ 2017-04-18T09:51:05+08:00 ] 127.0.0.1 /public/images/default.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001008s ]
+ERR: 无法加载模块:Public
+
+[ 2017-04-18T09:51:45+08:00 ] 127.0.0.1 /public/images/default.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000149s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001565s ]
+ERR: 无法加载模块:Public
+
+[ 2017-04-18T09:52:38+08:00 ] 127.0.0.1 /public/images/default.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001183s ]
+ERR: 无法加载模块:Public
+
+[ 2017-04-18T09:53:38+08:00 ] 127.0.0.1 /public/images/default.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000133s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002457s ]
+ERR: 无法加载模块:Public
+
