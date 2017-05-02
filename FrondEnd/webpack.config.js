@@ -23,7 +23,8 @@ module.exports = {
             { loader : 'css-loader', options : {importLoaders : 1, modules : true} },
             { loader : 'less-loader', options : {lessPlugins : [new CleanCSSPlugin({ advanced: true })]} },
           ]
-        })
+        }),
+        include : [path.resolve(__dirname, 'container'), path.resolve(__dirname, 'components')]
       },
       {
         test : /\.less$/,

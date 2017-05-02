@@ -11,6 +11,7 @@
 		<link rel="stylesheet" type="text/css" href="/Public/lib/style/common.css" />
 		
   <link href="/public/lib/style/simditor.css" rel="stylesheet" type="text/css" />
+  <link href="/public/style/app.css" rel="stylesheet" type="text/css" />
 
 	</head>
 	<body>
@@ -34,6 +35,7 @@
   <script type="text/javascript" src="/public/lib/javascript/hotkeys.min.js"></script>
   <script type="text/javascript" src="/public/lib/javascript/uploader.min.js"></script>
   <script type="text/javascript" src="/public/lib/javascript/simditor.min.js"></script>
-  <script type="text/javascript" src="http://localhost:9000/app.js"></script>
+  <script type="text/javascript" src="/public/javascript/app.js"></script>
+  <!--<script type="text/javascript" src="http://localhost:9000/app.js"></script>-->
 
 </html>
