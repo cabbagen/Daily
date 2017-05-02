@@ -8,6 +8,7 @@ import FilterFiles from '../components/FilterFiles.jsx';
 import FileOperatePanel from '../components/FileOperatePanel.jsx';
 import styles from '../container/file.less';
 
+var path = require('path');
 
 class File extends Component {
   constructor(props) {
@@ -125,7 +126,7 @@ class File extends Component {
   }
 
   // 上传文件
-  uploadFile(input) {
+  uploadFile(unloadFilePath, uploadFile) {
     var formData = new FormData();
     var { mainState, fileActions } = this.props;
 
@@ -134,16 +135,17 @@ class File extends Component {
       return;
     }
 
-    if(path.extname(input.value) !== '.md') {
+    if(path.extname(unloadFilePath) !== '.md') {
       alert('请传入 .md 的markdown 文件');
       return;
     }
 
-    if(input.value.length !== 0) {
-      formData.append('file', input.files[0]);
+    if(unloadFilePath.length !== 0) {
+      formData.append('file', uploadFile);
       formData.append('from_folder_id', mainState.currentCategoryId);
 
       fileActions.uploadFile(formData);
+
     }
   }
 
@@ -155,7 +157,7 @@ class File extends Component {
 
   // 分享文件
   shareFile(fileId, email) {
-    console.log(`文件id：${fileId},  email: ${email}`);
+    // console.log(`文件id：${fileId},  email: ${email}`);
     var { mainState, mainActions } = this.props;
     mainActions.shareFile({fileId : fileId, email : email});
   }

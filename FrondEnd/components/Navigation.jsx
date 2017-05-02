@@ -1,7 +1,7 @@
 import React, { PropTypes, Component } from 'react';
 import { Modal } from 'antd';
 
-import MsgList from './MsgList';
+import MsgList from './MsgList.jsx';
 import MenuOperateModal from './MenuOperateModal.jsx';
 import styles from './Navigation.less';
 

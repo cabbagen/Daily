@@ -37,7 +37,17 @@
 	
   <script type="text/javascript" src="https://g.alicdn.com/aliww/??h5.imsdk/2.1.0/scripts/yw/wsdk.js,h5.openim.kit/0.3.7/scripts/kit.js" charset="utf-8"></script>
 	<script type="text/javascript">
-    WKIT.init(<?php echo ($imInfos); ?>);
+    WKIT.init( $.extend({}, <?php echo ($imInfos); ?>, {
+      avatar : '/Public/images/chatAvator.jpg',
+      toAvatar : '/Public/images/chatAvator2.jpg'
+    }) );
 	</script>
+  <script type="text/javascript">
+    // 离开此页面时，提示用户刷新主页面
+    document.addEventListener('unload', function() {
+      alert('关闭聊天页面后，您需要刷新主页面');
+    }, false);
+    
+  </script>
 
 </html>

@@ -54,7 +54,7 @@ class CalendarPanel extends Component {
           <Button onClick={that.showCreateModal.bind(that)} title="新建日程任务">新建</Button>
           <Button onClick={that.showAppraiseModal.bind(that)} title="评价日程任务">评价</Button>
           <Button title="返回日历" onClick={that.switchCalendar.bind(that)}>返回日历</Button>
-          <Icon title="查看完成图表" type="pie-chart" onClick={that.switchChart.bind(that)} />
+          <Icon title="查看完成图表" type="bar-chart" onClick={that.switchChart.bind(that)} />
         </div>
         <div className={styles.calendar_panel_content}>
           {currentContent}

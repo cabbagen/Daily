@@ -26,12 +26,15 @@
 <block name="javascript">
   <script type="text/javascript" src="__PUBLIC__/lib/javascript/mkit.js"></script>  
 	<script type="text/javascript">
-    WKIT.init({$imInfos});
+    WKIT.init( $.extend({}, {$imInfos}, {
+      avatar : '/Public/images/chatAvator.jpg',
+      toAvatar : '/Public/images/chatAvator2.jpg'
+    }) );
 	</script>
   <script type="text/javascript">
     // 离开此页面时，提示用户刷新主页面
     document.addEventListener('unload', function() {
-      alert('关闭聊天页面，您需要刷新主页面');
+      alert('关闭聊天页面后，您需要刷新主页面');
     }, false);
 
   </script>

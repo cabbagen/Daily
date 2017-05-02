@@ -88,7 +88,12 @@ class FileOperatePanel extends Component {
   }
 
   upload(event) {
-    this.props.uploadFile(event.target);
+    var unloadFilePath = event.target.value;
+    var uploadFile = event.target.files[0];
+
+    this.props.uploadFile(unloadFilePath, uploadFile);
+
+    event.target.value = '';
   }
 
   download() {

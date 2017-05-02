@@ -103,7 +103,7 @@ class Share extends Component {
 
   // 分享文件分享
   shareFile() {
-    console.log(`文件id：${fileId},  email: ${email}`);
+    // console.log(`文件id：${fileId},  email: ${email}`);
     var { mainState, mainActions } = this.props;
     mainActions.shareFile({fileId : fileId, email : email});
   }

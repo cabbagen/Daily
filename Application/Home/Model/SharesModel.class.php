@@ -42,6 +42,10 @@
 			return $this->data($shareInfo)->add();
 		}
 
+		public function getShareFile($fileInfos) {
+			return $this->where($fileInfos)->find();
+		}
+
 		
 	}
 	

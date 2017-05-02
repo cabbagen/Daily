@@ -113,7 +113,7 @@
         ));
 
         if($fileResult && $modelResult) {
-          $this->ajaxReturn(array('status' => 200, successMsg => '上传成功'));
+          $this->ajaxReturn(array('status' => 200, successMsg => '上传成功，选择文件夹查看'));
         } else {
           $this->ajaxReturnError();
         }

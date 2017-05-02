@@ -10,9 +10,13 @@ class MsgList extends Component {
     var msgItems = this.renderItem();
 
     return (
-      <ol className={styles.msgList}>
-        {msgItems}
-      </ol>
+      <div className={styles.outContent}>
+        <div className={styles.innerContent}>
+          <ol className={styles.msgList}>
+            {msgItems}
+          </ol>
+        </div>
+      </div>
     );
   }
 
@@ -39,7 +43,7 @@ class MsgList extends Component {
       msgItems.push(
         <li key="0">
           <div className={styles.msgListAvator}>
-            <img src="http://localhost:8088/avator.png" />
+            <img src="/Public/images/avator.png" alt="默认头像" />
           </div>
           <div className={styles.msgListContent}>
             <p className={styles.msgListNick}>

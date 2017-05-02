@@ -260,7 +260,8 @@ class GroupPanel extends Component {
   }
 
   openTribeChat() {
-    console.log('打开群聊窗口');
+    var tribeId = this.props.mainState.currentCategoryId;
+    window.open('/Home/App/tribeChat?tribeId=' + tribeId, 'chatWindow', 'toolbar=no, status=no, scrollbars=0,resizable=0,menubar＝0,location=0,width=700,height=500');
   }
 
   inviteAddTribeModalOk() {

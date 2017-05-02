@@ -7,35 +7,16 @@
 
   class GroupController extends BaseController {
 
-    // 创建群文件
-    private function createTribeFile($file_name, $file_content, $im_tribe_id) {
-      $converter = new \Markdownify\Converter;
-      $fileContent = $converter->parseString( htmlspecialchars_decode($file_content) );
+    // 获取群组管理员信息
+    public function getTirbeAdminInfo() {
+      $tribeId = I('tribeId', null);
+      $adminInfo = D('Groups')->getTribeAdminInfo($tribeId);
 
-      $fileName = './Public/files/uploadFiles/' . time() . '.md';
-
-      $fileResult = file_put_contents($fileName, $fileContent);
-      $fileModelResult = D('Files')->saveFile(array(
-        'file_name' => $file_name,
-        'file_path' => $fileName,
-        'from_folder_id' => null,
-      ));
-
-      $fileInfo = D('files')->where(array('file_path' => $fileName))->find();
-      $addResult = D('Tribefiles')->addTribeFile($im_tribe_id, $fileInfo['id']);
-
-      return ($fileModelResult && $addResult) ? true : false;
-      
-    }
-
-    // 更新群文件
-    private function updateTribeFile($file_content, $file_path) {
-      $converter = new \Markdownify\Converter;
-      $fileContent = $converter->parseString( htmlspecialchars_decode( $file_content ) );
-
-      $fileResult = file_put_contents($file_path, $fileContent);
-
-      return $fileResult ? true : false;
+      if($adminInfo) {
+        $this->ajaxReturn(array('status' => 200, 'data' => $adminInfo));
+      } else {
+        $this->ajaxReturnError();
+      }
     }
 
     // 退出群
@@ -128,117 +109,13 @@
         $dismissTribeResult = D('Groups')->deleteItemFromModel( array('id' => $tribeId) );
         $groupList = D('Groups')->getUserMenuCatetoryInfosFromModel('Group', $tribeId);
 
-        if($dismissTribeResult && $groupList) {
+        if($dismissTribeResult) {
           $this->ajaxReturn(array('status' => 200, 'groupList' => $groupList));
         } else {
           $this->ajaxReturnError();
         }
       } else {
         $this->ajaxReturn(array('status' => 205, 'msg' => '您不是群主，不能解散该群'));
-      }
-    }
-
-    
-
-    // 获取群文件
-    public function getTribeFiles() {
-      $tribeId = I('tribeId', null);
-      $tribeFiles = D('Tribefiles')->getTribeFiles($tribeId);
-
-      if(is_array($tribeFiles)) {
-        $this->ajaxReturn(array('status' => 200, 'data' => $tribeFiles));
-      } else {
-        $this->ajaxReturnError();
-      }
-
-    }
-
-    // 获取群组管理员信息
-    public function getTirbeAdminInfo() {
-      $tribeId = I('tribeId', null);
-      $adminInfo = D('Groups')->getTribeAdminInfo($tribeId);
-
-      if($adminInfo) {
-        $this->ajaxReturn(array('status' => 200, 'data' => $adminInfo));
-      } else {
-        $this->ajaxReturnError();
-      }
-    }
-    
-    // 批量下载文件
-    public function downloadTribeFiles() {
-      $tribeFileId = I('fileIds', null);
-
-      $zipName = './Public/zip/temp.zip';
-      $zip = new \ZipArchive;
-      $zip->open($zipName, \ZipArchive::CREATE);
-      $zip->addEmptyDir('files');  // 增加空目录
-
-      foreach($tribeFileId as $key => $value) {
-        $fileInfo = D('Files')->getFile($value);
-        $fileContent = file_get_contents($fileInfo['file_path']);
-        if($fileContent) {
-          $zip->addFromString('files/' . md5($fileInfo['file_name']) . '.md', $fileContent);
-        }
-      }
-      $zip->close();
-
-      $file = fopen($zipName, 'r');
-
-      header('Content-type: application/octet-stream');   
-      header('Accept-Range: bytes');
-      header('Accept-Length: ' . filesize($file));
-      header('Content-Disposition: attachment; filename=files.zip');
-
-      $buffer = 1024;
-      while(!feof($file)) {
-        $file_data = fread($file, $buffer);
-        echo $file_data;
-      }
-
-      fclose($file);
-      unlink($zipName);
-     
-
-    }
-
-    // 批量群组删除文件
-    public function deleteTribeFiles() {
-      $tribeFileIds = I('tribeFileIds', null);
-      $tribeId = I('tribeId', null);
-      $result = array();
-
-      foreach($tribeFileIds as $key => $value) {
-        array_push($result, D('Tribefiles')->deleteTribeFile($value));
-      }
-
-      $tribeFiles = D('Tribefiles')->getTribeFiles($tribeId);
-      if(in_array(0, $result)) {
-        $this->ajaxReturnError();
-      }
-
-      if(is_array($tribeFiles)) {
-        $this->ajaxReturn(array('status' => 200, 'tribeFiles' => $tribeFiles));
-      } else {
-        $this->ajaxReturnError();
-      }
-    }
-
-    // 保存群文件
-    public function saveTribeFile() {
-      $isNewTribeFile = I('fileId', null) ? false : true;
-
-      if($isNewTribeFile) {
-        $saveResult = $this->createTribeFile(I('fileName', null), I('fileContent', null), I('tribeId', null));
-      } else {
-        $filePath = D('Files')->getFile(I('fileId', null))['file_path'];
-        $saveResult = $this->updateTribeFile(I('fileContent', null), $filePath);
-      }
-
-      if($saveResult) {
-        $this->ajaxReturn(array('status' => 200, 'msg' => '群文件已保存成功！'));
-      } else {
-        $this->ajaxReturnError();
       }
     }
 
@@ -298,6 +175,152 @@
         } else {
           $this->ajaxReturnError();
         }
+      } else {
+        $this->ajaxReturnError();
+      }
+    }
+
+
+    // 群主权限判断
+    private function isTribeAdmin($tribeId) {
+      $userId = $this->getUserIdFromSession();
+      $tribeAdminInfo = D('Groups')->getTribeAdminInfo($tribeId);
+
+      if($tribeAdminInfo['from_user_id'] == $userId) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+
+
+    // 创建群文件
+    private function createTribeFile($file_name, $file_content, $im_tribe_id) {
+      $converter = new \Markdownify\Converter;
+      $fileContent = $converter->parseString( htmlspecialchars_decode($file_content) );
+
+      $fileName = './Public/files/uploadFiles/' . time() . '.md';
+
+      $fileResult = file_put_contents($fileName, $fileContent);
+      $fileModelResult = D('Files')->saveFile(array(
+        'file_name' => $file_name,
+        'file_path' => $fileName,
+        'from_folder_id' => null,
+      ));
+
+      $fileInfo = D('files')->where(array('file_path' => $fileName))->find();
+      $addResult = D('Tribefiles')->addTribeFile($im_tribe_id, $fileInfo['id']);
+
+      return ($fileModelResult && $addResult) ? true : false;
+      
+    }
+
+    // 更新群文件
+    private function updateTribeFile($file_content, $file_path) {
+      $converter = new \Markdownify\Converter;
+      $fileContent = $converter->parseString( htmlspecialchars_decode( $file_content ) );
+
+      $fileResult = file_put_contents($file_path, $fileContent);
+
+      return $fileResult ? true : false;
+    }
+
+    // 获取群文件
+    public function getTribeFiles() {
+      $tribeId = I('tribeId', null);
+      $tribeFiles = D('Tribefiles')->getTribeFiles($tribeId);
+
+      if(is_array($tribeFiles)) {
+        $this->ajaxReturn(array('status' => 200, 'data' => $tribeFiles));
+      } else {
+        $this->ajaxReturnError();
+      }
+
+    }
+    
+    // 批量下载文件
+    public function downloadTribeFiles() {
+      $tribeFileId = I('fileIds', null);
+
+      $zipName = './Public/zip/temp.zip';
+      $zip = new \ZipArchive;
+      $zip->open($zipName, \ZipArchive::CREATE);
+      $zip->addEmptyDir('files');  // 增加空目录
+
+      foreach($tribeFileId as $key => $value) {
+        $fileInfo = D('Files')->getFile($value);
+        $fileContent = file_get_contents($fileInfo['file_path']);
+        if($fileContent) {
+          $zip->addFromString('files/' . md5($fileInfo['file_name']) . '.md', $fileContent);
+        }
+      }
+      $zip->close();
+
+      $file = fopen($zipName, 'r');
+
+      header('Content-type: application/octet-stream');   
+      header('Accept-Range: bytes');
+      header('Accept-Length: ' . filesize($file));
+      header('Content-Disposition: attachment; filename=files.zip');
+
+      $buffer = 1024;
+      while(!feof($file)) {
+        $file_data = fread($file, $buffer);
+        echo $file_data;
+      }
+
+      fclose($file);
+      unlink($zipName);
+     
+
+    }
+
+    // 批量群组删除文件
+    public function deleteTribeFiles() {
+      $tribeFileIds = I('tribeFileIds', null);
+      $tribeId = I('tribeId', null);
+      $isTribeAdmin = $this->isTribeAdmin($tribeId);
+      $result = array();
+
+      if(!isTribeAdmin) {
+        $this->ajaxReturn(array('status' => 200, 'msg' => '您不是群主，不能执行该操作'));
+      }
+
+      foreach($tribeFileIds as $key => $value) {
+        array_push($result, D('Tribefiles')->deleteTribeFile($value));
+      }
+
+      $tribeFiles = D('Tribefiles')->getTribeFiles($tribeId);
+      if(in_array(0, $result)) {
+        $this->ajaxReturnError();
+      }
+
+      if(is_array($tribeFiles)) {
+        $this->ajaxReturn(array('status' => 200, 'tribeFiles' => $tribeFiles));
+      } else {
+        $this->ajaxReturnError();
+      }
+    }
+
+    // 保存群文件
+    public function saveTribeFile() {
+      $isNewTribeFile = I('fileId', null) ? false : true;
+
+      $isTribeAdmin = $this->isTribeAdmin( I('tribeId', null) );
+      
+      if(!$isTribeAdmin) {
+        $this->ajaxReturn(array('status' => 200, 'msg' => '您不是群主不能执行该操作'));
+      }
+
+      if($isNewTribeFile) {
+        $saveResult = $this->createTribeFile(I('fileName', null), I('fileContent', null), I('tribeId', null));
+      } else {
+        $filePath = D('Files')->getFile(I('fileId', null))['file_path'];
+        $saveResult = $this->updateTribeFile(I('fileContent', null), $filePath);
+      }
+
+      if($saveResult) {
+        $this->ajaxReturn(array('status' => 200, 'msg' => '群文件已保存成功！'));
       } else {
         $this->ajaxReturnError();
       }
