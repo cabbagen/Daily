@@ -1,0 +1,33 @@
+[ 2017-05-07T22:22:26+08:00 ] 127.0.0.1 /Home/app/deleteItem
+ERR: Think\Model:deleteItemFromModel方法不存在！
+
+[ 2017-05-07T22:24:50+08:00 ] 127.0.0.1 /Home/app/deleteItem?deleteItemObject[type]=Categorys&deleteItemObject[id]=1
+ERR: Think\Model:hasFriendsFromCategory方法不存在！
+
+[ 2017-05-07T22:24:54+08:00 ] 127.0.0.1 /Home/app/deleteItem?deleteItemObject[type]=Categorys&deleteItemObject[id]=1
+ERR: Think\Model:hasFriendsFromCategory方法不存在！
+
+[ 2017-05-07T22:26:50+08:00 ] 127.0.0.1 /Home/app/deleteItem?deleteItemObject[type]=Categorys&deleteItemObject[id]=1
+ERR: Think\Model:hasFriendsFromCategory方法不存在！
+
+[ 2017-05-07T22:27:50+08:00 ] 127.0.0.1 /Home/app/deleteItem?deleteItemObject[type]=Categorys&deleteItemObject[id]=1
+ERR: Think\Model:hasFriendsFromCategory方法不存在！
+
+[ 2017-05-07T22:28:36+08:00 ] 127.0.0.1 /Home/app/deleteItem?deleteItemObject[type]=Categorys&deleteItemObject[id]=1
+ERR: Think\Model:hasFriendsFromCategory方法不存在！
+
+[ 2017-05-07T22:29:35+08:00 ] 127.0.0.1 /Home/app/deleteItem?deleteItemObject[type]=Categorys&deleteItemObject[id]=1
+ERR: Think\Model:hasFriendsFromCategory方法不存在！
+
+[ 2017-05-07T22:29:36+08:00 ] 127.0.0.1 /Home/app/deleteItem?deleteItemObject[type]=Categorys&deleteItemObject[id]=1
+ERR: Think\Model:hasFriendsFromCategory方法不存在！
+
+[ 2017-05-07T22:29:58+08:00 ] 127.0.0.1 /Home/app/deleteItem?deleteItemObject[type]=Categorys&deleteItemObject[id]=1
+ERR: Think\Model:hasFriendsFromCategory方法不存在！
+
+[ 2017-05-07T22:30:10+08:00 ] 127.0.0.1 /Home/app/deleteItem?deleteItemObject[type]=Categorys&deleteItemObject[id]=1
+ERR: Think\Model:hasFriendsFromCategory方法不存在！
+
+[ 2017-05-07T22:30:32+08:00 ] 127.0.0.1 /Home/app/deleteItem?deleteItemObject[type]=Categorys&deleteItemObject[id]=1
+ERR: Think\Model:hasFriendsFromCategory方法不存在！
+

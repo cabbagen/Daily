@@ -18,5 +18,9 @@
     public function deleteFriend($friendInfoArray) {
       return $this->where($friendInfoArray)->delete();
     }
+
+    public function hasFriendsFromCategory($categoryId) {
+      return $this->where(array('from_category_id' => $categoryId))->select();
+    }
   }
 ?>

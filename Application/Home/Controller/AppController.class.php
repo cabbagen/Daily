@@ -122,7 +122,7 @@
         ));
         $this->ajaxReturn(array('status' => 200, 'data' => $updateData));
       } else {
-        $this->ajaxReturn(array('status' => 500, 'msg' => '您当前不能执行该操作' ));
+        $this->ajaxReturn(array('status' => 500, 'msg' => '您当前不能执行该操作, 请确定已删除分组内全部好友' ));
       }
     }
 

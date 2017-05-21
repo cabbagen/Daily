@@ -70,7 +70,7 @@
 					'from_user_id' => $this->getUserId(),
 				);
 			}
-			
+
 			$result = $this->table($fullTableName)->where($queryCondtion)->select();
 			return $result;
 		}
@@ -94,6 +94,12 @@
 		// 删除一级分类
 		public function deleteItemFromModel($receiveArray) {
 			$fullTableName = $this->databasePrefix . $receiveArray['type'];
+			if( $fullTableName == 'think_Categorys' ) {
+				$isHasFriends = D('Friends')->hasFriendsFromCategory($receiveArray['id']);
+				if($isHasFriends) {
+					return false;
+				}
+			}
 			return $this->table($fullTableName)->delete($receiveArray['id']);
 		}
 

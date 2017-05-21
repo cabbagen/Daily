@@ -222,13 +222,6 @@
     }
 
 
-    // 测试
-    public function demo() {
-      echo time() - 60 * 60 * 24 * 20;
-      echo "====";
-      echo time();
-    }
-
   }
 
 ?>
