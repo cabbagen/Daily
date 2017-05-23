@@ -101,7 +101,7 @@ class Navigation extends Component {
               {isShowImLinkmanPanel}
             </li>
             <li className={styles.user_info} onClick={this.showUserInfoCenterPanel.bind(this)}>
-              <img src={avator} />
+              <img src={avator} style={{borderRadius : '50%'}} />
               <span>{nickName}</span>
               <i className={triangleStyle}></i>
               {isShowUserInfoCenterPanel}
@@ -146,7 +146,7 @@ class Navigation extends Component {
   renderUserInfoCenterPanel() {
     var { userId } = this.props.userInfo;
     return this.state.isShowUserInfoCenterPanel ? (
-      <ol onClick={(e) => {e.stopPropagation()}}>
+      <ol onClick={(e) => {e.stopPropagation()}} style={{zIndex: 999}}>
         <li><a href={`/Home/UserInfo/users.html`}>个人中心</a></li>
         <li><a href="/Home/Login/loginAccount.html">登出</a></li>
       </ol>

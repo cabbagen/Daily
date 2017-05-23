@@ -34,7 +34,7 @@ requirejs(['formVerifier', 'fetchRequire'], function(FormVerifier, fetchRequire)
 				formData.append('avatorImg', sourceInput[0].files[0]);
 				var promise = fetchRequire('/Home/Login/uploadAvator', 'POST', formData);
 				promise.then(function(data) {
-					$('<img src="' + data.data + '" />').appendTo(targetImg);
+					$('<img id="uploadAvator" src="' + data.data + '" />').appendTo(targetImg);
 				});
 			}
 		}
@@ -45,6 +45,8 @@ requirejs(['formVerifier', 'fetchRequire'], function(FormVerifier, fetchRequire)
 		var isPassValidata = registPager.formSelect(formVerifier);
 		if(isPassValidata) {
 			var formData = new FormData(form);
+			var avatorImg = $('#uploadAvator').attr('src') || null;
+			formData.append('avator', avatorImg);
 			var promise = fetchRequire('/Home/Login/handleRegist','POST', formData);
 		}
 	});

@@ -5,7 +5,7 @@ import servers from '../servers';
 
 // 请求本月日程任务数据
 function* requireMonthDataAsync(action) {
-  var data = yield call(servers.calendarServer.requireMonthDataAsync, action.timestamp);
+  var data = yield call(servers.calendarServer.requireMonthDataAsync, action.timestamp, action.from_calendar_id);
   if(data.status && data.status === 200) {
     yield put({type : 'requireMonthDataAsyncSuccess', monthAffair : data.monthAffair});
   } else if(data.status && data.status !== 200) {
@@ -17,7 +17,7 @@ function* requireMonthDataAsync(action) {
 
 // 拉取当日日程任务数据
 function* requireDayDataAsync(action) {
-  var data = yield call(servers.calendarServer.requireDayDataAsync, action.timestamp);
+  var data = yield call(servers.calendarServer.requireDayDataAsync, action.timestamp, action.from_calendar_id);
   if(data.status && data.status === 200) {
     yield put({type : 'requireDayDataAsyncSuccess', currentAffairList : data.dayAffairList});
   } else if(data.status && data.status !== 200) {
@@ -29,7 +29,7 @@ function* requireDayDataAsync(action) {
 
 // 请求图表数据
 function* requireChartDataAsync(action) {
-  var data = yield call(servers.calendarServer.requireChartDataAsync);
+  var data = yield call(servers.calendarServer.requireChartDataAsync, action.from_calendar_id);
   if(data.status && data.status === 200) {
     yield put({type : 'requireChartDataAsyncSuccess', chartData : data.data});
   } else if(data.status && data.status !== 200) {

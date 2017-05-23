@@ -1,0 +1,9 @@
+[ 2017-05-23T13:53:43+08:00 ] 192.168.1.141 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2017-05-23T17:20:02+08:00 ] 192.168.1.141 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000656s ]
+ERR: 无法加载模块:Favicon
+

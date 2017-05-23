@@ -152,6 +152,7 @@ const mainReducerMap = {
   // 日程操作模块 
   // 获取
   getCalendarsCategoryItemAsyncSuccess : function(state, action) {
+
     var tempObj = {calendarsCategoryItem : action.calendarsCategoryItem, currentCategoryId : action.id};
     return Object.assign({},state, tempObj);
   },
@@ -407,9 +408,10 @@ const mainReducerMap = {
   // 添加未读消息
   addFriendUnReadMsgAsyncSuccess : function(state, action) {
     var isInUnReadList = false;
+    var imFriendInfos = [];
 
-    var imFriendInfos = state.imFriendInfos.map(item => {
-      if(item.concact === action.friendInfo.concact) {
+    imFriendInfos = state.imFriendInfos.map(item => {
+      if(item.contact === action.friendInfo.contact) {
         isInUnReadList = true;
         item.msgCount++;
       }
@@ -423,6 +425,7 @@ const mainReducerMap = {
     return Object.assign({},state, {
       imFriendInfos : imFriendInfos
     });
+
   },
   addFriendUnReadMsgAsyncError : function(state, action) {
     return Object.assign({}, state, {

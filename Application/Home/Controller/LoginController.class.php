@@ -65,13 +65,12 @@
 		public function handleRegist() {
 			$userModel = D('Users');
 			$userInfos = array_merge(I('post.', null), array(
-				'avator' => $this->avatorUrl,
+				'avator' => I('post.avator'),
 				'password' => md5( I('post.password', null) ),
 				'im_user_id' => md5( I('post.username', null) ),
 			));
 
 			$result = $userModel->createUser($userInfos);
-
 			if($result) {
 				$this->addWebsiteSession($result['username'], $result['id']);
 				$this->ajaxReturn($this->registSuccessResponse);

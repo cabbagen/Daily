@@ -58,7 +58,7 @@ class FileterCategory extends Component {
       return (
         <li key={item.id} title="双击打开聊天窗口" onDoubleClick={this.openChat.bind(this, item.id)}>
           <div className={`${styles.avator} ${styles.fl}`}>
-            <img src="/public/images/avator_1.png" />
+            <img src={item.avator} />
             {unreadNode}
           </div>
           <div className={`${styles.infos} ${styles.fl}`}>

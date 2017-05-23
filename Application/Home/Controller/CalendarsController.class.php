@@ -62,9 +62,9 @@
       $monthAffair = array();
 
       if( I('timestamp', null) ) {
-        $monthDataResult = D('Affairs')->getMonthAffair(I('timestamp', null)/1000);
+        $monthDataResult = D('Affairs')->getMonthAffair(I('timestamp', null)/1000, I('from_calendar_id'));
       } else {
-        $monthDataResult = D('Affairs')->getMonthAffair(time());        
+        $monthDataResult = D('Affairs')->getMonthAffair(time(), I('from_calendar_id'));        
       }
 
       if( is_array($monthDataResult) && count($monthDataResult) >= 0) {
@@ -80,7 +80,7 @@
 
     // 获取单日日程数据任务数据
     public function getDayAffairData() {
-      $dayDataResult = D('Affairs')->getDayAffair(I('timestamp', null) / 1000);
+      $dayDataResult = D('Affairs')->getDayAffair(I('timestamp', null) / 1000, I('from_calendar_id'));
       
       if(is_array($dayDataResult)) {
         $this->ajaxReturn(array('status' => 200, 'dayAffairList' => $dayDataResult));
@@ -131,7 +131,7 @@
 
     // 获取各类完成数据
     public function getTypeCompleteData() {
-      $resultMapArray = D('Affairs')->getCompleteRate();
+      $resultMapArray = D('Affairs')->getCompleteRate(I('from_calendar_id'));
       
       if($resultMapArray) {
         $this->ajaxReturn(array(

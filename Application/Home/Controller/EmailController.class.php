@@ -6,8 +6,8 @@
 
 		private $inviteTitle = "来自sessino('username')的邀请函";
 
-		private $inviteContent = '<p>您的好友邀请您加入我们的平台，点击下面的链接立即加入!</p><p><a href="http://www.baidu.com">http://www.baidu.com</a></p>';
-
+		public $inviteContent = "<p>您的好友邀请您加入我们的平台，点击下面的链接立即加入！</p><p><a href='http://www.daily.com:8080/Home/Login/registAccount.html'>http://www.daily.com:8080/Home/Login/registAccount.html</a></p>";
+		
 		private $findPasswordTitle = "找回密码通知";
 
 		private $findPasswordContent = "<p>您的密码已成功找回，请不要泄露给其他人！</p><p>新的密码为：";

@@ -23,7 +23,7 @@
 </header>
 	<section class="content">
 		<div class="avator">
-			<img src="/public/images/avator_1.png" />
+			<img src="<?php echo ($userInfo["avator"]); ?>" />
 			<p><strong>个性签名：</strong><span><?php echo ($userInfo["extra"]); ?></span><a class="target-extra" href="javascript:;"> [ 修改 ]</a></p>
 		</div>
 		<div class="infos">

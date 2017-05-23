@@ -20,7 +20,13 @@ class CalendarPanel extends Component {
   // 拉取本月数据
   componentWillMount() {
     var { calendarActions } = this.props;
-    calendarActions.requireMonthData();
+    var that = this;
+
+    // 延迟 2 秒获取，防止 that.props.mainState.currentCategoryId == '';
+    window.setTimeout(function() {
+      calendarActions.requireMonthData(that.props.mainState.currentCategoryId);
+    }, 2000);
+
   }
 
   render() {
@@ -157,9 +163,9 @@ class CalendarPanel extends Component {
   }
 
   switchChart() {
-    var { calendarActions } = this.props;
+    var { calendarActions, mainState } = this.props;
     this.setState({isShowChart : true}, function() {
-      calendarActions.requireChartData();
+      calendarActions.requireChartData(mainState.currentCategoryId);
     });
   }
 
@@ -183,21 +189,20 @@ class CalendarPanel extends Component {
   }
 
   panelChange(moment) {
-    var { calendarActions } = this.props;
-    calendarActions.requireMonthData(moment._d.getTime());
+    var { calendarActions, mainState } = this.props;
+    calendarActions.requireMonthData(mainState.currentCategoryId, moment._d.getTime());
   }
 
   selectDate(moment) {
     var isMonth = $('span.ant-radio-button-checked').next('span').text() === '月' ? true : false;
-    var { calendarActions } = this.props;
+    var { calendarActions, mainState } = this.props;
 
     if(isMonth) {
-      this.setState({
-        isShowCurrentDayModal : true
-      }, function() {
-        calendarActions.requireDayData(moment._d.getTime());
+      console.log(mainState.currentCategoryId);
+      this.setState({isShowCurrentDayModal : true}, function() {
+        calendarActions.requireDayData(mainState.currentCategoryId, moment._d.getTime());
       });
-    }
+    } 
   } 
 
   createAffairModalOk() {
@@ -222,8 +227,8 @@ class CalendarPanel extends Component {
         from_calendar_id : mainState.currentCategoryId
       });
       // 创建时，再拉取一次数据
-      calendarActions.requireMonthData();
-      calendarActions.requireChartData();
+      calendarActions.requireMonthData(mainState.currentCategoryId);
+      calendarActions.requireChartData(mainState.currentCategoryId);
     });
   }
 
@@ -254,13 +259,13 @@ class CalendarPanel extends Component {
   completeAffair(affairId) {
     var { mainActions, mainState, calendarActions } = this.props;
     mainActions.completeAffair(affairId, mainState.currentCategoryId);
-    calendarActions.requireChartData();
+    calendarActions.requireChartData(mainState.currentCategoryId);
   }
 
   cancelCompleteAffair(affairId) {
     var { mainActions, mainState, calendarActions } = this.props;
     mainActions.cancelCompleteAffair(affairId, mainState.currentCategoryId);
-    calendarActions.requireChartData();
+    calendarActions.requireChartData(mainState.currentCategoryId);
   }
 
   currentDayAffairModalOk() {

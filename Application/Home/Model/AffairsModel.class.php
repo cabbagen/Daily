@@ -37,7 +37,7 @@
 			))->setField('affair_content', $updateArray['affair_content']);
 		}
 
-		public function getMonthAffair($timestamp) {
+		public function getMonthAffair($timestamp, $fromCalendarId) {
 			$year = getdate($timestamp)['year'];
 			$month = getdate($timestamp)['mon'];
 			$day = 1;
@@ -51,7 +51,8 @@
 				->format('Y-m-d');
 
 			return $this->where(array(
-				'affair_time' => array('between', array($monthStartDate, $monthEndDate))
+				'affair_time' => array('between', array($monthStartDate, $monthEndDate)),
+				'from_calendar_id' => $fromCalendarId,
 			))->select();
 		}
 
@@ -67,7 +68,7 @@
 			return $this->where(array('id' => $affairId))->setField('is_complete', 1);
 		}
 
-		public function getDayAffair($timestamp) {
+		public function getDayAffair($timestamp, $fromCalendarId) {
 			$year = getdate($timestamp)['year'];
 			$month = getdate($timestamp)['mon'];
 			$day = getdate($timestamp)['mday'];
@@ -82,18 +83,19 @@
 
 			return $this->where(array(
 				'affair_time' => array('between', array($dayStartDate, $dayEndDate)),
+				'from_calendar_id' => $fromCalendarId,
 			))->select();
 		}
 
-		public function getCompleteRate() {
+		public function getCompleteRate($fromCalendarId) {
 			$weekStartDay = $this->getWeekStart();
 			$weekEndDay = $this->getWeekEnd();
 
 			$queryUpCompleteDataSql = "select affair_type, count(is_complete) as un_complete from think_affairs " .
-				"where is_complete = 1 and affair_time between '$weekStartDay' and '$weekEndDay' group by affair_type";
+				"where from_calendar_id = '$fromCalendarId' and is_complete = 1 and affair_time between '$weekStartDay' and '$weekEndDay' group by affair_type";
 
 			$queryCompleteDataSql = "select affair_type, count(is_complete) as complete from think_affairs " .
-				"where is_complete = 2 and affair_time between '$weekStartDay' and '$weekEndDay' group by affair_type";
+				"where from_calendar_id = '$fromCalendarId' and is_complete = 2 and affair_time between '$weekStartDay' and '$weekEndDay' group by affair_type";
 
 			$unCompleteData = $this->query($queryUpCompleteDataSql);
 			$completeDate = $this->query($queryCompleteDataSql);
