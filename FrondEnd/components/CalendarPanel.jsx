@@ -198,7 +198,6 @@ class CalendarPanel extends Component {
     var { calendarActions, mainState } = this.props;
 
     if(isMonth) {
-      console.log(mainState.currentCategoryId);
       this.setState({isShowCurrentDayModal : true}, function() {
         calendarActions.requireDayData(mainState.currentCategoryId, moment._d.getTime());
       });

@@ -173,7 +173,10 @@
             )
           ));
         } else {
-          $this->ajaxReturnError();
+          $this->ajaxReturn(array(
+            'status' => 205,
+            'msg' => '该群已解散',
+          ));
         }
       } else {
         $this->ajaxReturnError();

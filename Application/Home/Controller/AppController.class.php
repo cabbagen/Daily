@@ -163,7 +163,6 @@
         $friendUsername = D('Users')->getUserInfo(array('im_user_id' => $friendImId))['username'];
       }
       
-      
       $selfImInfo = $this->getImUserInfoFromSession();
       $toImInfo = $this->getImUserInfoFromUsername($friendUsername);
 

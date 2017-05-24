@@ -138,8 +138,8 @@ class FilterCalendar extends Component {
     mainActions.deleteAffair(affairId, mainState.currentCategoryId);
 
     // 删除时拉取一次数据
-    calendarActions.requireMonthData();
-    calendarActions.requireChartData();
+    calendarActions.requireMonthData(mainState.currentCategoryId);
+    calendarActions.requireChartData(mainState.currentCategoryId);
   }
 
 }
